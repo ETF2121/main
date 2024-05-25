@@ -20,11 +20,9 @@ words <- data.frame(word=c("statistical inference", "data wrangling", "data visu
                        freq= c(10, 8, 7, 5, 4, 3, 2, 4, 10, 12, 9))
 ```
 
-## ETF2121/5912 Data Analysis in Business  
+## ETF2121/5912 Data Analysis in Business
 
-![](images/intro.png){width="900" fig-align="center"}
-![](images/lec-1/joan.jpeg){.top-right .shake .absolute fig-alt="Headshot of Dr. Joan Tan" style="border-radius: 50%;" top="50" width="100" height="100"}
-
+![](images/intro.png){width="900" fig-align="center"} ![](images/lec-1/joan.jpeg){.top-right .shake .absolute fig-alt="Headshot of Dr. Joan Tan" style="border-radius: 50%;" top="50" width="100" height="100"}
 
 ## What is this course about?
 
@@ -33,7 +31,6 @@ words <- data.frame(word=c("statistical inference", "data wrangling", "data visu
 -   Preparing you with tools for data analysis regardless of your major
 -   Data wrangling, visualization, and analysis
 -   This unit is designed for the [non-technical]{style="color:red;"} student with no coding background!
-
 
 ![](images/lec-1/joan.jpeg){.top-right .shake .absolute fig-alt="Headshot of Dr. Joan Tan" style="border-radius: 50%;" top="0" width="100" height="100"}
 
@@ -70,4 +67,3 @@ wordcloud2(words, size = 0.4, backgroundColor = "black", color = "random-light")
 ```
 
 ![](images/lec-1/joan.jpeg){.top-right .shake .absolute fig-alt="Headshot of Dr. Joan Tan" style="border-radius: 50%;" top="0" width="100" height="100"}
-

@@ -27,8 +27,11 @@ strong, b {
 }
 
 .reveal .slide-logo {
-  max-height: unset;
-  height: 500px !important;
+  width: 100px !important;
+  height: auto;
+  position: absolute;
+  left: 10px;
+  z-index: 10;
 }
 
 .reveal .slides section {
