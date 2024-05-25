@@ -1,0 +1,408 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ETF2121/5912: Data Analysis in Business",
+    "section": "",
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nQuiz/Assignments\n\n\n\n\n1\nJul 22 - Jul 26\nTutorial 1 - R & Power BI installation\n\n\n\n\n\n\nTue, Jul 23\nWelcome to ETF2121/5921!\nIntroduction to Data Analysis\n\n\n\n\n\n\nFri, Jul 26\nReleased: Tutorial 1 Solution\n\n\n\n\n\n2\nJul 29 - Aug 2\nTutorial 2\n\n\n\n\n\n\nTue, Jul 30\nDescription Statistics\n\n\n\n\n\n\nFri, Aug 2\nReleased: Tutorial 2 solution\n\n\n\n\n\n3\nAug 5 - Aug 9\nTutorial 3\n\n\n\n\n\n\nTue, Aug 6\nData Visualization\n\n\n\n\n\n\nFri, Aug 9\nReleased: Tutorial 3 solution\n\n\n\n\n\n4\nAug 12 - Aug 16\nTutorial 4\n\n\n\n\n\n\nTue, Aug 13\nData Wrangling\n\n\n\n\n\n\nFri, Aug 16\nReleased: Tutorial 4 solution\n\n\n\n\n\n5\nAug 19 - Aug 23\nTutorial 5\n\n\n\n\n\n\nTue, Aug 20\nProbabiliy: An Introduction to Modelling Uncertainty\n\n\n\n\n\n\nFri, Aug 23\nReleased: Tutorial 5 solution\n\n\n\n\n\n6\nAug 26 - Aug 30\nTutorial 6\n\n\n\n\n\n\nTue, Aug 27\nDescriptive Data Mining\n\n\n\n\n\n\nWed, Aug 28\nIndividual assignment submission deadline\n\n\n\n\n\n\nFri, Aug 30\nReleased: Tutorial 6 solution\n\n\n\n\n\n7\nSep 2 - Sep 6\nTutorial 7\n\n\n\n\n\n\nTue, Sep 3\nStatistical Inference\n\n\n\n\n\n\nFri, Sep 6\nReleased: Tutorial 7 solution\n\n\n\n\n\n8\nSep 9 - Sep 13\nTutorial 8\n\n\n\n\n\n\nTue, Sep 10\nLinear Regression\n\n\n\n\n\n\nFri, Sep 13\nReleased: Tutorial 8 solution\n\n\n\n\n\n9\nSep 16 - Sep 20\nTutorial 9\n\n\n\n\n\n\nTue, Sep 17\nTime Series Analysis and Forecasting\n\n\n\n\n\n\nFri, Sep 20\nReleased: Tutorial 9 solution\n\n\n\n\n\nSemester Break\nSep 23 - Sep 27\nMid semester break\n\n\n\n\n\n10\nSep 30 - Oct 4\nTutorial 10\n\n\n\n\n\n\nTue, Oct 1\nDecision Tree\n\n\n\n\n\n\nThu, Mar 17\nReleased: Tutorial 10 solution\n\n\n\n\n\n11\nOct 7 - Oct 11\nTutorial 11\n\n\n\n\n\n\nTue, Oct 8\nRegression\n\n\n\n\n\n\nWed, Oct 9\nIndividual Assignment 2 Submission Deadline\n\n\n\n\n\n\nFri, Oct 11\nReleased: Tutorial 11 solution\n\n\n\n\n\n12\nOct 14 - Oct 18\nTutorial 12\n\n\n\n\n\n\nTue, Oct 15\nClassification\n\n\n\n\n\n\nFri, Oct 18\nReleased: Tutorial 12 Solution\n\n\n\n\n\nSWOT\nOct 21 - Oct 25\nSWOT"
+  },
+  {
+    "objectID": "course-overview.html",
+    "href": "course-overview.html",
+    "title": "ETF 2121/5912: Data Analysis in Business",
+    "section": "",
+    "text": "Welcome to Data Analysis in Business. This unit provides an overview of fundamental tools of data and statistical analysis used in the Business and Economics disciplines. The methods covered are widely used in industry and academia, providing the necessary foundation for more advanced approaches as you advance your training and career.\n\nThis course delves deeper into basic statistical concepts, with a focus on their application in finance, accounting, and other sectors. It introduces cutting-edge software and programming languages such as R, Power-BI, SQL and Excel for robust data analysis and predictive modelling. Students will engage with modern data sources and advanced sampling techniques, learn to perform hypothesis testing, and apply modelling techniques such as regression and time series analysis in business contexts. The course places a strong emphasis on practical applications, aiming to equip students with the skills to interpret and leverage statistical data for solving business problems and making informed decisions in industry.\n\nIntroductory Video"
+  },
+  {
+    "objectID": "course-syllabus.html",
+    "href": "course-syllabus.html",
+    "title": "Syllabus/Outline",
+    "section": "",
+    "text": "This unit equips students with statistical techniques and the use of modern business software, including R, Excel, Power BI, for business applications. Students will learn to process and analyse extensive datasets using methods such as regression, time series analysis and classification. Key topics include modeling, regression analysis, and time series analysis in the business context."
+  },
+  {
+    "objectID": "course-syllabus.html#unit-synopsis",
+    "href": "course-syllabus.html#unit-synopsis",
+    "title": "Syllabus/Outline",
+    "section": "",
+    "text": "This unit equips students with statistical techniques and the use of modern business software, including R, Excel, Power BI, for business applications. Students will learn to process and analyse extensive datasets using methods such as regression, time series analysis and classification. Key topics include modeling, regression analysis, and time series analysis in the business context."
+  },
+  {
+    "objectID": "course-syllabus.html#unit-objectives",
+    "href": "course-syllabus.html#unit-objectives",
+    "title": "Syllabus/Outline",
+    "section": "Unit Objectives",
+    "text": "Unit Objectives\nOn successful completion of this unit, you should be able to:\n\nGain proficiency in business reporting tools and data analysis tool.\nLearn to perform complex statistical analyses, including hypothesis testing and confidence intervals.\nUse various predictive modeling technique to enhance forecasting and decision-making in business context.\nAcquire skills to analyze and interpret real-time data for better business strategic planning and decision."
+  },
+  {
+    "objectID": "course-syllabus.html#unit-outline",
+    "href": "course-syllabus.html#unit-outline",
+    "title": "Syllabus/Outline",
+    "section": "Unit Outline",
+    "text": "Unit Outline\n\nIntroduction to data analysis\nDescriptive statistics\nData visualization\nData wrangling\nProbability: An introduction to modelling uncertainty\nDescriptive data mining\nStatistical inference\nLinear regression\nTime series analysis and forecasting\nRegression\nClassification"
+  },
+  {
+    "objectID": "course-syllabus.html#textbooks",
+    "href": "course-syllabus.html#textbooks",
+    "title": "Syllabus/Outline",
+    "section": "Textbooks",
+    "text": "Textbooks\nThe textbook for this course is just a supplement to the lectures and labs. The main resources for this course are the lecture notes, lab materials, and the course website. However, the following textbooks are recommended for additional reading:\n\nBusiness Analytics by Camm, Cochran, Fry, Ohlmann, Anderson & Sweeney, 2024, 5th Edition.\nAdvanced Analytics with Power BI and R by Dr. Leila Etaati, 2020."
+  },
+  {
+    "objectID": "course-syllabus.html#assessment",
+    "href": "course-syllabus.html#assessment",
+    "title": "Syllabus/Outline",
+    "section": "Assessment",
+    "text": "Assessment\n\nWithin semester assessment: 50%\n\n\nExamination: 50%\nHurdle description for Examination:\nThis unit contains a hurdle requirement that you must achieve to be able to pass the unit. The consequence of not achieving a hurdle requirement is a fail grade (NH) and a maximum mark of 45 for the unit.\n\n\n\nAssessments\nWeight\nDue Date\nLearnkng Oucomes\n\n\n\n\nQuizzes\n10%\nWeekly\nWeeks 2-12\n\n\nAssignment 1\n20%\nWeeks 6\nWeeks 1-5\n\n\nAssignment 2\n20%\nWeek 11\nWeeks 1-10\n\n\nFinal exam\n50%\nExam period\nWeeks 1-12\n\n\n\n\nThe lowest quiz grade will be dropped at the end of the semester.\nIt is your responsibility to check your assignment grading and to report any discrepancies within one week of the grade being posted."
+  },
+  {
+    "objectID": "course-syllabus.html#course-info",
+    "href": "course-syllabus.html#course-info",
+    "title": "Syllabus/Outline",
+    "section": "Course info",
+    "text": "Course info\n\n\n\n\nDay\nTime\nLocation\n\n\n\n\nLectures\nTue\n2.00 pm - 3.50 pm\nK312, Caulfield Campus\n\n\nTutorial 1\nMon\n1:45 pm - 3:00 pm\nxx.\n\n\n\n\nCommunication\nAll lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website at xx.\nI will regularly send course announcements via Ed discussion board, make sure to check one or the other of these regularly. It is your responsibility to stay informed about the course progress and any changes to the schedule.\n\n\nWhere to get help\n\nIf you have a question during lecture or tutorial, feel free to ask your teaching team or post your question in the discussion board. There are likely other students with the same question, and it is helpful to have the answer available to everyone.\nThe teaching team is here to help you be successful in the course. You are encouraged to attend the designated consultation hours to ask questions about the course content and assignments. Those consultation hours are available every day except weekend!\nOutside of class and office hours, any general questions about course content or assignments should be posted on the Ed discussion board here. Please check whether your question has already been answered before posting. Please help each others by answering other questions, you will notice that you learn a lot by posting/responding to others. Do not expect the teaching team to answer questions that are posted during the weekend in the discussion board.\nEmails should be reserved for personal questions that are not appropriate to be discuss in the forum. Please include “ETF2121/5912” in the email subject line. Response time may be slower for emails with 24 hours being the maximum response time except weekend."
+  },
+  {
+    "objectID": "course-syllabus.html#lectures-and-tutorials",
+    "href": "course-syllabus.html#lectures-and-tutorials",
+    "title": "Syllabus/Outline",
+    "section": "Lectures and tutorials",
+    "text": "Lectures and tutorials\nOur goal in both lectures and labs is to encourage maximum interaction. As your instructor, I will introduce you to new tools and techniques, but it’s up to you to apply them effectively. Coding is best learned through practice, so much of our coursework will involve hands-on coding tasks. Each session will include various activities and assignments designed to enhance your skills.\nAttendance and active participation in both lectures and tutorials are expected. Attending lectures and tutorials in person will provide the best learning experience. Some lectures will feature application exercises and periodic activities to foster a supportive learning community. These activities will be brief and enjoyable, aimed at strengthening connections among classmates throughout the semester.\n\nExams\nFinal exam. The exam will be held during the exam period, and it will be a closed-book exam with 5 pieces of A4 paper (10 pages) of handwritten/typed notes allowed. It is a supervised exam, and you will not be allowed to access the internet.\n\n\nLate work submission policy\nAssignment deadlines are set to facilitate your progression through the course content and to enable timely feedback from the teaching team. I understand that unforeseen circumstances may occasionally arise, hindering your ability to meet a deadline. In such cases, you can request an extension through the Monash extension unit for extenuating circumstances. Please note that I do not grant individual approvals for late submissions, and requests should solely be made through the Monash extension unit.\n\nThere will be a 10% deduction for each 24-hour period the assignment is late.\nIf you submit an assessment task more than seven days after the due date, you’ll receive a mark of zero and you won’t get any feedback.\nStrictly no late submission without approval.\nI will not reply to any email related to request on late submission."
+  },
+  {
+    "objectID": "course-syllabus.html#important-dates",
+    "href": "course-syllabus.html#important-dates",
+    "title": "Syllabus/Outline",
+    "section": "Important dates",
+    "text": "Important dates\n\nxxx: Classes begin (Tuesday)\nxxx: Assignment 1 submission deadline\nxxx: Assignment 2 submission deadline"
+  },
+  {
+    "objectID": "exams/exam-2.html",
+    "href": "exams/exam-2.html",
+    "title": "Exam 2",
+    "section": "",
+    "text": "Exam 1 will be released on Friday, Feb 25 at 9 am ET and must be completed by Mon, Feb 28 at 11:59 pm.\nThe exam will consist of two parts:\n\nPart 1 - Conceptual: Multiple choice questions on Sakai test and quizzes. This portion may only be submitted one time. Go here to complete Part 1 of the exam.\nPart 2 - Applied: Data analysis in RStudio and submitted in Gradescope (like a usual lab and homework). Go to the GitHub organization for the course and find the exam-2- repo to complete Part 2 of your exam. Add your answers to the exam-2.qmd file in your repo.\n\nBoth portions must be completed and submitted by Mon, Feb 28 at 11:59 pm. Late work will only be accepted in the case of of extenuating circumstances and notification from your academic dean.\n🍀 Good luck! 🍀\n\n\n\nBy taking this exam, you pledge to uphold the Duke Community Standard:\n\nI will not lie, cheat, or steal in my academic endeavors;\nI will conduct myself honorably in all my endeavors; and\nI will act if the Standard is compromised.\n\n\n\n\n\nThis is an individual assignment. Everything in your repository and on Sakai is for your eyes only.\nYou may not collaborate or communicate anything about this exam to anyone except the instructor and the head TA (Rick Presman). For example, you may not communicate with other students, other TAs, or post/solicit help on the internet, email or via any other method of communication.\nThe exam is open-book, open-note, so you may use any materials from class as you take the exam.\nOnly head TA and professor office hours will be held during the exam period.\nYou may not email the TAs questions about the exam.\nIf you have questions, direct message the professor or the head TA (Rick Presman) on Slack or post on Sakai Conversations for “Instructors in this site” only or attend my office hours (Monday, 10:30 am - 11:30 am).\n\n\n\n\n\nPart 1 - Conceptual: The answers to the multiple choice/short answer questions should be submitted under Test & Quizzes in Sakai.\nPart 2 - Applied: The PDF document for the data analysis portion must be uploaded to Gradescope.\n\nYou must submit a PDF to Gradescope that corresponds to the .qmd file on your GitHub repository in order to receive credit for this portion of the exam.\nYou must upload a PDF, not HTML. Any non-PDF submissions will not be graded.\nMark the pages associated with each question. If any answer for a question spans multiple pages, mark all associated pages.\nMake sure to associate the “Workflow & formatting” section with the first page.\nFailure to mark the pages in Gradescope will result in point deductions. Any pages that are not marked will not be graded.\nMake sure that your uploaded PDF document matches your .qmd and the PDF in your GitHub repository exactly. Points will be deducted for documents that are not reproducible."
+  },
+  {
+    "objectID": "exams/exam-2.html#overview",
+    "href": "exams/exam-2.html#overview",
+    "title": "Exam 2",
+    "section": "",
+    "text": "Exam 1 will be released on Friday, Feb 25 at 9 am ET and must be completed by Mon, Feb 28 at 11:59 pm.\nThe exam will consist of two parts:\n\nPart 1 - Conceptual: Multiple choice questions on Sakai test and quizzes. This portion may only be submitted one time. Go here to complete Part 1 of the exam.\nPart 2 - Applied: Data analysis in RStudio and submitted in Gradescope (like a usual lab and homework). Go to the GitHub organization for the course and find the exam-2- repo to complete Part 2 of your exam. Add your answers to the exam-2.qmd file in your repo.\n\nBoth portions must be completed and submitted by Mon, Feb 28 at 11:59 pm. Late work will only be accepted in the case of of extenuating circumstances and notification from your academic dean.\n🍀 Good luck! 🍀"
+  },
+  {
+    "objectID": "exams/exam-2.html#academic-integrity",
+    "href": "exams/exam-2.html#academic-integrity",
+    "title": "Exam 2",
+    "section": "",
+    "text": "By taking this exam, you pledge to uphold the Duke Community Standard:\n\nI will not lie, cheat, or steal in my academic endeavors;\nI will conduct myself honorably in all my endeavors; and\nI will act if the Standard is compromised."
+  },
+  {
+    "objectID": "exams/exam-2.html#rules-notes",
+    "href": "exams/exam-2.html#rules-notes",
+    "title": "Exam 2",
+    "section": "",
+    "text": "This is an individual assignment. Everything in your repository and on Sakai is for your eyes only.\nYou may not collaborate or communicate anything about this exam to anyone except the instructor and the head TA (Rick Presman). For example, you may not communicate with other students, other TAs, or post/solicit help on the internet, email or via any other method of communication.\nThe exam is open-book, open-note, so you may use any materials from class as you take the exam.\nOnly head TA and professor office hours will be held during the exam period.\nYou may not email the TAs questions about the exam.\nIf you have questions, direct message the professor or the head TA (Rick Presman) on Slack or post on Sakai Conversations for “Instructors in this site” only or attend my office hours (Monday, 10:30 am - 11:30 am)."
+  },
+  {
+    "objectID": "exams/exam-2.html#submission",
+    "href": "exams/exam-2.html#submission",
+    "title": "Exam 2",
+    "section": "",
+    "text": "Part 1 - Conceptual: The answers to the multiple choice/short answer questions should be submitted under Test & Quizzes in Sakai.\nPart 2 - Applied: The PDF document for the data analysis portion must be uploaded to Gradescope.\n\nYou must submit a PDF to Gradescope that corresponds to the .qmd file on your GitHub repository in order to receive credit for this portion of the exam.\nYou must upload a PDF, not HTML. Any non-PDF submissions will not be graded.\nMark the pages associated with each question. If any answer for a question spans multiple pages, mark all associated pages.\nMake sure to associate the “Workflow & formatting” section with the first page.\nFailure to mark the pages in Gradescope will result in point deductions. Any pages that are not marked will not be graded.\nMake sure that your uploaded PDF document matches your .qmd and the PDF in your GitHub repository exactly. Points will be deducted for documents that are not reproducible."
+  },
+  {
+    "objectID": "exams/exam-1.html",
+    "href": "exams/exam-1.html",
+    "title": "Exam 1",
+    "section": "",
+    "text": "Exam 1 will be released on Friday, Feb 4 at 9 am ET and must be completed by Mon, Feb 7 at 11:59 pm.\nThe exam will consist of two parts:\n\nPart 1 - Conceptual: Multiple choice questions on Sakai test and quizzes. This portion may only be submitted one time. Go here to complete Part 1 of the exam.\nPart 2 - Applied: Data analysis in RStudio and submitted in Gradescope (like a usual lab and homework). Go to the GitHub organization for the course and find the exam-1- repo to complete Part 3 of your exam. Add your answers to the exam-1.qmd file in your repo.\n\nBoth portions must be completed and submitted by Mon, Feb 7 at 11:59 pm. Late work will only be accepted in the case of of extenuating circumstances and notification from your academic dean.\n🍀 Good luck! 🍀\n\n\n\nBy taking this exam, you pledge to uphold the Duke Community Standard:\n\nI will not lie, cheat, or steal in my academic endeavors;\nI will conduct myself honorably in all my endeavors; and\nI will act if the Standard is compromised.\n\n\n\n\n\nThis is an individual assignment. Everything in your repository and on Sakai is for your eyes only.\nYou may not collaborate or communicate anything about this exam to anyone except the instructor and the head TA (Rick Presman). For example, you may not communicate with other students, other TAs, or post/solicit help on the internet, email or via any other method of communication.\nThe exam is open-book, open-note, so you may use any materials from class as you take the exam.\nOnly head TA and professor office hours will be held during the exam period.\nYou may not email the TAs questions about the exam.\nIf you have questions, direct message the professor or the head TA (Rick Presman) on Slack or post on Sakai Conversations for “Instructors in this site” only or attend my office hours (Monday, 10:30 am - 11:30 am).\n\n\n\n\n\nPart 1 - Conceptual: The answers to the multiple choice/short answer questions should be submitted under Test & Quizzes in Sakai.\nPart 2 - Applied: The PDF document for the data analysis portion must be uploaded to Gradescope.\n\nYou must submit a PDF to Gradescope that corresponds to the .qmd file on your GitHub repository in order to receive credit for this portion of the exam.\nYou must upload a PDF, not HTML. Any non-PDF submissions will not be graded.\nMark the pages associated with each question. If any answer for a question spans multiple pages, mark all associated pages.\nMake sure to associate the “Workflow & formatting” section with the first page.\nFailure to mark the pages in Gradescope will result in point deductions. Any pages that are not marked will not be graded.\nMake sure that your uploaded PDF document matches your .qmd and the PDF in your GitHub repository exactly. Points will be deducted for documents that are not reproducible."
+  },
+  {
+    "objectID": "exams/exam-1.html#overview",
+    "href": "exams/exam-1.html#overview",
+    "title": "Exam 1",
+    "section": "",
+    "text": "Exam 1 will be released on Friday, Feb 4 at 9 am ET and must be completed by Mon, Feb 7 at 11:59 pm.\nThe exam will consist of two parts:\n\nPart 1 - Conceptual: Multiple choice questions on Sakai test and quizzes. This portion may only be submitted one time. Go here to complete Part 1 of the exam.\nPart 2 - Applied: Data analysis in RStudio and submitted in Gradescope (like a usual lab and homework). Go to the GitHub organization for the course and find the exam-1- repo to complete Part 3 of your exam. Add your answers to the exam-1.qmd file in your repo.\n\nBoth portions must be completed and submitted by Mon, Feb 7 at 11:59 pm. Late work will only be accepted in the case of of extenuating circumstances and notification from your academic dean.\n🍀 Good luck! 🍀"
+  },
+  {
+    "objectID": "exams/exam-1.html#academic-integrity",
+    "href": "exams/exam-1.html#academic-integrity",
+    "title": "Exam 1",
+    "section": "",
+    "text": "By taking this exam, you pledge to uphold the Duke Community Standard:\n\nI will not lie, cheat, or steal in my academic endeavors;\nI will conduct myself honorably in all my endeavors; and\nI will act if the Standard is compromised."
+  },
+  {
+    "objectID": "exams/exam-1.html#rules-notes",
+    "href": "exams/exam-1.html#rules-notes",
+    "title": "Exam 1",
+    "section": "",
+    "text": "This is an individual assignment. Everything in your repository and on Sakai is for your eyes only.\nYou may not collaborate or communicate anything about this exam to anyone except the instructor and the head TA (Rick Presman). For example, you may not communicate with other students, other TAs, or post/solicit help on the internet, email or via any other method of communication.\nThe exam is open-book, open-note, so you may use any materials from class as you take the exam.\nOnly head TA and professor office hours will be held during the exam period.\nYou may not email the TAs questions about the exam.\nIf you have questions, direct message the professor or the head TA (Rick Presman) on Slack or post on Sakai Conversations for “Instructors in this site” only or attend my office hours (Monday, 10:30 am - 11:30 am)."
+  },
+  {
+    "objectID": "exams/exam-1.html#submission",
+    "href": "exams/exam-1.html#submission",
+    "title": "Exam 1",
+    "section": "",
+    "text": "Part 1 - Conceptual: The answers to the multiple choice/short answer questions should be submitted under Test & Quizzes in Sakai.\nPart 2 - Applied: The PDF document for the data analysis portion must be uploaded to Gradescope.\n\nYou must submit a PDF to Gradescope that corresponds to the .qmd file on your GitHub repository in order to receive credit for this portion of the exam.\nYou must upload a PDF, not HTML. Any non-PDF submissions will not be graded.\nMark the pages associated with each question. If any answer for a question spans multiple pages, mark all associated pages.\nMake sure to associate the “Workflow & formatting” section with the first page.\nFailure to mark the pages in Gradescope will result in point deductions. Any pages that are not marked will not be graded.\nMake sure that your uploaded PDF document matches your .qmd and the PDF in your GitHub repository exactly. Points will be deducted for documents that are not reproducible."
+  },
+  {
+    "objectID": "course-faq.html",
+    "href": "course-faq.html",
+    "title": "FAQ",
+    "section": "",
+    "text": "Go to your Files tab, check the box next to the file you want to download, then click on the blue gear icon on the Files tab to reveal the drop down menu, and select Export… If you have selected multiple files to export, RStudio will zip them up into a single zip file for you. If you’ve selected just a single file, it will only download that. The downloaded file will go to wherever files you download off the internet goes on your computer (usually your Downloads folder)."
+  },
+  {
+    "objectID": "course-faq.html#how-do-i-export-my-assignment-pdf-from-rstudio-to-upload-to-gradescope",
+    "href": "course-faq.html#how-do-i-export-my-assignment-pdf-from-rstudio-to-upload-to-gradescope",
+    "title": "FAQ",
+    "section": "",
+    "text": "Go to your Files tab, check the box next to the file you want to download, then click on the blue gear icon on the Files tab to reveal the drop down menu, and select Export… If you have selected multiple files to export, RStudio will zip them up into a single zip file for you. If you’ve selected just a single file, it will only download that. The downloaded file will go to wherever files you download off the internet goes on your computer (usually your Downloads folder)."
+  },
+  {
+    "objectID": "course-faq.html#how-can-i-submit-my-assignment-to-gradescope",
+    "href": "course-faq.html#how-can-i-submit-my-assignment-to-gradescope",
+    "title": "FAQ",
+    "section": "How can I submit my assignment to Gradescope?",
+    "text": "How can I submit my assignment to Gradescope?\nThe instructions for submitting your assignment to Gradescope can be found here. In a nutshell, you’ll upload your PDF and them mark the page(s) where each question can be found. It’s OK if a question spans multiple pages, just mark them all. It’s also OK if a page includes multiple questions."
+  },
+  {
+    "objectID": "course-faq.html#can-i-use-a-local-install-of-r-and-rstudio-instead-of-using-the-rstudio-containers",
+    "href": "course-faq.html#can-i-use-a-local-install-of-r-and-rstudio-instead-of-using-the-rstudio-containers",
+    "title": "FAQ",
+    "section": "Can I use a local install of R and RStudio instead of using the RStudio containers?",
+    "text": "Can I use a local install of R and RStudio instead of using the RStudio containers?\nThe short answer is, I’d rather you didn’t, to save yourself some headache. But, the long answer is, sure! But you will need to install a specific versions of R and RStudio for everything to work as expected. You will also need to install the R packages we’re using as well as have Git installed on your computer. These are not extremely challenging things to get right, but they are not trivial either, particularly on certain operating systems. Myself and the TAs are always happy to provide help with any computational questions when you’re working in the containers we have provided for you. If you’re working on your local setup, we can’t guarantee being able to resolve your issues, though we’re happy to try.\nIf you want to take this path, here is what you need to do:\n\nDownload and install R 4.1.2: https://cran.r-project.org/\nDownload and install a daily build of RStudio: https://dailies.rstudio.com/\nInstall Quarto CLI: https://quarto.org/docs/getting-started/installation.html\nInstall Git: https://happygitwithr.com/install-git.html\nInstall any necessary packages with install.packages(\"___\")\n\nAnd I’d like to reiterate again that successful installation of these software is not a learning goal of this course. So if any of this seems tedious or intimidating in any way, just use the computing environment we have set up for you. More on that here."
+  },
+  {
+    "objectID": "slides/lec-1.html",
+    "href": "slides/lec-1.html",
+    "title": "Welcome to ETF2121/5912",
+    "section": "",
+    "text": "Dr. Joan Tan (she/her)\n\n\n\n\n🎓 PhD in Applied Econometrics, Monash University, Australia\n🎓 Certified Analytics Professional (CAP), INFORMS, USA\n🎓 Master of Applied Statistics\n🎓 Bachelor of Economics (Major in Applied Statistics)\nWorking Experience: Associate director, Consultant, data analyst, lecturer\n💌 joan.tan@monash.edu\n\n\n\n\n\n\n\n\n\n\n\nMr. Chin Quek (he/him)\n\n\n\n\n🎓 Master of Public Health, Monash University, Australia\n🎓 Bachelor in Mechanical Engineering, Commerce and Finance\nWorking Experience: Senior analyst, Business analyst\n💌 chin.quek@monash.edu"
+  },
+  {
+    "objectID": "slides/lec-1.html#lecturer-joan-tan",
+    "href": "slides/lec-1.html#lecturer-joan-tan",
+    "title": "Welcome to ETF2121/5912",
+    "section": "",
+    "text": "Dr. Joan Tan (she/her)\n\n\n\n\n🎓 PhD in Applied Econometrics, Monash University, Australia\n🎓 Certified Analytics Professional (CAP), INFORMS, USA\n🎓 Master of Applied Statistics\n🎓 Bachelor of Economics (Major in Applied Statistics)\nWorking Experience: Associate director, Consultant, data analyst, lecturer\n💌 joan.tan@monash.edu"
+  },
+  {
+    "objectID": "slides/lec-1.html#head-tutor-chin-quek",
+    "href": "slides/lec-1.html#head-tutor-chin-quek",
+    "title": "Welcome to ETF2121/5912",
+    "section": "",
+    "text": "Mr. Chin Quek (he/him)\n\n\n\n\n🎓 Master of Public Health, Monash University, Australia\n🎓 Bachelor in Mechanical Engineering, Commerce and Finance\nWorking Experience: Senior analyst, Business analyst\n💌 chin.quek@monash.edu"
+  },
+  {
+    "objectID": "slides/lec-1.html#course-information",
+    "href": "slides/lec-1.html#course-information",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Course Information",
+    "text": "Course Information\n\nCourse Website: todo: xxx\nCommunication: Ed Discussion Forum 💬\n\nPlease use the forum for all course-related questions\nWe will aim to respond to questions within 48 hours\nWe do not answer questions via email!\nPlease be respectful and starts the conversation by saying “Hi teaching team”. This course is all about business, so you have to learn the manner in the business world.\nYou can also help each other out by answering others questions! Who answered the most questions will have a bonus mark for participation."
+  },
+  {
+    "objectID": "slides/lec-1.html#course-toolkit",
+    "href": "slides/lec-1.html#course-toolkit",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Course toolkit",
+    "text": "Course toolkit\n\n\n\n\n\n\nImportant\n\n\n\nPOWER BI, R, RStudio, SQL\n\n\n\nPlease install all the necessary softwares on your computer before your first tutorial.\nWe will provide you with the necessary instructions on how to install the software. The detail can be found in the here."
+  },
+  {
+    "objectID": "slides/lec-1.html#cadence",
+    "href": "slides/lec-1.html#cadence",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Cadence",
+    "text": "Cadence\n\n\nTutorial: Try to solve the weekly tutorial questions before the tutorial, and bring your questions to the tutorial!\nTutorial Solution: will be released on saturday.\nLecture: Every Tuesday 2-4pm\nAssignments: There are 2 individual assignments. All deadlines are on Wednesday 11.55pm. Late assignments are strictly not allowed."
+  },
+  {
+    "objectID": "slides/lec-1.html#grading",
+    "href": "slides/lec-1.html#grading",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Grading",
+    "text": "Grading\n\n\n\nAssessments\nWeight\n\n\n\n\nQuizzes\n10%\n\n\nAssignment 1\n20%\n\n\nAssignment 2\n20%\n\n\nFinal exam\n50%"
+  },
+  {
+    "objectID": "slides/lec-1.html#course-learning-objectives",
+    "href": "slides/lec-1.html#course-learning-objectives",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Course learning objectives",
+    "text": "Course learning objectives\n\nGain proficiency in business reporting tools and data analysis tool.\nLearn to perform complex statistical analyses, including hypothesis testing and confidence intervals.\nUse various predictive modeling technique to enhance forecasting and decision-making in business context.\nAcquire skills to analyze and interpret real-time data for better business strategic planning and decision."
+  },
+  {
+    "objectID": "slides/lec-1.html#five-tips-for-success",
+    "href": "slides/lec-1.html#five-tips-for-success",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Five tips for success 💪",
+    "text": "Five tips for success 💪\n\nAsk questions.\nDo the readings about lecture notes, complete all tutorial questions.\nPractice, practice and practice…\nDon’t procrastinate!"
+  },
+  {
+    "objectID": "slides/lec-1.html#week-1-learning-outcome",
+    "href": "slides/lec-1.html#week-1-learning-outcome",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Week 1 learning outcome",
+    "text": "Week 1 learning outcome\n\nBe able to install the necessary software for the course."
+  },
+  {
+    "objectID": "computing-pipelines.html",
+    "href": "computing-pipelines.html",
+    "title": "Pipelines",
+    "section": "",
+    "text": "library(palmerpenguins)\nlibrary(tidyverse)\n\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──\n\n\n✓ ggplot2 3.3.5     ✓ purrr   0.3.4\n✓ tibble  3.1.6     ✓ dplyr   1.0.7\n✓ tidyr   1.1.4     ✓ stringr 1.4.0\n✓ readr   2.1.1     ✓ forcats 0.5.1\n\n\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\nx dplyr::filter() masks stats::filter()\nx dplyr::lag()    masks stats::lag()\n\nlibrary(tidymodels)\n\nRegistered S3 method overwritten by 'tune':\n  method                   from   \n  required_pkgs.model_spec parsnip\n\n\n── Attaching packages ────────────────────────────────────── tidymodels 0.1.4 ──\n\n\n✓ broom        0.7.10         ✓ rsample      0.1.1     \n✓ dials        0.0.10         ✓ tune         0.1.6     \n✓ infer        1.0.1.9000     ✓ workflows    0.2.4     \n✓ modeldata    0.1.1          ✓ workflowsets 0.1.0     \n✓ parsnip      0.1.7          ✓ yardstick    0.0.9     \n✓ recipes      0.2.0          \n\n\n── Conflicts ───────────────────────────────────────── tidymodels_conflicts() ──\nx scales::discard() masks purrr::discard()\nx dplyr::filter()   masks stats::filter()\nx recipes::fixed()  masks stringr::fixed()\nx dplyr::lag()      masks stats::lag()\nx yardstick::spec() masks readr::spec()\nx recipes::step()   masks stats::step()\n• Search for functions across packages at https://www.tidymodels.org/find/\n\nlibrary(knitr)"
+  },
+  {
+    "objectID": "computing-pipelines.html#simple-linear-regression",
+    "href": "computing-pipelines.html#simple-linear-regression",
+    "title": "Pipelines",
+    "section": "Simple linear regression",
+    "text": "Simple linear regression\n\nModel fitting\nFit model:\n\npenguins_fit &lt;- linear_reg() %&gt;%\n  set_engine(\"lm\") %&gt;%\n  fit(body_mass_g ~ flipper_length_mm, data = penguins)\n\nTidy model output:\n\ntidy(penguins_fit)\n\n# A tibble: 2 × 5\n  term              estimate std.error statistic   p.value\n  &lt;chr&gt;                &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;\n1 (Intercept)        -5781.     306.       -18.9 5.59e- 55\n2 flipper_length_mm     49.7      1.52      32.7 4.37e-107\n\n\nFormat model output as table:\n\ntidy(penguins_fit) %&gt;%\n  kable(digits = 3)\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n-5780.831\n305.815\n-18.903\n0\n\n\nflipper_length_mm\n49.686\n1.518\n32.722\n0\n\n\n\n\n\nAugment data with model:\n\naugment(penguins_fit$fit)\n\n# A tibble: 342 × 9\n   .rownames body_mass_g flipper_length_… .fitted  .resid    .hat .sigma .cooksd\n   &lt;chr&gt;           &lt;int&gt;            &lt;int&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;\n 1 1                3750              181   3212.  538.   0.00881   394. 8.34e-3\n 2 2                3800              186   3461.  339.   0.00622   394. 2.33e-3\n 3 3                3250              195   3908. -658.   0.00344   393. 4.83e-3\n 4 5                3450              193   3808. -358.   0.00385   394. 1.60e-3\n 5 6                3650              190   3659.   -9.43 0.00469   395. 1.35e-6\n 6 7                3625              181   3212.  413.   0.00881   394. 4.91e-3\n 7 8                4675              195   3908.  767.   0.00344   393. 6.56e-3\n 8 9                3475              193   3808. -333.   0.00385   394. 1.39e-3\n 9 10               4250              190   3659.  591.   0.00469   394. 5.31e-3\n10 11               3300              186   3461. -161.   0.00622   395. 5.23e-4\n# … with 332 more rows, and 1 more variable: .std.resid &lt;dbl&gt;\n\n\n\n\nStatistical inference"
+  },
+  {
+    "objectID": "notes/w1.html",
+    "href": "notes/w1.html",
+    "title": "Lecture Note 1",
+    "section": "",
+    "text": "Note\n\n\n\nLearning Objective:"
+  },
+  {
+    "objectID": "notes/w1.html#introduction-to-data-analysis",
+    "href": "notes/w1.html#introduction-to-data-analysis",
+    "title": "Lecture Note 1",
+    "section": "Introduction to Data Analysis",
+    "text": "Introduction to Data Analysis"
+  },
+  {
+    "objectID": "notes/w1.html#introduction-to-r-language",
+    "href": "notes/w1.html#introduction-to-r-language",
+    "title": "Lecture Note 1",
+    "section": "Introduction to R Language",
+    "text": "Introduction to R Language\n\nWhat is R?\nR is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.\n\n\nWhy R?\n\nR is open-source and free\nR is a powerful tool for data analysis\nR has a large and active community\nR has a large number of packages for data analysis\nR is a programming language and can be used for automating data analysis tasks\nR is a great tool for reproducible research\n\n\n\nRStudio\nRsudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.\n\n\nBasic of R\n\nR as a Calculator\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nR Objects\nIn R, everything is an object. These objects serve as containers for various types of data. Whether you’re dealing with a single number, a character string (like a word), or a complex structure like the output of a plot or a statistical analysis summary, it’s all represented as an object.\nCreating Objects:\nTo create an object, you simply give it a name. For instance\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nIn this example, an object is created called x and it is assigned the value 5. The &lt;- is the assignment operator. It assigns the value on the right to the object on the left. You can also use = to assign values to objects, but it’s considered bad practice.\nViewing Objects:\nTo view the value of an object, you simply type the name of the object and press enter. For instance:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nR keeps track of all objects in the current workspace during the session. You can see all the objects in the current workspace by typing ls() in the console.\nOpearations with Objects:\nYou can perform operations with objects. For instance:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nObjects names:\nObject names can contain letters, numbers, periods, and underscores. However, they can only starts with letters or underscore and nothing else. They are case-sensitive, so x and X are different objects. They cannot start with a number or a period. If you would like to insist to have numbers or period as the first character, you can use backticks to define the object name. It is called nonsyntactic names. For instance, you can define the following:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nExercises:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nCreate an object called a and assign the value 10 to it.\nCreate an object called b and assign the value 20 to it.\n\nCreate an object called star and assign the value a + b to it.\nView the value of star.\nWhich of the following is not the syntactic name for an object?\n\nx\nX\n1x\nx1\nx.y\nx_y\n\n\n\n\nData Types\nR has several data types. The most common data types are:\n\nNumeric (double)\n\n\nrepresents eal numbers (e.g., 3.14, 0.0001, 1000.0).\ncan be positive or negative.\ncan be in scientific notation (e.g., 1.23e-5).\nused for continuous data like measurements, weights, heights, etc.\n\n\nCharacter\n\n\nrepresents text data (e.g., “hello”, “world”, “R is fun”).\nmust be enclosed in quotes.\nused for categorical data (e.g., “High School”, “Primary School”, “University”).\n\n\nLogical (boolean)\n\n\nrepresents binary data (e.g., TRUE or FALSE).\nused for logical operations.\n\n\nInteger\n\n\nrepresents whole numbers (e.g., 1, 2, 3, 1000).\ncan be positive or negative.\nused for counting data like number of students, number of cars, etc.\nsometimes you will see it ends with L (e.g., 1L, 2L, 3L, 1000L). This is to indicate that the number is an integer.\n\n\nFactors\n\n\nrepresents categorical data (e.g., “High School”, “Primary School”, “University”).\nused for categorical data.\n\n\nComplex\n\n\nrepresents complex numbers (e.g., 1 + 2i, 3 + 4i, 5 + 6i).\nused for complex data like electrical engineering, physics, etc.\n\nHowever, we seldom deal with complex data types. We will focus on the first four data types.\nExercises:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nWhat is the data type of 3.14?\nWhat is the data type of \"hello\"?\nWhat is the data type of TRUE?\nWhat is the data type of 1L?\nWhat is the data type of factor(\"High School\")?\nWhat is the data type of 1 + 2i?\nWhat is the data type of \"1\"?\n\nNote: You can check your answers using typeof() function.\n\n\nFunctions\nA function is a block of code that performs a specific task. R has a large number of in-built functions and also allows users to define their own functions. We will learn more about how to create functions in the coming weeks. But so far, we will use some of the in-built functions. Anything that starts with ( and end with ) is a function.\nExercises:\nDefine which one is a function below:\n\nmean()\nmedian\nsd()\nvar()\nsum[]\n\n\n\nVectors\n\n\nData Frames\n\n\nPackages\nR packages are collections of functions and data sets developed by the community. They increase the power of R by improving existing base R functionalities, or by adding new ones.\nExercises:\n\nInstall tidyverse package. Explain what do you observe from the console.\nLoad the tidyverse package. Explain what do you observe from the console.\nInstall palmerpenguins package. Explain what do you observe from the console.\nLoad the palmerpenguins package. Explain what do you observe from the console.\nLoad the lmer package. Explain what do you observe from the console."
+  },
+  {
+    "objectID": "exams/exam-3.html",
+    "href": "exams/exam-3.html",
+    "title": "Exam 2",
+    "section": "",
+    "text": "Exam 3 is released on Friday, April 15 at 9 am ET and must be completed by Mon, April 18 at 11:59 pm.\nThe exam will consist of two parts:\n\nPart 1 - Conceptual: Multiple choice questions on Sakai test and quizzes.\n\nGo here to complete Part 1 of the exam.\nThis portion is comprised of 10 multiple choice / fill in the blank questions may only be submitted one time, so start it when you can set aside ~30 minutes to work on it. You will likely be done quicker but it’s best to set aside ample time.\n\nPart 2 - Applied: Data analysis in RStudio and submitted in Gradescope, like a usual lab and homework.\n\nGo to the GitHub organization for the course and find the exam-3- repo to complete Part 2 of your exam.\nAdd your answers to the exam-3.qmd file in your repo.\nYou can work on this portion at your own pace and come back to it however many times you like until the deadline. I recommend setting aside ~2 hours. You will likely be done quicker, but it’s best to set aside ample time.\n\n\nBoth portions must be completed and submitted by Mon, April 18 at 11:59 pm. Late work will only be accepted in the case of of extenuating circumstances and notification from your academic dean.\n🍀 Good luck! 🍀\n\n\n\nBy taking this exam, you pledge to uphold the Duke Community Standard:\n\nI will not lie, cheat, or steal in my academic endeavors;\nI will conduct myself honorably in all my endeavors; and\nI will act if the Standard is compromised.\n\n\n\n\n\nThis is an individual assignment. Everything in your repository and on Sakai is for your eyes only.\nYou may not collaborate or communicate anything about this exam to anyone except the instructor and the head TA (Rick Presman). For example, you may not communicate with other students, other TAs, or post/solicit help on the internet, email or via any other method of communication.\nThe exam is open-book, open-note, so you may use any materials from class as you take the exam.\nOnly head TA and professor office hours will be held during the exam period.\nYou may not email the TAs questions about the exam.\nIf you have questions, direct message the professor on Slack or email or request an appointment to meet on Zoom.\n\n\n\n\n\nPart 1 - Conceptual: The answers to the multiple choice/short answer questions should be submitted under Test & Quizzes in Sakai.\nPart 2 - Applied: The PDF document for the data analysis portion must be uploaded to Gradescope.\n\nYou must submit a PDF to Gradescope that corresponds to the .qmd file on your GitHub repository in order to receive credit for this portion of the exam.\nYou must upload a PDF, not HTML. Any non-PDF submissions will not be graded.\nMark the pages associated with each question. If any answer for a question spans multiple pages, mark all associated pages.\nMake sure to associate the “Workflow & formatting” section with the first page.\nFailure to mark the pages in Gradescope will result in point deductions. Any pages that are not marked will not be graded.\nMake sure that your uploaded PDF document matches your .qmd and the PDF in your GitHub repository exactly. Points will be deducted for documents that are not reproducible."
+  },
+  {
+    "objectID": "exams/exam-3.html#overview",
+    "href": "exams/exam-3.html#overview",
+    "title": "Exam 2",
+    "section": "",
+    "text": "Exam 3 is released on Friday, April 15 at 9 am ET and must be completed by Mon, April 18 at 11:59 pm.\nThe exam will consist of two parts:\n\nPart 1 - Conceptual: Multiple choice questions on Sakai test and quizzes.\n\nGo here to complete Part 1 of the exam.\nThis portion is comprised of 10 multiple choice / fill in the blank questions may only be submitted one time, so start it when you can set aside ~30 minutes to work on it. You will likely be done quicker but it’s best to set aside ample time.\n\nPart 2 - Applied: Data analysis in RStudio and submitted in Gradescope, like a usual lab and homework.\n\nGo to the GitHub organization for the course and find the exam-3- repo to complete Part 2 of your exam.\nAdd your answers to the exam-3.qmd file in your repo.\nYou can work on this portion at your own pace and come back to it however many times you like until the deadline. I recommend setting aside ~2 hours. You will likely be done quicker, but it’s best to set aside ample time.\n\n\nBoth portions must be completed and submitted by Mon, April 18 at 11:59 pm. Late work will only be accepted in the case of of extenuating circumstances and notification from your academic dean.\n🍀 Good luck! 🍀"
+  },
+  {
+    "objectID": "exams/exam-3.html#academic-integrity",
+    "href": "exams/exam-3.html#academic-integrity",
+    "title": "Exam 2",
+    "section": "",
+    "text": "By taking this exam, you pledge to uphold the Duke Community Standard:\n\nI will not lie, cheat, or steal in my academic endeavors;\nI will conduct myself honorably in all my endeavors; and\nI will act if the Standard is compromised."
+  },
+  {
+    "objectID": "exams/exam-3.html#rules-notes",
+    "href": "exams/exam-3.html#rules-notes",
+    "title": "Exam 2",
+    "section": "",
+    "text": "This is an individual assignment. Everything in your repository and on Sakai is for your eyes only.\nYou may not collaborate or communicate anything about this exam to anyone except the instructor and the head TA (Rick Presman). For example, you may not communicate with other students, other TAs, or post/solicit help on the internet, email or via any other method of communication.\nThe exam is open-book, open-note, so you may use any materials from class as you take the exam.\nOnly head TA and professor office hours will be held during the exam period.\nYou may not email the TAs questions about the exam.\nIf you have questions, direct message the professor on Slack or email or request an appointment to meet on Zoom."
+  },
+  {
+    "objectID": "exams/exam-3.html#submission",
+    "href": "exams/exam-3.html#submission",
+    "title": "Exam 2",
+    "section": "",
+    "text": "Part 1 - Conceptual: The answers to the multiple choice/short answer questions should be submitted under Test & Quizzes in Sakai.\nPart 2 - Applied: The PDF document for the data analysis portion must be uploaded to Gradescope.\n\nYou must submit a PDF to Gradescope that corresponds to the .qmd file on your GitHub repository in order to receive credit for this portion of the exam.\nYou must upload a PDF, not HTML. Any non-PDF submissions will not be graded.\nMark the pages associated with each question. If any answer for a question spans multiple pages, mark all associated pages.\nMake sure to associate the “Workflow & formatting” section with the first page.\nFailure to mark the pages in Gradescope will result in point deductions. Any pages that are not marked will not be graded.\nMake sure that your uploaded PDF document matches your .qmd and the PDF in your GitHub repository exactly. Points will be deducted for documents that are not reproducible."
+  },
+  {
+    "objectID": "project-description.html",
+    "href": "project-description.html",
+    "title": "Project description",
+    "section": "",
+    "text": "Topic ideas due Fri, Feb 18\nProposal due Fri, Mar 18\nDraft report due Fri, Apr 8\nPeer review due Fri, Apr 15\nFinal report due Mon, Apr 25\nVideo presentation + slides and final GitHub repo due Thu, Apr 28\nPresentation comments due Sat, Apr 30"
+  },
+  {
+    "objectID": "project-description.html#timeline",
+    "href": "project-description.html#timeline",
+    "title": "Project description",
+    "section": "",
+    "text": "Topic ideas due Fri, Feb 18\nProposal due Fri, Mar 18\nDraft report due Fri, Apr 8\nPeer review due Fri, Apr 15\nFinal report due Mon, Apr 25\nVideo presentation + slides and final GitHub repo due Thu, Apr 28\nPresentation comments due Sat, Apr 30"
+  },
+  {
+    "objectID": "project-description.html#introduction",
+    "href": "project-description.html#introduction",
+    "title": "Project description",
+    "section": "Introduction",
+    "text": "Introduction\nTL;DR: Pick a data set and do a regression analysis. That is your final project.\nThe goal of the final project is for you to use regression analysis to analyze a data set of your own choosing. The data set may already exist or you may collect your own data by scraping the web.\nChoose the data based on your group’s interests or work you all have done in other courses or research projects. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like!) and apply them to a data set to analyze it in a meaningful way.\nAll analyses must be done in RStudio, and all components of the project must be reproducible (with the exception of the presentation).\n\nLogistics\nYou will work on the project with your lab groups.\nThe four primary deliverables for the final project are\n\nA written, reproducible report detailing your analysis\nA GitHub repository corresponding to your report\nSlides + a video presentation\nFormal peer review on another team’s project"
+  },
+  {
+    "objectID": "project-description.html#topic-ideas",
+    "href": "project-description.html#topic-ideas",
+    "title": "Project description",
+    "section": "Topic ideas",
+    "text": "Topic ideas\nIdentify 2-3 data sets you’re interested in potentially using for the final project. If you’re unsure where to find data, you can use the list of potential data sources in the Tips + Resources section as a starting point. It may also help to think of topics you’re interested in investigating and find data sets on those topics.\nThe purpose of submitting project ideas is to give you time to find data for the project and to make sure you have a data set that can help you be successful in the project. Therefore, you must use one of the data sets submitted as a topic idea, unless otherwise notified by the teaching team.\nThe data sets should meet the following criteria:\n\nAt least 500 observations\nAt least 10 columns\nAt least 6 of the columns must be useful and unique predictor variables.\n\nIdentifier variables such as “name”, “social security number”, etc. are not useful predictor variables.\nIf you have multiple columns with the same information (e.g. “state abbreviation” and “state name”), then they are not unique predictors.\n\nAt least one variable that can be identified as a reasonable response variable.\n\nThe response variable can be quantitative or categorical.\n\nA mix of quantitative and categorical variables that can be used as predictors.\nObservations should reasonably meet the independence condition. Therefore, avoid data with repeated measures, data collected over time, etc.\nYou may not use data that has previously been used in any course materials, or any derivation of data that has been used in course materials.\n\nPlease ask a member of the teaching team if you’re unsure whether your data set meets the criteria.\nFor each data set, include the following:\n\nIntroduction and data\n\nState the source of the data set.\nDescribe when and how it was originally collected (by the original data curator, not necessarily how you found the data)\nDescribe the observations and the general characteristics being measured in the data\n\n\n\nResearch question\n\nDescribe a research question you’re interested in answering using this data.\n\n\n\nGlimpse of data\n\nUse the glimpse function to provide an overview of each data set\n\nSubmit the PDF of the topic ideas to Gradescope. Mark all pages associated with each data set."
+  },
+  {
+    "objectID": "project-description.html#project-proposal",
+    "href": "project-description.html#project-proposal",
+    "title": "Project description",
+    "section": "Project proposal",
+    "text": "Project proposal\nThe purpose of the project proposal is to help you think about your analysis strategy early.\nInclude the following in the proposal:\n\nSection 1 - Introduction\nThe introduction section includes\n\nan introduction to the subject matter you’re investigating\nthe motivation for your research question (citing any relevant literature)\nthe general research question you wish to explore\nyour hypotheses regarding the research question of interest.\n\n\n\nSection 2 - Data description\nIn this section, you will describe the data set you wish to explore. This includes\n\ndescription of the observations in the data set,\ndescription of how the data was originally collected (not how you found the data but how the original curator of the data collected it).\n\n\n\nSection 3 - Analysis approach\nIn this section, you will provide a brief overview of your analysis approach. This includes:\n\nDescription of the response variable.\nVisualization and summary statistics for the response variable.\nList of variables that will be considered as predictors\nRegression model technique (multiple linear regression and logistic regression)\n\n\n\nData dictionary (aka code book)\nSubmit a data dictionary for all the variables in your data set in the README of your project repo, in the data folder. Link to this file from your proposal writeup.\n\n\nSubmission\nPush all of your final changes to the GitHub repo, and submit the PDF of your proposal to Gradescope.\n\n\nProposal grading\n\n\n\nTotal\n10 pts\n\n\n\n\nIntroduction\n3 pts\n\n\nData description\n2 pts\n\n\nAnalysis plan\n4 pts\n\n\nData dictionary\n1 pts\n\n\n\nEach component will be graded as follows:\n\nMeets expectations (full credit): All required elements are completed and are accurate. The narrative is written clearly, all tables and visualizations are nicely formatted, and the work would be presentable in a professional setting.\nClose to expectations (half credit): There are some elements missing and/or inaccurate. There are some issues with formatting.\nDoes not meet expectations (no credit): Major elements missing. Work is not neatly formatted and would not be presentable in a professional setting."
+  },
+  {
+    "objectID": "project-description.html#draft-report",
+    "href": "project-description.html#draft-report",
+    "title": "Project description",
+    "section": "Draft report",
+    "text": "Draft report\nThe purpose of the draft and peer review is to give you an opportunity to get early feedback on your analysis. Therefore, the draft and peer review will focus primarily on the exploratory data analysis, modeling, and initial interpretations.\nWrite the draft in the written-report.qmd file in your project repo. You do not need to submit the draft on Gradescope.\nBelow is a brief description of the sections to focus on in the draft:\n\nIntroduction and data\nThis section includes an introduction to the project motivation, data, and research question. Describe the data and definitions of key variables. It should also include some exploratory data analysis. All of the EDA won’t fit in the paper, so focus on the EDA for the response variable and a few other interesting variables and relationships.\n\n\nMethodology\nThis section includes a brief description of your modeling process. Explain the reasoning for the type of model you’re fitting, predictor variables considered for the model including any interactions. Additionally, show how you arrived at the final model by describing the model selection process, any variable transformations (if needed), and any other relevant considerations that were part of the model fitting process.\n\n\nResults\nIn this section, you will output the final model and include a brief discussion of the model assumptions, diagnostics, and any relevant model fit statistics.\nThis section also includes initial interpretations and conclusions drawn from the model."
+  },
+  {
+    "objectID": "project-description.html#peer-review",
+    "href": "project-description.html#peer-review",
+    "title": "Project description",
+    "section": "Peer review",
+    "text": "Peer review\nCritically reviewing others’ work is a crucial part of the scientific process, and STA 210 is no exception. Each lab team will be assigned two other teams’s projects to review. Each team should push their draft to their GitHub repo by the due date. One lab in the following week will be dedicated to the peer review, and all reviews will be due by the end of that lab session.\nDuring the peer review process, you will be provided read-only access to your partner teams’ GitHub repos. Provide your review in the form of GitHub issues to your partner team’s GitHub repo using the issue template provided. The peer review will be graded on the extent to which it comprehensively and constructively addresses the components of the partner team’s report: the research context and motivation, exploratory data analysis, modeling, interpretations, and conclusions.\n\nPairings\n\nSection 1 - M 1:45PM - 3:00PM\n\n\n\nTeam being reviewed\nReviewer 1\nReviewer 2\n\n\n\n\nchaa_chaa_chaa\nyay_stats\nstat_over_flow\n\n\ndekk\nchaa_chaa_chaa\nyay_stats\n\n\neight\ndekk\nchaa_chaa_chaa\n\n\nhousecats\neight\ndekk\n\n\nkrafthouse\nhousecats\neight\n\n\nrrawr\nkrafthouse\nhousecats\n\n\nstat_over_flow\nrrawr\nkrafthouse\n\n\nyay_stats\nstat_over_flow\nrrawr\n\n\n\n\n\nSection 2 - M 3:30PM - 4:45PM\n\n\n\nTeam being reviewed\nReviewer 1\nReviewer 2\n\n\n\n\na_plus_plus_plus\nwe_r\ntina\n\n\npredictors\na_plus_plus_plus\nwe_r\n\n\nsixers\npredictors\na_plus_plus_plus\n\n\nsoy_nuggets\nsixers\npredictors\n\n\ntina\nsoy_nuggets\nsixers\n\n\nwe_r\ntina\nsoy_nuggets\n\n\n\n\n\nSection 3 - M 5:15PM - 6:30PM\n\n\n\n\n\n\n\n\nTeam being reviewed\nReviewer 1\nReviewer 2\n\n\n\n\ndown_to_earth_goats\nthe_three_musketeers\nteam_five\n\n\nginger_and_stats\ndown_to_earth_goats\nthe_three_musketeers\n\n\npineapple_wedge_and_diced_papaya\nginger_and_stats\ndown_to_earth_goats\n\n\nstatchelorettes\npineapple_wedge_and_diced_papaya\nginger_and_stats\n\n\nstatisix\nstatchelorettes\npineapple_wedge_and_diced_papaya\n\n\nstats_squad\nstatisix\nstatchelorettes\n\n\nteam_five\nstats_squad\nstatisix\n\n\nthe_three_musketeers\nteam_five\nstats_squad\n\n\n\n\n\n\nProcess and questions\nSpend ~30 mins to review each team’s project.\n\nFind your team name on the Reviewer 1 and Reviewer 2 columns.\nFor each of the columns, find the name of the team to review in the Team being reviewed column. You should already have access to this team’s repo.\nOpen the repo of the team you’re reviewing, read their project draft, and browser around the rest of their repo.\nThen, go to the Issues tab in that repo, click on New issue, and click on Get started for the Peer review issue. Fill out this issue, answering the following questions:\n\nPeer review by: [NAME OF TEAM DOING THE REVIEW]\nNames of team members that participated in this review: [FULL NAMES OF TEAM MEMBERS DOING THE REVIEW]\nDescribe the goal of the project.\nDescribe the data used or collected, if any. If the proposal does not include the use of a specific dataset, comment on whether the project would be strengthened by the inclusion of a dataset.\nDescribe the approaches, tools, and methods that will be used.\nIs there anything that is unclear from the proposal?\nProvide constructive feedback on how the team might be able to improve their project. Make sure your feedback includes at least one comment on the statistical modeling aspect of the project, but do feel free to comment on aspects beyond the modeling.\nWhat aspect of this project are you most interested in and would like to see highlighted in the presentation.\nProvide constructive feedback on any issues with file and/or code organization.\n(Optional) Any further comments or feedback?"
+  },
+  {
+    "objectID": "project-description.html#written-report",
+    "href": "project-description.html#written-report",
+    "title": "Project description",
+    "section": "Written report",
+    "text": "Written report\nYour written report must be completed in the written-report.qmd file and must be reproducible. All team members should contribute to the GitHub repository, with regular meaningful commits.\nBefore you finalize your write up, make sure the printing of code chunks is off with the option echo = FALSE.\nYou will submit the PDF of your final report on Gradescope.\nThe PDF you submit must match the files in your GitHub repository exactly. The mandatory components of the report are below. You are free to add additional sections as necessary. The report, including visualizations, should be no more than 10 pages long. is no minimum page requirement; however, you should comprehensively address all of the analysis and report.\nBe selective in what you include in your final write-up. The goal is to write a cohesive narrative that demonstrates a thorough and comprehensive analysis rather than explain every step of the analysis.\nYou are welcome to include an appendix with additional work at the end of the written report document; however, grading will largely be based on the content in the main body of the report. You should assume the reader will not see the material in the appendix unless prompted to view it in the main body of the report. The appendix should be neatly formatted and easy for the reader to navigate. It is not included in the 10-page limit.\nThe written report is worth 40 points, broken down as follows\n\n\n\nTotal\n40 pts\n\n\n\n\nIntroduction/data\n6 pts\n\n\nMethodology\n10 pts\n\n\nResults\n14 pts\n\n\nDiscussion + conclusion\n6 pts\n\n\nOrganization + formatting\n4 pts\n\n\n\nClick here for a PDF of the written report rubric.\n\nIntroduction and data\nThis section includes an introduction to the project motivation, data, and research question. Describe the data and definitions of key variables. It should also include some exploratory data analysis. All of the EDA won’t fit in the paper, so focus on the EDA for the response variable and a few other interesting variables and relationships.\n\nGrading criteria\nThe research question and motivation are clearly stated in the introduction, including citations for the data source and any external research. The data are clearly described, including a description about how the data were originally collected and a concise definition of the variables relevant to understanding the report. The data cleaning process is clearly described, including any decisions made in the process (e.g., creating new variables, removing observations, etc.) The explanatory data analysis helps the reader better understand the observations in the data along with interesting and relevant relationships between the variables. It incorporates appropriate visualizations and summary statistics.\n\n\n\nMethodology\nThis section includes a brief description of your modeling process. Explain the reasoning for the type of model you’re fitting, predictor variables considered for the model including any interactions. Additionally, show how you arrived at the final model by describing the model selection process, interactions considered, variable transformations (if needed), assessment of conditions and diagnostics, and any other relevant considerations that were part of the model fitting process.\n\nGrading criteria\nThe analysis steps are appropriate for the data and research question. The group used a thorough and careful approach to select the final model; the approach is clearly described in the report. The model selection process took into account potential interaction effects and addressed any violations in model conditions. The model conditions and diagnostics are thoroughly and accurately assessed for their model. If violations of model conditions are still present, there was a reasonable attempt to address the violations based on the course content.\n\n\n\nResults\nThis is where you will output the final model with any relevant model fit statistics.\nDescribe the key results from the model. The goal is not to interpret every single variable in the model but rather to show that you are proficient in using the model output to address the research questions, using the interpretations to support your conclusions. Focus on the variables that help you answer the research question and that provide relevant context for the reader.\n\nGrading criteria\nThe model fit is clearly assessed, and interesting findings from the model are clearly described. Interpretations of model coefficients are used to support the key findings and conclusions, rather than merely listing the interpretation of every model coefficient. If the primary modeling objective is prediction, the model’s predictive power is thoroughly assessed.\n\n\n\nDiscussion + Conclusion\nIn this section you’ll include a summary of what you have learned about your research question along with statistical arguments supporting your conclusions. In addition, discuss the limitations of your analysis and provide suggestions on ways the analysis could be improved. Any potential issues pertaining to the reliability and validity of your data and appropriateness of the statistical analysis should also be discussed here. Lastly, this section will include ideas for future work.\n\nGrading criteria\nOverall conclusions from analysis are clearly described, and the model results are put into the larger context of the subject matter and original research question. There is thoughtful consideration of potential limitations of the data and/or analysis, and ideas for future work are clearly described.\n\n\n\nOrganization + formatting\nThis is an assessment of the overall presentation and formatting of the written report.\n\nGrading criteria\nThe report neatly written and organized with clear section headers and appropriately sized figures with informative labels. Numerical results are displayed with a reasonable number of digits, and all visualizations are neatly formatted. All citations and links are properly formatted. If there is an appendix, it is reasonably organized and easy for the reader to find relevant information. All code, warnings, and messages are suppressed. The main body of the written report (not including the appendix) is no longer than 10 pages."
+  },
+  {
+    "objectID": "project-description.html#video-presentation-slides",
+    "href": "project-description.html#video-presentation-slides",
+    "title": "Project description",
+    "section": "Video presentation + slides",
+    "text": "Video presentation + slides\n\nSlides\nIn addition to the written report, your team will also create presentation slides and record a video presentation that summarize and showcase your project. Introduce your research question and data set, showcase visualizations, and discuss the primary conclusions. These slides should serve as a brief visual addition to your written report and will be graded for content and quality.\nFor submission, convert these slides to a .pdf document, and submit the PDF of the slides on Gradescope.\nThe slide deck should have no more than 6 content slides + 1 title slide. Here is a suggested outline as you think through the slides; you do not have to use this exact format for the 6 slides.\n\nTitle Slide\nSlide 1: Introduce the topic and motivation\nSlide 2: Introduce the data\nSlide 3: Highlights from EDA\nSlide 4: Final model\nSlide 5: Interesting findings from the model\nSlide 6: Conclusions + future work\n\n\n\nVideo presentation\nFor the video presentation, you can speak over your slide deck, similar to the lecture content videos. The video presentation must be no longer than 8 minutes. It is fine if the video is shorter than 8 minutes, but it cannot exceed 8 minutes. You may use can use any platform that works best for your group to record your presentation. Below are a few resources on recording videos:\n\nRecording presentations in Zoom\nApple Quicktime for screen recording\nWindows 10 built-in screen recording functionality\nKap for screen recording\n\nOnce your video is ready, upload the video to Warpwire, then embed the video in an new discussion post on Conversations.\n\nTo upload your video to Warpwire:\n\nClick the Warpwire tab in the course Sakai site.\nClick the “+” and select “Upload files”.\nLocate the video on your computer and click to upload.\nOnce you’ve uploaded the video to Warpwire, click to share the video and copy the video’s URL. You will need this when you post the video in the discussion forum.\n\n\n\nTo post the video to the discussion forum\n\nClick the Presentations tab in the course Sakai site.\nClick the Presentations topic.\nClick “Start a new conversation”.\nMake the title “Your Team Name: Project Title”. For example, “Teaching Team: Our Awesome Presentation”.\nClick the Warpwire icon (between the table and shopping cart icons).\nSelect your video, then click “Insert 1 item.” This will embed your video in the conversation.\nUnder the video, paste the URL to your video.\nYou’re done!"
+  },
+  {
+    "objectID": "project-description.html#presentation-comments",
+    "href": "project-description.html#presentation-comments",
+    "title": "Project description",
+    "section": "Presentation comments",
+    "text": "Presentation comments\nEach student will be assigned 2 presentations to watch. Your viewing assignments will be posted later in the semester.\nWatch the group’s video, then click “Reply” to post a question for the group. You may not post a question that’s already been asked on the discussion thread. Additionally, the question should be (i) substantive (i.e. it shouldn’t be “Why did you use a bar plot instead of a pie chart”?), (ii) demonstrate your understanding of the content from the course, and (iii) relevant to that group’s specific presentation, i.e demonstrating that you’ve watched the presentation.\nThis portion of the project will be assessed individually.\n\nPairings\nFind your team name in the first column, watch videos from teams in the second column and leave comments.\n\n\n\n\n\n\n\n\nReviewer\nFirst video to review\nSecond video to review\n\n\n\n\nGinger and Stats\nEight\nWe R\n\n\nKrafthouse\nGinger and Stats\nEight\n\n\nSoy Nuggets\nKrafthouse\nGinger and Stats\n\n\nDown To Earth Goats\nSoy Nuggets\nKrafthouse\n\n\nA+++\nDown To Earth Goats\nSoy Nuggets\n\n\nTeam Five\nA+++\nDown To Earth Goats\n\n\nRrawr\nTeam Five\nA+++\n\n\nHousecats\nRrawr\nTeam Five\n\n\nDekk\nHousecats\nRrawr\n\n\nStat OverFlow\nDekk\nHousecats\n\n\nThe Three Musketeers\nStat OverFlow\nDekk\n\n\nPredictors\nThe Three Musketeers\nStat OverFlow\n\n\nStats Squad\nPredictors\nThe Three Musketeers\n\n\nStatisix\nStats Squad\nPredictors\n\n\nSixers\nStatisix\nStats Squad\n\n\nYay Stats\nSixers\nStatisix\n\n\nTINA\nYay Stats\nSixers\n\n\nStatchelorettes\nTINA\nYay Stats\n\n\nPineapple Wedge and Diced Papaya\nStatchelorettes\nTINA\n\n\nChaa Chaa Chaa\nPineapple Wedge and Diced Papaya\nStatchelorettes\n\n\nWe R\nChaa Chaa Chaa\nPineapple Wedge and Diced Papaya\n\n\nEight\nWe R\nChaa Chaa Chaa"
+  },
+  {
+    "objectID": "project-description.html#reproducibility-organization",
+    "href": "project-description.html#reproducibility-organization",
+    "title": "Project description",
+    "section": "Reproducibility + organization",
+    "text": "Reproducibility + organization\nAll written work (with exception of presentation slides) should be reproducible, and the GitHub repo should be neatly organized.\nThe GitHub repo should have the following structure:\n\nREADME: Short project description and data dictionary\nwritten-report.qmd & written-report.pdf: Final written report\n/data: Folder that contains the data set for the final project.\n/previous-work: Folder that contains the topic-ideas and project-proposal files.\n/presentation: Folder with the presentation slides.\n\nIf your presentation slides are online, you can put a link to the slides in a README.md file in the presentation folder.\n\n\nPoints for reproducibility + organization will be based on the reproducibility of the written report and the organization of the project GitHub repo. The repo should be neatly organized as described above, there should be no extraneous files, all text in the README should be easily readable."
+  },
+  {
+    "objectID": "project-description.html#peer-teamwork-evaluation",
+    "href": "project-description.html#peer-teamwork-evaluation",
+    "title": "Project description",
+    "section": "Peer teamwork evaluation",
+    "text": "Peer teamwork evaluation\nYou will be asked to fill out a survey where you rate the contribution and teamwork of each team member by assigning a contribution percentage for each team member. Filling out the survey is a prerequisite for getting credit on the team member evaluation. If you are suggesting that an individual did less than half the expected contribution given your team size (e.g., for a team of four students, if a student contributed less than 12.5% of the total effort), please provide some explanation. If any individual gets an average peer score indicating that this was the case, their grade will be assessed accordingly.\nIf you have concerns with the teamwork and/or contribution from any team members, please email me by the project video deadline. You only need to email me if you have concerns. Otherwise, I will assume everyone on the team equally contributed and will receive full credit for the teamwork portion of the grade."
+  },
+  {
+    "objectID": "project-description.html#overall-grading",
+    "href": "project-description.html#overall-grading",
+    "title": "Project description",
+    "section": "Overall grading",
+    "text": "Overall grading\nThe grade breakdown is as follows:\n\n\n\nTotal\n100 pts\n\n\n\n\nTopic ideas\n5 pts\n\n\nProject proposal\n10 pts\n\n\nPeer review\n10 pts\n\n\nWritten report\n40 pts\n\n\nSlides + video presentation\n20 pts\n\n\nReproducibility + organization\n5 pts\n\n\nVideo comments\n5 pts\n\n\nPeer teamwork evaluation\n5 pts\n\n\n\nNote: No late project reports or videos are accepted.\n\nGrading summary\nGrading of the project will take into account the following:\n\nContent - What is the quality of research and/or policy question and relevancy of data to those questions?\nCorrectness - Are statistical procedures carried out and explained correctly?\nWriting and Presentation - What is the quality of the statistical presentation, writing, and explanations?\nCreativity and Critical Thought - Is the project carefully thought out? Are the limitations carefully considered? Does it appear that time and effort went into the planning and implementation of the project?\n\nA general breakdown of scoring is as follows:\n\n90%-100%: Outstanding effort. Student understands how to apply all statistical concepts, can put the results into a cogent argument, can identify weaknesses in the argument, and can clearly communicate the results to others.\n80%-89%: Good effort. Student understands most of the concepts, puts together an adequate argument, identifies some weaknesses of their argument, and communicates most results clearly to others.\n70%-79%: Passing effort. Student has misunderstanding of concepts in several areas, has some trouble putting results together in a cogent argument, and communication of results is sometimes unclear.\n60%-69%: Struggling effort. Student is making some effort, but has misunderstanding of many concepts and is unable to put together a cogent argument. Communication of results is unclear.\nBelow 60%: Student is not making a sufficient effort.\n\n\n\nLate work policy\nThere is no late work accepted on this project. Be sure to turn in your work early to avoid any technological mishaps."
+  }
+]

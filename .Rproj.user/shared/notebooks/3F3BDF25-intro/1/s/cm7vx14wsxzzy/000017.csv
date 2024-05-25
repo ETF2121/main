@@ -1,0 +1,4 @@
+"0","library(countdown)"
+"0","library(wordcloud2)"
+"0","words <- data.frame(word=c(""statistical inference"", ""data wrangling"", ""data visualization"", ""data mining"", ""presciptive"", ""descriptive"", ""predictive"", ""linear regression"", ""time-series"", ""R programming"", ""SQL"", ""Power BI""),"
+"0","                       freq= c(10, 8, 7, 6, 5, 4, 3, 2, 4, 10, 12, 9))"

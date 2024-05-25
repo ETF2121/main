@@ -1,0 +1,293 @@
+{
+  "index.qmd": {
+    "index.html": "f02a31f9"
+  },
+  "labs/lab-2.qmd": {
+    "lab-2.html": "47dc87dc"
+  },
+  "labs/lab-3.qmd": {
+    "lab-3.html": "830cb3e5"
+  },
+  "labs/lab-1.qmd": {
+    "lab-1.html": "21b544de"
+  },
+  "labs/lab-0.qmd": {
+    "lab-0.html": "a5439fa4"
+  },
+  "labs/lab-4.qmd": {
+    "lab-4.html": "d75b904e"
+  },
+  "labs/lab-5.qmd": {
+    "lab-5.html": "e3e14dc1"
+  },
+  "labs/lab-7.qmd": {
+    "lab-7.html": "b5388495"
+  },
+  "labs/lab-6.qmd": {
+    "lab-6.html": "064d88e7"
+  },
+  "course-links.qmd": {
+    "course-links.html": "3063ec2a"
+  },
+  "LICENSE.md": {
+    "LICENSE.html": "87c5f615"
+  },
+  "weeks/week-6.qmd": {
+    "week-6.html": "60b3cb87"
+  },
+  "weeks/week-7.qmd": {
+    "week-7.html": "0a040367"
+  },
+  "weeks/week-5.qmd": {
+    "week-5.html": "b99f4817"
+  },
+  "weeks/week-4.qmd": {
+    "week-4.html": "d79f32b4"
+  },
+  "weeks/week-1.qmd": {
+    "week-1.html": "8ebcbd13"
+  },
+  "weeks/week-3.qmd": {
+    "week-3.html": "0ad231e6"
+  },
+  "weeks/week-2.qmd": {
+    "week-2.html": "7041dd1b"
+  },
+  "weeks/week-10.qmd": {
+    "week-10.html": "942ad265"
+  },
+  "weeks/week-11.qmd": {
+    "week-11.html": "b83ea86f"
+  },
+  "weeks/week-13.qmd": {
+    "week-13.html": "ded14a52"
+  },
+  "weeks/week-12.qmd": {
+    "week-12.html": "d17e0d1a"
+  },
+  "weeks/week-9.qmd": {
+    "week-9.html": "234fba45"
+  },
+  "weeks/week-8.qmd": {
+    "week-8.html": "a4b92d86"
+  },
+  "weeks/week-15.qmd": {
+    "week-15.html": "ffa07bda"
+  },
+  "weeks/week-14.qmd": {
+    "week-14.html": "744dbf78"
+  },
+  "hw/hw-5.qmd": {
+    "hw-5.html": "ffbb82ee"
+  },
+  "hw/hw-4.qmd": {
+    "hw-4.html": "57d2d6a2"
+  },
+  "hw/hw-3.qmd": {
+    "hw-3.html": "a4b31fdc"
+  },
+  "hw/hw-2.qmd": {
+    "hw-2.html": "3beb0d00"
+  },
+  "hw/hw-1.qmd": {
+    "hw-1.html": "d18a6670"
+  },
+  "ae/ae-5-the-office.qmd": {
+    "ae-5-the-office.html": "bc747f37"
+  },
+  "ae/ae-11-volcanoes.qmd": {
+    "ae-11-volcanoes.html": "045da64c"
+  },
+  "ae/ae-4-exam-1-review.qmd": {
+    "ae-4-exam-1-review.html": "87b483ef"
+  },
+  "ae/ae-6-the-office-cv.qmd": {
+    "ae-6-the-office-cv.html": "f75b2f2d"
+  },
+  "ae/ae-8-rail-trail.qmd": {
+    "ae-8-rail-trail.html": "44d22ea2"
+  },
+  "ae/ae-1-dcbikeshare.qmd": {
+    "ae-1-dcbikeshare.html": "c1d9fea3"
+  },
+  "ae/ae-12-exam-3-review.qmd": {
+    "ae-12-exam-3-review.html": "9c193dea"
+  },
+  "ae/ae-9-odds.qmd": {
+    "ae-9-odds.html": "9535b327"
+  },
+  "ae/ae-7-exam-2-review.qmd": {
+    "ae-7-exam-2-review.html": "bc073ced"
+  },
+  "ae/ae-0-movies.qmd": {
+    "ae-0-movies.html": "c16fc49a"
+  },
+  "ae/ae-3-duke-forest.qmd": {
+    "ae-3-duke-forest.html": "fdeb9723"
+  },
+  "ae/ae-2-dcbikeshare.qmd": {
+    "ae-2-dcbikeshare.html": "4d4b4947"
+  },
+  "ae/ae-10-flight-delays.qmd": {
+    "ae-10-flight-delays.html": "06ca2a20"
+  },
+  "404.qmd": {
+    "404.html": "1b5ef251"
+  },
+  "project-tips-resources.qmd": {
+    "project-tips-resources.html": "5b3455b2"
+  },
+  "computing-access.qmd": {
+    "computing-access.html": "36fbe9f5"
+  },
+  "course-overview.qmd": {
+    "course-overview.html": "3580bd49"
+  },
+  "course-team.qmd": {
+    "course-team.html": "6146d2af"
+  },
+  "slides/lec-15.qmd": {
+    "lec-15.html": "4dc3ed81"
+  },
+  "slides/lec-14.qmd": {
+    "lec-14.html": "c317f25a"
+  },
+  "slides/lec-28.qmd": {
+    "lec-28.html": "c662326e"
+  },
+  "slides/lec-16.qmd": {
+    "lec-16.html": "7a3381d1"
+  },
+  "slides/lec-17.qmd": {
+    "lec-17.html": "d6043114"
+  },
+  "slides/lec-9.qmd": {
+    "lec-9.html": "0cb9c55a"
+  },
+  "slides/lec-13.qmd": {
+    "lec-13.html": "9469c542"
+  },
+  "slides/lec-12.qmd": {
+    "lec-12.html": "b289902f"
+  },
+  "slides/lec-8.qmd": {
+    "lec-8.html": "9863d411"
+  },
+  "slides/lec-10.qmd": {
+    "lec-10.html": "02ef1915"
+  },
+  "slides/lec-11.qmd": {
+    "lec-11.html": "d6c02f34"
+  },
+  "slides/lab-2.qmd": {
+    "lab-2.html": "4cfbdd4e"
+  },
+  "slides/lec-6.qmd": {
+    "lec-6.html": "159875ed"
+  },
+  "slides/lec-20.qmd": {
+    "lec-20.html": "30c7fdc9"
+  },
+  "slides/lec-21.qmd": {
+    "lec-21.html": "27ae0d9a"
+  },
+  "slides/lec-7.qmd": {
+    "lec-7.html": "a351c902"
+  },
+  "slides/lab-3.qmd": {
+    "lab-3.html": "c6b59139"
+  },
+  "slides/lab-1.qmd": {
+    "lab-1.html": "9af6bc4d"
+  },
+  "slides/lec-5.qmd": {
+    "lec-5.html": "cb5e7676"
+  },
+  "slides/lec-23.qmd": {
+    "lec-23.html": "59602656"
+  },
+  "slides/lec-22.qmd": {
+    "lec-22.html": "9bf81f5c"
+  },
+  "slides/lec-4.qmd": {
+    "lec-4.html": "99b99044"
+  },
+  "slides/lab-0.qmd": {
+    "lab-0.html": "c25c5089"
+  },
+  "slides/lec-26.qmd": {
+    "lec-26.html": "44632c86"
+  },
+  "slides/lec-27.qmd": {
+    "lec-27.html": "75174089"
+  },
+  "slides/lec-1.qmd": {
+    "lec-1.html": "9274be64"
+  },
+  "slides/lec-3.qmd": {
+    "lec-3.html": "db241887"
+  },
+  "slides/lec-25.qmd": {
+    "lec-25.html": "1d82d64f"
+  },
+  "slides/lec-19.qmd": {
+    "lec-19.html": "9ca17c45"
+  },
+  "slides/lec-18.qmd": {
+    "lec-18.html": "503a635d"
+  },
+  "slides/lec-24.qmd": {
+    "lec-24.html": "89384bd9"
+  },
+  "slides/lec-2.qmd": {
+    "lec-2.html": "9a8c7a94"
+  },
+  "supplemental/mlr-matrix.qmd": {
+    "mlr-matrix.html": "117b310d"
+  },
+  "supplemental/model-diagnostics-matrix.qmd": {
+    "model-diagnostics-matrix.html": "7a2e81ec"
+  },
+  "supplemental/slr-derivations.qmd": {
+    "slr-derivations.html": "bd3375c3"
+  },
+  "supplemental/log-transformations.qmd": {
+    "log-transformations.html": "9eeb6269"
+  },
+  "supplemental/model-selection-criteria.qmd": {
+    "model-selection-criteria.html": "2f0d992c"
+  },
+  "computing-pipelines.qmd": {
+    "computing-pipelines.html": "2c635a76"
+  },
+  "course-faq.qmd": {
+    "course-faq.html": "563cc913"
+  },
+  "course-support.qmd": {
+    "course-support.html": "47b443ea"
+  },
+  "exams/exam-1.qmd": {
+    "exam-1.html": "9aa8208d"
+  },
+  "exams/exam-3.qmd": {
+    "exam-3.html": "f28c29e1"
+  },
+  "exams/exam-2.qmd": {
+    "exam-2.html": "5936f632"
+  },
+  "project-description.qmd": {
+    "project-description.html": "5e4a8e86"
+  },
+  "course-syllabus.qmd": {
+    "course-syllabus.html": "795f4439"
+  },
+  "computing-troubleshooting.qmd": {
+    "computing-troubleshooting.html": "91c6804f"
+  },
+  "notes/w1.qmd": {
+    "w1.html": "5f4078e2"
+  },
+  "slides/intro.qmd": {
+    "intro.html": "c4ffd0d8"
+  }
+}
