@@ -289,5 +289,8 @@
   },
   "slides/intro.qmd": {
     "intro.html": "c4ffd0d8"
+  },
+  "supplementary/supp1.qmd": {
+    "supp1.html": "d0c9d45b"
   }
 }

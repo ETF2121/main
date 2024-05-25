@@ -59,10 +59,10 @@ library(emo)
 
 ## Course Information
 
--   **Course Website:** [todo: xxx](todo:%20please%20put%20url%20here)
+-   [**Course Website**](https://etf2121.github.io/main)
 -   **Communication:** [Ed Discussion Forum 💬](Link%20to%20Ed%20discussion%20forum:%20todo)
     -   Please use the forum for all course-related questions
-    -   We will aim to respond to questions within 48 hours
+    -   We will aim to respond to questions within 24 hours
     -   We do not answer questions via email!
     -   Please be respectful and starts the conversation by saying "Hi teaching team". This course is all about business, so you have to learn the manner in the business world.
     -   You can also help each other out by answering others questions! Who answered the most questions will have a [bonus mark]{style="color:red;"} for participation.
@@ -70,6 +70,8 @@ library(emo)
 ## Course toolkit
 
 ::: callout-important
+## Important Software
+
 POWER BI, R, RStudio, SQL
 :::
 

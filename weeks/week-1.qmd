@@ -14,7 +14,7 @@ editor: visual
 
 🖥️ [Lecture 1 - Introduction to Data Analysis](/slides/lec-1.html)
 
-📋 [Note](/notes/w1.html)
+📋 [Note 1 - Introduction to Power BI and R](/notes/w1.html)
 
 ## Tutorial (real-time)
 
@@ -22,7 +22,7 @@ editor: visual
 
 ## Supplementary (own-time)
 
-⌨️ [Supp 1 - Familiarise yourself with R](tba)
+⌨️ [Supp 1 - Familiarise yourself with R](/supplementary/supp1.qmd)
 
 <br><br>
 
