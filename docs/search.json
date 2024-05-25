@@ -185,15 +185,15 @@
     "objectID": "slides/lec-1.html#lecturer-joan-tan",
     "href": "slides/lec-1.html#lecturer-joan-tan",
     "title": "Welcome to ETF2121/5912",
-    "section": "",
-    "text": "Dr. Joan Tan (she/her)\n\n\n\n\n🎓 PhD in Applied Econometrics, Monash University, Australia\n🎓 Certified Analytics Professional (CAP), INFORMS, USA\n🎓 Master of Applied Statistics\n🎓 Bachelor of Economics (Major in Applied Statistics)\nWorking Experience: Associate director, Consultant, data analyst, lecturer\n💌 joan.tan@monash.edu"
+    "section": "Lecturer: Joan Tan",
+    "text": "Lecturer: Joan Tan\n\n\n\n\n\nDr. Joan Tan (she/her)\n\n\n\n\n🎓 PhD in Applied Econometrics, Monash University, Australia\n🎓 Certified Analytics Professional (CAP), INFORMS, USA\n🎓 Master of Applied Statistics\n🎓 Bachelor of Economics (Major in Applied Statistics)\nWorking Experience: Associate director, Consultant, data analyst, lecturer\n💌 joan.tan@monash.edu"
   },
   {
     "objectID": "slides/lec-1.html#head-tutor-chin-quek",
     "href": "slides/lec-1.html#head-tutor-chin-quek",
     "title": "Welcome to ETF2121/5912",
-    "section": "",
-    "text": "Mr. Chin Quek (he/him)\n\n\n\n\n🎓 Master of Public Health, Monash University, Australia\n🎓 Bachelor in Mechanical Engineering, Commerce and Finance\nWorking Experience: Senior analyst, Business analyst\n💌 chin.quek@monash.edu"
+    "section": "Head Tutor: Chin Quek",
+    "text": "Head Tutor: Chin Quek\n\n\n\n\n\nMr. Chin Quek (he/him)\n\n\n\n\n🎓 Master of Public Health, Monash University, Australia\n🎓 Bachelor in Mechanical Engineering, Commerce and Finance\nWorking Experience: Senior analyst, Business analyst\n💌 chin.quek@monash.edu"
   },
   {
     "objectID": "slides/lec-1.html#course-information",
@@ -207,7 +207,7 @@
     "href": "slides/lec-1.html#course-toolkit",
     "title": "Welcome to ETF2121/5912",
     "section": "Course toolkit",
-    "text": "Course toolkit\n\n\n\n\n\n\nImportant\n\n\n\nPOWER BI, R, RStudio, SQL\n\n\n\nPlease install all the necessary softwares on your computer before your first tutorial.\nWe will provide you with the necessary instructions on how to install the software. The detail can be found in the here."
+    "text": "Course toolkit\n\n\n\n\n\n\nImportant\n\n\nPOWER BI, R, RStudio, SQL\n\n\n\n\nPlease install all the necessary softwares on your computer before your first tutorial.\nWe will provide you with the necessary instructions on how to install the software. The detail can be found in the here."
   },
   {
     "objectID": "slides/lec-1.html#cadence",
@@ -242,7 +242,7 @@
     "href": "slides/lec-1.html#week-1-learning-outcome",
     "title": "Welcome to ETF2121/5912",
     "section": "Week 1 learning outcome",
-    "text": "Week 1 learning outcome\n\nBe able to install the necessary software for the course."
+    "text": "Week 1 learning outcome\n\nBe able to install the necessary software for the course.\n\n\n\n\n\ncourse website"
   },
   {
     "objectID": "computing-pipelines.html",
@@ -404,5 +404,103 @@
     "title": "Project description",
     "section": "Overall grading",
     "text": "Overall grading\nThe grade breakdown is as follows:\n\n\n\nTotal\n100 pts\n\n\n\n\nTopic ideas\n5 pts\n\n\nProject proposal\n10 pts\n\n\nPeer review\n10 pts\n\n\nWritten report\n40 pts\n\n\nSlides + video presentation\n20 pts\n\n\nReproducibility + organization\n5 pts\n\n\nVideo comments\n5 pts\n\n\nPeer teamwork evaluation\n5 pts\n\n\n\nNote: No late project reports or videos are accepted.\n\nGrading summary\nGrading of the project will take into account the following:\n\nContent - What is the quality of research and/or policy question and relevancy of data to those questions?\nCorrectness - Are statistical procedures carried out and explained correctly?\nWriting and Presentation - What is the quality of the statistical presentation, writing, and explanations?\nCreativity and Critical Thought - Is the project carefully thought out? Are the limitations carefully considered? Does it appear that time and effort went into the planning and implementation of the project?\n\nA general breakdown of scoring is as follows:\n\n90%-100%: Outstanding effort. Student understands how to apply all statistical concepts, can put the results into a cogent argument, can identify weaknesses in the argument, and can clearly communicate the results to others.\n80%-89%: Good effort. Student understands most of the concepts, puts together an adequate argument, identifies some weaknesses of their argument, and communicates most results clearly to others.\n70%-79%: Passing effort. Student has misunderstanding of concepts in several areas, has some trouble putting results together in a cogent argument, and communication of results is sometimes unclear.\n60%-69%: Struggling effort. Student is making some effort, but has misunderstanding of many concepts and is unable to put together a cogent argument. Communication of results is unclear.\nBelow 60%: Student is not making a sufficient effort.\n\n\n\nLate work policy\nThere is no late work accepted on this project. Be sure to turn in your work early to avoid any technological mishaps."
+  },
+  {
+    "objectID": "slides/intro.html#etf21215912-data-analysis-in-business",
+    "href": "slides/intro.html#etf21215912-data-analysis-in-business",
+    "title": "Welcome",
+    "section": "ETF2121/5912 Data Analysis in Business",
+    "text": "ETF2121/5912 Data Analysis in Business"
+  },
+  {
+    "objectID": "slides/intro.html#what-is-this-course-about",
+    "href": "slides/intro.html#what-is-this-course-about",
+    "title": "Welcome",
+    "section": "What is this course about?",
+    "text": "What is this course about?\n\nProblem-based learning\nBusiness analytics\nPreparing you with tools for data analysis regardless of your major\nData wrangling, visualization, and analysis\nThis unit is designed for the non-technical student with no coding background!"
+  },
+  {
+    "objectID": "slides/intro.html#example-case-problem",
+    "href": "slides/intro.html#example-case-problem",
+    "title": "Welcome",
+    "section": "Example: Case Problem",
+    "text": "Example: Case Problem\nAlumni donations are an important source of revenue for colleges and universities. If administrators could determine the factors that could lead to increases in the percentage of alumni who make a donation, they might be able to implement policies that could lead to increased revenues. Research shows that students who are more satisfied with their contact with teachers are more likely to graduate. As a result, one might suspect that smaller class sizes and lower student/faculty ratios might lead to a higher percentage of satisfied graduates, which in turn might lead to increases in the percentage of alumni who make a donation.\nProblem to solve: Predict the alumni giving rate, given the graduation rate. Discuss your findings."
+  },
+  {
+    "objectID": "slides/intro.html#what-you-will-learn",
+    "href": "slides/intro.html#what-you-will-learn",
+    "title": "Welcome",
+    "section": "What you will learn?",
+    "text": "What you will learn?\n\nHow to use R programming language for data wrangling, visualization, and analysis;\nHow to use SQL language to query databases;\nHow to use POWER BI as data dashboard to showcase your analysis;\nHow to apply analytics skill to solve the business problem."
+  },
+  {
+    "objectID": "slides/intro.html#at-the-end-of-this-course-you-are-able-to",
+    "href": "slides/intro.html#at-the-end-of-this-course-you-are-able-to",
+    "title": "Welcome",
+    "section": "At the end of this course, you are able to",
+    "text": "At the end of this course, you are able to\n\n\n\nsource: https://community.fabric.microsoft.com/t5/Data-Stories-Gallery/Healthcare-Expenditure/td-p/3437485"
+  },
+  {
+    "objectID": "slides/intro.html#see-you",
+    "href": "slides/intro.html#see-you",
+    "title": "Welcome",
+    "section": "See you 🎡",
+    "text": "See you 🎡\n\n\n\n\n\n\n\n\n\n\nCourse Website"
+  },
+  {
+    "objectID": "weeks/week-1.html",
+    "href": "weeks/week-1.html",
+    "title": "Week 1",
+    "section": "",
+    "text": "📖 Read the syllabus"
+  },
+  {
+    "objectID": "weeks/week-1.html#pre-class-activities-own-time",
+    "href": "weeks/week-1.html#pre-class-activities-own-time",
+    "title": "Week 1",
+    "section": "",
+    "text": "📖 Read the syllabus"
+  },
+  {
+    "objectID": "weeks/week-1.html#lecture-real-time",
+    "href": "weeks/week-1.html#lecture-real-time",
+    "title": "Week 1",
+    "section": "Lecture (real-time)",
+    "text": "Lecture (real-time)\n🖥️ Lab 0\n🖥️ Lecture 1 - Introduction to Data Analysis\n📋 Note"
+  },
+  {
+    "objectID": "weeks/week-1.html#tutorial-real-time",
+    "href": "weeks/week-1.html#tutorial-real-time",
+    "title": "Week 1",
+    "section": "Tutorial (real-time)",
+    "text": "Tutorial (real-time)\n📋 Tutorial 1 - Software Installation"
+  },
+  {
+    "objectID": "weeks/week-1.html#supplementary-own-time",
+    "href": "weeks/week-1.html#supplementary-own-time",
+    "title": "Week 1",
+    "section": "Supplementary (own-time)",
+    "text": "Supplementary (own-time)\n⌨️ Supp 1 - Familiarise yourself with R\n\n\nBack to course schedule ⏎"
+  },
+  {
+    "objectID": "course-team.html",
+    "href": "course-team.html",
+    "title": "Teaching team",
+    "section": "",
+    "text": "Dr. Joan Tan (she/her) works as Senior Teaching Fellow at the Department of Business Statistics and Econometrics at Monash University. Joan’s work focuses on bringing industry experience into teaching with student centered innovative learning. Joan also works in NAB as an Associate Director."
+  },
+  {
+    "objectID": "course-team.html#instructor",
+    "href": "course-team.html#instructor",
+    "title": "Teaching team",
+    "section": "",
+    "text": "Dr. Joan Tan (she/her) works as Senior Teaching Fellow at the Department of Business Statistics and Econometrics at Monash University. Joan’s work focuses on bringing industry experience into teaching with student centered innovative learning. Joan also works in NAB as an Associate Director."
+  },
+  {
+    "objectID": "course-team.html#teaching-associates",
+    "href": "course-team.html#teaching-associates",
+    "title": "Teaching team",
+    "section": "Teaching Associates",
+    "text": "Teaching Associates\n\n\n\n\n\n\n\n\nContact\nTutorial Slots (Location)\nConsultation Hours\n\n\n\n\nMr. Chin Quek\n\n\n\n\n\nMr. Elvis Yang\n\n\n\n\nMr. Krisanat"
   }
 ]

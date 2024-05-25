@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sta210-s22.github.io/website/index.html</loc>
-    <lastmod>2024-05-25T02:33:00.666Z</lastmod>
+    <lastmod>2024-05-25T11:14:19.283Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/course-overview.html</loc>
-    <lastmod>2024-05-25T02:32:02.408Z</lastmod>
+    <lastmod>2024-05-25T11:14:18.506Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/course-syllabus.html</loc>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/slides/lec-1.html</loc>
-    <lastmod>2024-05-25T02:32:03.413Z</lastmod>
+    <lastmod>2024-05-25T11:15:02.250Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/computing-pipelines.html</loc>
@@ -43,5 +43,17 @@
   <url>
     <loc>https://sta210-s22.github.io/website/project-description.html</loc>
     <lastmod>2024-05-25T02:32:07.541Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta210-s22.github.io/website/slides/intro.html</loc>
+    <lastmod>2024-05-25T11:13:58.007Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta210-s22.github.io/website/weeks/week-1.html</loc>
+    <lastmod>2024-05-25T11:14:31.145Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta210-s22.github.io/website/course-team.html</loc>
+    <lastmod>2024-05-25T11:14:55.441Z</lastmod>
   </url>
 </urlset>
