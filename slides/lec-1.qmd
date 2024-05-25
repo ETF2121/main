@@ -1,6 +1,6 @@
 ---
 title: "Welcome to ETF2121/5912"
-subtitle: "ETF2121 - S2 2023"
+subtitle: "Week 1"
 author: "Dr. Joan Tan"
 logo: "images/logo.png"
 footer:  "[course website](https://etf2121.github.io/main)"

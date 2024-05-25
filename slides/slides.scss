@@ -9,6 +9,10 @@ $presentation-title-slide-text-align: "left";
 
 /*-- scss:rules --*/
 
+.subtitle {
+  color: #0E46A3;
+}
+
 details>summary {
   font-size: 0.5em;
 }
@@ -27,7 +31,7 @@ strong, b {
 }
 
 .reveal .slide-logo {
-  width: 100px !important;
+  width: 200px !important;
   height: auto;
   position: absolute;
   left: 10px;
@@ -70,6 +74,7 @@ strong, b {
   75% { transform: translateX(-5px) rotate(-5deg); }
   100% { transform: translateX(0) rotate(0deg); }
 }
+
 .shake {
     animation: shake 2s infinite;
 }
