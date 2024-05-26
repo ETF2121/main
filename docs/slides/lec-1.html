@@ -319,6 +319,10 @@
       margin-right: 0; 
     }
   </style>
+  <meta name="mermaid-theme" content="forest">
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <meta property="og:title" content="ETF2121/5912 - S2 2024 - Welcome to ETF2121/5912">
 <meta property="og:description" content="Week 1">
 <meta property="og:site-name" content="ETF2121/5912 - S2 2024">
@@ -372,13 +376,13 @@ Dr.&nbsp;Joan Tan
 </div>
 </div>
 </section>
-<section id="head-tutor-chin-quek" class="slide level2">
-<h2>Head Tutor: Chin Quek</h2>
+<section id="chin-quek" class="slide level2">
+<h2>Chin Quek</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center" style="width: 80%; border-radius: 50%;">
+<div class="quarto-figure quarto-figure-center" style="border-radius: 50%;">
 <figure>
-<p><img data-src="images/lec-1/chin.jpg" alt="Headshot of Chin Quek"></p>
+<p><img data-src="images/lec-1/chin.jpg" style="width:144mm" alt="Headshot of Chin Quek"></p>
 <figcaption>Mr.&nbsp;Chin Quek (he/him)</figcaption>
 </figure>
 </div>
@@ -388,6 +392,39 @@ Dr.&nbsp;Joan Tan
 <li>🎓 Bachelor in Mechanical Engineering, Commerce and Finance</li>
 <li>Working Experience: Senior analyst, Business analyst</li>
 <li>💌 <a href="mailto:chin.quek@monash.edu" class="email">chin.quek@monash.edu</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="elvis-yang" class="slide level2">
+<h2>Elvis Yang</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>🎓 xxxMonash University, Australia</li>
+<li>🎓 xx</li>
+<li>Working Experience: Senior analyst, Business analyst</li>
+<li>💌 <a href="mailto:zhixiang.yang@monash.edu" class="email">zhixiang.yang@monash.edu</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="krisanat" class="slide level2">
+<h2>Krisanat</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center" style="border-radius: 50%;">
+<figure>
+<p><img data-src="images/lec-1/krisanat.jpg" alt="Headshot of Krisanat"></p>
+<figcaption>Mr.&nbsp;Krisanat (he/him)</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<ul>
+<li>🎓 Master of Business Analytics, Monash University, Australia</li>
+<li>🎓 Bachelor in xxx, Commerce and Finance</li>
+<li>Working Experience: Tutor</li>
+<li>💌 <a href="mailto:Krisanat.Anukarnsakulchularp@monash.edu" class="email">Krisanat.Anukarnsakulchularp@monash.edu</a></li>
 </ul>
 </div>
 </div>
@@ -436,7 +473,7 @@ Dr.&nbsp;Joan Tan
 <div>
 <ul>
 <li class="fragment"><strong>Tutorial:</strong> Try to solve the weekly tutorial questions before the tutorial, and bring your questions to the tutorial!</li>
-<li class="fragment"><strong>Tutorial Solution:</strong> will be released on saturday.</li>
+<li class="fragment"><strong>Tutorial Solution:</strong> will be released on Friday.</li>
 <li class="fragment"><strong>Lecture:</strong> Every Tuesday 2-4pm</li>
 <li class="fragment"><strong>Assignments:</strong> There are 2 individual assignments. All deadlines are on Wednesday 11.55pm. Late assignments are strictly not allowed.</li>
 </ul>
@@ -502,12 +539,132 @@ Dr.&nbsp;Joan Tan
 <section id="week-1-learning-outcome" class="slide level2">
 <h2>Week 1 learning outcome</h2>
 <ul>
-<li>Be able to install the necessary software for the course.</li>
-<li></li>
+<li>Able to install Power BI, mySQL, and R.</li>
+<li>Able to use Power BI</li>
+<li>Understand and able to identify descriptive, predictive, and prescriptive analytics.</li>
+<li>Describe applications of analytics for decision making.</li>
+<li>Able to identify, describe various data types</li>
 </ul>
+</section>
+<section id="what-is-business-analytics" class="slide level2">
+<h2>What is Business Analytics?</h2>
+<p>Business analytics is the scientific process of <strong>transforming data into insights</strong> to facilitate better decision-making. This approach leverages data-driven or fact-based methods, often considered more objective than other decision-making alternatives.</p>
+<p>The tools of business analytics support decision-making by:</p>
+<ul>
+<li>Generating insights from data</li>
+<li>Enhancing our forecasting abilities for more accurate planning</li>
+<li>Quantifying risks</li>
+<li>Providing better alternatives through analysis and optimization</li>
+</ul>
+</section>
+<section id="types-of-business-analytics" class="slide level2">
+<h2>Types of Business Analytics</h2>
+<ul>
+<li><strong>Descriptive Analytics:</strong> What happened?</li>
+<li><strong>Predictive Analytics:</strong> What will happen?</li>
+<li><strong>Prescriptive Analytics:</strong> What should we do?</li>
+</ul>
+</section>
+<section id="descriptive-analytics" class="slide level2">
+<h2>Descriptive Analytics</h2>
+<ul>
+<li>Descriptive analytics is the interpretation of <strong>historical data</strong> to better understand changes that have occurred in a business.</li>
+<li>It is the most basic form of analytics and is used to understand what has happened in the past.</li>
+<li>Descriptive analytics is used to understand the current state of a business and to track key performance indicators (KPIs).</li>
+</ul>
+</section>
+<section id="predictive-analytics" class="slide level2">
+<h2>Predictive Analytics</h2>
+<ul>
+<li>Predictive analytics is the use of <strong>data, statistical algorithms, and machine learning techniques</strong> to identify the likelihood of future outcomes based on historical data.</li>
+<li>It is used to forecast future trends, behaviors, and events.<br>
+</li>
+<li>Predictive analytics uses many techniques from data mining, statistics, modeling, machine learning, and artificial intelligence to analyze current data to make predictions about the future.</li>
+</ul>
+</section>
+<section id="prescriptive-analytics" class="slide level2">
+<h2>Prescriptive Analytics</h2>
+<ul>
+<li>Prescriptive analytics is the <strong>final stage of business analytics</strong>.</li>
+<li>It involves using <strong>optimization and simulation algorithms</strong> to advise on possible outcomes and answer the question, “What should we do?”</li>
+<li>Prescriptive analytics is used to make decisions based on the insights generated by descriptive and predictive analytics.</li>
+</ul>
+</section>
+<section id="data-types" class="slide level2">
+<h2>Data Types</h2>
+<div class="cell" data-reveal="true" data-fig-width="10" data-fig-height="8">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A[Data] --&gt; B(Qualitative)
+  A --&gt; C(Quantitative)
+  B --&gt; D[Nominal]
+  B --&gt; E[Ordinal]
+  C --&gt; F[Discrete]
+  C --&gt; G[Continous]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="quiz" class="slide level2">
+<h2>Quiz</h2>
+<ol type="1">
+<li>Name</li>
+<li>Age</li>
+<li>Schooling: Primary, Secondary, Tertiary</li>
+<li>Height</li>
+<li>Temperature</li>
+<li>Sales</li>
+<li>Bonds grade</li>
+</ol>
+</section>
+<section id="forms-of-data-collection" class="slide level2">
+<h2>Forms of data collection</h2>
+<ul>
+<li><strong>Time series data:</strong> Data that is collected at regular intervals over time.</li>
+<li><strong>Cross-sectional data:</strong> Data that is collected at a single point in time.</li>
+<li><strong>Panel data:</strong> Data that is collected over time from multiple entities.</li>
+</ul>
+</section></section>
+<section>
+<section id="power-bi" class="title-slide slide level1 center">
+<h1>Power BI</h1>
 
+</section>
+<section id="what-is-power-bi" class="slide level2">
+<h2>What is Power BI?</h2>
+<ul>
+<li>Power BI is a business analytics tool developed by Microsoft that provides interactive visualizations and business intelligence capabilities.</li>
+<li>It is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding.</li>
+<li>Power BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights.</li>
+</ul>
+</section>
+<section id="why-power-bi" class="slide level2">
+<h2>Why Power BI?</h2>
+<ul>
+<li><strong>Easy to use:</strong> Power BI is designed to be user-friendly and intuitive.</li>
+<li><strong>Interactive:</strong> Power BI allows you to interact with your data in real-time.</li>
+<li><strong>Customizable:</strong> Power BI allows you to customize your reports and dashboards to suit your needs.</li>
+<li><strong>Collaborative:</strong> Power BI allows you to share your reports and dashboards with others.</li>
+</ul>
+</section>
+<section id="power-bi-components" class="slide level2">
+<h2>Power BI Components</h2>
+<ul>
+<li><strong>Power BI Desktop:</strong> A desktop application that allows you to create reports and dashboards.</li>
+<li><strong>Power BI Service:</strong> A cloud-based service that allows you to publish, share, and collaborate on reports and dashboards.</li>
+<li><strong>Power BI Mobile:</strong> A mobile app that allows you to view and interact with your reports and dashboards on the go.</li>
+</ul>
+</section>
+<section id="how-to-use-demo-time" class="slide level2">
+<h2>How to use? Demo Time</h2>
+<p><img data-src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHRvZXVkd3NnNnhsOTZ1YXJxOXgzMmQ0cHF5ejFkcWc0Mzk2YWxwZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/eKV3P1IFX185laegIa/giphy.gif" style="width:100.0%"></p>
 
-<img src="images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<p><img src="images/logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
 <p><a href="https://etf2121.github.io/main">course website</a></p>
 </div>
 </section></section>

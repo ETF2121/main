@@ -214,7 +214,7 @@
     "href": "slides/lec-1.html#cadence",
     "title": "Welcome to ETF2121/5912",
     "section": "Cadence",
-    "text": "Cadence\n\n\nTutorial: Try to solve the weekly tutorial questions before the tutorial, and bring your questions to the tutorial!\nTutorial Solution: will be released on saturday.\nLecture: Every Tuesday 2-4pm\nAssignments: There are 2 individual assignments. All deadlines are on Wednesday 11.55pm. Late assignments are strictly not allowed."
+    "text": "Cadence\n\n\nTutorial: Try to solve the weekly tutorial questions before the tutorial, and bring your questions to the tutorial!\nTutorial Solution: will be released on Friday.\nLecture: Every Tuesday 2-4pm\nAssignments: There are 2 individual assignments. All deadlines are on Wednesday 11.55pm. Late assignments are strictly not allowed."
   },
   {
     "objectID": "slides/lec-1.html#grading",
@@ -242,7 +242,7 @@
     "href": "slides/lec-1.html#week-1-learning-outcome",
     "title": "Welcome to ETF2121/5912",
     "section": "Week 1 learning outcome",
-    "text": "Week 1 learning outcome\n\nBe able to install the necessary software for the course.\n\n\n\n\n\ncourse website"
+    "text": "Week 1 learning outcome\n\nAble to install Power BI, mySQL, and R.\nAble to use Power BI\nUnderstand and able to identify descriptive, predictive, and prescriptive analytics.\nDescribe applications of analytics for decision making.\nAble to identify, describe various data types"
   },
   {
     "objectID": "computing-pipelines.html",
@@ -551,5 +551,124 @@
     "title": "Lecture Note 1",
     "section": "Introduction to R Language",
     "text": "Introduction to R Language\n\nBasic of R\n\nR as a Calculator\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\nR Objects\nIn R, everything is an object. These objects serve as containers for various types of data. Whether you’re dealing with a single number, a character string (like a word), or a complex structure like the output of a plot or a statistical analysis summary, it’s all represented as an object.\nCreating Objects:\nTo create an object, you simply give it a name. For instance\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nIn this example, an object is created called x and it is assigned the value 5. The &lt;- is the assignment operator. It assigns the value on the right to the object on the left. You can also use = to assign values to objects, but it’s considered bad practice.\nViewing Objects:\nTo view the value of an object, you simply type the name of the object and press enter. For instance:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nR keeps track of all objects in the current workspace during the session. You can see all the objects in the current workspace by typing ls() in the console.\nOpearations with Objects:\nYou can perform operations with objects. For instance:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nObjects names:\nObject names can contain letters, numbers, periods, and underscores. However, they can only starts with letters or underscore and nothing else. They are case-sensitive, so x and X are different objects. They cannot start with a number or a period. If you would like to insist to have numbers or period as the first character, you can use backticks to define the object name. It is called nonsyntactic names. For instance, you can define the following:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\nExercises:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nCreate an object called a and assign the value 10 to it.\nCreate an object called b and assign the value 20 to it.\n\nCreate an object called star and assign the value a + b to it.\nView the value of star.\nWhich of the following is not the syntactic name for an object?\n\nx\nX\n1x\nx1\nx.y\nx_y\n\n\n\n\nData Types\nR has several data types. The most common data types are:\n\nNumeric (double)\n\n\nrepresents eal numbers (e.g., 3.14, 0.0001, 1000.0).\ncan be positive or negative.\ncan be in scientific notation (e.g., 1.23e-5).\nused for continuous data like measurements, weights, heights, etc.\n\n\nCharacter\n\n\nrepresents text data (e.g., “hello”, “world”, “R is fun”).\nmust be enclosed in quotes.\nused for categorical data (e.g., “High School”, “Primary School”, “University”).\n\n\nLogical (boolean)\n\n\nrepresents binary data (e.g., TRUE or FALSE).\nused for logical operations.\n\n\nInteger\n\n\nrepresents whole numbers (e.g., 1, 2, 3, 1000).\ncan be positive or negative.\nused for counting data like number of students, number of cars, etc.\nsometimes you will see it ends with L (e.g., 1L, 2L, 3L, 1000L). This is to indicate that the number is an integer.\n\n\nFactors\n\n\nrepresents categorical data (e.g., “High School”, “Primary School”, “University”).\nused for categorical data.\n\n\nComplex\n\n\nrepresents complex numbers (e.g., 1 + 2i, 3 + 4i, 5 + 6i).\nused for complex data like electrical engineering, physics, etc.\n\nHowever, we seldom deal with complex data types. We will focus on the first four data types.\nExercises:\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nWhat is the data type of 3.14?\nWhat is the data type of \"hello\"?\nWhat is the data type of TRUE?\nWhat is the data type of 1L?\nWhat is the data type of factor(\"High School\")?\nWhat is the data type of 1 + 2i?\nWhat is the data type of \"1\"?\n\nNote: You can check your answers using typeof() function.\n\n\nFunctions\nA function is a block of code that performs a specific task. R has a large number of in-built functions and also allows users to define their own functions. We will learn more about how to create functions in the coming weeks. But so far, we will use some of the in-built functions. Anything that starts with ( and end with ) is a function.\nExercises:\nDefine which one is a function below:\n\nmean()\nmedian\nsd()\nvar()\nsum[]\n\n\n\nVectors\n\n\nData Frames\n\n\nPackages\nR packages are collections of functions and data sets developed by the community. They increase the power of R by improving existing base R functionalities, or by adding new ones.\nExercises:\n\nInstall tidyverse package. Explain what do you observe from the console.\nLoad the tidyverse package. Explain what do you observe from the console.\nInstall palmerpenguins package. Explain what do you observe from the console.\nLoad the palmerpenguins package. Explain what do you observe from the console.\nLoad the lmer package. Explain what do you observe from the console."
+  },
+  {
+    "objectID": "slides/lec-1.html#chin-quek",
+    "href": "slides/lec-1.html#chin-quek",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Chin Quek",
+    "text": "Chin Quek\n\n\n\n\n\nMr. Chin Quek (he/him)\n\n\n\n\n🎓 Master of Public Health, Monash University, Australia\n🎓 Bachelor in Mechanical Engineering, Commerce and Finance\nWorking Experience: Senior analyst, Business analyst\n💌 chin.quek@monash.edu"
+  },
+  {
+    "objectID": "slides/lec-1.html#elvis-yang",
+    "href": "slides/lec-1.html#elvis-yang",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Elvis Yang",
+    "text": "Elvis Yang\n\n\n\n🎓 xxxMonash University, Australia\n🎓 xx\nWorking Experience: Senior analyst, Business analyst\n💌 zhixiang.yang@monash.edu"
+  },
+  {
+    "objectID": "slides/lec-1.html#krisanat",
+    "href": "slides/lec-1.html#krisanat",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Krisanat",
+    "text": "Krisanat\n\n\n\n\n\nMr. Krisanat (he/him)\n\n\n\n\n🎓 Master of Business Analytics, Monash University, Australia\n🎓 Bachelor in xxx, Commerce and Finance\nWorking Experience: Tutor\n💌 Krisanat.Anukarnsakulchularp@monash.edu"
+  },
+  {
+    "objectID": "slides/lec-1.html#what-is-business-analytics",
+    "href": "slides/lec-1.html#what-is-business-analytics",
+    "title": "Welcome to ETF2121/5912",
+    "section": "What is Business Analytics?",
+    "text": "What is Business Analytics?\nBusiness analytics is the scientific process of transforming data into insights to facilitate better decision-making. This approach leverages data-driven or fact-based methods, often considered more objective than other decision-making alternatives.\nThe tools of business analytics support decision-making by:\n\nGenerating insights from data\nEnhancing our forecasting abilities for more accurate planning\nQuantifying risks\nProviding better alternatives through analysis and optimization"
+  },
+  {
+    "objectID": "slides/lec-1.html#types-of-business-analytics",
+    "href": "slides/lec-1.html#types-of-business-analytics",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Types of Business Analytics",
+    "text": "Types of Business Analytics\n\nDescriptive Analytics: What happened?\nPredictive Analytics: What will happen?\nPrescriptive Analytics: What should we do?"
+  },
+  {
+    "objectID": "slides/lec-1.html#descriptive-analytics",
+    "href": "slides/lec-1.html#descriptive-analytics",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Descriptive Analytics",
+    "text": "Descriptive Analytics\n\nDescriptive analytics is the interpretation of historical data to better understand changes that have occurred in a business.\nIt is the most basic form of analytics and is used to understand what has happened in the past.\nDescriptive analytics is used to understand the current state of a business and to track key performance indicators (KPIs)."
+  },
+  {
+    "objectID": "slides/lec-1.html#predictive-analytics",
+    "href": "slides/lec-1.html#predictive-analytics",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Predictive Analytics",
+    "text": "Predictive Analytics\n\nPredictive analytics is the use of data, statistical algorithms, and machine learning techniques to identify the likelihood of future outcomes based on historical data.\nIt is used to forecast future trends, behaviors, and events.\n\nPredictive analytics uses many techniques from data mining, statistics, modeling, machine learning, and artificial intelligence to analyze current data to make predictions about the future."
+  },
+  {
+    "objectID": "slides/lec-1.html#prescriptive-analytics",
+    "href": "slides/lec-1.html#prescriptive-analytics",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Prescriptive Analytics",
+    "text": "Prescriptive Analytics\n\nPrescriptive analytics is the final stage of business analytics.\nIt involves using optimization and simulation algorithms to advise on possible outcomes and answer the question, “What should we do?”\nPrescriptive analytics is used to make decisions based on the insights generated by descriptive and predictive analytics."
+  },
+  {
+    "objectID": "slides/lec-1.html#data-types",
+    "href": "slides/lec-1.html#data-types",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Data Types",
+    "text": "Data Types\n\n\n\n\nflowchart LR\n  A[Data] --&gt; B(Qualitative)\n  A --&gt; C(Quantitative)\n  B --&gt; D[Nominal]\n  B --&gt; E[Ordinal]\n  C --&gt; F[Discrete]\n  C --&gt; G[Continous]"
+  },
+  {
+    "objectID": "slides/lec-1.html#forms-of-data",
+    "href": "slides/lec-1.html#forms-of-data",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Forms of data",
+    "text": "Forms of data\n\nTime series data: Data that is collected at regular intervals over time.\nCross-sectional data: Data that is collected at a single point in time.\nPanel data: Data that is collected over time from multiple entities.\n\n\n\n\ncourse website"
+  },
+  {
+    "objectID": "slides/lec-1.html#forms-of-data-collection",
+    "href": "slides/lec-1.html#forms-of-data-collection",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Forms of data collection",
+    "text": "Forms of data collection\n\nTime series data: Data that is collected at regular intervals over time.\nCross-sectional data: Data that is collected at a single point in time.\nPanel data: Data that is collected over time from multiple entities."
+  },
+  {
+    "objectID": "slides/lec-1.html#what-is-power-bi",
+    "href": "slides/lec-1.html#what-is-power-bi",
+    "title": "Welcome to ETF2121/5912",
+    "section": "What is Power BI?",
+    "text": "What is Power BI?\n\nPower BI is a business analytics tool developed by Microsoft that provides interactive visualizations and business intelligence capabilities.\nIt is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding.\nPower BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights."
+  },
+  {
+    "objectID": "slides/lec-1.html#why-power-bi",
+    "href": "slides/lec-1.html#why-power-bi",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Why Power BI?",
+    "text": "Why Power BI?\n\nEasy to use: Power BI is designed to be user-friendly and intuitive.\nInteractive: Power BI allows you to interact with your data in real-time.\nCustomizable: Power BI allows you to customize your reports and dashboards to suit your needs.\nCollaborative: Power BI allows you to share your reports and dashboards with others."
+  },
+  {
+    "objectID": "slides/lec-1.html#power-bi-components",
+    "href": "slides/lec-1.html#power-bi-components",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Power BI Components",
+    "text": "Power BI Components\n\nPower BI Desktop: A desktop application that allows you to create reports and dashboards.\nPower BI Service: A cloud-based service that allows you to publish, share, and collaborate on reports and dashboards.\nPower BI Mobile: A mobile app that allows you to view and interact with your reports and dashboards on the go."
+  },
+  {
+    "objectID": "slides/lec-1.html#how-to-use",
+    "href": "slides/lec-1.html#how-to-use",
+    "title": "Welcome to ETF2121/5912",
+    "section": "How to use?",
+    "text": "How to use?\n\n\n\n\ncourse website"
+  },
+  {
+    "objectID": "slides/lec-1.html#quiz",
+    "href": "slides/lec-1.html#quiz",
+    "title": "Welcome to ETF2121/5912",
+    "section": "Quiz",
+    "text": "Quiz\n\nName\nAge\nSchooling: Primary, Secondary, Tertiary\nHeight\nTemperature\nSales\nBonds grade"
+  },
+  {
+    "objectID": "slides/lec-1.html#how-to-use-demo-time",
+    "href": "slides/lec-1.html#how-to-use-demo-time",
+    "title": "Welcome to ETF2121/5912",
+    "section": "How to use? Demo Time",
+    "text": "How to use? Demo Time\n\n\n\n\ncourse website"
   }
 ]
