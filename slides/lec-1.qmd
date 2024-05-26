@@ -191,8 +191,8 @@ The tools of business analytics support decision-making by:
 ## Data Types
 
 ```{mermaid}
-%%| fig-width: 10
-%%| fig-height: 8
+%%| fig-width: 8
+%%| fig-height: 6
 flowchart LR
   A[Data] --> B(Qualitative)
   A --> C(Quantitative)
