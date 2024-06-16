@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sta210-s22.github.io/website/index.html</loc>
-    <lastmod>2024-05-25T12:10:25.059Z</lastmod>
+    <lastmod>2024-06-09T12:43:30.067Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/course-overview.html</loc>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/slides/lec-1.html</loc>
-    <lastmod>2024-05-26T11:48:59.704Z</lastmod>
+    <lastmod>2024-06-09T12:03:35.166Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/computing-pipelines.html</loc>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/weeks/week-1.html</loc>
-    <lastmod>2024-05-25T12:41:05.990Z</lastmod>
+    <lastmod>2024-06-10T04:55:08.490Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/course-team.html</loc>
@@ -58,6 +58,34 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/supplementary/supp1.html</loc>
-    <lastmod>2024-05-25T12:42:53.509Z</lastmod>
+    <lastmod>2024-06-04T18:21:38.334Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta210-s22.github.io/website/weeks/week-5.html</loc>
+    <lastmod>2024-06-09T12:43:54.836Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta210-s22.github.io/website/slides/lec-5.html</loc>
+    <lastmod>2024-06-09T12:43:07.813Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta210-s22.github.io/website/hw/hw-5.html</loc>
+    <lastmod>2024-06-09T12:29:43.530Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta210-s22.github.io/website/notes/w1a.html</loc>
+    <lastmod>2024-06-10T04:54:37.911Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta210-s22.github.io/website/notes/w1b.html</loc>
+    <lastmod>2024-06-10T04:23:37.234Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta210-s22.github.io/website/labs/lab-0.html</loc>
+    <lastmod>2024-06-10T04:43:41.198Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta210-s22.github.io/website/labs/lab-1.html</loc>
+    <lastmod>2024-06-10T04:54:07.668Z</lastmod>
   </url>
 </urlset>

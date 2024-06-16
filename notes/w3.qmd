@@ -1,0 +1,143 @@
+---
+title: "Lecture Note 1b"
+filters: 
+  - webr
+execute: 
+  echo: false
+---
+
+::: callout-note
+Learning Objective:
+:::
+
+```{r}
+#| include: false
+
+library(tidyverse)
+library(knitr)
+```
+
+## Part 1: Introduction to Power BI (Extended Lecture Notes)
+
+### 1. What is Power BI? (5 minutes)
+
+**Power BI Overview:**
+- **Definition:**
+  - Power BI is a suite of business analytics tools by Microsoft that allows you to visualize your data and share insights across your organization or embed them in an app or website.
+- **Key Features:**
+  - **Data Visualization:**
+    - Create visually appealing reports and dashboards with a variety of charts, graphs, and maps.
+  - **Real-time Data Updates:**
+    - Connect to multiple data sources and refresh your data in real-time or on a schedule.
+  - **Interactive Reports:**
+    - Use interactive elements like slicers and filters to explore your data dynamically.
+  - **Cloud-based and On-premises Deployment:**
+    - Access Power BI reports and dashboards from the web or mobile devices.
+- **Benefits:**
+  - **User-friendly Interface:**
+    - Intuitive drag-and-drop functionality makes it easy for non-technical users.
+  - **Integration with Other Microsoft Services:**
+    - Seamlessly integrates with Excel, Azure, SQL Server, and other Microsoft products.
+  - **Scalable and Secure:**
+    - Suitable for small businesses to large enterprises with robust security features.
+- **Real-world Applications:**
+  - **Business Reporting:**
+    - Monthly sales reports, financial summaries, and performance dashboards.
+  - **Data Analysis:**
+    - Customer behavior analysis, market trend analysis, and operational efficiency.
+  - **Decision Making:**
+    - Data-driven decisions based on insights derived from comprehensive data analysis.
+
+---
+
+### 2. Power BI Interface Overview (10 minutes)
+
+**Power BI Desktop Components:**
+
+1. **Report View:**
+   - **Purpose:**
+     - Design and view your interactive reports.
+   - **Features:**
+     - Add visuals, format reports, and create multiple report pages.
+   - **Navigation:**
+     - Use the left-hand pane to switch between Report, Data, and Model views.
+
+2. **Data View:**
+   - **Purpose:**
+     - Explore and manage your data tables and columns.
+   - **Features:**
+     - View raw data, create new columns, and transform data.
+   - **Navigation:**
+     - Access the Data view by clicking the table icon on the left-hand pane.
+
+3. **Model View:**
+   - **Purpose:**
+     - Define and manage relationships between tables.
+   - **Features:**
+     - Create and edit relationships, view data models, and manage table connections.
+   - **Navigation:**
+     - Access the Model view by clicking the diagram icon on the left-hand pane.
+
+**Key Interface Elements:**
+
+1. **Ribbon:**
+   - **Purpose:**
+     - Provides access to tools and options for report creation and data management.
+   - **Sections:**
+     - Home, View, Modeling, Format, Data, and Help tabs.
+
+2. **Panes:**
+   - **Fields Pane:**
+     - Displays available tables and fields for use in your report.
+   - **Visualizations Pane:**
+     - Contains a variety of visual elements (charts, tables, maps) to add to your report.
+   - **Filters Pane:**
+     - Allows you to apply filters to visuals, pages, or the entire report.
+
+3. **Canvas:**
+   - **Purpose:**
+     - Design area where you create and arrange visuals for your report.
+   - **Features:**
+     - Drag and drop fields, format visuals, and customize the report layout.
+
+---
+
+### 3. Connecting to Data Sources (15 minutes)
+
+**Data Connectors:**
+- **Overview:**
+  - Power BI can connect to a wide range of data sources including files, databases, and online services.
+- **Common Data Sources:**
+  - **Files:**
+    - Excel, CSV, XML, JSON.
+  - **Databases:**
+    - SQL Server, MySQL, Oracle, PostgreSQL.
+  - **Online Services:**
+    - Azure, SharePoint, Google Analytics, Salesforce.
+
+**Steps to Import Data:**
+1. **Get Data:**
+   - **Navigation:**
+     - Click on the "Home" tab > "Get Data" button.
+   - **Options:**
+     - Choose from a list of common data sources or click "More" to see all available connectors.
+2. **Choose Source:**
+   - **Example:**
+     - Select "Excel" to import data from an Excel file.
+3. **Load Data:**
+   - **Navigation:**
+     - Browse to the file location, select the file, and click "Open."
+   - **Preview:**
+     - Preview the data before loading it into Power BI.
+   - **Load/Transform:**
+     - Click "Load" to import the data directly or "Transform Data" to open Power Query Editor for data cleaning and transformation.
+
+**Demo: Importing a Sample Dataset:**
+- **Step-by-Step Walkthrough:**
+  1. Click "Home" > "Get Data" > "Excel."
+  2. Browse and select a sample Excel file.
+  3. Preview the data in the Navigator window.
+  4. Click "Load" to import the data into Power BI.
+  5. Explore the imported data in the Data view.
+  
+  

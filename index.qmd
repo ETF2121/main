@@ -3,7 +3,7 @@ title: "ETF2121/5912: Data Analysis in Business"
 tbl-colwidths: [5,10,30,5,5,5,5,5,5,5]
 ---
 
-This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses, with all changes documented here.
+This page provides a comprehensive outline of the topics, content, and assignments planned for the semester. Please note that this schedule is subject to updates as the semester progresses. Any changes or adjustments will be documented here to ensure you have the most current information available. In the event of any discrepancies between the information on this website and the exam timetable or course handbook, the exam timetable and course handbook will serve as the authoritative sources.
 
 +---------------------------+-----------------+------------------------------------------------------+---------+--------+------------------+
 | Week                      | Date            | Topic                                                | Prepare | Slides | Quiz/Assignments |
@@ -96,5 +96,5 @@ knitr::knit_exit()
 ```
 
 |      |      |       | Prepare | Slides | AE  |                                                    Labs                                                    | HW  | Exam | Project | Quiz |
-|------|------|-------|:-------:|:------:|:---:|:----------------------------------------------------------------------------------------------------------:|:---:|:----:|:-------:|:----:|
+|-----|-----|-----|:---:|:---:|:---:|:-------------------------:|:---:|:---:|:---:|:---:|
 | Week | Date | Topic |   📖    |   🖥️   | 📋  | [💻](https://sakai.duke.edu/samigo-app/servlet/Login?id=6fa7ebf3-01af-42a6-91ba-3e813d3901221641094171786) | ✍️  |  ✅  |   📂    |  📝  |

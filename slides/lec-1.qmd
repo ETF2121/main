@@ -151,18 +151,18 @@ POWER BI, R, RStudio, SQL
 -   Able to use Power BI
 -   Understand and able to identify descriptive, predictive, and prescriptive analytics.
 -   Describe applications of analytics for decision making.
--   Able to identify, describe various data types 
+-   Able to identify, describe various data types
 
 ## What is Business Analytics?
 
-Business analytics is the scientific process of **transforming data into insights** to facilitate better decision-making. This approach leverages data-driven or fact-based methods, often considered more objective than other decision-making alternatives. 
+Business analytics is the scientific process of **transforming data into insights** to facilitate better decision-making. This approach leverages data-driven or fact-based methods, often considered more objective than other decision-making alternatives.
 
 The tools of business analytics support decision-making by:
 
-* Generating insights from data
-* Enhancing our forecasting abilities for more accurate planning
-* Quantifying risks
-* Providing better alternatives through analysis and optimization
+-   Generating insights from data
+-   Enhancing our forecasting abilities for more accurate planning
+-   Quantifying risks
+-   Providing better alternatives through analysis and optimization
 
 ## Types of Business Analytics
 
@@ -179,7 +179,7 @@ The tools of business analytics support decision-making by:
 ## Predictive Analytics
 
 -   Predictive analytics is the use of **data, statistical algorithms, and machine learning techniques** to identify the likelihood of future outcomes based on historical data.
--   It is used to forecast future trends, behaviors, and events.    
+-   It is used to forecast future trends, behaviors, and events.\
 -   Predictive analytics uses many techniques from data mining, statistics, modeling, machine learning, and artificial intelligence to analyze current data to make predictions about the future.
 
 ## Prescriptive Analytics
@@ -204,21 +204,79 @@ flowchart LR
 
 ## Quiz
 
-1. Name
-2. Age
-3. Schooling: Primary, Secondary, Tertiary
-4. Height
-5. Temperature
-6. Sales
-7. Bonds grade
-
-
+1.  Name
+2.  Age
+3.  Schooling: Primary, Secondary, Tertiary
+4.  Height
+5.  Temperature
+6.  Sales
+7.  Bonds grade
 
 ## Forms of data collection
 
 -   **Time series data:** Data that is collected at regular intervals over time.
+
 -   **Cross-sectional data:** Data that is collected at a single point in time.
+
 -   **Panel data:** Data that is collected over time from multiple entities.
+
+# Business Analytics in Practice
+
+## Accounting Analytics
+
+**Descriptive Analytics**: This involves data visualization techniques to monitor financial performance metrics such as stock returns, trading volumes, and market volatility indicators.
+
+**Predictive Analytics**: Predictive models are employed to forecast financial performance, evaluate the risk associated with investment portfolios and projects, and develop financial instruments such as derivatives.
+
+**Prescriptive Analytics**: These models are used for optimizing investment portfolios, allocating assets efficiently, and creating optimal capital budgeting plans.
+
+## Financial Analytics
+
+## Human Resource Analytics
+
+The HR function is responsible for ensuring that the organization has\
+- the necessary mix of skill sets to meet its needs,\
+- hires the highest-quality talent,\
+- provides an environment to retain it,\
+- and achieves its organizational diversity goals.
+
+Goal: Effective HR practices ensure that the organization is equipped with skilled professionals who can drive the company's success while fostering a supportive and inclusive workplace.
+
+Google uses "people analytics" to analyze data on its employees\
+- to determine the characteristics of great leaders,\
+- assess factors contributing to productivity,\
+- and evaluate potential new hires.\
+Goal: By leveraging data analytics, Google can identify and nurture leadership qualities, understand what drives employee performance, and make informed hiring decisions.
+
+.
+
+## Marketing Analytics
+
+Marketing is one of the fastest-growing areas for the application of analytics. - The use of scanner data and data generated from social media has led to a better understanding of consumer behavior and increased interest in marketing analytics. - As a result, descriptive, predictive, and prescriptive analytics are all heavily used in marketing.
+
+Predictive models and optimization are used to better align advertising to specific target audiences making marketing efforts more effective and efficient.
+
+Sentiment analysis allows companies to monitor better “the voice of the customer” and use the data to adjust their services and products.
+
+## Health Care Analytics
+
+The use of analytics in health care is increasing because of pressure to control costs and provide more effective treatment simultaneously. Descriptive, predictive, and prescriptive analytics are used to improve patient, staff, and facility scheduling, patient flow, purchasing, and inventory control. The use of prescriptive analytics for diagnosis and treatment is the most critical application of analytics in health care.
+
+## Supply Chain Analytics
+
+Analytics has long been used to achieve the efficient delivery of goods: the core service of logistic companies. To UPS and FedEx, the optimal sorting of goods, vehicle and staff scheduling, and vehicle routing are all key to profitability. Supply chain problems caused by the COVID-19 pandemic and world conflicts focused on using analytics to increase the resiliency of the supply chain. Descriptive analytics is used to monitor supply chain performance. Predictive analytics is used to quantify risk. Prescriptive analytics with scenario analysis is used to prepare supply chain solutions that can handle a high degree of disruption.
+
+## Analytics for Government and Nonprofits
+
+Government agencies use analytics to increase the effectiveness and accountability of programs. The U.S. Internal Revenue Service uses data mining to identify patterns that distinguish questionable annual personal income tax filings. Likewise, nonprofit agencies use analytics to ensure their effectiveness and accountability to donors and clients. Descriptive and predictive analytics monitor agency performance, track donor behavior, and forecast donations. Data mining helps identify potential donors and minimize donor attrition. Optimization allocates scarce resources in capital budgeting.
+
+## Sports Analytics
+
+Professional sports teams use analytics to assess players for the amateur drafts, decide how much to offer players in contract negotiations, and assist with on-field decisions. Sports franchises also use analytics for off-the-field business decisions. Based on fan survey data, a predictive technique known as conjoint analysis is used to design stadium premium seating. Prescriptive analytics is used to adjust ticket prices throughout the season dynamically.
+
+## Web Analytics
+
+The analysis of online activity includes, but is not limited to, visits to websites and social media sites such as Facebook and LinkedIn. Leading companies apply descriptive and advanced analytics to data collected in online experiments to determine the best way to configure websites, position ads, and utilize social networks to promote products and services. Because of the massive pool of Internet users, experiments can be conducted without risking disrupting the company’s overall business.
 
 # Power BI
 
@@ -241,8 +299,6 @@ flowchart LR
 -   **Power BI Service:** A cloud-based service that allows you to publish, share, and collaborate on reports and dashboards.
 -   **Power BI Mobile:** A mobile app that allows you to view and interact with your reports and dashboards on the go.
 
-
 ## How to use? Demo Time
 
-![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHRvZXVkd3NnNnhsOTZ1YXJxOXgzMmQ0cHF5ejFkcWc0Mzk2YWxwZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/eKV3P1IFX185laegIa/giphy.gif){width=100%}
-
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHRvZXVkd3NnNnhsOTZ1YXJxOXgzMmQ0cHF5ejFkcWc0Mzk2YWxwZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/eKV3P1IFX185laegIa/giphy.gif){width="100%"}

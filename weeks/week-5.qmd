@@ -1,0 +1,39 @@
+---
+title: "Week 5"
+subtitle: "Introduction to Modeling Uncertainty"
+editor: visual
+---
+
+::: callout-important
+-   Individual assignment 1 due next week!
+:::
+
+## Pre-class activities (own-time)
+
+📖 Read Business Analytics, Sec 5.4: Random Variables
+
+📖 Read Business Analytics, Sec 5.5: Discrete Probability Distributions
+
+📖 Read Business Analytics, Sec 5.6: Continuous Probability Distributions
+
+## Lecture (real-time)
+
+🖥️ [Lab 3 - Coffee ratings](/slides/lab-3.html)
+
+🖥️ [Lecture 5 - Introduction to Modeling Uncertainty](/slides/lec-5.html)
+
+[Testing](https://learning.monash.edu/pluginfile.php/3721006/mod_resource/content/1/Assignmen4Solutions.html)
+
+## Tutorial (real-time)
+
+📋 [Tutorial 5 - ](tba)[Modeling](hw/hw-5.qmd)[ Uncertainty](tba)
+
+## Supplementary (own-time)
+
+⌨️ Supp 5 - Understanding distribution in R
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/ "Course schedule") ⏎
+:::

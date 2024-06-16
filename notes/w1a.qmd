@@ -1,0 +1,107 @@
+---
+title: "Lecture Note 1a"
+filters: 
+  - webr
+execute: 
+  echo: false
+---
+
+::: callout-note
+Learning Objective:
+:::
+
+```{r}
+#| include: false
+
+library(tidyverse)
+library(knitr)
+```
+
+## 
+
+## Section 1: Introduction to SQL
+
+### What is SQL?
+
+SQL stands for ***Structured Query Language***. It is a language used to communicate with databases. It is the standard language for relational database management systems.
+Why we need SQL? Let's say you are suppose to design for a system that will store the information of students in a university. How would you store the information of students? You can store the information in a spreadsheet, but what if you have to store the information of thousands of students? It will be very difficult to manage the data in a spreadsheet. Also, where do you want to store the information? In a table? Will a table suffice? What if you have to store the information of the courses that the students are enrolled in? How will you manage the data? This is where databases come in. 
+
+Databases are used to store large amount of data. SQL is used to communicate with the database!
+
+The database can be of any type like MySQL, PostgreSQL, SQLite, etc. By ignoring all those, let's focus on the SQL language itself, which is used to communicate with the database. Once you master SQL, you can work with any database. The most popular database is MySQL. It is an open-source database. It is used by many companies like Facebook, Twitter, etc. Oracle is also a popular database. It is used by many big companies. SQL is used to communicate with the database. It is used to perform all types of operations on the database. It is used to create a database, create a table in the database, insert data into the table, update the data, delete the data, etc. 
+
+### SQL Syntax
+
+SQL syntax is the set of rules that defines how a SQL query should be written. It is the set of rules that all SQL queries should follow. SQL syntax is similar to the English language, which makes it easier to write, read, and understand. SQL syntax is divided into several categories. These categories are:
+
+-   Data Definition Language (DDL)
+-   Data Manipulation Language (DML)
+-   Data Query Language (DQL)
+-   Data Control Language (DCL)
+-   Transaction Control Language (TCL)
+
+### Data Definition Language (DDL)
+
+Data Definition Language (DDL) is used to define the structure that holds the data. It is used to create tables, columns, etc. DDL commands are auto-committed. It means that the changes made by the DDL command are saved to the database automatically. The following are the DDL commands:
+
+-   CREATE
+-   ALTER
+-   DROP
+-   TRUNCATE
+-   COMMENT
+
+### Data Manipulation Language (DML)
+
+Data Manipulation Language (DML) is used to manipulate the data itself. It is used to insert, update, delete, and retrieve data from the database. DML commands are not auto-committed. It means that the changes made by the DML command are not saved to the database automatically. You have to use the COMMIT command to save the changes. The following are the DML commands:
+
+-   SELECT
+-   INSERT
+-   UPDATE
+-   DELETE
+
+### Data Query Language (DQL)
+
+Data Query Language (DQL) is used to retrieve the data from the database. The SELECT statement is the most commonly used DQL command. The following are the DQL commands:
+
+-   SELECT
+-  WHERE
+-  GROUP BY
+-  HAVING
+-  ORDER BY
+
+### Data Control Language (DCL)
+
+Data Control Language (DCL) is used to control the visibility of data. It is used to control the access of data. The following are the DCL commands:
+
+-   GRANT
+-   REVOKE
+
+### Transaction Control Language (TCL)
+
+Transaction Control Language (TCL) is used to manage the transactions in the database. It is used to manage the changes made by the DML commands. The following are the TCL commands:
+
+-   COMMIT
+-   ROLLBACK
+-   SAVEPOINT
+
+## Section 2: Live SQL Oracle
+
+Oracle Live SQL is a free, interactive, web-based tool that allows users to write, run, and share SQL scripts and PL/SQL code. It provides a convenient platform for learning and practicing SQL without needing to install Oracle Database software locally. Key benefits include:
+
+1. Ease of Use:
+The web-based interface is user-friendly, making it accessible for both beginners and experienced users to write and execute SQL code.
+
+2. Educational Resources:
+Live SQL offers tutorials, sample scripts, and documentation to help users learn SQL and PL/SQL concepts and best practices.
+
+3. Collaboration:
+Users can share their scripts and solutions with others, fostering collaboration and knowledge sharing within the community.
+
+4. Real-Time Execution:
+Scripts run on an Oracle Database in real-time, providing immediate feedback and results.
+
+5. Access Anywhere:
+As a web-based tool, Live SQL can be accessed from any device with an internet connection, making it convenient for users to practice and develop their SQL skills on the go.
+
+Oracle Live SQL is an excellent resource for anyone looking to improve their SQL proficiency, offering hands-on experience with Oracle Database in a flexible and collaborative environment.
+
