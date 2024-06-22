@@ -62,11 +62,15 @@ This unit contains a hurdle requirement that you must achieve to be able to pass
 |            | Day | Time              | Location               |
 |------------|-----|-------------------|------------------------|
 | Lectures   | Tue | 2.00 pm - 3.50 pm | K312, Caulfield Campus |
-| Tutorial 1 | Mon | 1:45 pm - 3:00 pm | xx\.                   |
+| Tutorial 1 | Tue | 5.00 pm - 6:30 pm | C302A                  |
+| Tutorial 2 | Tue | 9.30 am - 10:30 pm | N122                  |
+| Tutorial 3 | Tue | 11.00 am - 12:30 pm | N122                   |
+| Tutorial 4 | Tue | 6.30 pm - 7:30 pm | C302A                  |
+| Tutorial 5 | Wed | 9.30 am - 10:30 pm | N122                  |
 
 ### Communication
 
-All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website at [xx](coming).
+All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website at [here](https://etf2121.github.io/main).
 
 I will regularly send course announcements via Ed discussion board, make sure to check one or the other of these regularly. It is your responsibility to stay informed about the course progress and any changes to the schedule.
 
@@ -98,8 +102,10 @@ Assignment deadlines are set to facilitate your progression through the course c
 
 ## Important dates
 
--   **xxx:** Classes begin (Tuesday)
+-   **23rd July 2024:** Classes begin (Tuesday)
 
--   xxx: Assignment 1 submission deadline
+-   **Every Sunday**: Quiz closed at 11.55pm
 
--   xxx: Assignment 2 submission deadline
+-   **28th August 2024**: Assignment 1 submission deadline
+
+-   **9th October 2024**: Assignment 2 submission deadline
