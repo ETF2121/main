@@ -11,7 +11,11 @@
     "href": "course-overview.html",
     "title": "ETF 2121/5912: Data Analysis in Business",
     "section": "",
-    "text": "Welcome to Data Analysis in Business. This unit provides an overview of fundamental tools of data and statistical analysis used in the Business and Economics disciplines. The methods covered are widely used in industry and academia, providing the necessary foundation for more advanced approaches as you advance your training and career.\n\nThis course delves deeper into basic statistical concepts, with a focus on their application in finance, accounting, and other sectors. It introduces cutting-edge software and programming languages such as R, Power-BI, SQL and Excel for robust data analysis and predictive modelling. Students will engage with modern data sources and advanced sampling techniques, learn to perform hypothesis testing, and apply modelling techniques such as regression and time series analysis in business contexts. The course places a strong emphasis on practical applications, aiming to equip students with the skills to interpret and leverage statistical data for solving business problems and making informed decisions in industry."
+    "text": "Welcome to Data Analysis in Business. This unit provides an overview of fundamental tools of data and statistical analysis used in the Business and Economics disciplines. The methods covered are widely used in industry and academia, providing the necessary foundation for more advanced approaches as you advance your training and career.\n\nThis course delves deeper into basic statistical concepts, with a focus on their application in finance, accounting, and other sectors. It introduces cutting-edge software and programming languages such as R, Power-BI, SQL and Excel for robust data analysis and predictive modelling. Students will engage with modern data sources and advanced sampling techniques, learn to perform hypothesis testing, and apply modelling techniques such as regression and time series analysis in business contexts. The course places a strong emphasis on practical applications, aiming to equip students with the skills to interpret and leverage statistical data for solving business problems and making informed decisions in industry.",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
   },
   {
     "objectID": "course-syllabus.html",
@@ -507,21 +511,33 @@
     "href": "course-team.html",
     "title": "Teaching team",
     "section": "",
-    "text": "Dr. Joan Tan (she/her) works as Senior Teaching Fellow at the Department of Business Statistics and Econometrics at Monash University. Joan’s work focuses on bringing industry experience into teaching with student centered innovative learning. Joan also works in NAB as an Associate Director."
+    "text": "Dr. Joan Tan (she/her) works as Senior Teaching Fellow at the Department of Business Statistics and Econometrics at Monash University and also currently working in a bank as an Associate Director. Joan’s work focuses on bringing industry experience into teaching with student centered innovative learning.",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
   },
   {
     "objectID": "course-team.html#instructor",
     "href": "course-team.html#instructor",
     "title": "Teaching team",
     "section": "",
-    "text": "Dr. Joan Tan (she/her) works as Senior Teaching Fellow at the Department of Business Statistics and Econometrics at Monash University. Joan’s work focuses on bringing industry experience into teaching with student centered innovative learning. Joan also works in NAB as an Associate Director."
+    "text": "Dr. Joan Tan (she/her) works as Senior Teaching Fellow at the Department of Business Statistics and Econometrics at Monash University and also currently working in a bank as an Associate Director. Joan’s work focuses on bringing industry experience into teaching with student centered innovative learning.",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
   },
   {
     "objectID": "course-team.html#teaching-associates",
     "href": "course-team.html#teaching-associates",
     "title": "Teaching team",
     "section": "Teaching Associates",
-    "text": "Teaching Associates\n\n\n\n\n\n\n\n\nContact\nTutorial Slots (Location)\nConsultation Hours\n\n\n\n\nMr. Chin Quek\n\n\n\n\n\nMr. Elvis Yang\n\n\n\n\nMr. Krisanat"
+    "text": "Teaching Associates\n\n\n\n\n\n\n\n\nContact\nTutorial Slots (Location)\nConsultation Hours\n\n\n\n\nMr. Chin Quek\n\n\n\n\n\nMr. Elvis Yang\n\n\n\n\n\nMr. Krisanat",
+    "crumbs": [
+      "Course information",
+      "Teaching team"
+    ]
   },
   {
     "objectID": "notes/w1.html#introduction-to-power-bi",
