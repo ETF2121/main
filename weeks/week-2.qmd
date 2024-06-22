@@ -1,0 +1,31 @@
+---
+title: "Week 1"
+subtitle: "Welcome to ETF2121/5912"
+editor: visual
+---
+
+## Pre-class activities (own-time)
+
+📖 Read the [syllabus](/course-syllabus.html)
+
+## Lecture (real-time)
+
+🖥️ [Lecture 1 - Introduction to Data Analysis](/slides/lec-1.html)
+
+📋 [Note 1 - Introduction to SQL](/notes/w1a.html)
+
+📋 [Note 2 - Introduction to Power BI and R](/notes/w1.html)
+
+## Tutorial (real-time)
+
+📋 [Tutorial 1 - Software Installation](/labs/lab-1.html)
+
+## Supplementary (own-time)
+
+⌨️ [Supp 1 - Familiarise yourself with R](/supplementary/supp1.qmd)
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/ "Course schedule") ⏎
+:::

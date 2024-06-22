@@ -39,7 +39,7 @@ strong, b {
 }
 
 .reveal .slides section {
-  font-size: 0.9em; // Adjust this value to the desired font size
+  font-size: 0.8em; // Adjust this value to the desired font size
 }
 
 
@@ -94,3 +94,9 @@ strong, b {
   align-items: center;
   height: 100%;
 }
+
+th, td {
+    padding: 10px;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+  }

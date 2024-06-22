@@ -25,63 +25,16 @@ library(emo)
 
 # Teaching Team
 
-## Lecturer: Joan Tan
 
-::: columns
-::: {.column width="40%"}
-![Dr. Joan Tan (she/her)](images/lec-1/joan.jpeg){fig-alt="Headshot of Dr. Joan Tan" fig-align="center" style="width: 80%; border-radius: 50%;"}
-:::
+## Teaching Team 
 
-::: {.column width="60%"}
--   `r emo::ji("mortar_board")` PhD in Applied Econometrics, Monash University, Australia
--   `r emo::ji("mortar_board")` Certified Analytics Professional (CAP), INFORMS, USA
--   `r emo::ji("mortar_board")` Master of Applied Statistics
--   `r emo::ji("mortar_board")` Bachelor of Economics (Major in Applied Statistics)
--   Working Experience: Associate director, Consultant, data analyst, lecturer
--   💌 [joan.tan\@monash.edu](mailto:joan.tan@monash.edu){.email}
-:::
-:::
-
-## Chin Quek
-
-::: columns
-::: {.column width="40%"}
-![Mr. Chin Quek (he/him)](images/lec-1/chin.jpg){fig-alt="Headshot of Chin Quek" fig-align="center" style="border-radius: 50%;" width="144mm"}
-:::
-
-::: {.column width="60%"}
--   `r emo::ji("mortar_board")` Master of Public Health, Monash University, Australia
--   `r emo::ji("mortar_board")` Bachelor in Mechanical Engineering, Commerce and Finance
--   Working Experience: Senior analyst, Business analyst
--   💌 [chin.quek\@monash.edu](mailto:chin.quek@monash.edu){.email}
-:::
-:::
-
-## Elvis Yang
-
-::: columns
-::: {.column width="60%"}
--   `r emo::ji("mortar_board")` xxxMonash University, Australia
--   `r emo::ji("mortar_board")` xx
--   Working Experience: Senior analyst, Business analyst
--   💌 [zhixiang.yang\@monash.edu](mailto:zhixiang.yang@monash.edu){.email}
-:::
-:::
-
-## Krisanat
-
-::: columns
-::: {.column width="40%"}
-![Mr. Krisanat (he/him)](images/lec-1/krisanat.jpg){style="border-radius: 50%;" fig-alt="Headshot of Krisanat" fig-align="center"}
-:::
-
-::: {.column width="60%"}
--   `r emo::ji("mortar_board")` Master of Business Analytics, Monash University, Australia
--   `r emo::ji("mortar_board")` Bachelor in xxx, Commerce and Finance
--   Working Experience: Tutor
--   💌 [Krisanat.Anukarnsakulchularp\@monash.edu](mailto:Krisanat.Anukarnsakulchularp@monash.edu){.email}
-:::
-:::
+| Picture | Email  💌 |
+|---------|--------|
+| ![Dr. Joan Tan](images/lec-1/joan.jpeg){fig-alt="Headshot of Joan Tan" fig-align="center" width=100px} | Dr. Joan Tan <br> [joan.tan\@monash.edu](mailto:joan.tan@monash.edu){.email} <br> **Consultation**: Tuesday 12-1pm|
+| ![Mr. Chin Quek](images/lec-1/chin.jpg){fig-alt="Headshot of Chin Quek" fig-align="center" width=100px} | Mr. Chin Quek <br> [chin.quek\@monash.edu](mailto:chin.quek@monash.edu){.email}|
+| ![Mr. Elvis](images/lec-1/elvis.jpeg){fig-alt="Headshot of Elvis Yang" fig-align="center" width=100px} | Mr Elvis Yang <br> [zhixiang.yang\@monash.edu](mailto:zhixiang.yang@monash.edu){.email} |
+| ![Mr. Krisanat](images/lec-1/krisanat.jpg){fig-alt="Headshot of Krisanat" fig-align="center" width=100px}| Mr. Krisanat <br> [Krisanat.Anukarnsakulchularp\@monash.edu](mailto:Krisanat.Anukarnsakulchularp@monash.edu){.email}|
+: {tbl-colwidths="[30, 70]"}
 
 # Course overview
 

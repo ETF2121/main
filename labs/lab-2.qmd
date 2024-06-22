@@ -1,230 +1,223 @@
 ---
-title: "Lab 2 - College scorecard"
+title: "Tutorial 1 - Meet + greet + Software Installation"
 editor: visual
-reference-location: margin
 ---
 
-## Introduction
+### Warm up
 
-In today's lab, you'll use simple linear regression to analyze the relationship between the admissions rate and total cost for colleges and universities in the United States.
+Introduce yourself to your instructor and friends.
 
-### Learning goals
+### Section 1: Installing R and RStudio
 
-By the end of the lab you will...
+#### Installing R
 
--   Be able to fit a simple linear regression model using R.
--   Be able to interpret the slope and intercept for the model.
--   Be able to use statistical inference to draw conclusions about the slope.
--   Continue developing a workflow for reproducible data analysis.
+R is a powerful statistical programming language used for data analysis and visualization. Follow these steps to install R on your computer:
 
-## Getting started
+1.  **Download R:**
 
--   Go to the [sta210-s22](https://www.github.com/sta210-s22) organization on GitHub.
-    Click on the repo with the prefix **lab-2**.
-    It contains the starter documents you need to complete the lab.
+    -   Go to the CRAN R Project website.
 
--   Clone the repo and start a new project in RStudio.
-    See the [Lab 1 instructions](labs/lab-1.html) for details on cloning a repo, starting a new R project and configuring git.
+    -   Click on the link for your operating system (Windows, macOS, or Linux).
 
-## Packages
+    -   For Windows: Click on "Download R for Windows" and then click on "base". Click on the download link to get the installer.
 
-We will use the following package in today's lab.
+    -   For macOS: Click on "Download R for (Mac) OS X". Choose the appropriate file for your macOS version and download the installer.
 
-```{r}
-#| message: false
+    -   For Linux: Follow the instructions provided for your specific distribution (Debian, Ubuntu, Fedora, etc.).
 
-library(tidyverse)  # for data wrangling + visualization
-library(tidymodels) # for modeling
-library(knitr)      # for pretty printing of tables
-```
+2.  **Install R:**
 
-## Data: College scorecard
+    -   **Windows:** Run the downloaded .exe file and follow the installation prompts. Accept the default settings unless you have specific requirements.
 
-The data for this lab is from the `scorecard` data set in the **rcfss** R package.
-It includes information originally obtained from the [U.S. Department of Education's College Scorecard](https://collegescorecard.ed.gov/data/) for 1753 colleges and universities during the 2018 - 2019 academic year.
+    -   **macOS:** Open the downloaded .pkg file and follow the installation prompts.
 
-The lab focuses on the following variables:
+    -   **Linux:** Use the terminal and follow the instructions from the CRAN website to add the R repository and install R via your package manager.
 
--   `admrate`: Undergraduate admissions rate (from 0-100%)
+#### Installing RStudio
 
--   `cost`: The average annual total cost of attendance, including tuition and fees, books and supplies, and living expenses
+RStudio is an integrated development environment (IDE) for R that makes coding in R easier and more efficient. Follow these steps to install RStudio:
 
--   `type`: Type of college (Public; Private, nonprofit; Private, for-profit)
+1.  **Download RStudio:**
 
-[Click here](https://uc-cfss.github.io/rcfss/reference/scorecard.html) to see a full list of variables and definitions.
+    -   Go to the RStudio website.
 
-Use the code below to load the data set.
+    -   Click on the "Download" button under RStudio Desktop.
 
-```{r}
-#| message: false
+    -   Choose the installer for your operating system (Windows, macOS, or Linux).
 
-scorecard <- read_csv("data/scorecard.csv")
-```
+2.  **Install RStudio:**
 
-## Exercises
+    -   **Windows:** Run the downloaded .exe file and follow the installation prompts.
 
-::: callout-note
-Include axis labels and an informative title for all plots.
-Use the `kable()` function to neatly print tables and regression output.
-:::
+    -   **macOS:** Open the downloaded .dmg file and drag the RStudio icon to your Applications folder.
 
-### Exercise 1
+    -   **Linux:** Open the terminal and follow the instructions provided on the RStudio website to install RStudio via your package manager or download and install the .deb or .rpm package.
 
-Create a histogram to examine the distribution of `admrate` and calculate summary statistics for the center (mean and median) and the spread (standard deviation and IQR).
+3.  **Launch RStudio:**
 
-### Exercise 2
+    -   After installation, open RStudio. It should automatically detect your R installation. If it doesn't, you may need to manually configure the path to the R executable in the RStudio settings.
 
-Use the results from the previous exercise to describe the distribution of `admrate`.
-Include the shape, center, spread, and if there are potential outliers.
+By completing these steps, you will have both R and RStudio installed on your computer, ready for use in data analysis and visualization tasks.
 
-### Exercise 3
+------------------------------------------------------------------------
 
-Plot the distribution of `cost` and calculate the appropriate summary statistics.
-Describe the distribution of `cost` (shape, center, and spread, and outliers) using the plot and appropriate summary statistics.
+### Section 2: Getting Started with R and RStudio
 
-::: render-commit-push
-This is a good place to render, commit, and push changes to your remote lab repo on GitHub.
-Click the checkbox next to each file in the Git pane to stage the updates you've made, write an informative commit message, and push.
-After you push the changes, the Git pane in RStudio should be empty.
-:::
+Now that you have installed R and RStudio, it's time to get familiar with the environment and start coding.
 
-### Exercise 4
+#### 2.1 Exploring the RStudio Interface
 
-The goal of this analysis is to fit a regression model that can be used to understand the variability in the cost of college based on the admission rate.
-Before fitting the model, let's look at the relationship between the two variables.
-Create a scatterplot to display the relationship between cost and admissions rate.
-Describe the relationship between the two variables based on the plot.
+RStudio provides a user-friendly interface that integrates various tools for working with R. Here's a quick overview of the main components:
 
-### Exercise 5
+1.  **Source Pane:**
 
-Does the relationship between cost and admissions rate differ by type of college?
-Modify the plot from the previous exercise visualize the relationship by type of college.
+    -   This is where you write and edit your R scripts. You can open multiple tabs to work on different scripts simultaneously.
 
-### Exercise 6
+2.  **Console Pane:**
 
-Describe two new observations from the scatterplot in Exercise 5 that you didn't see in the scatterplot from Exercise 4.
+    -   The console pane is where you can directly enter R commands and see the output immediately.
 
-::: render-commit-push
-This is a good place to render, commit, and push changes to your remote lab repo on GitHub.
-Click the checkbox next to each file in the Git pane to stage the updates you've made, write an informative commit message, and push.
-After you push the changes, the Git pane in RStudio should be empty.
-:::
+3.  **Environment/History Pane:**
 
-### Exercise 7
+    -   The Environment tab shows all the objects (data, variables, functions) currently in your workspace.
 
-Fit the linear regression model.
-Use the `kable` function to neatly display the results with a reasonable number of decimals.
+    -   The History tab keeps a record of all the commands you've entered in the console.
 
-### Exercise 8
+4.  **Files/Plots/Packages/Help/Viewer Pane:**
 
-Consider the model from the previous exercise.
+    -   The Files tab lets you navigate your file system.
 
--   Interpret the slope in the context of the problem.
--   Does the intercept have a meaningful interpretation? If so, write the interpretation in the context of the problem. Otherwise, explain why the interpretation is not meaningful.
+    -   The Plots tab displays plots generated by your R code.
 
-### Exercise 9
+    -   The Packages tab allows you to manage R packages.
 
-Construct a 95% confidence interval for the slope using bootstrapping.
-Follow these steps to accomplish this:
+    -   The Help tab provides access to R documentation and help files.
 
--   First set a seed for simulating reproducibly.
--   Then, simulate the bootstrap distribution of the slope using 1,000 bootstrap samples.
--   Then, visually estimate the bounds of the bootstrap interval based on a histogram of the distribution of the bootstrapped slopes, using the percentile method.
--   And then, use the `get_confidence_interval()` function to explicitly calculate the bounds of the confidence interval using the percentile method.
--   Finally, interpret the confidence interval in the context of the data.
+    -   The Viewer tab can display web content or documents.
 
-::: render-commit-push
-This is a good place to render, commit, and push changes to your remote lab repo on GitHub.
-Click the checkbox next to each file in the Git pane to stage the updates you've made, write an informative commit message, and push.
-After you push the changes, the Git pane in RStudio should be empty.
-:::
+#todo: insert video here
 
-### Exercise 10
+------------------------------------------------------------------------
 
-Finally, we want to answer the question "Do the data provide sufficient evidence of a linear relationship between cost and admissions rate, i.e. $\beta_1$ is different from 0?"
+### Section 3: Sign up and Register for Oracle Live SQL?
 
-To answer this question we will use a hypothesis test.
-We can conduct a hypothesis test via simulation (what we'll do in this lab) or using mathematical models (what we'll do in the next class).
+1.  Open your web browser and go to the Oracle Live SQL website: [Oracle Live SQL](https://livesql.oracle.com/).
 
-Before we can conduct the hypothesis test, let's first set our hypotheses.
-Remember that the null hypothesis represents the status quo (nothing going on, i.e. there is no relationship) and the alternative hypothesis represents our research question (there is something going on, i.e. there is a relationship).
+2.  On the Oracle Live SQL homepage, click the ***Sign In*** button located at the top right corner of the page.
 
--   $H_0$: There is no linear relationship between the admissions rate and cost of colleges in the United States, $\beta_1 = 0$
--   $H_A$: There is a linear relationship between the admissions rate and cost of colleges in the United States, $\beta_1 \ne 0$
+3.  If you already have an Oracle account, you can simply enter your login credentials (email and password) and click ***Sign In***. If you do not have an Oracle account, click the ***Create Account*** link below the ***Sign In*** button.
 
-To test these hypotheses, we will use a permutation test, where we
+4.  You will be redirected to the Oracle account creation page. Fill out the registration form with the required information:
 
--   Simulate new samples from the original sample via permutation under the assumption that the null hypothesis is true
--   Fit models to each of the samples and estimate the slope
--   Use features of the distribution of the permuted slopes to calculate the p-value for the hypothesis test
+    -   **Email Address**: Enter a valid email address that you have access to.
+    -   **Password**: Create a strong password that meets the specified criteria.
+    -   **Country**: Select your country of residence from the dropdown menu.
+    -   **Name**: Enter your first and last name.
+    -   **Job Title**: (Optional) Enter your job title.
+    -   **Work Phone**: (Optional) Enter your work phone number.
+    -   **Company Name**: (Optional) Enter your company name.
 
-The major difference between constructing a confidence interval and conducting a hypothesis test is that for the hypothesis test we assume that the null hypothesis is true.
-This requires a simulation scheme that will allow us to measure the natural variability in the data due to sampling but **not** due to cost and admission rate being correlated by permuting permute one variable to eliminate any existing relationship between the variables.
-To do so, we randomly assign each `admrate` value to `cost` of a given university, i.e. `cost` and `admrate` are no longer matched for a given university.
+5.  Review the Oracle Terms of Use and Privacy Policy. If you agree to the terms, check the box indicating your acceptance.
 
-In the following code chunk we
+6.  Complete the CAPTCHA to verify you are not a robot.
 
--   First set a seed for simulating reproducibly.
--   Then, we start with our data frame and specify our model as `cost` vs. `admrate`.
--   Then, we set our null hypothesis (`cost` and `admrate` are independent)
--   And then we generate 1000 replicates of our data where, for each replicate, we permute values of `admrate` to randomly assign them to values of `cost`
--   Finally, we fit our model to each of our 1000 permuted datasets
+7.  Click the ***Create Account*** button to submit your registration.
 
-```{r}
-set.seed(1234)
+8.  After submitting your registration, Oracle will send a verification email to the email address you provided. Check your inbox for an email from Oracle with the subject line "Verify your email address."
 
-perm_fits <- scorecard %>%
-  specify(cost ~ admrate) %>%
-  hypothesize(null = "independence") %>%
-  generate(reps = 1000, type = "permute") %>%
-  fit()
-```
+9.  Open the email and click the verification link to confirm your email address. You will be redirected to the Oracle website, and your account will be activated.
 
-The resulting dataset `perm_fits` has `nrow(perm_fits)` and `ncol(perm_fits)` columns.
-The first column, `replicate` indicates the replicate number of the dataset the models were fit to; the values in this column range between 1 and 1000.
-The second column, `term`, tells us which term (intercept of the model or slope of `admrate`) the `estimate` value in the third column is for.
+10. Return to the Oracle Live SQL website: [Oracle Live SQL](https://livesql.oracle.com/).
 
-```{r}
-perm_fits
-```
+11. Click the ***Sign In*** button at the top right corner of the page.
 
--   Create a histogram of the slope estimates in `perm_fits`. (Hint: Filter the dataset for just the slope values, `term == "admrate".`)
--   Estimate the p-value of the hypothesis test based on this distribution.
--   State your conclusion for the test in context.
--   Indicate whether or not it is consistent with the results of the hypothesis test from the previous exercise. Briefly explain your response.
+12. Enter your Oracle account credentials (email and password) and click ***Sign In***.
 
-::: render-commit-push
-This is a good place to render, commit, and push changes to your remote lab repo on GitHub.
-Click the checkbox next to each file in the Git pane to stage the updates you've made, write an informative commit message, and push.
-After you push the changes, the Git pane in RStudio should be empty.
-:::
+13. Once signed in, you will be directed to the Oracle Live SQL main interface.
 
-## Submission
+14. You can now start writing and running SQL and PL/SQL scripts. The interface provides a variety of features, including:
 
-::: callout-warning
-Before you wrap up the assignment, make sure all documents are updated on your GitHub repo.
-We will be checking these to make sure you have been practicing how to commit and push changes.
+    -   **Script Editor**: Write and execute your SQL scripts.
+    -   **Sample Scripts**: Explore and run sample scripts provided by Oracle to learn SQL and PL/SQL concepts.
+    -   **Tutorials**: Access educational resources and tutorials to improve your skills.
+    -   **Community Sharing**: Share your scripts with the community or explore scripts shared by other users.
 
-Remember -- you must turn in a PDF file to the Gradescope page before the submission deadline for full credit.
-:::
+### Additional Tips:
 
-To submit your assignment:
+-   **Save Your Work**: Remember to save your scripts periodically to avoid losing your work.
+-   **Explore Documentation**: Utilize the extensive Oracle documentation and resources available on the platform to deepen your understanding of SQL and PL/SQL.
+-   **Engage with the Community**: Participate in the Oracle Live SQL community by sharing your scripts, providing feedback, and learning from others.
 
--   Go to [http://www.gradescope.com](http://www.gradescope.com/) and click *Log in* in the top right corner.
--   Click *School Credentials* ➡️ *Duke NetID* and log in using your NetID credentials.
--   Click on your *STA 210* course.
--   Click on the assignment, and you'll be prompted to submit it.
--   Mark the pages associated with each exercise. All of the pages of your lab should be associated with at least one question (i.e., should be "checked").
--   Select the first page of your PDF submission to be associated with the *"Workflow & formatting"* section.
+------------------------------------------------------------------------
 
-## Grading
+### Section 4: Downloading and Installing Power BI Desktop
 
-Total points available: 50 points.
+Power BI Desktop is a powerful data visualization tool that allows you to connect to various data sources, transform data, and create interactive reports. Follow these steps to download and install Power BI Desktop on your computer.
 
-| Component             | Points |
-|-----------------------|--------|
-| Ex 1 - 10             | 45     |
-| Workflow & formatting | 5[^1]  |
+#### 4.1 Downloading Power BI Desktop
 
-[^1]: The "Workflow & formatting" grade is to assess the reproducible workflow.
-    This includes having at least 3 informative commit messages and updating the name and date in the YAML.
+1.  **Visit the Power BI Website:**
+
+    -   Go to the [Power BI website](https://powerbi.microsoft.com/).
+
+2.  **Navigate to the Download Page:**
+
+    -   Click on the `Products` menu at the top of the page and select `Power BI Desktop`.
+
+3.  **Download the Installer:**
+
+    -   Click on the `Download free` button to go to the Microsoft Store page for Power BI Desktop.
+
+    -   If you prefer to download the installer directly (instead of through the Microsoft Store), click on the `See download or language options` link and choose the version suitable for your operating system.
+
+#### 4.2 Installing Power BI Desktop
+
+1.  **Run the Installer:**
+
+    -   If you downloaded Power BI Desktop from the Microsoft Store, it will install automatically after you click the `Get` button.
+
+    -   If you downloaded the installer directly, locate the downloaded file (typically a .msi file) and double-click it to run the installer.
+
+2.  **Follow the Installation Prompts:**
+
+    -   Click `Next` on the welcome screen.
+
+    -   Accept the license agreement and click `Next`.
+
+    -   Choose the installation folder or accept the default path and click `Next`.
+
+    -   Click `Install` to begin the installation process.
+
+3.  **Complete the Installation:**
+
+    -   Once the installation is complete, click `Finish` to close the installer.
+
+4.  **Launch Power BI Desktop:**
+
+    -   After installation, you can launch Power BI Desktop from the Start menu (Windows) or by searching for it in your applications.
+
+#### 4.3 Initial Setup and Configuration
+
+1.  **Sign In to Power BI:**
+
+    -   When you first open Power BI Desktop, you may be prompted to sign in. If you have a Power BI account, sign in with your credentials. If not, you can create a new account or skip this step.
+
+2.  **Explore the Interface:**
+
+    -   Familiarize yourself with the Power BI Desktop interface, which includes the following key components:
+
+        -   **Report View:** Where you create and arrange visualizations.
+
+        -   **Data View:** Where you can see your data tables.
+
+        -   **Model View:** Where you can manage relationships between tables.
+
+        -   **Fields Pane:** Displays the tables and fields in your data model.
+
+        -   **Visualizations Pane:** Contains various types of visualizations you can add to your reports.
+
+3.  **Connect to Data Sources:**
+
+    -   Click on `Get Data` in the Home ribbon to connect to a variety of data sources, such as Excel, SQL Server, web data, and more.
+
+    -   Follow the prompts to load your data into Power BI Desktop.

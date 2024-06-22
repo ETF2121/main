@@ -7,7 +7,158 @@ editor: visual
 
 Introduce yourself to your instructor and friends.
 
-### Section 1: Installing R and RStudio
+### Section 1: Sign up and Register for Oracle Live SQL?
+
+1.  Open your web browser and go to the Oracle Live SQL website: [Oracle Live SQL](https://livesql.oracle.com/).
+
+2.  On the Oracle Live SQL homepage, click the ***Sign In*** button located at the top right corner of the page.
+
+3.  If you already have an Oracle account, you can simply enter your login credentials (email and password) and click ***Sign In***. If you do not have an Oracle account, click the ***Create Account*** link below the ***Sign In*** button.
+
+4.  You will be redirected to the Oracle account creation page. Fill out the registration form with the required information:
+
+    -   **Email Address**: Enter a valid email address that you have access to.
+    -   **Password**: Create a strong password that meets the specified criteria.
+    -   **Country**: Select your country of residence from the dropdown menu.
+    -   **Name**: Enter your first and last name.
+    -   **Job Title**: (Optional) Enter your job title.
+    -   **Work Phone**: (Optional) Enter your work phone number.
+    -   **Company Name**: (Optional) Enter your company name.
+
+5.  Review the Oracle Terms of Use and Privacy Policy. If you agree to the terms, check the box indicating your acceptance.
+
+6.  Complete the CAPTCHA to verify you are not a robot.
+
+7.  Click the ***Create Account*** button to submit your registration.
+
+8.  After submitting your registration, Oracle will send a verification email to the email address you provided. Check your inbox for an email from Oracle with the subject line "Verify your email address."
+
+9.  Open the email and click the verification link to confirm your email address. You will be redirected to the Oracle website, and your account will be activated.
+
+10. Return to the Oracle Live SQL website: [Oracle Live SQL](https://livesql.oracle.com/).
+
+11. Click the ***Sign In*** button at the top right corner of the page.
+
+12. Enter your Oracle account credentials (email and password) and click ***Sign In***.
+
+13. Once signed in, you will be directed to the Oracle Live SQL main interface.
+
+14. You can now start writing and running SQL and PL/SQL scripts. The interface provides a variety of features, including:
+
+    -   **Script Editor**: Write and execute your SQL scripts.
+    -   **Sample Scripts**: Explore and run sample scripts provided by Oracle to learn SQL and PL/SQL concepts.
+    -   **Tutorials**: Access educational resources and tutorials to improve your skills.
+    -   **Community Sharing**: Share your scripts with the community or explore scripts shared by other users.
+
+#### Exercises
+
+Gol to oracle live and select `Start Coding` as in the screenshot below.
+
+![](images/clipboard-3691592483.png)
+
+The database used in this exercise is `HR` database as in the schema below.
+
+![](images/clipboard-919790428.png)
+
+1.  **Write a Simple SQL Query**:
+
+    -   In the Script Editor, write a simple SQL query to select all columns from a table. For example:
+
+    ``` sql
+    SELECT * FROM table_name;
+    ```
+
+    -   Click the ***Run*** button to execute the query and view the results.
+
+    ![](images/clipboard-165894266.png)
+
+2.  Play around with the `select` statement using `HR` schema. The tables in `HR` schema can be accessed via Schema \> Choose "Human Resources (HR)" from the dropdown list.
+
+![](images/clipboard-2232185184.png)
+
+------------------------------------------------------------------------
+
+### Section 2: Downloading and Installing Power BI Desktop
+
+Power BI Desktop is a powerful data visualization tool that allows you to connect to various data sources, transform data, and create interactive reports. Follow these steps to download and install Power BI Desktop on your computer.
+
+#### 2.1 Downloading Power BI Desktop
+
+1.  **Visit the Power BI Website:**
+
+    -   Go to the [Power BI website](https://powerbi.microsoft.com/).
+
+2.  **Navigate to the Download Page:**
+
+    -   Click on the `Products` menu at the top of the page and select `Power BI Desktop`.
+
+3.  **Download the Installer:**
+
+    -   Click on the `Download free` button to go to the Microsoft Store page for Power BI Desktop.
+
+    -   If you prefer to download the installer directly (instead of through the Microsoft Store), click on the `See download or language options` link and choose the version suitable for your operating system.
+
+#### 2.2 Installing Power BI Desktop
+
+1.  **Run the Installer:**
+
+    -   If you downloaded Power BI Desktop from the Microsoft Store, it will install automatically after you click the `Get` button.
+
+    -   If you downloaded the installer directly, locate the downloaded file (typically a .msi file) and double-click it to run the installer.
+
+2.  **Follow the Installation Prompts:**
+
+    -   Click `Next` on the welcome screen.
+
+    -   Accept the license agreement and click `Next`.
+
+    -   Choose the installation folder or accept the default path and click `Next`.
+
+    -   Click `Install` to begin the installation process.
+
+3.  **Complete the Installation:**
+
+    -   Once the installation is complete, click `Finish` to close the installer.
+
+4.  **Launch Power BI Desktop:**
+
+    -   After installation, you can launch Power BI Desktop from the Start menu (Windows) or by searching for it in your applications.
+
+#### 2.3 Initial Setup and Configuration
+
+1.  **Sign In to Power BI:**
+
+    -   When you first open Power BI Desktop, you may be prompted to sign in. If you have a Power BI account, sign in with your credentials. If not, you can create a new account or skip this step.
+
+2.  **Explore the Interface:**
+
+    -   Familiarize yourself with the Power BI Desktop interface, which includes the following key components:
+
+        -   **Report View:** Where you create and arrange visualizations.
+
+        -   **Data View:** Where you can see your data tables.
+
+        -   **Model View:** Where you can manage relationships between tables.
+
+        -   **Fields Pane:** Displays the tables and fields in your data model.
+
+        -   **Visualizations Pane:** Contains various types of visualizations you can add to your reports.
+
+3.  **Connect to Data Sources:**
+
+    -   Click on `Get Data` in the Home ribbon to connect to a variety of data sources, such as Excel, SQL Server, web data, and more.
+
+    -   Follow the prompts to load your data into Power BI Desktop.
+
+#### Exercises
+
+1.  **Connect to a Sample Data Source:**
+
+    -   Connect to a sample data source (e.g., an Excel file or a web data source) to practice loading data into Power BI Desktop.
+
+    -   Explore the data in the Data View and create a simple visualization in the Report View.
+
+### Section 3: Installing R and RStudio
 
 #### Installing R
 
@@ -61,11 +212,11 @@ By completing these steps, you will have both R and RStudio installed on your co
 
 ------------------------------------------------------------------------
 
-### Section 2: Getting Started with R and RStudio
+### Section 4: Getting Started with R and RStudio
 
 Now that you have installed R and RStudio, it's time to get familiar with the environment and start coding.
 
-#### 2.1 Exploring the RStudio Interface
+#### 4.1 Exploring the RStudio Interface
 
 RStudio provides a user-friendly interface that integrates various tools for working with R. Here's a quick overview of the main components:
 
@@ -95,127 +246,48 @@ RStudio provides a user-friendly interface that integrates various tools for wor
 
     -   The Viewer tab can display web content or documents.
 
-#todo: insert video here
+#### 4.2 Running R Code
 
----------------------------------
+To run R code in RStudio, you can either type commands directly into the console or write scripts in the source pane. Here's how to run code in RStudio:
 
-### Section 3: Sign up and Register for Oracle Live SQL?
+1.  **Running Commands in the Console:**
 
-1. Open your web browser and go to the Oracle Live SQL website: [Oracle Live SQL](https://livesql.oracle.com/).
+    -   Type an R command in the console and press `Enter` to execute it.
 
-1. On the Oracle Live SQL homepage, click the ***Sign In*** button located at the top right corner of the page.
+    -   The output will be displayed below the command.
 
-2. If you already have an Oracle account, you can simply enter your login credentials (email and password) and click ***Sign In***. If you do not have an Oracle account, click the ***Create Account*** link below the ***Sign In*** button.
+    -   For example, you can type `2 + 3` in the console and press `Enter` to see the result.
 
-1. You will be redirected to the Oracle account creation page. Fill out the registration form with the required information:
-   - **Email Address**: Enter a valid email address that you have access to.
-   - **Password**: Create a strong password that meets the specified criteria.
-   - **Country**: Select your country of residence from the dropdown menu.
-   - **Name**: Enter your first and last name.
-   - **Job Title**: (Optional) Enter your job title.
-   - **Work Phone**: (Optional) Enter your work phone number.
-   - **Company Name**: (Optional) Enter your company name.
-   
-2. Review the Oracle Terms of Use and Privacy Policy. If you agree to the terms, check the box indicating your acceptance.
+2.  **Writing Scripts:**
 
-3. Complete the CAPTCHA to verify you are not a robot.
+    -   To write longer scripts or save your code for later use, open a new script file by clicking on `File > New File > R Script`.
 
-4. Click the ***Create Account*** button to submit your registration.
+#### Exercises
 
-1. After submitting your registration, Oracle will send a verification email to the email address you provided. Check your inbox for an email from Oracle with the subject line "Verify your email address."
+1.  **Calculate the Sum of Two Numbers:** using R/Rstudio
 
-2. Open the email and click the verification link to confirm your email address. You will be redirected to the Oracle website, and your account will be activated.
+    -   5 \* 3 - 7
+    -   (5 \* 3) - 7
+    -   5 \* (3 - 7)
 
-1. Return to the Oracle Live SQL website: [Oracle Live SQL](https://livesql.oracle.com/).
+Discuss the results, is it as what you expected?
 
-2. Click the ***Sign In*** button at the top right corner of the page.
+2.  **Create a Vector:** using R/Rstudio
 
-3. Enter your Oracle account credentials (email and password) and click ***Sign In***.
+    -   Create a vector named `numbers` with the values 1, 2, 3, 4, 5.
+    -   Calculate the sum of the vector using the `sum()` function.
+    -   Calculate the mean of the vector using the `mean()` function.
 
-1. Once signed in, you will be directed to the Oracle Live SQL main interface.
+3.  **Create a Data Frame:** using R/Rstudio
 
-2. You can now start writing and running SQL and PL/SQL scripts. The interface provides a variety of features, including:
-   - **Script Editor**: Write and execute your SQL scripts.
-   - **Sample Scripts**: Explore and run sample scripts provided by Oracle to learn SQL and PL/SQL concepts.
-   - **Tutorials**: Access educational resources and tutorials to improve your skills.
-   - **Community Sharing**: Share your scripts with the community or explore scripts shared by other users.
+    -   Create a data frame named `students` with the following columns: `name`, `age`, `gender`.
+    -   Add the following data to the data frame:
+        -   Name: Alice, Age
 
-### Additional Tips:
+Phew....feel overwhelm?
 
-- **Save Your Work**: Remember to save your scripts periodically to avoid losing your work.
-- **Explore Documentation**: Utilize the extensive Oracle documentation and resources available on the platform to deepen your understanding of SQL and PL/SQL.
-- **Engage with the Community**: Participate in the Oracle Live SQL community by sharing your scripts, providing feedback, and learning from others.
+```         
+😓
+```
 
----------------
-
-### Section 4: Downloading and Installing Power BI Desktop
-
-Power BI Desktop is a powerful data visualization tool that allows you to connect to various data sources, transform data, and create interactive reports. Follow these steps to download and install Power BI Desktop on your computer.
-
-#### 4.1 Downloading Power BI Desktop
-
-1.  **Visit the Power BI Website:**
-
-    -   Go to the [Power BI website](https://powerbi.microsoft.com/).
-
-2.  **Navigate to the Download Page:**
-
-    -   Click on the `Products` menu at the top of the page and select `Power BI Desktop`.
-
-3.  **Download the Installer:**
-
-    -   Click on the `Download free` button to go to the Microsoft Store page for Power BI Desktop.
-
-    -   If you prefer to download the installer directly (instead of through the Microsoft Store), click on the `See download or language options` link and choose the version suitable for your operating system.
-
-#### 4.2 Installing Power BI Desktop
-
-1.  **Run the Installer:**
-
-    -   If you downloaded Power BI Desktop from the Microsoft Store, it will install automatically after you click the `Get` button.
-
-    -   If you downloaded the installer directly, locate the downloaded file (typically a .msi file) and double-click it to run the installer.
-
-2.  **Follow the Installation Prompts:**
-
-    -   Click `Next` on the welcome screen.
-
-    -   Accept the license agreement and click `Next`.
-
-    -   Choose the installation folder or accept the default path and click `Next`.
-
-    -   Click `Install` to begin the installation process.
-
-3.  **Complete the Installation:**
-
-    -   Once the installation is complete, click `Finish` to close the installer.
-
-4.  **Launch Power BI Desktop:**
-
-    -   After installation, you can launch Power BI Desktop from the Start menu (Windows) or by searching for it in your applications.
-
-#### 4.3 Initial Setup and Configuration
-
-1.  **Sign In to Power BI:**
-
-    -   When you first open Power BI Desktop, you may be prompted to sign in. If you have a Power BI account, sign in with your credentials. If not, you can create a new account or skip this step.
-
-2.  **Explore the Interface:**
-
-    -   Familiarize yourself with the Power BI Desktop interface, which includes the following key components:
-
-        -   **Report View:** Where you create and arrange visualizations.
-
-        -   **Data View:** Where you can see your data tables.
-
-        -   **Model View:** Where you can manage relationships between tables.
-
-        -   **Fields Pane:** Displays the tables and fields in your data model.
-
-        -   **Visualizations Pane:** Contains various types of visualizations you can add to your reports.
-
-3.  **Connect to Data Sources:**
-
-    -   Click on `Get Data` in the Home ribbon to connect to a variety of data sources, such as Excel, SQL Server, web data, and more.
-
-    -   Follow the prompts to load your data into Power BI Desktop.
+The whole exercise is just to make sure you successfully installed all necessary software in your pc. Once you get it install, everything will become easier later on. Having trouble? Please consult your tutor asap.

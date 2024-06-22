@@ -23,12 +23,11 @@ library(knitr)
 
 ### What is SQL?
 
-SQL stands for ***Structured Query Language***. It is a language used to communicate with databases. It is the standard language for relational database management systems.
-Why we need SQL? Let's say you are suppose to design for a system that will store the information of students in a university. How would you store the information of students? You can store the information in a spreadsheet, but what if you have to store the information of thousands of students? It will be very difficult to manage the data in a spreadsheet. Also, where do you want to store the information? In a table? Will a table suffice? What if you have to store the information of the courses that the students are enrolled in? How will you manage the data? This is where databases come in. 
+SQL stands for ***Structured Query Language***. It is a language used to communicate with databases. It is the standard language for relational database management systems. Why we need SQL? Let's say you are suppose to design for a system that will store the information of students in a university. How would you store the information of students? You can store the information in a spreadsheet, but what if you have to store the information of thousands of students? It will be very difficult to manage the data in a spreadsheet. Also, where do you want to store the information? In a table? Will a table suffice? What if you have to store the information of the courses that the students are enrolled in? How will you manage the data? This is where databases come in.
 
 Databases are used to store large amount of data. SQL is used to communicate with the database!
 
-The database can be of any type like MySQL, PostgreSQL, SQLite, etc. By ignoring all those, let's focus on the SQL language itself, which is used to communicate with the database. Once you master SQL, you can work with any database. The most popular database is MySQL. It is an open-source database. It is used by many companies like Facebook, Twitter, etc. Oracle is also a popular database. It is used by many big companies. SQL is used to communicate with the database. It is used to perform all types of operations on the database. It is used to create a database, create a table in the database, insert data into the table, update the data, delete the data, etc. 
+The database can be of any type like MySQL, PostgreSQL, SQLite, etc. By ignoring all those, let's focus on the SQL language itself, which is used to communicate with the database. Once you master SQL, you can work with any database. The most popular database is MySQL. It is an open-source database. It is used by many companies like Facebook, Twitter, etc. Oracle is also a popular database. It is used by many big companies. SQL is used to communicate with the database. It is used to perform all types of operations on the database. It is used to create a database, create a table in the database, insert data into the table, update the data, delete the data, etc.
 
 ### SQL Syntax
 
@@ -64,10 +63,10 @@ Data Manipulation Language (DML) is used to manipulate the data itself. It is us
 Data Query Language (DQL) is used to retrieve the data from the database. The SELECT statement is the most commonly used DQL command. The following are the DQL commands:
 
 -   SELECT
--  WHERE
--  GROUP BY
--  HAVING
--  ORDER BY
+-   WHERE
+-   GROUP BY
+-   HAVING
+-   ORDER BY
 
 ### Data Control Language (DCL)
 
@@ -88,20 +87,14 @@ Transaction Control Language (TCL) is used to manage the transactions in the dat
 
 Oracle Live SQL is a free, interactive, web-based tool that allows users to write, run, and share SQL scripts and PL/SQL code. It provides a convenient platform for learning and practicing SQL without needing to install Oracle Database software locally. Key benefits include:
 
-1. Ease of Use:
-The web-based interface is user-friendly, making it accessible for both beginners and experienced users to write and execute SQL code.
+1.  Ease of Use: The web-based interface is user-friendly, making it accessible for both beginners and experienced users to write and execute SQL code.
 
-2. Educational Resources:
-Live SQL offers tutorials, sample scripts, and documentation to help users learn SQL and PL/SQL concepts and best practices.
+2.  Educational Resources: Live SQL offers tutorials, sample scripts, and documentation to help users learn SQL and PL/SQL concepts and best practices.
 
-3. Collaboration:
-Users can share their scripts and solutions with others, fostering collaboration and knowledge sharing within the community.
+3.  Collaboration: Users can share their scripts and solutions with others, fostering collaboration and knowledge sharing within the community.
 
-4. Real-Time Execution:
-Scripts run on an Oracle Database in real-time, providing immediate feedback and results.
+4.  Real-Time Execution: Scripts run on an Oracle Database in real-time, providing immediate feedback and results.
 
-5. Access Anywhere:
-As a web-based tool, Live SQL can be accessed from any device with an internet connection, making it convenient for users to practice and develop their SQL skills on the go.
+5.  Access Anywhere: As a web-based tool, Live SQL can be accessed from any device with an internet connection, making it convenient for users to practice and develop their SQL skills on the go.
 
 Oracle Live SQL is an excellent resource for anyone looking to improve their SQL proficiency, offering hands-on experience with Oracle Database in a flexible and collaborative environment.
-

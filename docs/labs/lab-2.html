@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.45">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ETF2121/5912 - S2 2024 - Lab 2 - College scorecard</title>
+<title>Tutorial 1 - Meet + greet + Software Installation – ETF2121/5912 - S2 2024</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -80,7 +46,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -89,38 +61,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta property="og:title" content="ETF2121/5912 - S2 2024 - Lab 2 - College scorecard">
-<meta property="og:description" content="">
-<meta property="og:site-name" content="ETF2121/5912 - S2 2024">
-<meta name="twitter:title" content="ETF2121/5912 - S2 2024 - Lab 2 - College scorecard">
-<meta name="twitter:description" content="">
+<meta property="og:title" content="ETF2121/5912 - S2 2024 - Tutorial 1 - Meet + greet + Software Installation">
+<meta property="og:description" content="Homepage for ETF2121/5921 - Data Analysis in Business at Monash University, S2 2023.">
+<meta property="og:site_name" content="ETF2121/5912 - S2 2024">
+<meta name="twitter:title" content="ETF2121/5912 - S2 2024 - Tutorial 1 - Meet + greet + Software Installation">
+<meta name="twitter:description" content="Homepage for ETF2121/5921 - Data Analysis in Business at Monash University, S2 2023.">
 <meta name="twitter:image" content="https://sta210-s22.github.io/website/labs/images/twitter-card.png">
 <meta name="twitter:creator" content="@minebocek">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-sidebar docked slimcontent">
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lab 2 - College scorecard</li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Tutorial 1 - Meet + greet + Software Installation</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -129,7 +100,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
       <img src="../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
@@ -147,9 +118,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Course information</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -182,9 +153,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
  <span class="menu-text">Weekly Schedule</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -195,49 +166,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Week 1</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 5</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
-  <ul class="collapse">
-  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link" data-scroll-target="#learning-goals">Learning goals</a></li>
-  </ul></li>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a></li>
-  <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages</a></li>
-  <li><a href="#data-college-scorecard" id="toc-data-college-scorecard" class="nav-link" data-scroll-target="#data-college-scorecard">Data: College scorecard</a></li>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a>
-  <ul class="collapse">
-  <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1">Exercise 1</a></li>
-  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2">Exercise 2</a></li>
-  <li><a href="#exercise-3" id="toc-exercise-3" class="nav-link" data-scroll-target="#exercise-3">Exercise 3</a></li>
-  <li><a href="#exercise-4" id="toc-exercise-4" class="nav-link" data-scroll-target="#exercise-4">Exercise 4</a></li>
-  <li><a href="#exercise-5" id="toc-exercise-5" class="nav-link" data-scroll-target="#exercise-5">Exercise 5</a></li>
-  <li><a href="#exercise-6" id="toc-exercise-6" class="nav-link" data-scroll-target="#exercise-6">Exercise 6</a></li>
-  <li><a href="#exercise-7" id="toc-exercise-7" class="nav-link" data-scroll-target="#exercise-7">Exercise 7</a></li>
-  <li><a href="#exercise-8" id="toc-exercise-8" class="nav-link" data-scroll-target="#exercise-8">Exercise 8</a></li>
-  <li><a href="#exercise-9" id="toc-exercise-9" class="nav-link" data-scroll-target="#exercise-9">Exercise 9</a></li>
-  <li><a href="#exercise-10" id="toc-exercise-10" class="nav-link" data-scroll-target="#exercise-10">Exercise 10</a></li>
-  </ul></li>
-  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
-  <li><a href="#grading" id="toc-grading" class="nav-link" data-scroll-target="#grading">Grading</a></li>
+  <li><a href="#warm-up" id="toc-warm-up" class="nav-link active" data-scroll-target="#warm-up">Warm up</a></li>
+  <li><a href="#section-1-installing-r-and-rstudio" id="toc-section-1-installing-r-and-rstudio" class="nav-link" data-scroll-target="#section-1-installing-r-and-rstudio">Section 1: Installing R and RStudio</a></li>
+  <li><a href="#section-2-getting-started-with-r-and-rstudio" id="toc-section-2-getting-started-with-r-and-rstudio" class="nav-link" data-scroll-target="#section-2-getting-started-with-r-and-rstudio">Section 2: Getting Started with R and RStudio</a></li>
+  <li><a href="#section-3-sign-up-and-register-for-oracle-live-sql" id="toc-section-3-sign-up-and-register-for-oracle-live-sql" class="nav-link" data-scroll-target="#section-3-sign-up-and-register-for-oracle-live-sql">Section 3: Sign up and Register for Oracle Live SQL?</a></li>
+  <li><a href="#additional-tips" id="toc-additional-tips" class="nav-link" data-scroll-target="#additional-tips">Additional Tips:</a></li>
+  <li><a href="#section-4-downloading-and-installing-power-bi-desktop" id="toc-section-4-downloading-and-installing-power-bi-desktop" class="nav-link" data-scroll-target="#section-4-downloading-and-installing-power-bi-desktop">Section 4: Downloading and Installing Power BI Desktop</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lab 2 - College scorecard</h1>
+<h1 class="title">Tutorial 1 - Meet + greet + Software Installation</h1>
 </div>
 
 
@@ -250,240 +211,211 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+
 </header>
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>In today’s lab, you’ll use simple linear regression to analyze the relationship between the admissions rate and total cost for colleges and universities in the United States.</p>
-<section id="learning-goals" class="level3">
-<h3 class="anchored" data-anchor-id="learning-goals">Learning goals</h3>
-<p>By the end of the lab you will…</p>
+
+<section id="warm-up" class="level3">
+<h3 class="anchored" data-anchor-id="warm-up">Warm up</h3>
+<p>Introduce yourself to your instructor and friends.</p>
+</section>
+<section id="section-1-installing-r-and-rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="section-1-installing-r-and-rstudio">Section 1: Installing R and RStudio</h3>
+<section id="installing-r" class="level4">
+<h4 class="anchored" data-anchor-id="installing-r">Installing R</h4>
+<p>R is a powerful statistical programming language used for data analysis and visualization. Follow these steps to install R on your computer:</p>
+<ol type="1">
+<li><p><strong>Download R:</strong></p>
 <ul>
-<li>Be able to fit a simple linear regression model using R.</li>
-<li>Be able to interpret the slope and intercept for the model.</li>
-<li>Be able to use statistical inference to draw conclusions about the slope.</li>
-<li>Continue developing a workflow for reproducible data analysis.</li>
-</ul>
-</section>
-</section>
-<section id="getting-started" class="level2">
-<h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
+<li><p>Go to the CRAN R Project website.</p></li>
+<li><p>Click on the link for your operating system (Windows, macOS, or Linux).</p></li>
+<li><p>For Windows: Click on “Download R for Windows” and then click on “base”. Click on the download link to get the installer.</p></li>
+<li><p>For macOS: Click on “Download R for (Mac) OS X”. Choose the appropriate file for your macOS version and download the installer.</p></li>
+<li><p>For Linux: Follow the instructions provided for your specific distribution (Debian, Ubuntu, Fedora, etc.).</p></li>
+</ul></li>
+<li><p><strong>Install R:</strong></p>
 <ul>
-<li><p>Go to the <a href="https://www.github.com/sta210-s22">sta210-s22</a> organization on GitHub. Click on the repo with the prefix <strong>lab-2</strong>. It contains the starter documents you need to complete the lab.</p></li>
-<li><p>Clone the repo and start a new project in RStudio. See the <a href="labs/lab-1.html">Lab 1 instructions</a> for details on cloning a repo, starting a new R project and configuring git.</p></li>
-</ul>
+<li><p><strong>Windows:</strong> Run the downloaded .exe file and follow the installation prompts. Accept the default settings unless you have specific requirements.</p></li>
+<li><p><strong>macOS:</strong> Open the downloaded .pkg file and follow the installation prompts.</p></li>
+<li><p><strong>Linux:</strong> Use the terminal and follow the instructions from the CRAN website to add the R repository and install R via your package manager.</p></li>
+</ul></li>
+</ol>
 </section>
-<section id="packages" class="level2">
-<h2 class="anchored" data-anchor-id="packages">Packages</h2>
-<p>We will use the following package in today’s lab.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)  <span class="co"># for data wrangling + visualization</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidymodels) <span class="co"># for modeling</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)      <span class="co"># for pretty printing of tables</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="data-college-scorecard" class="level2">
-<h2 class="anchored" data-anchor-id="data-college-scorecard">Data: College scorecard</h2>
-<p>The data for this lab is from the <code>scorecard</code> data set in the <strong>rcfss</strong> R package. It includes information originally obtained from the <a href="https://collegescorecard.ed.gov/data/">U.S. Department of Education’s College Scorecard</a> for 1753 colleges and universities during the 2018 - 2019 academic year.</p>
-<p>The lab focuses on the following variables:</p>
+<section id="installing-rstudio" class="level4">
+<h4 class="anchored" data-anchor-id="installing-rstudio">Installing RStudio</h4>
+<p>RStudio is an integrated development environment (IDE) for R that makes coding in R easier and more efficient. Follow these steps to install RStudio:</p>
+<ol type="1">
+<li><p><strong>Download RStudio:</strong></p>
 <ul>
-<li><p><code>admrate</code>: Undergraduate admissions rate (from 0-100%)</p></li>
-<li><p><code>cost</code>: The average annual total cost of attendance, including tuition and fees, books and supplies, and living expenses</p></li>
-<li><p><code>type</code>: Type of college (Public; Private, nonprofit; Private, for-profit)</p></li>
-</ul>
-<p><a href="https://uc-cfss.github.io/rcfss/reference/scorecard.html">Click here</a> to see a full list of variables and definitions.</p>
-<p>Use the code below to load the data set.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>scorecard <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/scorecard.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="exercises" class="level2">
-<h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Include axis labels and an informative title for all plots. Use the <code>kable()</code> function to neatly print tables and regression output.</p>
-</div>
-</div>
-<section id="exercise-1" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-1">Exercise 1</h3>
-<p>Create a histogram to examine the distribution of <code>admrate</code> and calculate summary statistics for the center (mean and median) and the spread (standard deviation and IQR).</p>
-</section>
-<section id="exercise-2" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-2">Exercise 2</h3>
-<p>Use the results from the previous exercise to describe the distribution of <code>admrate</code>. Include the shape, center, spread, and if there are potential outliers.</p>
-</section>
-<section id="exercise-3" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-3">Exercise 3</h3>
-<p>Plot the distribution of <code>cost</code> and calculate the appropriate summary statistics. Describe the distribution of <code>cost</code> (shape, center, and spread, and outliers) using the plot and appropriate summary statistics.</p>
-<div class="render-commit-push">
-<p>This is a good place to render, commit, and push changes to your remote lab repo on GitHub. Click the checkbox next to each file in the Git pane to stage the updates you’ve made, write an informative commit message, and push. After you push the changes, the Git pane in RStudio should be empty.</p>
-</div>
-</section>
-<section id="exercise-4" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-4">Exercise 4</h3>
-<p>The goal of this analysis is to fit a regression model that can be used to understand the variability in the cost of college based on the admission rate. Before fitting the model, let’s look at the relationship between the two variables. Create a scatterplot to display the relationship between cost and admissions rate. Describe the relationship between the two variables based on the plot.</p>
-</section>
-<section id="exercise-5" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-5">Exercise 5</h3>
-<p>Does the relationship between cost and admissions rate differ by type of college? Modify the plot from the previous exercise visualize the relationship by type of college.</p>
-</section>
-<section id="exercise-6" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-6">Exercise 6</h3>
-<p>Describe two new observations from the scatterplot in Exercise 5 that you didn’t see in the scatterplot from Exercise 4.</p>
-<div class="render-commit-push">
-<p>This is a good place to render, commit, and push changes to your remote lab repo on GitHub. Click the checkbox next to each file in the Git pane to stage the updates you’ve made, write an informative commit message, and push. After you push the changes, the Git pane in RStudio should be empty.</p>
-</div>
-</section>
-<section id="exercise-7" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-7">Exercise 7</h3>
-<p>Fit the linear regression model. Use the <code>kable</code> function to neatly display the results with a reasonable number of decimals.</p>
-</section>
-<section id="exercise-8" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-8">Exercise 8</h3>
-<p>Consider the model from the previous exercise.</p>
+<li><p>Go to the RStudio website.</p></li>
+<li><p>Click on the “Download” button under RStudio Desktop.</p></li>
+<li><p>Choose the installer for your operating system (Windows, macOS, or Linux).</p></li>
+</ul></li>
+<li><p><strong>Install RStudio:</strong></p>
 <ul>
-<li>Interpret the slope in the context of the problem.</li>
-<li>Does the intercept have a meaningful interpretation? If so, write the interpretation in the context of the problem. Otherwise, explain why the interpretation is not meaningful.</li>
-</ul>
-</section>
-<section id="exercise-9" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-9">Exercise 9</h3>
-<p>Construct a 95% confidence interval for the slope using bootstrapping. Follow these steps to accomplish this:</p>
+<li><p><strong>Windows:</strong> Run the downloaded .exe file and follow the installation prompts.</p></li>
+<li><p><strong>macOS:</strong> Open the downloaded .dmg file and drag the RStudio icon to your Applications folder.</p></li>
+<li><p><strong>Linux:</strong> Open the terminal and follow the instructions provided on the RStudio website to install RStudio via your package manager or download and install the .deb or .rpm package.</p></li>
+</ul></li>
+<li><p><strong>Launch RStudio:</strong></p>
 <ul>
-<li>First set a seed for simulating reproducibly.</li>
-<li>Then, simulate the bootstrap distribution of the slope using 1,000 bootstrap samples.</li>
-<li>Then, visually estimate the bounds of the bootstrap interval based on a histogram of the distribution of the bootstrapped slopes, using the percentile method.</li>
-<li>And then, use the <code>get_confidence_interval()</code> function to explicitly calculate the bounds of the confidence interval using the percentile method.</li>
-<li>Finally, interpret the confidence interval in the context of the data.</li>
-</ul>
-<div class="render-commit-push">
-<p>This is a good place to render, commit, and push changes to your remote lab repo on GitHub. Click the checkbox next to each file in the Git pane to stage the updates you’ve made, write an informative commit message, and push. After you push the changes, the Git pane in RStudio should be empty.</p>
-</div>
-</section>
-<section id="exercise-10" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-10">Exercise 10</h3>
-<p>Finally, we want to answer the question “Do the data provide sufficient evidence of a linear relationship between cost and admissions rate, i.e.&nbsp;<span class="math inline">\(\beta_1\)</span> is different from 0?”</p>
-<p>To answer this question we will use a hypothesis test. We can conduct a hypothesis test via simulation (what we’ll do in this lab) or using mathematical models (what we’ll do in the next class).</p>
-<p>Before we can conduct the hypothesis test, let’s first set our hypotheses. Remember that the null hypothesis represents the status quo (nothing going on, i.e.&nbsp;there is no relationship) and the alternative hypothesis represents our research question (there is something going on, i.e.&nbsp;there is a relationship).</p>
-<ul>
-<li><span class="math inline">\(H_0\)</span>: There is no linear relationship between the admissions rate and cost of colleges in the United States, <span class="math inline">\(\beta_1 = 0\)</span></li>
-<li><span class="math inline">\(H_A\)</span>: There is a linear relationship between the admissions rate and cost of colleges in the United States, <span class="math inline">\(\beta_1 \ne 0\)</span></li>
-</ul>
-<p>To test these hypotheses, we will use a permutation test, where we</p>
-<ul>
-<li>Simulate new samples from the original sample via permutation under the assumption that the null hypothesis is true</li>
-<li>Fit models to each of the samples and estimate the slope</li>
-<li>Use features of the distribution of the permuted slopes to calculate the p-value for the hypothesis test</li>
-</ul>
-<p>The major difference between constructing a confidence interval and conducting a hypothesis test is that for the hypothesis test we assume that the null hypothesis is true. This requires a simulation scheme that will allow us to measure the natural variability in the data due to sampling but <strong>not</strong> due to cost and admission rate being correlated by permuting permute one variable to eliminate any existing relationship between the variables. To do so, we randomly assign each <code>admrate</code> value to <code>cost</code> of a given university, i.e.&nbsp;<code>cost</code> and <code>admrate</code> are no longer matched for a given university.</p>
-<p>In the following code chunk we</p>
-<ul>
-<li>First set a seed for simulating reproducibly.</li>
-<li>Then, we start with our data frame and specify our model as <code>cost</code> vs.&nbsp;<code>admrate</code>.</li>
-<li>Then, we set our null hypothesis (<code>cost</code> and <code>admrate</code> are independent)</li>
-<li>And then we generate 1000 replicates of our data where, for each replicate, we permute values of <code>admrate</code> to randomly assign them to values of <code>cost</code></li>
-<li>Finally, we fit our model to each of our 1000 permuted datasets</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1234</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>perm_fits <span class="ot">&lt;-</span> scorecard <span class="sc">%&gt;%</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">specify</span>(cost <span class="sc">~</span> admrate) <span class="sc">%&gt;%</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hypothesize</span>(<span class="at">null =</span> <span class="st">"independence"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">generate</span>(<span class="at">reps =</span> <span class="dv">1000</span>, <span class="at">type =</span> <span class="st">"permute"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">fit</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>The resulting dataset <code>perm_fits</code> has <code>nrow(perm_fits)</code> and <code>ncol(perm_fits)</code> columns. The first column, <code>replicate</code> indicates the replicate number of the dataset the models were fit to; the values in this column range between 1 and 1000. The second column, <code>term</code>, tells us which term (intercept of the model or slope of <code>admrate</code>) the <code>estimate</code> value in the third column is for.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>perm_fits</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-stdout">
-<pre><code># A tibble: 2,000 × 3
-# Groups:   replicate [1,000]
-   replicate term      estimate
-       &lt;int&gt; &lt;chr&gt;        &lt;dbl&gt;
- 1         1 intercept  36857. 
- 2         1 admrate     -781. 
- 3         2 intercept  35901. 
- 4         2 admrate      643. 
- 5         3 intercept  36608. 
- 6         3 admrate     -411. 
- 7         4 intercept  35831. 
- 8         4 admrate      746. 
- 9         5 intercept  36367. 
-10         5 admrate      -51.7
-# … with 1,990 more rows</code></pre>
-</div>
-</div>
-<ul>
-<li>Create a histogram of the slope estimates in <code>perm_fits</code>. (Hint: Filter the dataset for just the slope values, <code>term == "admrate".</code>)</li>
-<li>Estimate the p-value of the hypothesis test based on this distribution.</li>
-<li>State your conclusion for the test in context.</li>
-<li>Indicate whether or not it is consistent with the results of the hypothesis test from the previous exercise. Briefly explain your response.</li>
-</ul>
-<div class="render-commit-push">
-<p>This is a good place to render, commit, and push changes to your remote lab repo on GitHub. Click the checkbox next to each file in the Git pane to stage the updates you’ve made, write an informative commit message, and push. After you push the changes, the Git pane in RStudio should be empty.</p>
-</div>
+<li>After installation, open RStudio. It should automatically detect your R installation. If it doesn’t, you may need to manually configure the path to the R executable in the RStudio settings.</li>
+</ul></li>
+</ol>
+<p>By completing these steps, you will have both R and RStudio installed on your computer, ready for use in data analysis and visualization tasks.</p>
+<hr>
 </section>
 </section>
-<section id="submission" class="level2">
-<h2 class="anchored" data-anchor-id="submission">Submission</h2>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Before you wrap up the assignment, make sure all documents are updated on your GitHub repo. We will be checking these to make sure you have been practicing how to commit and push changes.</p>
-<p>Remember – you must turn in a PDF file to the Gradescope page before the submission deadline for full credit.</p>
-</div>
-</div>
-<p>To submit your assignment:</p>
+<section id="section-2-getting-started-with-r-and-rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="section-2-getting-started-with-r-and-rstudio">Section 2: Getting Started with R and RStudio</h3>
+<p>Now that you have installed R and RStudio, it’s time to get familiar with the environment and start coding.</p>
+<section id="exploring-the-rstudio-interface" class="level4">
+<h4 class="anchored" data-anchor-id="exploring-the-rstudio-interface">2.1 Exploring the RStudio Interface</h4>
+<p>RStudio provides a user-friendly interface that integrates various tools for working with R. Here’s a quick overview of the main components:</p>
+<ol type="1">
+<li><p><strong>Source Pane:</strong></p>
 <ul>
-<li>Go to <a href="http://www.gradescope.com/">http://www.gradescope.com</a> and click <em>Log in</em> in the top right corner.</li>
-<li>Click <em>School Credentials</em> ➡️ <em>Duke NetID</em> and log in using your NetID credentials.</li>
-<li>Click on your <em>STA 210</em> course.</li>
-<li>Click on the assignment, and you’ll be prompted to submit it.</li>
-<li>Mark the pages associated with each exercise. All of the pages of your lab should be associated with at least one question (i.e., should be “checked”).</li>
-<li>Select the first page of your PDF submission to be associated with the <em>“Workflow &amp; formatting”</em> section.</li>
-</ul>
+<li>This is where you write and edit your R scripts. You can open multiple tabs to work on different scripts simultaneously.</li>
+</ul></li>
+<li><p><strong>Console Pane:</strong></p>
+<ul>
+<li>The console pane is where you can directly enter R commands and see the output immediately.</li>
+</ul></li>
+<li><p><strong>Environment/History Pane:</strong></p>
+<ul>
+<li><p>The Environment tab shows all the objects (data, variables, functions) currently in your workspace.</p></li>
+<li><p>The History tab keeps a record of all the commands you’ve entered in the console.</p></li>
+</ul></li>
+<li><p><strong>Files/Plots/Packages/Help/Viewer Pane:</strong></p>
+<ul>
+<li><p>The Files tab lets you navigate your file system.</p></li>
+<li><p>The Plots tab displays plots generated by your R code.</p></li>
+<li><p>The Packages tab allows you to manage R packages.</p></li>
+<li><p>The Help tab provides access to R documentation and help files.</p></li>
+<li><p>The Viewer tab can display web content or documents.</p></li>
+</ul></li>
+</ol>
+<p>#todo: insert video here</p>
+<hr>
 </section>
-<section id="grading" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="grading">Grading</h2>
-<p>Total points available: 50 points.</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Component</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Ex 1 - 10</td>
-<td>45</td>
-</tr>
-<tr class="even">
-<td>Workflow &amp; formatting</td>
-<td>5<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></td>
-</tr>
-</tbody>
-</table>
+</section>
+<section id="section-3-sign-up-and-register-for-oracle-live-sql" class="level3">
+<h3 class="anchored" data-anchor-id="section-3-sign-up-and-register-for-oracle-live-sql">Section 3: Sign up and Register for Oracle Live SQL?</h3>
+<ol type="1">
+<li><p>Open your web browser and go to the Oracle Live SQL website: <a href="https://livesql.oracle.com/">Oracle Live SQL</a>.</p></li>
+<li><p>On the Oracle Live SQL homepage, click the <strong><em>Sign In</em></strong> button located at the top right corner of the page.</p></li>
+<li><p>If you already have an Oracle account, you can simply enter your login credentials (email and password) and click <strong><em>Sign In</em></strong>. If you do not have an Oracle account, click the <strong><em>Create Account</em></strong> link below the <strong><em>Sign In</em></strong> button.</p></li>
+<li><p>You will be redirected to the Oracle account creation page. Fill out the registration form with the required information:</p>
+<ul>
+<li><strong>Email Address</strong>: Enter a valid email address that you have access to.</li>
+<li><strong>Password</strong>: Create a strong password that meets the specified criteria.</li>
+<li><strong>Country</strong>: Select your country of residence from the dropdown menu.</li>
+<li><strong>Name</strong>: Enter your first and last name.</li>
+<li><strong>Job Title</strong>: (Optional) Enter your job title.</li>
+<li><strong>Work Phone</strong>: (Optional) Enter your work phone number.</li>
+<li><strong>Company Name</strong>: (Optional) Enter your company name.</li>
+</ul></li>
+<li><p>Review the Oracle Terms of Use and Privacy Policy. If you agree to the terms, check the box indicating your acceptance.</p></li>
+<li><p>Complete the CAPTCHA to verify you are not a robot.</p></li>
+<li><p>Click the <strong><em>Create Account</em></strong> button to submit your registration.</p></li>
+<li><p>After submitting your registration, Oracle will send a verification email to the email address you provided. Check your inbox for an email from Oracle with the subject line “Verify your email address.”</p></li>
+<li><p>Open the email and click the verification link to confirm your email address. You will be redirected to the Oracle website, and your account will be activated.</p></li>
+<li><p>Return to the Oracle Live SQL website: <a href="https://livesql.oracle.com/">Oracle Live SQL</a>.</p></li>
+<li><p>Click the <strong><em>Sign In</em></strong> button at the top right corner of the page.</p></li>
+<li><p>Enter your Oracle account credentials (email and password) and click <strong><em>Sign In</em></strong>.</p></li>
+<li><p>Once signed in, you will be directed to the Oracle Live SQL main interface.</p></li>
+<li><p>You can now start writing and running SQL and PL/SQL scripts. The interface provides a variety of features, including:</p>
+<ul>
+<li><strong>Script Editor</strong>: Write and execute your SQL scripts.</li>
+<li><strong>Sample Scripts</strong>: Explore and run sample scripts provided by Oracle to learn SQL and PL/SQL concepts.</li>
+<li><strong>Tutorials</strong>: Access educational resources and tutorials to improve your skills.</li>
+<li><strong>Community Sharing</strong>: Share your scripts with the community or explore scripts shared by other users.</li>
+</ul></li>
+</ol>
+</section>
+<section id="additional-tips" class="level3">
+<h3 class="anchored" data-anchor-id="additional-tips">Additional Tips:</h3>
+<ul>
+<li><strong>Save Your Work</strong>: Remember to save your scripts periodically to avoid losing your work.</li>
+<li><strong>Explore Documentation</strong>: Utilize the extensive Oracle documentation and resources available on the platform to deepen your understanding of SQL and PL/SQL.</li>
+<li><strong>Engage with the Community</strong>: Participate in the Oracle Live SQL community by sharing your scripts, providing feedback, and learning from others.</li>
+</ul>
+<hr>
+</section>
+<section id="section-4-downloading-and-installing-power-bi-desktop" class="level3">
+<h3 class="anchored" data-anchor-id="section-4-downloading-and-installing-power-bi-desktop">Section 4: Downloading and Installing Power BI Desktop</h3>
+<p>Power BI Desktop is a powerful data visualization tool that allows you to connect to various data sources, transform data, and create interactive reports. Follow these steps to download and install Power BI Desktop on your computer.</p>
+<section id="downloading-power-bi-desktop" class="level4">
+<h4 class="anchored" data-anchor-id="downloading-power-bi-desktop">4.1 Downloading Power BI Desktop</h4>
+<ol type="1">
+<li><p><strong>Visit the Power BI Website:</strong></p>
+<ul>
+<li>Go to the <a href="https://powerbi.microsoft.com/">Power BI website</a>.</li>
+</ul></li>
+<li><p><strong>Navigate to the Download Page:</strong></p>
+<ul>
+<li>Click on the <code>Products</code> menu at the top of the page and select <code>Power BI Desktop</code>.</li>
+</ul></li>
+<li><p><strong>Download the Installer:</strong></p>
+<ul>
+<li><p>Click on the <code>Download free</code> button to go to the Microsoft Store page for Power BI Desktop.</p></li>
+<li><p>If you prefer to download the installer directly (instead of through the Microsoft Store), click on the <code>See download or language options</code> link and choose the version suitable for your operating system.</p></li>
+</ul></li>
+</ol>
+</section>
+<section id="installing-power-bi-desktop" class="level4">
+<h4 class="anchored" data-anchor-id="installing-power-bi-desktop">4.2 Installing Power BI Desktop</h4>
+<ol type="1">
+<li><p><strong>Run the Installer:</strong></p>
+<ul>
+<li><p>If you downloaded Power BI Desktop from the Microsoft Store, it will install automatically after you click the <code>Get</code> button.</p></li>
+<li><p>If you downloaded the installer directly, locate the downloaded file (typically a .msi file) and double-click it to run the installer.</p></li>
+</ul></li>
+<li><p><strong>Follow the Installation Prompts:</strong></p>
+<ul>
+<li><p>Click <code>Next</code> on the welcome screen.</p></li>
+<li><p>Accept the license agreement and click <code>Next</code>.</p></li>
+<li><p>Choose the installation folder or accept the default path and click <code>Next</code>.</p></li>
+<li><p>Click <code>Install</code> to begin the installation process.</p></li>
+</ul></li>
+<li><p><strong>Complete the Installation:</strong></p>
+<ul>
+<li>Once the installation is complete, click <code>Finish</code> to close the installer.</li>
+</ul></li>
+<li><p><strong>Launch Power BI Desktop:</strong></p>
+<ul>
+<li>After installation, you can launch Power BI Desktop from the Start menu (Windows) or by searching for it in your applications.</li>
+</ul></li>
+</ol>
+</section>
+<section id="initial-setup-and-configuration" class="level4">
+<h4 class="anchored" data-anchor-id="initial-setup-and-configuration">4.3 Initial Setup and Configuration</h4>
+<ol type="1">
+<li><p><strong>Sign In to Power BI:</strong></p>
+<ul>
+<li>When you first open Power BI Desktop, you may be prompted to sign in. If you have a Power BI account, sign in with your credentials. If not, you can create a new account or skip this step.</li>
+</ul></li>
+<li><p><strong>Explore the Interface:</strong></p>
+<ul>
+<li><p>Familiarize yourself with the Power BI Desktop interface, which includes the following key components:</p>
+<ul>
+<li><p><strong>Report View:</strong> Where you create and arrange visualizations.</p></li>
+<li><p><strong>Data View:</strong> Where you can see your data tables.</p></li>
+<li><p><strong>Model View:</strong> Where you can manage relationships between tables.</p></li>
+<li><p><strong>Fields Pane:</strong> Displays the tables and fields in your data model.</p></li>
+<li><p><strong>Visualizations Pane:</strong> Contains various types of visualizations you can add to your reports.</p></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Connect to Data Sources:</strong></p>
+<ul>
+<li><p>Click on <code>Get Data</code> in the Home ribbon to connect to a variety of data sources, such as Excel, SQL Server, web data, and more.</p></li>
+<li><p>Follow the prompts to load your data into Power BI Desktop.</p></li>
+</ul></li>
+</ol>
 
 
-<div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;The “Workflow &amp; formatting” grade is to assess the reproducible workflow. This includes having at least 3 informative commit messages and updating the name and date in the YAML.</p></li></div></section>
-
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -527,6 +459,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -595,13 +554,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -636,18 +597,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -679,11 +629,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/sta210-s22\.github\.io\/website\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -693,8 +682,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -706,7 +704,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -750,6 +871,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -775,6 +897,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -837,13 +985,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© Copyright 2024, Dr.&nbsp;Joan Tan</div>   
+    <div class="nav-footer-left">
+<p>© Copyright 2024, Dr.&nbsp;Joan Tan</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
-    <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
+    <div class="nav-footer-right">
+<p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
   </div>
 </footer>
+
 
 
 
