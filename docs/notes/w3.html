@@ -182,11 +182,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#part-1-introduction-to-power-bi-extended-lecture-notes" id="toc-part-1-introduction-to-power-bi-extended-lecture-notes" class="nav-link active" data-scroll-target="#part-1-introduction-to-power-bi-extended-lecture-notes">Part 1: Introduction to Power BI (Extended Lecture Notes)</a>
+  <li><a href="#section-1-introduction-to-r-language" id="toc-section-1-introduction-to-r-language" class="nav-link active" data-scroll-target="#section-1-introduction-to-r-language">Section 1: Introduction to R Language</a>
   <ul class="collapse">
-  <li><a href="#what-is-power-bi-5-minutes" id="toc-what-is-power-bi-5-minutes" class="nav-link" data-scroll-target="#what-is-power-bi-5-minutes">1. What is Power BI? (5 minutes)</a></li>
-  <li><a href="#power-bi-interface-overview-10-minutes" id="toc-power-bi-interface-overview-10-minutes" class="nav-link" data-scroll-target="#power-bi-interface-overview-10-minutes">2. Power BI Interface Overview (10 minutes)</a></li>
-  <li><a href="#connecting-to-data-sources-15-minutes" id="toc-connecting-to-data-sources-15-minutes" class="nav-link" data-scroll-target="#connecting-to-data-sources-15-minutes">3. Connecting to Data Sources (15 minutes)</a></li>
+  <li><a href="#what-is-r" id="toc-what-is-r" class="nav-link" data-scroll-target="#what-is-r">What is R?</a></li>
+  <li><a href="#why-r" id="toc-why-r" class="nav-link" data-scroll-target="#why-r">Why R?</a></li>
+  <li><a href="#rstudio" id="toc-rstudio" class="nav-link" data-scroll-target="#rstudio">RStudio</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -226,110 +226,26 @@ Note
 <p>Learning Objective:</p>
 </div>
 </div>
-<section id="part-1-introduction-to-power-bi-extended-lecture-notes" class="level2">
-<h2 class="anchored" data-anchor-id="part-1-introduction-to-power-bi-extended-lecture-notes">Part 1: Introduction to Power BI (Extended Lecture Notes)</h2>
-<section id="what-is-power-bi-5-minutes" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-power-bi-5-minutes">1. What is Power BI? (5 minutes)</h3>
-<p><strong>Power BI Overview:</strong> - <strong>Definition:</strong> - Power BI is a suite of business analytics tools by Microsoft that allows you to visualize your data and share insights across your organization or embed them in an app or website. - <strong>Key Features:</strong> - <strong>Data Visualization:</strong> - Create visually appealing reports and dashboards with a variety of charts, graphs, and maps. - <strong>Real-time Data Updates:</strong> - Connect to multiple data sources and refresh your data in real-time or on a schedule. - <strong>Interactive Reports:</strong> - Use interactive elements like slicers and filters to explore your data dynamically. - <strong>Cloud-based and On-premises Deployment:</strong> - Access Power BI reports and dashboards from the web or mobile devices. - <strong>Benefits:</strong> - <strong>User-friendly Interface:</strong> - Intuitive drag-and-drop functionality makes it easy for non-technical users. - <strong>Integration with Other Microsoft Services:</strong> - Seamlessly integrates with Excel, Azure, SQL Server, and other Microsoft products. - <strong>Scalable and Secure:</strong> - Suitable for small businesses to large enterprises with robust security features. - <strong>Real-world Applications:</strong> - <strong>Business Reporting:</strong> - Monthly sales reports, financial summaries, and performance dashboards. - <strong>Data Analysis:</strong> - Customer behavior analysis, market trend analysis, and operational efficiency. - <strong>Decision Making:</strong> - Data-driven decisions based on insights derived from comprehensive data analysis.</p>
-<hr>
+<section id="section-1-introduction-to-r-language" class="level2">
+<h2 class="anchored" data-anchor-id="section-1-introduction-to-r-language">Section 1: Introduction to R Language</h2>
+<section id="what-is-r" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-r">What is R?</h3>
+<p>R is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.</p>
 </section>
-<section id="power-bi-interface-overview-10-minutes" class="level3">
-<h3 class="anchored" data-anchor-id="power-bi-interface-overview-10-minutes">2. Power BI Interface Overview (10 minutes)</h3>
-<p><strong>Power BI Desktop Components:</strong></p>
-<ol type="1">
-<li><strong>Report View:</strong>
+<section id="why-r" class="level3">
+<h3 class="anchored" data-anchor-id="why-r">Why R?</h3>
 <ul>
-<li><strong>Purpose:</strong>
-<ul>
-<li>Design and view your interactive reports.</li>
-</ul></li>
-<li><strong>Features:</strong>
-<ul>
-<li>Add visuals, format reports, and create multiple report pages.</li>
-</ul></li>
-<li><strong>Navigation:</strong>
-<ul>
-<li>Use the left-hand pane to switch between Report, Data, and Model views.</li>
-</ul></li>
-</ul></li>
-<li><strong>Data View:</strong>
-<ul>
-<li><strong>Purpose:</strong>
-<ul>
-<li>Explore and manage your data tables and columns.</li>
-</ul></li>
-<li><strong>Features:</strong>
-<ul>
-<li>View raw data, create new columns, and transform data.</li>
-</ul></li>
-<li><strong>Navigation:</strong>
-<ul>
-<li>Access the Data view by clicking the table icon on the left-hand pane.</li>
-</ul></li>
-</ul></li>
-<li><strong>Model View:</strong>
-<ul>
-<li><strong>Purpose:</strong>
-<ul>
-<li>Define and manage relationships between tables.</li>
-</ul></li>
-<li><strong>Features:</strong>
-<ul>
-<li>Create and edit relationships, view data models, and manage table connections.</li>
-</ul></li>
-<li><strong>Navigation:</strong>
-<ul>
-<li>Access the Model view by clicking the diagram icon on the left-hand pane.</li>
-</ul></li>
-</ul></li>
-</ol>
-<p><strong>Key Interface Elements:</strong></p>
-<ol type="1">
-<li><strong>Ribbon:</strong>
-<ul>
-<li><strong>Purpose:</strong>
-<ul>
-<li>Provides access to tools and options for report creation and data management.</li>
-</ul></li>
-<li><strong>Sections:</strong>
-<ul>
-<li>Home, View, Modeling, Format, Data, and Help tabs.</li>
-</ul></li>
-</ul></li>
-<li><strong>Panes:</strong>
-<ul>
-<li><strong>Fields Pane:</strong>
-<ul>
-<li>Displays available tables and fields for use in your report.</li>
-</ul></li>
-<li><strong>Visualizations Pane:</strong>
-<ul>
-<li>Contains a variety of visual elements (charts, tables, maps) to add to your report.</li>
-</ul></li>
-<li><strong>Filters Pane:</strong>
-<ul>
-<li>Allows you to apply filters to visuals, pages, or the entire report.</li>
-</ul></li>
-</ul></li>
-<li><strong>Canvas:</strong>
-<ul>
-<li><strong>Purpose:</strong>
-<ul>
-<li>Design area where you create and arrange visuals for your report.</li>
-</ul></li>
-<li><strong>Features:</strong>
-<ul>
-<li>Drag and drop fields, format visuals, and customize the report layout.</li>
-</ul></li>
-</ul></li>
-</ol>
-<hr>
+<li>R is open-source and free</li>
+<li>R is a powerful tool for data analysis</li>
+<li>R has a large and active community</li>
+<li>R has a large number of packages for data analysis</li>
+<li>R is a programming language and can be used for automating data analysis tasks</li>
+<li>R is a great tool for reproducible research</li>
+</ul>
 </section>
-<section id="connecting-to-data-sources-15-minutes" class="level3">
-<h3 class="anchored" data-anchor-id="connecting-to-data-sources-15-minutes">3. Connecting to Data Sources (15 minutes)</h3>
-<p><strong>Data Connectors:</strong> - <strong>Overview:</strong> - Power BI can connect to a wide range of data sources including files, databases, and online services. - <strong>Common Data Sources:</strong> - <strong>Files:</strong> - Excel, CSV, XML, JSON. - <strong>Databases:</strong> - SQL Server, MySQL, Oracle, PostgreSQL. - <strong>Online Services:</strong> - Azure, SharePoint, Google Analytics, Salesforce.</p>
-<p><strong>Steps to Import Data:</strong> 1. <strong>Get Data:</strong> - <strong>Navigation:</strong> - Click on the “Home” tab &gt; “Get Data” button. - <strong>Options:</strong> - Choose from a list of common data sources or click “More” to see all available connectors. 2. <strong>Choose Source:</strong> - <strong>Example:</strong> - Select “Excel” to import data from an Excel file. 3. <strong>Load Data:</strong> - <strong>Navigation:</strong> - Browse to the file location, select the file, and click “Open.” - <strong>Preview:</strong> - Preview the data before loading it into Power BI. - <strong>Load/Transform:</strong> - Click “Load” to import the data directly or “Transform Data” to open Power Query Editor for data cleaning and transformation.</p>
-<p><strong>Demo: Importing a Sample Dataset:</strong> - <strong>Step-by-Step Walkthrough:</strong> 1. Click “Home” &gt; “Get Data” &gt; “Excel.” 2. Browse and select a sample Excel file. 3. Preview the data in the Navigator window. 4. Click “Load” to import the data into Power BI. 5. Explore the imported data in the Data view.</p>
+<section id="rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="rstudio">RStudio</h3>
+<p>Rsudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.</p>
 
 
 </section>

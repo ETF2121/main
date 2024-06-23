@@ -52,7 +52,7 @@ Introduce yourself to your instructor and friends.
 
 #### Exercises
 
-Gol to oracle live and select `Start Coding` as in the screenshot below.
+Go to oracle live and select `Start Coding` as in the screenshot below.
 
 ![](images/clipboard-3691592483.png)
 

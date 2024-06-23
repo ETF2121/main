@@ -184,12 +184,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#warm-up" id="toc-warm-up" class="nav-link active" data-scroll-target="#warm-up">Warm up</a></li>
-  <li><a href="#section-1-installing-r-and-rstudio" id="toc-section-1-installing-r-and-rstudio" class="nav-link" data-scroll-target="#section-1-installing-r-and-rstudio">Section 1: Installing R and RStudio</a></li>
-  <li><a href="#section-2-getting-started-with-r-and-rstudio" id="toc-section-2-getting-started-with-r-and-rstudio" class="nav-link" data-scroll-target="#section-2-getting-started-with-r-and-rstudio">Section 2: Getting Started with R and RStudio</a></li>
-  <li><a href="#section-3-sign-up-and-register-for-oracle-live-sql" id="toc-section-3-sign-up-and-register-for-oracle-live-sql" class="nav-link" data-scroll-target="#section-3-sign-up-and-register-for-oracle-live-sql">Section 3: Sign up and Register for Oracle Live SQL?</a></li>
-  <li><a href="#additional-tips" id="toc-additional-tips" class="nav-link" data-scroll-target="#additional-tips">Additional Tips:</a></li>
-  <li><a href="#section-4-downloading-and-installing-power-bi-desktop" id="toc-section-4-downloading-and-installing-power-bi-desktop" class="nav-link" data-scroll-target="#section-4-downloading-and-installing-power-bi-desktop">Section 4: Downloading and Installing Power BI Desktop</a></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions:</a></li>
+  <li><a href="#section-1-easy" id="toc-section-1-easy" class="nav-link" data-scroll-target="#section-1-easy">Section 1: Easy</a></li>
+  <li><a href="#section-2-intermediate" id="toc-section-2-intermediate" class="nav-link" data-scroll-target="#section-2-intermediate">Section 2: Intermediate</a></li>
+  <li><a href="#section-3-hard" id="toc-section-3-hard" class="nav-link" data-scroll-target="#section-3-hard">Section 3: Hard</a></li>
+  <li><a href="#section-4-challenge" id="toc-section-4-challenge" class="nav-link" data-scroll-target="#section-4-challenge">Section 4: Challenge</a></li>
   </ul>
 </nav>
     </div>
@@ -215,206 +214,63 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="warm-up" class="level3">
-<h3 class="anchored" data-anchor-id="warm-up">Warm up</h3>
-<p>Introduce yourself to your instructor and friends.</p>
-</section>
-<section id="section-1-installing-r-and-rstudio" class="level3">
-<h3 class="anchored" data-anchor-id="section-1-installing-r-and-rstudio">Section 1: Installing R and RStudio</h3>
-<section id="installing-r" class="level4">
-<h4 class="anchored" data-anchor-id="installing-r">Installing R</h4>
-<p>R is a powerful statistical programming language used for data analysis and visualization. Follow these steps to install R on your computer:</p>
+<section id="instructions" class="level3">
+<h3 class="anchored" data-anchor-id="instructions">Instructions:</h3>
+<p>Use the <code>hr</code> schema from <a href="https://livesql.oracle.com/">Oracle Live SQL</a> to complete the following exercises.</p>
+<p><img src="images/clipboard-2759979999.png" class="img-fluid"></p>
 <ol type="1">
-<li><p><strong>Download R:</strong></p>
-<ul>
-<li><p>Go to the CRAN R Project website.</p></li>
-<li><p>Click on the link for your operating system (Windows, macOS, or Linux).</p></li>
-<li><p>For Windows: Click on “Download R for Windows” and then click on “base”. Click on the download link to get the installer.</p></li>
-<li><p>For macOS: Click on “Download R for (Mac) OS X”. Choose the appropriate file for your macOS version and download the installer.</p></li>
-<li><p>For Linux: Follow the instructions provided for your specific distribution (Debian, Ubuntu, Fedora, etc.).</p></li>
-</ul></li>
-<li><p><strong>Install R:</strong></p>
-<ul>
-<li><p><strong>Windows:</strong> Run the downloaded .exe file and follow the installation prompts. Accept the default settings unless you have specific requirements.</p></li>
-<li><p><strong>macOS:</strong> Open the downloaded .pkg file and follow the installation prompts.</p></li>
-<li><p><strong>Linux:</strong> Use the terminal and follow the instructions from the CRAN website to add the R repository and install R via your package manager.</p></li>
-</ul></li>
+<li>Log in and click <code>Start Coding</code> as screenshot below.</li>
+</ol>
+<p><img src="images/clipboard-633559056.png" class="img-fluid"></p>
+<ol start="2" type="1">
+<li>Click on <code>SQL worksheet</code></li>
+</ol>
+<p><img src="images/clipboard-2871069976.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>Start solving the questions below by typing in the SQL code in the editor. Remember to prefix your table name with <code>hr.table_name</code> to represent the table is from <code>hr</code> schema.</li>
 </ol>
 </section>
-<section id="installing-rstudio" class="level4">
-<h4 class="anchored" data-anchor-id="installing-rstudio">Installing RStudio</h4>
-<p>RStudio is an integrated development environment (IDE) for R that makes coding in R easier and more efficient. Follow these steps to install RStudio:</p>
+<section id="section-1-easy" class="level3">
+<h3 class="anchored" data-anchor-id="section-1-easy">Section 1: Easy</h3>
 <ol type="1">
-<li><p><strong>Download RStudio:</strong></p>
-<ul>
-<li><p>Go to the RStudio website.</p></li>
-<li><p>Click on the “Download” button under RStudio Desktop.</p></li>
-<li><p>Choose the installer for your operating system (Windows, macOS, or Linux).</p></li>
-</ul></li>
-<li><p><strong>Install RStudio:</strong></p>
-<ul>
-<li><p><strong>Windows:</strong> Run the downloaded .exe file and follow the installation prompts.</p></li>
-<li><p><strong>macOS:</strong> Open the downloaded .dmg file and drag the RStudio icon to your Applications folder.</p></li>
-<li><p><strong>Linux:</strong> Open the terminal and follow the instructions provided on the RStudio website to install RStudio via your package manager or download and install the .deb or .rpm package.</p></li>
-</ul></li>
-<li><p><strong>Launch RStudio:</strong></p>
-<ul>
-<li>After installation, open RStudio. It should automatically detect your R installation. If it doesn’t, you may need to manually configure the path to the R executable in the RStudio settings.</li>
-</ul></li>
-</ol>
-<p>By completing these steps, you will have both R and RStudio installed on your computer, ready for use in data analysis and visualization tasks.</p>
-<hr>
-</section>
-</section>
-<section id="section-2-getting-started-with-r-and-rstudio" class="level3">
-<h3 class="anchored" data-anchor-id="section-2-getting-started-with-r-and-rstudio">Section 2: Getting Started with R and RStudio</h3>
-<p>Now that you have installed R and RStudio, it’s time to get familiar with the environment and start coding.</p>
-<section id="exploring-the-rstudio-interface" class="level4">
-<h4 class="anchored" data-anchor-id="exploring-the-rstudio-interface">2.1 Exploring the RStudio Interface</h4>
-<p>RStudio provides a user-friendly interface that integrates various tools for working with R. Here’s a quick overview of the main components:</p>
-<ol type="1">
-<li><p><strong>Source Pane:</strong></p>
-<ul>
-<li>This is where you write and edit your R scripts. You can open multiple tabs to work on different scripts simultaneously.</li>
-</ul></li>
-<li><p><strong>Console Pane:</strong></p>
-<ul>
-<li>The console pane is where you can directly enter R commands and see the output immediately.</li>
-</ul></li>
-<li><p><strong>Environment/History Pane:</strong></p>
-<ul>
-<li><p>The Environment tab shows all the objects (data, variables, functions) currently in your workspace.</p></li>
-<li><p>The History tab keeps a record of all the commands you’ve entered in the console.</p></li>
-</ul></li>
-<li><p><strong>Files/Plots/Packages/Help/Viewer Pane:</strong></p>
-<ul>
-<li><p>The Files tab lets you navigate your file system.</p></li>
-<li><p>The Plots tab displays plots generated by your R code.</p></li>
-<li><p>The Packages tab allows you to manage R packages.</p></li>
-<li><p>The Help tab provides access to R documentation and help files.</p></li>
-<li><p>The Viewer tab can display web content or documents.</p></li>
-</ul></li>
-</ol>
-<p>#todo: insert video here</p>
-<hr>
-</section>
-</section>
-<section id="section-3-sign-up-and-register-for-oracle-live-sql" class="level3">
-<h3 class="anchored" data-anchor-id="section-3-sign-up-and-register-for-oracle-live-sql">Section 3: Sign up and Register for Oracle Live SQL?</h3>
-<ol type="1">
-<li><p>Open your web browser and go to the Oracle Live SQL website: <a href="https://livesql.oracle.com/">Oracle Live SQL</a>.</p></li>
-<li><p>On the Oracle Live SQL homepage, click the <strong><em>Sign In</em></strong> button located at the top right corner of the page.</p></li>
-<li><p>If you already have an Oracle account, you can simply enter your login credentials (email and password) and click <strong><em>Sign In</em></strong>. If you do not have an Oracle account, click the <strong><em>Create Account</em></strong> link below the <strong><em>Sign In</em></strong> button.</p></li>
-<li><p>You will be redirected to the Oracle account creation page. Fill out the registration form with the required information:</p>
-<ul>
-<li><strong>Email Address</strong>: Enter a valid email address that you have access to.</li>
-<li><strong>Password</strong>: Create a strong password that meets the specified criteria.</li>
-<li><strong>Country</strong>: Select your country of residence from the dropdown menu.</li>
-<li><strong>Name</strong>: Enter your first and last name.</li>
-<li><strong>Job Title</strong>: (Optional) Enter your job title.</li>
-<li><strong>Work Phone</strong>: (Optional) Enter your work phone number.</li>
-<li><strong>Company Name</strong>: (Optional) Enter your company name.</li>
-</ul></li>
-<li><p>Review the Oracle Terms of Use and Privacy Policy. If you agree to the terms, check the box indicating your acceptance.</p></li>
-<li><p>Complete the CAPTCHA to verify you are not a robot.</p></li>
-<li><p>Click the <strong><em>Create Account</em></strong> button to submit your registration.</p></li>
-<li><p>After submitting your registration, Oracle will send a verification email to the email address you provided. Check your inbox for an email from Oracle with the subject line “Verify your email address.”</p></li>
-<li><p>Open the email and click the verification link to confirm your email address. You will be redirected to the Oracle website, and your account will be activated.</p></li>
-<li><p>Return to the Oracle Live SQL website: <a href="https://livesql.oracle.com/">Oracle Live SQL</a>.</p></li>
-<li><p>Click the <strong><em>Sign In</em></strong> button at the top right corner of the page.</p></li>
-<li><p>Enter your Oracle account credentials (email and password) and click <strong><em>Sign In</em></strong>.</p></li>
-<li><p>Once signed in, you will be directed to the Oracle Live SQL main interface.</p></li>
-<li><p>You can now start writing and running SQL and PL/SQL scripts. The interface provides a variety of features, including:</p>
-<ul>
-<li><strong>Script Editor</strong>: Write and execute your SQL scripts.</li>
-<li><strong>Sample Scripts</strong>: Explore and run sample scripts provided by Oracle to learn SQL and PL/SQL concepts.</li>
-<li><strong>Tutorials</strong>: Access educational resources and tutorials to improve your skills.</li>
-<li><strong>Community Sharing</strong>: Share your scripts with the community or explore scripts shared by other users.</li>
-</ul></li>
+<li><p>Retrieve the first name and last name of all employees.</p></li>
+<li><p>List all distinct job IDs from the employees table.</p></li>
+<li><p>Retrieve the first name and last name of all employees, sorted by last name in ascending order.</p></li>
+<li><p>Find all employees who work in department 50.</p></li>
+<li><p>Find all employees whose first name starts with ‘J’.</p></li>
 </ol>
 </section>
-<section id="additional-tips" class="level3">
-<h3 class="anchored" data-anchor-id="additional-tips">Additional Tips:</h3>
-<ul>
-<li><strong>Save Your Work</strong>: Remember to save your scripts periodically to avoid losing your work.</li>
-<li><strong>Explore Documentation</strong>: Utilize the extensive Oracle documentation and resources available on the platform to deepen your understanding of SQL and PL/SQL.</li>
-<li><strong>Engage with the Community</strong>: Participate in the Oracle Live SQL community by sharing your scripts, providing feedback, and learning from others.</li>
-</ul>
-<hr>
-</section>
-<section id="section-4-downloading-and-installing-power-bi-desktop" class="level3">
-<h3 class="anchored" data-anchor-id="section-4-downloading-and-installing-power-bi-desktop">Section 4: Downloading and Installing Power BI Desktop</h3>
-<p>Power BI Desktop is a powerful data visualization tool that allows you to connect to various data sources, transform data, and create interactive reports. Follow these steps to download and install Power BI Desktop on your computer.</p>
-<section id="downloading-power-bi-desktop" class="level4">
-<h4 class="anchored" data-anchor-id="downloading-power-bi-desktop">4.1 Downloading Power BI Desktop</h4>
-<ol type="1">
-<li><p><strong>Visit the Power BI Website:</strong></p>
-<ul>
-<li>Go to the <a href="https://powerbi.microsoft.com/">Power BI website</a>.</li>
-</ul></li>
-<li><p><strong>Navigate to the Download Page:</strong></p>
-<ul>
-<li>Click on the <code>Products</code> menu at the top of the page and select <code>Power BI Desktop</code>.</li>
-</ul></li>
-<li><p><strong>Download the Installer:</strong></p>
-<ul>
-<li><p>Click on the <code>Download free</code> button to go to the Microsoft Store page for Power BI Desktop.</p></li>
-<li><p>If you prefer to download the installer directly (instead of through the Microsoft Store), click on the <code>See download or language options</code> link and choose the version suitable for your operating system.</p></li>
-</ul></li>
+<section id="section-2-intermediate" class="level3">
+<h3 class="anchored" data-anchor-id="section-2-intermediate">Section 2: Intermediate</h3>
+<ol start="6" type="1">
+<li><p>Find all employees who work in departments 10, 20, or 30.</p></li>
+<li><p>Find all employees who work in department 50 and have a salary greater than 5000.</p></li>
+<li><p>Count the number of employees in department 50.</p></li>
+<li><p>Calculate the total salary of all employees in department 50.</p></li>
+<li><p>Calculate the average salary of employees in department 50.</p></li>
 </ol>
 </section>
-<section id="installing-power-bi-desktop" class="level4">
-<h4 class="anchored" data-anchor-id="installing-power-bi-desktop">4.2 Installing Power BI Desktop</h4>
-<ol type="1">
-<li><p><strong>Run the Installer:</strong></p>
-<ul>
-<li><p>If you downloaded Power BI Desktop from the Microsoft Store, it will install automatically after you click the <code>Get</code> button.</p></li>
-<li><p>If you downloaded the installer directly, locate the downloaded file (typically a .msi file) and double-click it to run the installer.</p></li>
-</ul></li>
-<li><p><strong>Follow the Installation Prompts:</strong></p>
-<ul>
-<li><p>Click <code>Next</code> on the welcome screen.</p></li>
-<li><p>Accept the license agreement and click <code>Next</code>.</p></li>
-<li><p>Choose the installation folder or accept the default path and click <code>Next</code>.</p></li>
-<li><p>Click <code>Install</code> to begin the installation process.</p></li>
-</ul></li>
-<li><p><strong>Complete the Installation:</strong></p>
-<ul>
-<li>Once the installation is complete, click <code>Finish</code> to close the installer.</li>
-</ul></li>
-<li><p><strong>Launch Power BI Desktop:</strong></p>
-<ul>
-<li>After installation, you can launch Power BI Desktop from the Start menu (Windows) or by searching for it in your applications.</li>
-</ul></li>
+<section id="section-3-hard" class="level3">
+<h3 class="anchored" data-anchor-id="section-3-hard">Section 3: Hard</h3>
+<ol start="11" type="1">
+<li><p>Count the number of employees in each department.</p></li>
+<li><p>Find departments with more than 3 employees.</p></li>
+<li><p>Retrieve the top 5 highest paid employees.</p></li>
+<li><p>List all employees along with their department names.</p></li>
+<li><p>Find employees who earn more than the average salary.</p></li>
 </ol>
 </section>
-<section id="initial-setup-and-configuration" class="level4">
-<h4 class="anchored" data-anchor-id="initial-setup-and-configuration">4.3 Initial Setup and Configuration</h4>
-<ol type="1">
-<li><p><strong>Sign In to Power BI:</strong></p>
-<ul>
-<li>When you first open Power BI Desktop, you may be prompted to sign in. If you have a Power BI account, sign in with your credentials. If not, you can create a new account or skip this step.</li>
-</ul></li>
-<li><p><strong>Explore the Interface:</strong></p>
-<ul>
-<li><p>Familiarize yourself with the Power BI Desktop interface, which includes the following key components:</p>
-<ul>
-<li><p><strong>Report View:</strong> Where you create and arrange visualizations.</p></li>
-<li><p><strong>Data View:</strong> Where you can see your data tables.</p></li>
-<li><p><strong>Model View:</strong> Where you can manage relationships between tables.</p></li>
-<li><p><strong>Fields Pane:</strong> Displays the tables and fields in your data model.</p></li>
-<li><p><strong>Visualizations Pane:</strong> Contains various types of visualizations you can add to your reports.</p></li>
-</ul></li>
-</ul></li>
-<li><p><strong>Connect to Data Sources:</strong></p>
-<ul>
-<li><p>Click on <code>Get Data</code> in the Home ribbon to connect to a variety of data sources, such as Excel, SQL Server, web data, and more.</p></li>
-<li><p>Follow the prompts to load your data into Power BI Desktop.</p></li>
-</ul></li>
+<section id="section-4-challenge" class="level3">
+<h3 class="anchored" data-anchor-id="section-4-challenge">Section 4: Challenge</h3>
+<ol start="16" type="1">
+<li><p>Retrieve employees along with their department names and job titles.</p></li>
+<li><p>Find employees who work in the ‘Sales’ department.</p></li>
+<li><p>List all departments and the number of employees in each department, including departments without employees.</p></li>
+<li><p>List all employees and the number of employees in their departments, including employees without a department.</p></li>
+<li><p>Find departments with more than 5 employees and list the department names and employee counts.</p></li>
 </ol>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

@@ -12,13 +12,19 @@ editor: visual
 
 🖥️ [Introduction to Data Analysis](https://learning.monash.edu/pluginfile.php/3800248/mod_resource/content/1/lec-1.html)
 
-<iframe src="https://learning.monash.edu/pluginfile.php/3800248/mod_resource/content/1/lec-1.html" width="100%" height="500"></iframe>
+<iframe src="https://learning.monash.edu/pluginfile.php/3800248/mod_resource/content/1/lec-1.html" width="100%" height="500">
 
-📋 [Note 1 - Introduction to SQL](/notes/w1a.html)
+</iframe>
+
+📋 [Note 1 - Introduction to SQL](/notes/w1.html)
 
 ## Tutorial (real-time)
 
 📋 [Tutorial 1 - Software Installation](/labs/lab-1.html)
+
+## Quiz (own-time)
+
+🧪 [Quiz 1](https://learning.monash.edu/mod/quiz/view.php?id=2893140)
 
 ## Supplementary (own-time)
 

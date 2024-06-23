@@ -6,21 +6,30 @@ editor: visual
 
 ## Pre-class activities (own-time)
 
-📖 Read the [syllabus](/course-syllabus.html)
+Make sure you can successfully login to Oracle Live SQL. If you are not, please refer to tutorial 1.
 
 ## Lecture (real-time)
 
-🖥️ [Lecture 1 - Introduction to Data Analysis](/slides/lec-1.html)
+🖥️ [Lecture 2 - SQL](/slides/lec-2.html)
 
-📋 [Note 1 - SQL Resources ](/notes/w1a.html)
+📋 [Note - SQL Resources](/notes/w2.html)
 
 ## Tutorial (real-time)
 
-📋 [Tutorial 1 - Software Installation](/labs/lab-1.html)
+📋 [Tutorial 2 - SQL](/labs/lab-2.html)
+
+## Quiz (own-time)
+
+🧪 [Quiz 2](https://learning.monash.edu/mod/quiz/view.php?id=2893560)
 
 ## Supplementary (own-time)
 
-⌨️ [Supp 1 - Familiarise yourself with R](/supplementary/supp1.qmd)
+🔕 Please take note that the below resources is just for you to advance the SQL topic and you are not required to complete it.
+
+1.  W3school has a very intensive resources on learning SQL. Click [here](https://www.w3schools.com/sql/default.asp).
+2.  Oracle Live Online - Give "Introduction to SQL" a go if you are interested to learn more SQL.
+
+![](images/clipboard-1246714449.png)
 
 <br><br>
 

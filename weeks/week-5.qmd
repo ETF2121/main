@@ -26,7 +26,7 @@ editor: visual
 
 ## Tutorial (real-time)
 
-📋 [Tutorial 5 - ](tba)[Modeling](hw/hw-5.qmd)[ Uncertainty](tba)
+📋 [Tutorial 5 -](tba)[Modeling](hw/hw-5.qmd)[Uncertainty](tba)
 
 ## Supplementary (own-time)
 

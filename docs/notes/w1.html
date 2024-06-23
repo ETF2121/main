@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.5.45">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ETF2121/5912 - S2 2024 - Lecture Note 1</title>
+<title>Lecture Note 1a – ETF2121/5912 - S2 2024</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -46,7 +46,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -55,6 +61,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -62,12 +69,11 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="ETF2121/5912 - S2 2024 - Lecture Note 1">
-<meta property="og:description" content="">
-<meta property="og:image" content="https://s33046.pcdn.co/wp-content/uploads/2022/02/power-bi-desktop-layout.png">
-<meta property="og:site-name" content="ETF2121/5912 - S2 2024">
-<meta name="twitter:title" content="ETF2121/5912 - S2 2024 - Lecture Note 1">
-<meta name="twitter:description" content="">
+<meta property="og:title" content="ETF2121/5912 - S2 2024 - Lecture Note 1a">
+<meta property="og:description" content="Homepage for ETF2121/5921 - Data Analysis in Business at Monash University, S2 2023.">
+<meta property="og:site_name" content="ETF2121/5912 - S2 2024">
+<meta name="twitter:title" content="ETF2121/5912 - S2 2024 - Lecture Note 1a">
+<meta name="twitter:description" content="Homepage for ETF2121/5921 - Data Analysis in Business at Monash University, S2 2023.">
 <meta name="twitter:image" content="https://sta210-s22.github.io/website/notes/images/twitter-card.png">
 <meta name="twitter:creator" content="@minebocek">
 <meta name="twitter:card" content="summary_large_image">
@@ -79,13 +85,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lecture Note 1</li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lecture Note 1a</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -94,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="../index.html" class="sidebar-logo-link">
       <img src="../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
@@ -112,9 +118,9 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Course information</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -147,9 +153,9 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
  <span class="menu-text">Weekly Schedule</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -160,12 +166,18 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Week 1</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 5</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -173,19 +185,17 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
-  <li><a href="#section-1-introduction-to-power-bi" id="toc-section-1-introduction-to-power-bi" class="nav-link" data-scroll-target="#section-1-introduction-to-power-bi">Section 1: Introduction to Power BI</a>
+  <li><a href="#section-1-introduction-to-sql" id="toc-section-1-introduction-to-sql" class="nav-link" data-scroll-target="#section-1-introduction-to-sql">Section 1: Introduction to SQL</a>
   <ul class="collapse">
-  <li><a href="#what-is-power-bi" id="toc-what-is-power-bi" class="nav-link" data-scroll-target="#what-is-power-bi"><strong>What is Power BI?</strong></a></li>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started"><strong>Getting Started</strong></a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><strong>Conclusion</strong></a></li>
+  <li><a href="#what-is-sql" id="toc-what-is-sql" class="nav-link" data-scroll-target="#what-is-sql">What is SQL?</a></li>
+  <li><a href="#sql-syntax" id="toc-sql-syntax" class="nav-link" data-scroll-target="#sql-syntax">SQL Syntax</a></li>
+  <li><a href="#data-definition-language-ddl" id="toc-data-definition-language-ddl" class="nav-link" data-scroll-target="#data-definition-language-ddl">Data Definition Language (DDL)</a></li>
+  <li><a href="#data-manipulation-language-dml" id="toc-data-manipulation-language-dml" class="nav-link" data-scroll-target="#data-manipulation-language-dml">Data Manipulation Language (DML)</a></li>
+  <li><a href="#data-query-language-dql" id="toc-data-query-language-dql" class="nav-link" data-scroll-target="#data-query-language-dql">Data Query Language (DQL)</a></li>
+  <li><a href="#data-control-language-dcl" id="toc-data-control-language-dcl" class="nav-link" data-scroll-target="#data-control-language-dcl">Data Control Language (DCL)</a></li>
+  <li><a href="#transaction-control-language-tcl" id="toc-transaction-control-language-tcl" class="nav-link" data-scroll-target="#transaction-control-language-tcl">Transaction Control Language (TCL)</a></li>
   </ul></li>
-  <li><a href="#section-2-introduction-to-r-language" id="toc-section-2-introduction-to-r-language" class="nav-link" data-scroll-target="#section-2-introduction-to-r-language">Section 2: Introduction to R Language</a>
-  <ul class="collapse">
-  <li><a href="#what-is-r" id="toc-what-is-r" class="nav-link" data-scroll-target="#what-is-r">What is R?</a></li>
-  <li><a href="#why-r" id="toc-why-r" class="nav-link" data-scroll-target="#why-r">Why R?</a></li>
-  <li><a href="#rstudio" id="toc-rstudio" class="nav-link" data-scroll-target="#rstudio">RStudio</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
-  </ul></li>
+  <li><a href="#section-2-live-sql-oracle" id="toc-section-2-live-sql-oracle" class="nav-link" data-scroll-target="#section-2-live-sql-oracle">Section 2: Live SQL Oracle</a></li>
   </ul>
 </nav>
     </div>
@@ -194,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lecture Note 1</h1>
+<h1 class="title">Lecture Note 1a</h1>
 </div>
 
 
@@ -207,7 +217,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -225,113 +237,88 @@ Note
 <section id="section" class="level2">
 <h2 class="anchored" data-anchor-id="section"></h2>
 </section>
-<section id="section-1-introduction-to-power-bi" class="level2">
-<h2 class="anchored" data-anchor-id="section-1-introduction-to-power-bi">Section 1: Introduction to Power BI</h2>
-<p><strong>Welcome to Power BI!</strong></p>
-<p>Power BI is a powerful business analytics tool that enables you to visualize data, share insights, and make data-driven decisions. This introductory document will guide you through the basics of Power BI and help you get started with creating your first report.</p>
-<section id="what-is-power-bi" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-power-bi"><strong>What is Power BI?</strong></h3>
-<p>Power BI is a suite of business analytics tools by Microsoft that includes software, services, and connectors. It transforms your unrelated sources of data into coherent, visually immersive, and interactive insights. Your data may be an Excel spreadsheet, or a collection of cloud-based and on-premises hybrid data warehouses.</p>
+<section id="section-1-introduction-to-sql" class="level2">
+<h2 class="anchored" data-anchor-id="section-1-introduction-to-sql">Section 1: Introduction to SQL</h2>
+<section id="what-is-sql" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-sql">What is SQL?</h3>
+<p>SQL stands for <strong><em>Structured Query Language</em></strong>. It is a language used to communicate with databases. It is the standard language for relational database management systems. Why we need SQL? Let’s say you are suppose to design for a system that will store the information of students in a university. How would you store the information of students? You can store the information in a spreadsheet, but what if you have to store the information of thousands of students? It will be very difficult to manage the data in a spreadsheet. Also, where do you want to store the information? In a table? Will a table suffice? What if you have to store the information of the courses that the students are enrolled in? How will you manage the data? This is where databases come in.</p>
+<p>Databases are used to store large amount of data. SQL is used to communicate with the database!</p>
+<p>The database can be of any type like MySQL, PostgreSQL, SQLite, etc. By ignoring all those, let’s focus on the SQL language itself, which is used to communicate with the database. Once you master SQL, you can work with any database. The most popular database is MySQL. It is an open-source database. It is used by many companies like Facebook, Twitter, etc. Oracle is also a popular database. It is used by many big companies. SQL is used to communicate with the database. It is used to perform all types of operations on the database. It is used to create a database, create a table in the database, insert data into the table, update the data, delete the data, etc.</p>
 </section>
-<section id="getting-started" class="level3">
-<h3 class="anchored" data-anchor-id="getting-started"><strong>Getting Started</strong></h3>
-<section id="download-and-install-power-bi-desktop" class="level4">
-<h4 class="anchored" data-anchor-id="download-and-install-power-bi-desktop"><strong>1. Download and Install Power BI Desktop</strong></h4>
+<section id="sql-syntax" class="level3">
+<h3 class="anchored" data-anchor-id="sql-syntax">SQL Syntax</h3>
+<p>SQL syntax is the set of rules that defines how a SQL query should be written. It is the set of rules that all SQL queries should follow. SQL syntax is similar to the English language, which makes it easier to write, read, and understand. SQL syntax is divided into several categories. These categories are:</p>
 <ul>
-<li><p>Go to the <a href="https://powerbi.microsoft.com/desktop/">Power BI website</a> and download the Power BI Desktop.</p></li>
-<li><p>Follow the installation instructions to install Power BI Desktop on your computer.</p></li>
+<li>Data Definition Language (DDL)</li>
+<li>Data Manipulation Language (DML)</li>
+<li>Data Query Language (DQL)</li>
+<li>Data Control Language (DCL)</li>
+<li>Transaction Control Language (TCL)</li>
 </ul>
 </section>
-<section id="open-power-bi-desktop" class="level4">
-<h4 class="anchored" data-anchor-id="open-power-bi-desktop"><strong>2. Open Power BI Desktop</strong></h4>
-<p>Once installed, open Power BI Desktop. You will see the following interface:</p>
-<p><img src="https://s33046.pcdn.co/wp-content/uploads/2022/02/power-bi-desktop-layout.png" class="img-fluid"></p>
-</section>
-<section id="connect-to-data" class="level4">
-<h4 class="anchored" data-anchor-id="connect-to-data"><strong>3. Connect to Data</strong></h4>
-<p>To start working with data, you need to connect Power BI to your data source. Here’s how:</p>
+<section id="data-definition-language-ddl" class="level3">
+<h3 class="anchored" data-anchor-id="data-definition-language-ddl">Data Definition Language (DDL)</h3>
+<p>Data Definition Language (DDL) is used to define the structure that holds the data. It is used to create tables, columns, etc. DDL commands are auto-committed. It means that the changes made by the DDL command are saved to the database automatically. The following are the DDL commands:</p>
 <ul>
-<li><p>Click on the “Home” tab.</p></li>
-<li><p>Click on the “Get Data” button.</p></li>
-</ul>
-<p><img src="https://learn.microsoft.com/vi-vn/power-bi/connect-data/media/desktop-quickstart-connect-to-data/qs-connect-data_02.png" class="img-fluid"></p>
-<ul>
-<li><p>Select your data source from the list (e.g., Excel, SQL Server, Web, etc.).</p></li>
-<li><p>Follow the prompts to load your data into Power BI.</p></li>
+<li>CREATE</li>
+<li>ALTER</li>
+<li>DROP</li>
+<li>TRUNCATE</li>
+<li>COMMENT</li>
 </ul>
 </section>
-<section id="transform-data-with-power-query-editor" class="level4">
-<h4 class="anchored" data-anchor-id="transform-data-with-power-query-editor"><strong>4. Transform Data with Power Query Editor</strong></h4>
-<p>After loading your data, you might need to clean and transform it. Use Power Query Editor for this purpose:</p>
+<section id="data-manipulation-language-dml" class="level3">
+<h3 class="anchored" data-anchor-id="data-manipulation-language-dml">Data Manipulation Language (DML)</h3>
+<p>Data Manipulation Language (DML) is used to manipulate the data itself. It is used to insert, update, delete, and retrieve data from the database. DML commands are not auto-committed. It means that the changes made by the DML command are not saved to the database automatically. You have to use the COMMIT command to save the changes. The following are the DML commands:</p>
 <ul>
-<li><p>Click on the “Home” tab.</p></li>
-<li><p>Click on the “Transform Data” button.</p></li>
-</ul>
-<p><img src="https://learn.microsoft.com/en-us/power-bi/transform-model/media/desktop-query-overview/query-overview-transform.png" class="img-fluid"></p>
-<p>The Power Query Editor will open, where you can clean and prepare your data.</p>
-<p><img src="https://learn.microsoft.com/en-us/power-query/media/power-query-ui/pqui-user-interface.png" class="img-fluid"></p>
-</section>
-<section id="create-visualizations" class="level4">
-<h4 class="anchored" data-anchor-id="create-visualizations"><strong>5. Create Visualizations</strong></h4>
-<p>Once your data is ready, you can start creating visualizations:</p>
-<ul>
-<li><p>Go back to the main Power BI Desktop window.</p></li>
-<li><p>In the “Visualizations” pane, select the type of visualization you want to create (e.g., bar chart, line chart, pie chart, etc.).</p></li>
-<li><p>Drag and drop fields from the “Fields” pane to the “Values”, “Axis”, “Legend”, etc., in the “Visualizations” pane.</p></li>
-</ul>
-<p><img src="https://learn.microsoft.com/en-us/power-bi/visuals/media/power-bi-report-add-visualizations-i/add-visual-1.png" class="img-fluid"></p>
-</section>
-<section id="build-reports" class="level4">
-<h4 class="anchored" data-anchor-id="build-reports"><strong>6. Build Reports</strong></h4>
-<p>Combine multiple visualizations into a report:</p>
-<ul>
-<li><p>Use the “Report” view in Power BI Desktop.</p></li>
-<li><p>Arrange your visualizations on the canvas.</p></li>
-<li><p>Add titles, labels, and other elements to enhance your report.</p></li>
+<li>SELECT</li>
+<li>INSERT</li>
+<li>UPDATE</li>
+<li>DELETE</li>
 </ul>
 </section>
-<section id="save-and-publish-your-report" class="level4">
-<h4 class="anchored" data-anchor-id="save-and-publish-your-report"><strong>7. Save and Publish Your Report</strong></h4>
+<section id="data-query-language-dql" class="level3">
+<h3 class="anchored" data-anchor-id="data-query-language-dql">Data Query Language (DQL)</h3>
+<p>Data Query Language (DQL) is used to retrieve the data from the database. The SELECT statement is the most commonly used DQL command. The following are the DQL commands:</p>
 <ul>
-<li><p>Click on the “File” tab.</p></li>
-<li><p>Select “Save As” to save your report locally.</p></li>
-<li><p>To share your report, click on the “Publish” button.</p></li>
-</ul>
-<p><img src="https://learn.microsoft.com/vi-vn/power-bi/create-reports/media/desktop-upload-desktop-files/pbid_publish_publishbutton.png" class="img-fluid"></p>
-<p>Follow the prompts to publish your report to the Power BI service, where you can share it with others.</p>
-</section>
-</section>
-<section id="conclusion" class="level3">
-<h3 class="anchored" data-anchor-id="conclusion"><strong>Conclusion</strong></h3>
-<p>Congratulations! You have successfully created your first Power BI report. Power BI is a versatile tool with many advanced features, so continue exploring and experimenting to unlock its full potential. Happy data analyzing!</p>
-</section>
-</section>
-<section id="section-2-introduction-to-r-language" class="level2">
-<h2 class="anchored" data-anchor-id="section-2-introduction-to-r-language">Section 2: Introduction to R Language</h2>
-<section id="what-is-r" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-r">What is R?</h3>
-<p>R is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.</p>
-</section>
-<section id="why-r" class="level3">
-<h3 class="anchored" data-anchor-id="why-r">Why R?</h3>
-<ul>
-<li>R is open-source and free</li>
-<li>R is a powerful tool for data analysis</li>
-<li>R has a large and active community</li>
-<li>R has a large number of packages for data analysis</li>
-<li>R is a programming language and can be used for automating data analysis tasks</li>
-<li>R is a great tool for reproducible research</li>
+<li>SELECT</li>
+<li>WHERE</li>
+<li>GROUP BY</li>
+<li>HAVING</li>
+<li>ORDER BY</li>
 </ul>
 </section>
-<section id="rstudio" class="level3">
-<h3 class="anchored" data-anchor-id="rstudio">RStudio</h3>
-<p>Rsudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.</p>
+<section id="data-control-language-dcl" class="level3">
+<h3 class="anchored" data-anchor-id="data-control-language-dcl">Data Control Language (DCL)</h3>
+<p>Data Control Language (DCL) is used to control the visibility of data. It is used to control the access of data. The following are the DCL commands:</p>
+<ul>
+<li>GRANT</li>
+<li>REVOKE</li>
+</ul>
 </section>
-<section id="section-1" class="level3">
-<h3 class="anchored" data-anchor-id="section-1"></h3>
+<section id="transaction-control-language-tcl" class="level3">
+<h3 class="anchored" data-anchor-id="transaction-control-language-tcl">Transaction Control Language (TCL)</h3>
+<p>Transaction Control Language (TCL) is used to manage the transactions in the database. It is used to manage the changes made by the DML commands. The following are the TCL commands:</p>
+<ul>
+<li>COMMIT</li>
+<li>ROLLBACK</li>
+<li>SAVEPOINT</li>
+</ul>
+</section>
+</section>
+<section id="section-2-live-sql-oracle" class="level2">
+<h2 class="anchored" data-anchor-id="section-2-live-sql-oracle">Section 2: Live SQL Oracle</h2>
+<p>Oracle Live SQL is a free, interactive, web-based tool that allows users to write, run, and share SQL scripts and PL/SQL code. It provides a convenient platform for learning and practicing SQL without needing to install Oracle Database software locally. Key benefits include:</p>
+<ol type="1">
+<li><p>Ease of Use: The web-based interface is user-friendly, making it accessible for both beginners and experienced users to write and execute SQL code.</p></li>
+<li><p>Educational Resources: Live SQL offers tutorials, sample scripts, and documentation to help users learn SQL and PL/SQL concepts and best practices.</p></li>
+<li><p>Collaboration: Users can share their scripts and solutions with others, fostering collaboration and knowledge sharing within the community.</p></li>
+<li><p>Real-Time Execution: Scripts run on an Oracle Database in real-time, providing immediate feedback and results.</p></li>
+<li><p>Access Anywhere: As a web-based tool, Live SQL can be accessed from any device with an internet connection, making it convenient for users to practice and develop their SQL skills on the go.</p></li>
+</ol>
+<p>Oracle Live SQL is an excellent resource for anyone looking to improve their SQL proficiency, offering hands-on experience with Oracle Database in a flexible and collaborative environment.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -376,6 +363,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -444,13 +458,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -485,18 +501,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -528,11 +533,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/sta210-s22\.github\.io\/website\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -542,8 +586,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -555,7 +608,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -599,6 +775,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -624,6 +801,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -686,13 +889,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© Copyright 2024, Dr.&nbsp;Joan Tan</div>   
+    <div class="nav-footer-left">
+<p>© Copyright 2024, Dr.&nbsp;Joan Tan</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
-    <div class="nav-footer-right">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>
+    <div class="nav-footer-right">
+<p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
   </div>
 </footer>
+
 
 
 
