@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lecture Note 3 – ETF2121/5912 - S2 2024</title>
+<title>Lecture Note Week 5 – ETF2121/5912 - S2 2024</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,11 +69,9 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="ETF2121/5912 - S2 2024 - Lecture Note 3">
-<meta property="og:description" content="Homepage for ETF2121/5921 - Data Analysis in Business at Monash University, S2 2023.">
+<meta property="og:title" content="ETF2121/5912 - S2 2024 - Lecture Note Week 5">
 <meta property="og:site_name" content="ETF2121/5912 - S2 2024">
-<meta name="twitter:title" content="ETF2121/5912 - S2 2024 - Lecture Note 3">
-<meta name="twitter:description" content="Homepage for ETF2121/5921 - Data Analysis in Business at Monash University, S2 2023.">
+<meta name="twitter:title" content="ETF2121/5912 - S2 2024 - Lecture Note Week 5">
 <meta name="twitter:image" content="https://sta210-s22.github.io/website/notes/images/twitter-card.png">
 <meta name="twitter:creator" content="@minebocek">
 <meta name="twitter:card" content="summary_large_image">
@@ -88,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lecture Note 3</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lecture Note Week 5</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -168,8 +166,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/week-5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 5</span></a>
+  <a href="../weeks/week-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 2</span></a>
   </div>
 </li>
       </ul>
@@ -185,17 +183,14 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
-  <li><a href="#section-1-introduction-to-power-bi" id="toc-section-1-introduction-to-power-bi" class="nav-link" data-scroll-target="#section-1-introduction-to-power-bi">Section 1: Introduction to Power BI</a>
-  <ul class="collapse">
-  <li><a href="#what-is-power-bi" id="toc-what-is-power-bi" class="nav-link" data-scroll-target="#what-is-power-bi"><strong>What is Power BI?</strong></a></li>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started"><strong>Getting Started</strong></a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><strong>Conclusion</strong></a></li>
-  </ul></li>
-  <li><a href="#section-2-introduction-to-r-language" id="toc-section-2-introduction-to-r-language" class="nav-link" data-scroll-target="#section-2-introduction-to-r-language">Section 2: Introduction to R Language</a>
+  <li><a href="#section-1-introduction-to-r-language" id="toc-section-1-introduction-to-r-language" class="nav-link" data-scroll-target="#section-1-introduction-to-r-language">Section 1: Introduction to R Language</a>
   <ul class="collapse">
   <li><a href="#what-is-r" id="toc-what-is-r" class="nav-link" data-scroll-target="#what-is-r">What is R?</a></li>
   <li><a href="#why-r" id="toc-why-r" class="nav-link" data-scroll-target="#why-r">Why R?</a></li>
   <li><a href="#rstudio" id="toc-rstudio" class="nav-link" data-scroll-target="#rstudio">RStudio</a></li>
+  </ul></li>
+  <li><a href="#section-2-modeling-uncertainty" id="toc-section-2-modeling-uncertainty" class="nav-link" data-scroll-target="#section-2-modeling-uncertainty">Section 2: Modeling Uncertainty</a>
+  <ul class="collapse">
   <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
   </ul></li>
   </ul>
@@ -206,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lecture Note 3</h1>
+<h1 class="title">Lecture Note Week 5</h1>
 </div>
 
 
@@ -234,94 +229,15 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <p>Learning Objective:</p>
+<p>LO1: Data wrangling with Power BI</p>
+<p>LO2: Data wrangling with R</p>
 </div>
 </div>
 <section id="section" class="level2">
 <h2 class="anchored" data-anchor-id="section"></h2>
 </section>
-<section id="section-1-introduction-to-power-bi" class="level2">
-<h2 class="anchored" data-anchor-id="section-1-introduction-to-power-bi">Section 1: Introduction to Power BI</h2>
-<p><strong>Welcome to Power BI!</strong></p>
-<p>Power BI is a powerful business analytics tool that enables you to visualize data, share insights, and make data-driven decisions. This introductory document will guide you through the basics of Power BI and help you get started with creating your first report.</p>
-<section id="what-is-power-bi" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-power-bi"><strong>What is Power BI?</strong></h3>
-<p>Power BI is a suite of business analytics tools by Microsoft that includes software, services, and connectors. It transforms your unrelated sources of data into coherent, visually immersive, and interactive insights. Your data may be an Excel spreadsheet, or a collection of cloud-based and on-premises hybrid data warehouses.</p>
-</section>
-<section id="getting-started" class="level3">
-<h3 class="anchored" data-anchor-id="getting-started"><strong>Getting Started</strong></h3>
-<section id="download-and-install-power-bi-desktop" class="level4">
-<h4 class="anchored" data-anchor-id="download-and-install-power-bi-desktop"><strong>1. Download and Install Power BI Desktop</strong></h4>
-<ul>
-<li><p>Go to the <a href="https://powerbi.microsoft.com/desktop/">Power BI website</a> and download the Power BI Desktop.</p></li>
-<li><p>Follow the installation instructions to install Power BI Desktop on your computer.</p></li>
-</ul>
-</section>
-<section id="open-power-bi-desktop" class="level4">
-<h4 class="anchored" data-anchor-id="open-power-bi-desktop"><strong>2. Open Power BI Desktop</strong></h4>
-<p>Once installed, open Power BI Desktop. You will see the following interface:</p>
-<p><img src="https://s33046.pcdn.co/wp-content/uploads/2022/02/power-bi-desktop-layout.png" class="img-fluid"></p>
-</section>
-<section id="connect-to-data" class="level4">
-<h4 class="anchored" data-anchor-id="connect-to-data"><strong>3. Connect to Data</strong></h4>
-<p>To start working with data, you need to connect Power BI to your data source. Here’s how:</p>
-<ul>
-<li><p>Click on the “Home” tab.</p></li>
-<li><p>Click on the “Get Data” button.</p></li>
-</ul>
-<p><img src="https://learn.microsoft.com/vi-vn/power-bi/connect-data/media/desktop-quickstart-connect-to-data/qs-connect-data_02.png" class="img-fluid"></p>
-<ul>
-<li><p>Select your data source from the list (e.g., Excel, SQL Server, Web, etc.).</p></li>
-<li><p>Follow the prompts to load your data into Power BI.</p></li>
-</ul>
-</section>
-<section id="transform-data-with-power-query-editor" class="level4">
-<h4 class="anchored" data-anchor-id="transform-data-with-power-query-editor"><strong>4. Transform Data with Power Query Editor</strong></h4>
-<p>After loading your data, you might need to clean and transform it. Use Power Query Editor for this purpose:</p>
-<ul>
-<li><p>Click on the “Home” tab.</p></li>
-<li><p>Click on the “Transform Data” button.</p></li>
-</ul>
-<p><img src="https://learn.microsoft.com/en-us/power-bi/transform-model/media/desktop-query-overview/query-overview-transform.png" class="img-fluid"></p>
-<p>The Power Query Editor will open, where you can clean and prepare your data.</p>
-<p><img src="https://learn.microsoft.com/en-us/power-query/media/power-query-ui/pqui-user-interface.png" class="img-fluid"></p>
-</section>
-<section id="create-visualizations" class="level4">
-<h4 class="anchored" data-anchor-id="create-visualizations"><strong>5. Create Visualizations</strong></h4>
-<p>Once your data is ready, you can start creating visualizations:</p>
-<ul>
-<li><p>Go back to the main Power BI Desktop window.</p></li>
-<li><p>In the “Visualizations” pane, select the type of visualization you want to create (e.g., bar chart, line chart, pie chart, etc.).</p></li>
-<li><p>Drag and drop fields from the “Fields” pane to the “Values”, “Axis”, “Legend”, etc., in the “Visualizations” pane.</p></li>
-</ul>
-<p><img src="https://learn.microsoft.com/en-us/power-bi/visuals/media/power-bi-report-add-visualizations-i/add-visual-1.png" class="img-fluid"></p>
-</section>
-<section id="build-reports" class="level4">
-<h4 class="anchored" data-anchor-id="build-reports"><strong>6. Build Reports</strong></h4>
-<p>Combine multiple visualizations into a report:</p>
-<ul>
-<li><p>Use the “Report” view in Power BI Desktop.</p></li>
-<li><p>Arrange your visualizations on the canvas.</p></li>
-<li><p>Add titles, labels, and other elements to enhance your report.</p></li>
-</ul>
-</section>
-<section id="save-and-publish-your-report" class="level4">
-<h4 class="anchored" data-anchor-id="save-and-publish-your-report"><strong>7. Save and Publish Your Report</strong></h4>
-<ul>
-<li><p>Click on the “File” tab.</p></li>
-<li><p>Select “Save As” to save your report locally.</p></li>
-<li><p>To share your report, click on the “Publish” button.</p></li>
-</ul>
-<p><img src="https://learn.microsoft.com/vi-vn/power-bi/create-reports/media/desktop-upload-desktop-files/pbid_publish_publishbutton.png" class="img-fluid"></p>
-<p>Follow the prompts to publish your report to the Power BI service, where you can share it with others.</p>
-</section>
-</section>
-<section id="conclusion" class="level3">
-<h3 class="anchored" data-anchor-id="conclusion"><strong>Conclusion</strong></h3>
-<p>Congratulations! You have successfully created your first Power BI report. Power BI is a versatile tool with many advanced features, so continue exploring and experimenting to unlock its full potential. Happy data analyzing!</p>
-</section>
-</section>
-<section id="section-2-introduction-to-r-language" class="level2">
-<h2 class="anchored" data-anchor-id="section-2-introduction-to-r-language">Section 2: Introduction to R Language</h2>
+<section id="section-1-introduction-to-r-language" class="level2">
+<h2 class="anchored" data-anchor-id="section-1-introduction-to-r-language">Section 1: Introduction to R Language</h2>
 <section id="what-is-r" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-r">What is R?</h3>
 <p>R is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.</p>
@@ -341,6 +257,9 @@ Note
 <h3 class="anchored" data-anchor-id="rstudio">RStudio</h3>
 <p>Rsudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.</p>
 </section>
+</section>
+<section id="section-2-modeling-uncertainty" class="level2">
+<h2 class="anchored" data-anchor-id="section-2-modeling-uncertainty">Section 2: Modeling Uncertainty</h2>
 <section id="section-1" class="level3">
 <h3 class="anchored" data-anchor-id="section-1"></h3>
 

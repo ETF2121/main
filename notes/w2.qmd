@@ -1,5 +1,5 @@
 ---
-title: "Lecture Note 2"
+title: "Lecture Note Week 2"
 filters: 
   - webr
 execute: 
@@ -8,6 +8,12 @@ execute:
 
 ::: callout-note
 Learning Objective:
+
+LO1: Able to write SQL queries to retrieve data from a database
+
+LO2: Able to write SQL queries to manipulate data in a database
+
+LO3: Understand basic SQL syntax
 :::
 
 ```{r}

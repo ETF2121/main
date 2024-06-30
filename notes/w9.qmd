@@ -1,0 +1,32 @@
+---
+title: "Lecture Note 3"
+filters: 
+  - webr
+execute: 
+  echo: false
+---
+
+::: callout-note
+Learning Objective:
+
+LO1: Estimate simple linear regression model and multiple linear regression model.
+
+LO2: Assessing the fit of the model.
+
+LO3: Compute and interpret the coefficients of the model.
+
+LO4: Use dummy variables to incorporate categorical variables in the model.
+
+LO5: Use quadratic and interaction terms in the model.
+
+LO4: Model inference.
+
+:::
+
+```{r}
+#| include: false
+
+library(tidyverse)
+library(knitr)
+```
+

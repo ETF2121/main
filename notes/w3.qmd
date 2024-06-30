@@ -1,5 +1,5 @@
 ---
-title: "Lecture Note 1b"
+title: "Lecture Note Week 3"
 filters: 
   - webr
 execute: 
@@ -17,21 +17,330 @@ library(tidyverse)
 library(knitr)
 ```
 
-## Section 1: Introduction to R Language
+## Section 1: Introduction to Power BI
 
-### What is R?
+**Welcome to Power BI!**
 
-R is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.
+Power BI is a powerful business analytics tool that enables you to visualize data, share insights, and make data-driven decisions. This introductory document will guide you through the basics of Power BI and help you get started with creating your first report.
 
-### Why R?
+### **1. What is Power BI?**
 
--   R is open-source and free
--   R is a powerful tool for data analysis
--   R has a large and active community
--   R has a large number of packages for data analysis
--   R is a programming language and can be used for automating data analysis tasks
--   R is a great tool for reproducible research
+Power BI is a suite of business analytics tools by Microsoft that includes software, services, and connectors. It transforms your unrelated sources of data into coherent, visually immersive, and interactive insights. Your data may be an Excel spreadsheet, or a collection of cloud-based and on-premises hybrid data warehouses.
 
-### RStudio
+### **Getting Started**
 
-Rsudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.
+#### **1. Download and Install Power BI Desktop**
+
+-   Go to the [Power BI website](https://powerbi.microsoft.com/desktop/) and download the Power BI Desktop.
+
+-   Follow the installation instructions to install Power BI Desktop on your computer.
+
+#### **2. Open Power BI Desktop**
+
+Once installed, open Power BI Desktop. You will see the following interface:
+
+![](https://s33046.pcdn.co/wp-content/uploads/2022/02/power-bi-desktop-layout.png)
+
+#### **3. Connect to Data**
+
+To start working with data, you need to connect Power BI to your data source. Here's how:
+
+-   Click on the "Home" tab.
+
+-   Click on the "Get Data" button.
+
+![](https://learn.microsoft.com/vi-vn/power-bi/connect-data/media/desktop-quickstart-connect-to-data/qs-connect-data_02.png)
+
+-   Select your data source from the list (e.g., Excel, SQL Server, Web, etc.).
+
+-   Follow the prompts to load your data into Power BI.
+
+#### **4. Transform Data with Power Query Editor**
+
+After loading your data, you might need to clean and transform it. Use Power Query Editor for this purpose:
+
+-   Click on the "Home" tab.
+
+-   Click on the "Transform Data" button.
+
+![](https://learn.microsoft.com/en-us/power-bi/transform-model/media/desktop-query-overview/query-overview-transform.png)
+
+The Power Query Editor will open, where you can clean and prepare your data.
+
+![](https://learn.microsoft.com/en-us/power-query/media/power-query-ui/pqui-user-interface.png)
+
+#### **5. Create Visualizations**
+
+Once your data is ready, you can start creating visualizations:
+
+-   Go back to the main Power BI Desktop window.
+
+-   In the "Visualizations" pane, select the type of visualization you want to create (e.g., bar chart, line chart, pie chart, etc.).
+
+-   Drag and drop fields from the "Fields" pane to the "Values", "Axis", "Legend", etc., in the "Visualizations" pane.
+
+![](https://learn.microsoft.com/en-us/power-bi/visuals/media/power-bi-report-add-visualizations-i/add-visual-1.png)
+
+#### **6. Build Reports**
+
+Combine multiple visualizations into a report:
+
+-   Use the "Report" view in Power BI Desktop.
+
+-   Arrange your visualizations on the canvas.
+
+-   Add titles, labels, and other elements to enhance your report.
+
+#### **7. Save and Publish Your Report**
+
+-   Click on the "File" tab.
+
+-   Select "Save As" to save your report locally.
+
+-   To share your report, click on the "Publish" button.
+
+![](https://learn.microsoft.com/vi-vn/power-bi/create-reports/media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
+
+Follow the prompts to publish your report to the Power BI service, where you can share it with others.
+
+### **Conclusion**
+
+Congratulations! You have successfully created your first Power BI report. Power BI is a versatile tool with many advanced features, so continue exploring and experimenting to unlock its full potential. Happy data analyzing!
+
+## Section 2. Descriptive Statistics
+
+### 2. Types of Data
+
+#### Population and Sample Data
+
+-   **Population Data:** Refers to the entire set of data or items of interest.
+
+    -   Example: All employees in a company.
+
+-   **Sample Data:** A subset of the population data.
+
+    -   Example: Employees in one department.
+
+#### Quantitative and Categorical Data
+
+-   **Quantitative (Numerical) Data:** Data that represents quantities and can be measured.
+
+    -   Example: Sales figures, ages.
+
+-   **Categorical (Qualitative) Data:** Data that represents categories or groups.
+
+    -   Example: Product categories, regions.
+
+#### Cross-Sectional and Time Series Data
+
+-   **Cross-Sectional Data:** Data collected at a single point in time.
+
+    -   Example: Survey results collected on a specific date.
+
+-   **Time Series Data:** Data collected over different time periods.
+
+    -   Example: Monthly sales data.
+
+#### Sorting and Filtering Data
+
+-   **Sorting Data:**
+
+    -   Click on the column header to sort data in ascending or descending order.
+
+-   **Filtering Data:**
+
+    -   Use the filter pane to apply filters to your data.
+
+### 3. Frequency Distributions
+
+#### Categorical Data
+
+-   **Creating Frequency Distributions:**
+
+    -   Use the "Visualizations" pane to create a bar chart.
+
+    -   Drag the categorical field to the Axis and the Value fields.
+
+#### Quantitative Data
+
+-   **Creating Frequency Distributions:**
+
+    -   Use the "Visualizations" pane to create a histogram.
+
+    -   Drag the quantitative field to the Axis and the Value fields.
+
+-   **Relative Frequency:**
+
+    -   Calculate the relative frequency by dividing the count of each category by the total count.
+
+### 4. Histograms and Cumulative Distributions
+
+#### Histograms
+
+-   **What is a Histogram?**
+
+    -   A graphical representation of the distribution of numerical data.
+
+    -   Used to visualize the frequency of data points within certain ranges.
+
+-   **Creating Histograms in Power BI:**
+
+    -   Use the "Visualizations" pane to create a histogram.
+
+    -   Drag the quantitative field to the Axis and the Value fields.
+
+#### Cumulative Distributions
+
+-   **What is a Cumulative Distribution?**
+
+    -   A graph showing the cumulative frequency of data points up to a certain value.
+
+-   **Creating Cumulative Distributions:**
+
+    -   Use line charts to visualize cumulative distributions.
+
+    -   Calculate cumulative frequencies and plot them.
+
+### 5. Measures of Central Tendency
+
+#### Mean
+
+-   **Definition:**
+
+    -   The average of a set of numbers.
+
+-   **Calculating Mean in Power BI:**
+
+    -   Use the "AVERAGE" function in a measure or calculated column.
+
+#### Median
+
+-   **Definition:**
+
+    -   The middle value of a data set when ordered.
+
+-   **Calculating Median in Power BI:**
+
+    -   Use the "MEDIAN" function in a measure or calculated column.
+
+#### Mode
+
+-   **Definition:**
+
+    -   The most frequently occurring value in a data set.
+
+-   **Calculating Mode in Power BI:**
+
+    -   Use the "MODE" function in a measure or calculated column.
+
+### 6. Measures of Variability
+
+#### Range
+
+-   **Definition:**
+
+    -   The difference between the highest and lowest values in a data set.
+
+-   **Calculating Range:**
+
+    -   Subtract the minimum value from the maximum value in a measure or calculated column.
+
+#### Variance and Standard Deviation
+
+-   **Variance:**
+
+    -   Measures how much the data points deviate from the mean.
+
+-   **Standard Deviation:**
+
+    -   The square root of the variance.
+
+-   **Calculating Variance and Standard Deviation in Power BI:**
+
+    -   Use the "VAR" and "STDEV" functions in measures or calculated columns.
+
+### 7. Percentiles and Quartiles
+
+#### Percentiles
+
+-   **Definition:**
+
+    -   Values below which a certain percentage of data points fall.
+
+-   **Calculating Percentiles in Power BI:**
+
+    -   Use the "PERCENTILE.INC" function in measures or calculated columns.
+
+#### Quartiles
+
+-   **Definition:**
+
+    -   Divides the data into four equal parts.
+
+-   **Calculating Quartiles in Power BI:**
+
+    -   Use the "QUARTILE.INC" function in measures or calculated columns.
+
+### 8. Z-Scores and the Empirical Rule
+
+#### Z-Scores
+
+-   **Definition:**
+
+    -   Measures how many standard deviations a data point is from the mean.
+
+-   **Calculating Z-Scores in Power BI:**
+
+    -   Use the formula: Z=(X−Mean)Standard DeviationZ = \frac{(X - \text{Mean})}{\text{Standard Deviation}}Z=Standard Deviation(X−Mean)​ in a calculated column.
+
+#### Empirical Rule
+
+-   **Definition:**
+
+    -   States that for a normal distribution:
+
+        -   68% of data falls within 1 standard deviation of the mean.
+
+        -   95% of data falls within 2 standard deviations of the mean.
+
+        -   99.7% of data falls within 3 standard deviations of the mean.
+
+-   **Application:**
+
+    -   Visualize data distribution and standard deviations in Power BI.
+
+### 9. Outliers and Boxplots
+
+#### Outliers
+
+-   **Definition:**
+
+    -   Data points significantly different from other observations.
+
+-   **Identifying Outliers in Power BI:**
+
+    -   Use visualizations like scatter plots and boxplots.
+
+#### Boxplots
+
+-   **What is a Boxplot?**
+
+    -   A graphical representation of data showing minimum, first quartile, median, third quartile, and maximum.
+
+-   **Creating Boxplots in Power BI:**
+
+    -   Use custom visuals or R scripts to create boxplots.
+
+### Conclusion
+
+-   Key Points:
+
+    -   Reviewed Power BI interface and data types.
+
+    -   Explained frequency distributions, histograms, and cumulative distributions.
+
+    -   Covered measures of central tendency and variability.
+
+    -   Discussed percentiles, quartiles, z-scores, and the empirical rule.
+
+    -   Identified outliers and created boxplots.

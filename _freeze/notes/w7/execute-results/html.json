@@ -1,0 +1,17 @@
+{
+  "hash": "36cdfb0e2dd4be90649466b67df0ccba",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Lecture Note Week 7\"\nfilters: \n  - webr\nexecute: \n  echo: false\n---\n\n\n\n\n\n::: callout-note\nLearning Objective:\n\nLO1: Take random samples from population.\n\nLO2: Calculate and interpret point estimates and confidence intervals for population parameters.\n\nLO3: Calculate and interpret the margin of error for a confidence interval.\n\nLO4: Identify the sampling distributions for sample means and sample proportions.\n\nLO5: Formulate and interpret hypotheses for population parameters.\n\nLO6: Identify Type I and Type II errors.\n:::\n\n\n\n\n\n\n\n\n\n\n\n## \n\n## Section 2: Introduction to R Language\n\n### What is R?\n\nR is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.\n\n### Why R?\n\n-   R is open-source and free\n-   R is a powerful tool for data analysis\n-   R has a large and active community\n-   R has a large number of packages for data analysis\n-   R is a programming language and can be used for automating data analysis tasks\n-   R is a great tool for reproducible research\n\n### RStudio\n\nRsudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.\n\n### \n",
+    "supporting": [
+      "w7_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

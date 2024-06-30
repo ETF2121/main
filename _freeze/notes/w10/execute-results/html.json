@@ -1,0 +1,17 @@
+{
+  "hash": "860e070f61793f081f304d87793e5528",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Lecture Note 3\"\nfilters: \n  - webr\nexecute: \n  echo: false\n---\n\n\n\n\n\n::: callout-note\nLearning Objective:\n\nLO1: Identifying an underlying pattern from a time-series plot.\n\nLO2: Calculate and measures of forecasting accuracy.\n\nLO3: Use various techniques to forecast a time series data.\n\nLO4:  Using linear regression to forecast a time series data.\n:::\n\n\n\n\n\n\n\n\n\n\n\n## \n\n## \n",
+    "supporting": [
+      "w10_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

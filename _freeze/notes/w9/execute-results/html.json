@@ -1,0 +1,17 @@
+{
+  "hash": "350c1e4cfe60a352770b0175a4576a64",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Lecture Note 3\"\nfilters: \n  - webr\nexecute: \n  echo: false\n---\n\n\n\n\n\n::: callout-note\nLearning Objective:\n\nLO1: Estimate simple linear regression model and multiple linear regression model.\n\nLO2: Assessing the fit of the model.\n\nLO3: Compute and interpret the coefficients of the model.\n\nLO4: Use dummy variables to incorporate categorical variables in the model.\n\nLO5: Use quadratic and interaction terms in the model.\n\nLO4: Model inference.\n\n:::\n\n\n\n\n\n\n",
+    "supporting": [
+      "w9_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

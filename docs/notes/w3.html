@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lecture Note 1b – ETF2121/5912 - S2 2024</title>
+<title>Lecture Note Week 3 – ETF2121/5912 - S2 2024</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,9 +69,11 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="ETF2121/5912 - S2 2024 - Lecture Note 1b">
+<meta property="og:title" content="ETF2121/5912 - S2 2024 - Lecture Note Week 3">
+<meta property="og:description" content="Homepage for ETF2121/5921 - Data Analysis in Business at Monash University, S2 2023.">
 <meta property="og:site_name" content="ETF2121/5912 - S2 2024">
-<meta name="twitter:title" content="ETF2121/5912 - S2 2024 - Lecture Note 1b">
+<meta name="twitter:title" content="ETF2121/5912 - S2 2024 - Lecture Note Week 3">
+<meta name="twitter:description" content="Homepage for ETF2121/5921 - Data Analysis in Business at Monash University, S2 2023.">
 <meta name="twitter:image" content="https://sta210-s22.github.io/website/notes/images/twitter-card.png">
 <meta name="twitter:creator" content="@minebocek">
 <meta name="twitter:card" content="summary_large_image">
@@ -86,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lecture Note 1b</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lecture Note Week 3</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -166,8 +168,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/week-5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 5</span></a>
+  <a href="../weeks/week-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 2</span></a>
   </div>
 </li>
       </ul>
@@ -182,11 +184,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section-1-introduction-to-r-language" id="toc-section-1-introduction-to-r-language" class="nav-link active" data-scroll-target="#section-1-introduction-to-r-language">Section 1: Introduction to R Language</a>
+  <li><a href="#section-1-introduction-to-power-bi" id="toc-section-1-introduction-to-power-bi" class="nav-link active" data-scroll-target="#section-1-introduction-to-power-bi">Section 1: Introduction to Power BI</a>
   <ul class="collapse">
-  <li><a href="#what-is-r" id="toc-what-is-r" class="nav-link" data-scroll-target="#what-is-r">What is R?</a></li>
-  <li><a href="#why-r" id="toc-why-r" class="nav-link" data-scroll-target="#why-r">Why R?</a></li>
-  <li><a href="#rstudio" id="toc-rstudio" class="nav-link" data-scroll-target="#rstudio">RStudio</a></li>
+  <li><a href="#what-is-power-bi" id="toc-what-is-power-bi" class="nav-link" data-scroll-target="#what-is-power-bi"><strong>1. What is Power BI?</strong></a></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started"><strong>Getting Started</strong></a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><strong>Conclusion</strong></a></li>
+  </ul></li>
+  <li><a href="#section-2.-descriptive-statistics" id="toc-section-2.-descriptive-statistics" class="nav-link" data-scroll-target="#section-2.-descriptive-statistics">Section 2. Descriptive Statistics</a>
+  <ul class="collapse">
+  <li><a href="#types-of-data" id="toc-types-of-data" class="nav-link" data-scroll-target="#types-of-data">2. Types of Data</a></li>
+  <li><a href="#frequency-distributions" id="toc-frequency-distributions" class="nav-link" data-scroll-target="#frequency-distributions">3. Frequency Distributions</a></li>
+  <li><a href="#histograms-and-cumulative-distributions" id="toc-histograms-and-cumulative-distributions" class="nav-link" data-scroll-target="#histograms-and-cumulative-distributions">4. Histograms and Cumulative Distributions</a></li>
+  <li><a href="#measures-of-central-tendency" id="toc-measures-of-central-tendency" class="nav-link" data-scroll-target="#measures-of-central-tendency">5. Measures of Central Tendency</a></li>
+  <li><a href="#measures-of-variability" id="toc-measures-of-variability" class="nav-link" data-scroll-target="#measures-of-variability">6. Measures of Variability</a></li>
+  <li><a href="#percentiles-and-quartiles" id="toc-percentiles-and-quartiles" class="nav-link" data-scroll-target="#percentiles-and-quartiles">7. Percentiles and Quartiles</a></li>
+  <li><a href="#z-scores-and-the-empirical-rule" id="toc-z-scores-and-the-empirical-rule" class="nav-link" data-scroll-target="#z-scores-and-the-empirical-rule">8. Z-Scores and the Empirical Rule</a></li>
+  <li><a href="#outliers-and-boxplots" id="toc-outliers-and-boxplots" class="nav-link" data-scroll-target="#outliers-and-boxplots">9. Outliers and Boxplots</a></li>
+  <li><a href="#conclusion-1" id="toc-conclusion-1" class="nav-link" data-scroll-target="#conclusion-1">Conclusion</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -196,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lecture Note 1b</h1>
+<h1 class="title">Lecture Note Week 3</h1>
 </div>
 
 
@@ -226,26 +240,382 @@ Note
 <p>Learning Objective:</p>
 </div>
 </div>
-<section id="section-1-introduction-to-r-language" class="level2">
-<h2 class="anchored" data-anchor-id="section-1-introduction-to-r-language">Section 1: Introduction to R Language</h2>
-<section id="what-is-r" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-r">What is R?</h3>
-<p>R is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.</p>
+<section id="section-1-introduction-to-power-bi" class="level2">
+<h2 class="anchored" data-anchor-id="section-1-introduction-to-power-bi">Section 1: Introduction to Power BI</h2>
+<p><strong>Welcome to Power BI!</strong></p>
+<p>Power BI is a powerful business analytics tool that enables you to visualize data, share insights, and make data-driven decisions. This introductory document will guide you through the basics of Power BI and help you get started with creating your first report.</p>
+<section id="what-is-power-bi" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-power-bi"><strong>1. What is Power BI?</strong></h3>
+<p>Power BI is a suite of business analytics tools by Microsoft that includes software, services, and connectors. It transforms your unrelated sources of data into coherent, visually immersive, and interactive insights. Your data may be an Excel spreadsheet, or a collection of cloud-based and on-premises hybrid data warehouses.</p>
 </section>
-<section id="why-r" class="level3">
-<h3 class="anchored" data-anchor-id="why-r">Why R?</h3>
+<section id="getting-started" class="level3">
+<h3 class="anchored" data-anchor-id="getting-started"><strong>Getting Started</strong></h3>
+<section id="download-and-install-power-bi-desktop" class="level4">
+<h4 class="anchored" data-anchor-id="download-and-install-power-bi-desktop"><strong>1. Download and Install Power BI Desktop</strong></h4>
 <ul>
-<li>R is open-source and free</li>
-<li>R is a powerful tool for data analysis</li>
-<li>R has a large and active community</li>
-<li>R has a large number of packages for data analysis</li>
-<li>R is a programming language and can be used for automating data analysis tasks</li>
-<li>R is a great tool for reproducible research</li>
+<li><p>Go to the <a href="https://powerbi.microsoft.com/desktop/">Power BI website</a> and download the Power BI Desktop.</p></li>
+<li><p>Follow the installation instructions to install Power BI Desktop on your computer.</p></li>
 </ul>
 </section>
-<section id="rstudio" class="level3">
-<h3 class="anchored" data-anchor-id="rstudio">RStudio</h3>
-<p>Rsudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.</p>
+<section id="open-power-bi-desktop" class="level4">
+<h4 class="anchored" data-anchor-id="open-power-bi-desktop"><strong>2. Open Power BI Desktop</strong></h4>
+<p>Once installed, open Power BI Desktop. You will see the following interface:</p>
+<p><img src="https://s33046.pcdn.co/wp-content/uploads/2022/02/power-bi-desktop-layout.png" class="img-fluid"></p>
+</section>
+<section id="connect-to-data" class="level4">
+<h4 class="anchored" data-anchor-id="connect-to-data"><strong>3. Connect to Data</strong></h4>
+<p>To start working with data, you need to connect Power BI to your data source. Here’s how:</p>
+<ul>
+<li><p>Click on the “Home” tab.</p></li>
+<li><p>Click on the “Get Data” button.</p></li>
+</ul>
+<p><img src="https://learn.microsoft.com/vi-vn/power-bi/connect-data/media/desktop-quickstart-connect-to-data/qs-connect-data_02.png" class="img-fluid"></p>
+<ul>
+<li><p>Select your data source from the list (e.g., Excel, SQL Server, Web, etc.).</p></li>
+<li><p>Follow the prompts to load your data into Power BI.</p></li>
+</ul>
+</section>
+<section id="transform-data-with-power-query-editor" class="level4">
+<h4 class="anchored" data-anchor-id="transform-data-with-power-query-editor"><strong>4. Transform Data with Power Query Editor</strong></h4>
+<p>After loading your data, you might need to clean and transform it. Use Power Query Editor for this purpose:</p>
+<ul>
+<li><p>Click on the “Home” tab.</p></li>
+<li><p>Click on the “Transform Data” button.</p></li>
+</ul>
+<p><img src="https://learn.microsoft.com/en-us/power-bi/transform-model/media/desktop-query-overview/query-overview-transform.png" class="img-fluid"></p>
+<p>The Power Query Editor will open, where you can clean and prepare your data.</p>
+<p><img src="https://learn.microsoft.com/en-us/power-query/media/power-query-ui/pqui-user-interface.png" class="img-fluid"></p>
+</section>
+<section id="create-visualizations" class="level4">
+<h4 class="anchored" data-anchor-id="create-visualizations"><strong>5. Create Visualizations</strong></h4>
+<p>Once your data is ready, you can start creating visualizations:</p>
+<ul>
+<li><p>Go back to the main Power BI Desktop window.</p></li>
+<li><p>In the “Visualizations” pane, select the type of visualization you want to create (e.g., bar chart, line chart, pie chart, etc.).</p></li>
+<li><p>Drag and drop fields from the “Fields” pane to the “Values”, “Axis”, “Legend”, etc., in the “Visualizations” pane.</p></li>
+</ul>
+<p><img src="https://learn.microsoft.com/en-us/power-bi/visuals/media/power-bi-report-add-visualizations-i/add-visual-1.png" class="img-fluid"></p>
+</section>
+<section id="build-reports" class="level4">
+<h4 class="anchored" data-anchor-id="build-reports"><strong>6. Build Reports</strong></h4>
+<p>Combine multiple visualizations into a report:</p>
+<ul>
+<li><p>Use the “Report” view in Power BI Desktop.</p></li>
+<li><p>Arrange your visualizations on the canvas.</p></li>
+<li><p>Add titles, labels, and other elements to enhance your report.</p></li>
+</ul>
+</section>
+<section id="save-and-publish-your-report" class="level4">
+<h4 class="anchored" data-anchor-id="save-and-publish-your-report"><strong>7. Save and Publish Your Report</strong></h4>
+<ul>
+<li><p>Click on the “File” tab.</p></li>
+<li><p>Select “Save As” to save your report locally.</p></li>
+<li><p>To share your report, click on the “Publish” button.</p></li>
+</ul>
+<p><img src="https://learn.microsoft.com/vi-vn/power-bi/create-reports/media/desktop-upload-desktop-files/pbid_publish_publishbutton.png" class="img-fluid"></p>
+<p>Follow the prompts to publish your report to the Power BI service, where you can share it with others.</p>
+</section>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion"><strong>Conclusion</strong></h3>
+<p>Congratulations! You have successfully created your first Power BI report. Power BI is a versatile tool with many advanced features, so continue exploring and experimenting to unlock its full potential. Happy data analyzing!</p>
+</section>
+</section>
+<section id="section-2.-descriptive-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="section-2.-descriptive-statistics">Section 2. Descriptive Statistics</h2>
+<section id="types-of-data" class="level3">
+<h3 class="anchored" data-anchor-id="types-of-data">2. Types of Data</h3>
+<section id="population-and-sample-data" class="level4">
+<h4 class="anchored" data-anchor-id="population-and-sample-data">Population and Sample Data</h4>
+<ul>
+<li><p><strong>Population Data:</strong> Refers to the entire set of data or items of interest.</p>
+<ul>
+<li>Example: All employees in a company.</li>
+</ul></li>
+<li><p><strong>Sample Data:</strong> A subset of the population data.</p>
+<ul>
+<li>Example: Employees in one department.</li>
+</ul></li>
+</ul>
+</section>
+<section id="quantitative-and-categorical-data" class="level4">
+<h4 class="anchored" data-anchor-id="quantitative-and-categorical-data">Quantitative and Categorical Data</h4>
+<ul>
+<li><p><strong>Quantitative (Numerical) Data:</strong> Data that represents quantities and can be measured.</p>
+<ul>
+<li>Example: Sales figures, ages.</li>
+</ul></li>
+<li><p><strong>Categorical (Qualitative) Data:</strong> Data that represents categories or groups.</p>
+<ul>
+<li>Example: Product categories, regions.</li>
+</ul></li>
+</ul>
+</section>
+<section id="cross-sectional-and-time-series-data" class="level4">
+<h4 class="anchored" data-anchor-id="cross-sectional-and-time-series-data">Cross-Sectional and Time Series Data</h4>
+<ul>
+<li><p><strong>Cross-Sectional Data:</strong> Data collected at a single point in time.</p>
+<ul>
+<li>Example: Survey results collected on a specific date.</li>
+</ul></li>
+<li><p><strong>Time Series Data:</strong> Data collected over different time periods.</p>
+<ul>
+<li>Example: Monthly sales data.</li>
+</ul></li>
+</ul>
+</section>
+<section id="sorting-and-filtering-data" class="level4">
+<h4 class="anchored" data-anchor-id="sorting-and-filtering-data">Sorting and Filtering Data</h4>
+<ul>
+<li><p><strong>Sorting Data:</strong></p>
+<ul>
+<li>Click on the column header to sort data in ascending or descending order.</li>
+</ul></li>
+<li><p><strong>Filtering Data:</strong></p>
+<ul>
+<li>Use the filter pane to apply filters to your data.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="frequency-distributions" class="level3">
+<h3 class="anchored" data-anchor-id="frequency-distributions">3. Frequency Distributions</h3>
+<section id="categorical-data" class="level4">
+<h4 class="anchored" data-anchor-id="categorical-data">Categorical Data</h4>
+<ul>
+<li><p><strong>Creating Frequency Distributions:</strong></p>
+<ul>
+<li><p>Use the “Visualizations” pane to create a bar chart.</p></li>
+<li><p>Drag the categorical field to the Axis and the Value fields.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="quantitative-data" class="level4">
+<h4 class="anchored" data-anchor-id="quantitative-data">Quantitative Data</h4>
+<ul>
+<li><p><strong>Creating Frequency Distributions:</strong></p>
+<ul>
+<li><p>Use the “Visualizations” pane to create a histogram.</p></li>
+<li><p>Drag the quantitative field to the Axis and the Value fields.</p></li>
+</ul></li>
+<li><p><strong>Relative Frequency:</strong></p>
+<ul>
+<li>Calculate the relative frequency by dividing the count of each category by the total count.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="histograms-and-cumulative-distributions" class="level3">
+<h3 class="anchored" data-anchor-id="histograms-and-cumulative-distributions">4. Histograms and Cumulative Distributions</h3>
+<section id="histograms" class="level4">
+<h4 class="anchored" data-anchor-id="histograms">Histograms</h4>
+<ul>
+<li><p><strong>What is a Histogram?</strong></p>
+<ul>
+<li><p>A graphical representation of the distribution of numerical data.</p></li>
+<li><p>Used to visualize the frequency of data points within certain ranges.</p></li>
+</ul></li>
+<li><p><strong>Creating Histograms in Power BI:</strong></p>
+<ul>
+<li><p>Use the “Visualizations” pane to create a histogram.</p></li>
+<li><p>Drag the quantitative field to the Axis and the Value fields.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="cumulative-distributions" class="level4">
+<h4 class="anchored" data-anchor-id="cumulative-distributions">Cumulative Distributions</h4>
+<ul>
+<li><p><strong>What is a Cumulative Distribution?</strong></p>
+<ul>
+<li>A graph showing the cumulative frequency of data points up to a certain value.</li>
+</ul></li>
+<li><p><strong>Creating Cumulative Distributions:</strong></p>
+<ul>
+<li><p>Use line charts to visualize cumulative distributions.</p></li>
+<li><p>Calculate cumulative frequencies and plot them.</p></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="measures-of-central-tendency" class="level3">
+<h3 class="anchored" data-anchor-id="measures-of-central-tendency">5. Measures of Central Tendency</h3>
+<section id="mean" class="level4">
+<h4 class="anchored" data-anchor-id="mean">Mean</h4>
+<ul>
+<li><p><strong>Definition:</strong></p>
+<ul>
+<li>The average of a set of numbers.</li>
+</ul></li>
+<li><p><strong>Calculating Mean in Power BI:</strong></p>
+<ul>
+<li>Use the “AVERAGE” function in a measure or calculated column.</li>
+</ul></li>
+</ul>
+</section>
+<section id="median" class="level4">
+<h4 class="anchored" data-anchor-id="median">Median</h4>
+<ul>
+<li><p><strong>Definition:</strong></p>
+<ul>
+<li>The middle value of a data set when ordered.</li>
+</ul></li>
+<li><p><strong>Calculating Median in Power BI:</strong></p>
+<ul>
+<li>Use the “MEDIAN” function in a measure or calculated column.</li>
+</ul></li>
+</ul>
+</section>
+<section id="mode" class="level4">
+<h4 class="anchored" data-anchor-id="mode">Mode</h4>
+<ul>
+<li><p><strong>Definition:</strong></p>
+<ul>
+<li>The most frequently occurring value in a data set.</li>
+</ul></li>
+<li><p><strong>Calculating Mode in Power BI:</strong></p>
+<ul>
+<li>Use the “MODE” function in a measure or calculated column.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="measures-of-variability" class="level3">
+<h3 class="anchored" data-anchor-id="measures-of-variability">6. Measures of Variability</h3>
+<section id="range" class="level4">
+<h4 class="anchored" data-anchor-id="range">Range</h4>
+<ul>
+<li><p><strong>Definition:</strong></p>
+<ul>
+<li>The difference between the highest and lowest values in a data set.</li>
+</ul></li>
+<li><p><strong>Calculating Range:</strong></p>
+<ul>
+<li>Subtract the minimum value from the maximum value in a measure or calculated column.</li>
+</ul></li>
+</ul>
+</section>
+<section id="variance-and-standard-deviation" class="level4">
+<h4 class="anchored" data-anchor-id="variance-and-standard-deviation">Variance and Standard Deviation</h4>
+<ul>
+<li><p><strong>Variance:</strong></p>
+<ul>
+<li>Measures how much the data points deviate from the mean.</li>
+</ul></li>
+<li><p><strong>Standard Deviation:</strong></p>
+<ul>
+<li>The square root of the variance.</li>
+</ul></li>
+<li><p><strong>Calculating Variance and Standard Deviation in Power BI:</strong></p>
+<ul>
+<li>Use the “VAR” and “STDEV” functions in measures or calculated columns.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="percentiles-and-quartiles" class="level3">
+<h3 class="anchored" data-anchor-id="percentiles-and-quartiles">7. Percentiles and Quartiles</h3>
+<section id="percentiles" class="level4">
+<h4 class="anchored" data-anchor-id="percentiles">Percentiles</h4>
+<ul>
+<li><p><strong>Definition:</strong></p>
+<ul>
+<li>Values below which a certain percentage of data points fall.</li>
+</ul></li>
+<li><p><strong>Calculating Percentiles in Power BI:</strong></p>
+<ul>
+<li>Use the “PERCENTILE.INC” function in measures or calculated columns.</li>
+</ul></li>
+</ul>
+</section>
+<section id="quartiles" class="level4">
+<h4 class="anchored" data-anchor-id="quartiles">Quartiles</h4>
+<ul>
+<li><p><strong>Definition:</strong></p>
+<ul>
+<li>Divides the data into four equal parts.</li>
+</ul></li>
+<li><p><strong>Calculating Quartiles in Power BI:</strong></p>
+<ul>
+<li>Use the “QUARTILE.INC” function in measures or calculated columns.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="z-scores-and-the-empirical-rule" class="level3">
+<h3 class="anchored" data-anchor-id="z-scores-and-the-empirical-rule">8. Z-Scores and the Empirical Rule</h3>
+<section id="z-scores" class="level4">
+<h4 class="anchored" data-anchor-id="z-scores">Z-Scores</h4>
+<ul>
+<li><p><strong>Definition:</strong></p>
+<ul>
+<li>Measures how many standard deviations a data point is from the mean.</li>
+</ul></li>
+<li><p><strong>Calculating Z-Scores in Power BI:</strong></p>
+<ul>
+<li>Use the formula: Z=(X−Mean)Standard&nbsp;DeviationZ = Z=Standard&nbsp;Deviation(X−Mean)​ in a calculated column.</li>
+</ul></li>
+</ul>
+</section>
+<section id="empirical-rule" class="level4">
+<h4 class="anchored" data-anchor-id="empirical-rule">Empirical Rule</h4>
+<ul>
+<li><p><strong>Definition:</strong></p>
+<ul>
+<li><p>States that for a normal distribution:</p>
+<ul>
+<li><p>68% of data falls within 1 standard deviation of the mean.</p></li>
+<li><p>95% of data falls within 2 standard deviations of the mean.</p></li>
+<li><p>99.7% of data falls within 3 standard deviations of the mean.</p></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Application:</strong></p>
+<ul>
+<li>Visualize data distribution and standard deviations in Power BI.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="outliers-and-boxplots" class="level3">
+<h3 class="anchored" data-anchor-id="outliers-and-boxplots">9. Outliers and Boxplots</h3>
+<section id="outliers" class="level4">
+<h4 class="anchored" data-anchor-id="outliers">Outliers</h4>
+<ul>
+<li><p><strong>Definition:</strong></p>
+<ul>
+<li>Data points significantly different from other observations.</li>
+</ul></li>
+<li><p><strong>Identifying Outliers in Power BI:</strong></p>
+<ul>
+<li>Use visualizations like scatter plots and boxplots.</li>
+</ul></li>
+</ul>
+</section>
+<section id="boxplots" class="level4">
+<h4 class="anchored" data-anchor-id="boxplots">Boxplots</h4>
+<ul>
+<li><p><strong>What is a Boxplot?</strong></p>
+<ul>
+<li>A graphical representation of data showing minimum, first quartile, median, third quartile, and maximum.</li>
+</ul></li>
+<li><p><strong>Creating Boxplots in Power BI:</strong></p>
+<ul>
+<li>Use custom visuals or R scripts to create boxplots.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="conclusion-1" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion-1">Conclusion</h3>
+<ul>
+<li><p>Key Points:</p>
+<ul>
+<li><p>Reviewed Power BI interface and data types.</p></li>
+<li><p>Explained frequency distributions, histograms, and cumulative distributions.</p></li>
+<li><p>Covered measures of central tendency and variability.</p></li>
+<li><p>Discussed percentiles, quartiles, z-scores, and the empirical rule.</p></li>
+<li><p>Identified outliers and created boxplots.</p></li>
+</ul></li>
+</ul>
 
 
 </section>

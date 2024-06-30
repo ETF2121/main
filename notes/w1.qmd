@@ -1,5 +1,5 @@
 ---
-title: "Lecture Note 1a"
+title: "Lecture Note Week 1"
 filters: 
   - webr
 execute: 
@@ -8,6 +8,15 @@ execute:
 
 ::: callout-note
 Learning Objective:
+
+LO1: Understand the basic concepts of SQL
+
+LO2: Learn how to use SQL to communicate with the database
+
+LO3: Understand the different categories of SQL commands
+
+LO4: Learn the SQL syntax
+
 :::
 
 ```{r}

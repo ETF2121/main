@@ -1,0 +1,17 @@
+{
+  "hash": "fc99c3f72af4e2cf5d0a584a8b5f75f6",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Lecture Note Weeek 8\"\nfilters: \n  - webr\nexecute: \n  echo: false\n---\n\n\n\n\n\n::: callout-note\nLearning Objective:\n\nLO1: Use and interpret principal component analysis (PCA) \n\nLO2: Describe and apply distance measures for observations consisting of quantitative variables.\n\nLO3: Describe and apply distance measures for observations consisting of qualitative variables.\n\nLO4: Construct clusters with k-means clustering.\n\nLO5: Construct clusters with hierarchical clustering.\n\n:::\n\n\n\n\n\n\n\n\n\n\n\n## \n\n## Section 2: Introduction to R Language\n\n### What is R?\n\nR is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.\n\n### Why R?\n\n-   R is open-source and free\n-   R is a powerful tool for data analysis\n-   R has a large and active community\n-   R has a large number of packages for data analysis\n-   R is a programming language and can be used for automating data analysis tasks\n-   R is a great tool for reproducible research\n\n### RStudio\n\nRsudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.\n\n### \n",
+    "supporting": [
+      "w8_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

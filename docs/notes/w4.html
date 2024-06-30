@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.45">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Lecture Note 4 – ETF2121/5912 - S2 2024</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<meta property="og:title" content="ETF2121/5912 - S2 2024 - Lecture Note 4">
+<meta property="og:description" content="Homepage for ETF2121/5921 - Data Analysis in Business at Monash University, S2 2023.">
+<meta property="og:site_name" content="ETF2121/5912 - S2 2024">
+<meta name="twitter:title" content="ETF2121/5912 - S2 2024 - Lecture Note 4">
+<meta name="twitter:description" content="Homepage for ETF2121/5921 - Data Analysis in Business at Monash University, S2 2023.">
+<meta name="twitter:image" content="https://sta210-s22.github.io/website/notes/images/twitter-card.png">
+<meta name="twitter:creator" content="@minebocek">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lecture Note 4</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Course information</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-team.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Teaching team</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Weekly Schedule</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#preattentive-attributes-and-data-ink-ratio" id="toc-preattentive-attributes-and-data-ink-ratio" class="nav-link active" data-scroll-target="#preattentive-attributes-and-data-ink-ratio">1. Preattentive Attributes and Data-Ink Ratio</a></li>
+  <li><a href="#pivottables-and-pivotcharts" id="toc-pivottables-and-pivotcharts" class="nav-link" data-scroll-target="#pivottables-and-pivotcharts">2. PivotTables and PivotCharts</a></li>
+  <li><a href="#scatter-charts" id="toc-scatter-charts" class="nav-link" data-scroll-target="#scatter-charts">3. Scatter Charts</a></li>
+  <li><a href="#line-charts-bar-charts-and-column-charts" id="toc-line-charts-bar-charts-and-column-charts" class="nav-link" data-scroll-target="#line-charts-bar-charts-and-column-charts">4. Line Charts, Bar Charts, and Column Charts</a></li>
+  <li><a href="#trendlines" id="toc-trendlines" class="nav-link" data-scroll-target="#trendlines">5. Trendlines</a></li>
+  <li><a href="#sorted-clustered-and-stacked-bar-column-charts" id="toc-sorted-clustered-and-stacked-bar-column-charts" class="nav-link" data-scroll-target="#sorted-clustered-and-stacked-bar-column-charts">6. Sorted, Clustered, and Stacked Bar (Column) Charts</a></li>
+  <li><a href="#bubble-charts-scatter-chart-matrices-and-table-lenses" id="toc-bubble-charts-scatter-chart-matrices-and-table-lenses" class="nav-link" data-scroll-target="#bubble-charts-scatter-chart-matrices-and-table-lenses">7. Bubble Charts, Scatter Chart Matrices, and Table Lenses</a></li>
+  <li><a href="#advanced-visualization-types" id="toc-advanced-visualization-types" class="nav-link" data-scroll-target="#advanced-visualization-types">8. Advanced Visualization Types</a></li>
+  <li><a href="#geospatial-data-visualization" id="toc-geospatial-data-visualization" class="nav-link" data-scroll-target="#geospatial-data-visualization">9. Geospatial Data Visualization</a></li>
+  <li><a href="#effective-data-dashboards" id="toc-effective-data-dashboards" class="nav-link" data-scroll-target="#effective-data-dashboards">10. Effective Data Dashboards</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lecture Note 4</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Learning Objective:</p>
+<ul>
+<li><p>Be able to use visual principles such as preattentive attributes and the data-ink ratio to enhance chart design.</p></li>
+<li><p>Be able to create and use PivotTables and PivotCharts in Power BI to explore and analyze data.</p></li>
+<li><p>Be able to create and interpret scatter charts, line charts, bar charts, and column charts to examine relationships between variables.</p></li>
+<li><p>Be able to create and interpret advanced visualizations such as trendlines, sorted/clustered/stacked bar charts, bubble charts, scatter chart matrices, and table lenses.</p></li>
+<li><p>Be able to design and create effective data dashboards in Power BI for real-time data analysis and decision-making.</p></li>
+</ul>
+</div>
+</div>
+<section id="preattentive-attributes-and-data-ink-ratio" class="level3">
+<h3 class="anchored" data-anchor-id="preattentive-attributes-and-data-ink-ratio">1. Preattentive Attributes and Data-Ink Ratio</h3>
+<p><strong>Preattentive Attributes</strong>:</p>
+<ul>
+<li><p><strong>Color</strong>: Use contrasting colors to highlight key data points.</p></li>
+<li><p><strong>Size</strong>: Larger elements draw attention.</p></li>
+<li><p><strong>Orientation</strong>: Different shapes and orientations can guide focus.</p></li>
+<li><p><strong>Position</strong>: Place important data at prominent positions.</p></li>
+</ul>
+<p><strong>Data-Ink Ratio</strong>:</p>
+<ul>
+<li><p><strong>Definition</strong>: The ratio of data-ink (ink used to present data) to the total ink used in the chart.</p></li>
+<li><p><strong>Goal</strong>: Maximize the data-ink ratio by minimizing non-essential ink.</p></li>
+<li><p><strong>Implementation in Power BI</strong>:</p>
+<ul>
+<li><p>Use minimalist design principles.</p></li>
+<li><p>Avoid unnecessary gridlines and borders.</p></li>
+<li><p>Focus on essential data representation.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="pivottables-and-pivotcharts" class="level3">
+<h3 class="anchored" data-anchor-id="pivottables-and-pivotcharts">2. PivotTables and PivotCharts</h3>
+<p><strong>Purpose</strong>:</p>
+<ul>
+<li><p><strong>PivotTables</strong>: Summarize, analyze, explore, and present summary data.</p></li>
+<li><p><strong>PivotCharts</strong>: Visualize the data from PivotTables.</p></li>
+</ul>
+<p><strong>Creating PivotTables in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Import Data</strong>: Load your dataset into Power BI.</p>
+<ul>
+<li><p>Go to <code>Home &gt; Get Data &gt; Excel</code> (or choose your data source).</p></li>
+<li><p>Select your file and click <code>Load</code>.</p></li>
+</ul></li>
+<li><p><strong>Create PivotTable</strong>:</p>
+<ul>
+<li><p>Go to <code>Modeling &gt; New Table</code>.</p></li>
+<li><p>Write a DAX formula to create your PivotTable. For example:</p>
+<pre><code>DAX</code></pre>
+<p><code>SUMMARIZE(   'Sales',   'Sales'[Region],   'Sales'[Category],   "Total Sales", SUM('Sales'[SalesAmount]) )</code></p></li>
+</ul></li>
+<li><p><strong>Visualize Data</strong>:</p>
+<ul>
+<li><p>Drag fields into Rows, Columns, and Values areas in the Visualizations pane.</p></li>
+<li><p>Adjust the fields to refine your table.</p></li>
+</ul></li>
+</ol>
+<p><strong>Creating PivotCharts in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Select Data</strong>:</p>
+<ul>
+<li><p>Click on your PivotTable to activate it.</p></li>
+<li><p>Go to <code>Visualizations</code> pane and choose a chart type (e.g., Clustered Column Chart).</p></li>
+</ul></li>
+<li><p><strong>Customize Chart</strong>:</p>
+<ul>
+<li><p>Drag and drop fields into the Axis, Legend, and Values areas.</p></li>
+<li><p>Customize the chart using the Format pane.</p></li>
+</ul></li>
+</ol>
+</section>
+<section id="scatter-charts" class="level3">
+<h3 class="anchored" data-anchor-id="scatter-charts">3. Scatter Charts</h3>
+<p><strong>Purpose</strong>: Examine relationships between two variables.</p>
+<p><strong>Creating Scatter Charts in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Select Scatter Chart</strong>:</p>
+<ul>
+<li><p>Go to the <code>Visualizations</code> pane.</p></li>
+<li><p>Click on the Scatter Chart icon.</p></li>
+</ul></li>
+<li><p><strong>Add Data Fields</strong>:</p>
+<ul>
+<li><p>Drag numerical fields to the X-axis and Y-axis.</p></li>
+<li><p>Optionally, add a third numerical field to the <code>Size</code> field well.</p></li>
+</ul></li>
+<li><p><strong>Customize and Interpret</strong>:</p>
+<ul>
+<li><p>Use the <code>Format</code> pane to customize the chart’s appearance.</p></li>
+<li><p>Interpret the relationship between variables by examining the pattern of points.</p></li>
+</ul></li>
+</ol>
+</section>
+<section id="line-charts-bar-charts-and-column-charts" class="level3">
+<h3 class="anchored" data-anchor-id="line-charts-bar-charts-and-column-charts">4. Line Charts, Bar Charts, and Column Charts</h3>
+<p><strong>Purpose</strong>:</p>
+<ul>
+<li><p><strong>Line Charts</strong>: Show trends over time.</p></li>
+<li><p><strong>Bar Charts</strong>: Compare quantities across categories.</p></li>
+<li><p><strong>Column Charts</strong>: Similar to bar charts, but vertical.</p></li>
+</ul>
+<p><strong>Creating Line Charts in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Select Line Chart</strong>:</p>
+<ul>
+<li><p>Go to the <code>Visualizations</code> pane.</p></li>
+<li><p>Click on the Line Chart icon.</p></li>
+</ul></li>
+<li><p><strong>Add Data Fields</strong>:</p>
+<ul>
+<li>Drag a date field to the X-axis and a numerical field to the Y-axis.</li>
+</ul></li>
+</ol>
+<p><strong>Creating Bar and Column Charts in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Select Bar/Column Chart</strong>:</p>
+<ul>
+<li><p>Go to the <code>Visualizations</code> pane.</p></li>
+<li><p>Click on the Bar Chart or Column Chart icon.</p></li>
+</ul></li>
+<li><p><strong>Add Data Fields</strong>:</p>
+<ul>
+<li>Drag a categorical field to the Axis area and a numerical field to the Values area.</li>
+</ul></li>
+</ol>
+</section>
+<section id="trendlines" class="level3">
+<h3 class="anchored" data-anchor-id="trendlines">5. Trendlines</h3>
+<p><strong>Purpose</strong>: Identify trends within scatter and line charts.</p>
+<p><strong>Adding Trendlines in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Select Chart</strong>:</p>
+<ul>
+<li>Click on the chart where you want to add a trendline (e.g., scatter chart or line chart).</li>
+</ul></li>
+<li><p><strong>Add Trendline</strong>:</p>
+<ul>
+<li><p>Go to the <code>Analytics</code> pane.</p></li>
+<li><p>Click on <code>Trend Line</code>, then click <code>+ Add</code>.</p></li>
+</ul></li>
+<li><p><strong>Customize Trendline</strong>:</p>
+<ul>
+<li>Set properties such as color, style, and transparency.</li>
+</ul></li>
+</ol>
+</section>
+<section id="sorted-clustered-and-stacked-bar-column-charts" class="level3">
+<h3 class="anchored" data-anchor-id="sorted-clustered-and-stacked-bar-column-charts">6. Sorted, Clustered, and Stacked Bar (Column) Charts</h3>
+<p><strong>Purpose</strong>:</p>
+<ul>
+<li><p><strong>Sorted Bar/Column Charts</strong>: Rank data in ascending or descending order.</p></li>
+<li><p><strong>Clustered Bar/Column Charts</strong>: Compare multiple categories across a single axis.</p></li>
+<li><p><strong>Stacked Bar/Column Charts</strong>: Show composition and compare totals.</p></li>
+</ul>
+<p><strong>Creating Sorted Bar/Column Charts</strong>:</p>
+<ol type="1">
+<li><p><strong>Sort Data</strong>:</p>
+<ul>
+<li><p>Click on the ellipsis (…) in the top right corner of the chart.</p></li>
+<li><p>Select <code>Sort by</code> and choose the desired field.</p></li>
+</ul></li>
+</ol>
+<p><strong>Creating Clustered Bar/Column Charts</strong>:</p>
+<ol type="1">
+<li><p><strong>Select Clustered Chart</strong>:</p>
+<ul>
+<li><p>Go to the <code>Visualizations</code> pane.</p></li>
+<li><p>Click on the Clustered Bar Chart or Clustered Column Chart icon.</p></li>
+</ul></li>
+<li><p><strong>Add Data Fields</strong>:</p>
+<ul>
+<li>Drag multiple categorical fields to the Axis area and a numerical field to the Values area.</li>
+</ul></li>
+</ol>
+<p><strong>Creating Stacked Bar/Column Charts</strong>:</p>
+<ol type="1">
+<li><p><strong>Select Stacked Chart</strong>:</p>
+<ul>
+<li><p>Go to the <code>Visualizations</code> pane.</p></li>
+<li><p>Click on the Stacked Bar Chart or Stacked Column Chart icon.</p></li>
+</ul></li>
+<li><p><strong>Add Data Fields</strong>:</p>
+<ul>
+<li>Drag a categorical field to the Axis area and another categorical field to the Legend area.</li>
+</ul></li>
+</ol>
+</section>
+<section id="bubble-charts-scatter-chart-matrices-and-table-lenses" class="level3">
+<h3 class="anchored" data-anchor-id="bubble-charts-scatter-chart-matrices-and-table-lenses">7. Bubble Charts, Scatter Chart Matrices, and Table Lenses</h3>
+<p><strong>Purpose</strong>:</p>
+<ul>
+<li><p><strong>Bubble Charts</strong>: Visualize three dimensions of data.</p></li>
+<li><p><strong>Scatter Chart Matrices</strong>: Show relationships across multiple variables.</p></li>
+<li><p><strong>Table Lenses</strong>: Combine tabular data with visual elements.</p></li>
+</ul>
+<p><strong>Creating Bubble Charts in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Select Bubble Chart</strong>:</p>
+<ul>
+<li><p>Go to the <code>Visualizations</code> pane.</p></li>
+<li><p>Click on the Scatter Chart icon and add a field to the <code>Size</code> well.</p></li>
+</ul></li>
+<li><p><strong>Add Data Fields</strong>:</p>
+<ul>
+<li>Drag fields to the X-axis, Y-axis, and Size areas.</li>
+</ul></li>
+</ol>
+<p><strong>Creating Scatter Chart Matrices in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Select Matrix</strong>:</p>
+<ul>
+<li><p>Go to the <code>Visualizations</code> pane.</p></li>
+<li><p>Click on the Matrix icon.</p></li>
+</ul></li>
+<li><p><strong>Add Data Fields</strong>:</p>
+<ul>
+<li>Drag fields to the Rows, Columns, and Values areas.</li>
+</ul></li>
+</ol>
+<p><strong>Creating Table Lenses in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Select Table</strong>:</p>
+<ul>
+<li><p>Go to the <code>Visualizations</code> pane.</p></li>
+<li><p>Click on the Table icon.</p></li>
+</ul></li>
+<li><p><strong>Add Data Fields</strong>:</p>
+<ul>
+<li><p>Drag fields to the Values area.</p></li>
+<li><p>Use conditional formatting to add visual cues.</p></li>
+</ul></li>
+</ol>
+</section>
+<section id="advanced-visualization-types" class="level3">
+<h3 class="anchored" data-anchor-id="advanced-visualization-types">8. Advanced Visualization Types</h3>
+<p><strong>Purpose</strong>:</p>
+<ul>
+<li><p><strong>Heat Maps</strong>: Show data density or intensity.</p></li>
+<li><p><strong>Sparklines</strong>: Show trends in a small space.</p></li>
+<li><p><strong>Treemaps</strong>: Visualize hierarchical data.</p></li>
+<li><p><strong>Waterfall Charts</strong>: Show cumulative effects.</p></li>
+<li><p><strong>Stock Charts</strong>: Display financial data.</p></li>
+<li><p><strong>Parallel Coordinates Plots</strong>: Visualize multi-dimensional data.</p></li>
+</ul>
+<p><strong>Creating Heat Maps in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Select Heat Map</strong>:</p>
+<ul>
+<li>Use the Shape Map visual in the <code>Visualizations</code> pane.</li>
+</ul></li>
+<li><p><strong>Add Data Fields</strong>:</p>
+<ul>
+<li>Drag fields to the Location and Value areas.</li>
+</ul></li>
+</ol>
+<p><strong>Creating Sparklines in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Add Sparklines</strong>:</p>
+<ul>
+<li><p>Go to <code>Visualizations</code> pane.</p></li>
+<li><p>Use the <code>Line and clustered column chart</code> visual.</p></li>
+</ul></li>
+<li><p><strong>Add Data Fields</strong>:</p>
+<ul>
+<li>Drag fields to the Line Values area.</li>
+</ul></li>
+</ol>
+<p><strong>Creating Treemaps in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Select Treemap</strong>:</p>
+<ul>
+<li><p>Go to the <code>Visualizations</code> pane.</p></li>
+<li><p>Click on the Treemap icon.</p></li>
+</ul></li>
+<li><p><strong>Add Data Fields</strong>:</p>
+<ul>
+<li>Drag hierarchical fields to the Group and Values areas.</li>
+</ul></li>
+</ol>
+<p><strong>Creating Waterfall Charts in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Select Waterfall Chart</strong>:</p>
+<ul>
+<li><p>Go to the <code>Visualizations</code> pane.</p></li>
+<li><p>Click on the Waterfall Chart icon.</p></li>
+</ul></li>
+<li><p><strong>Add Data Fields</strong>:</p>
+<ul>
+<li>Drag fields to the Category and Y-axis areas.</li>
+</ul></li>
+</ol>
+<p><strong>Creating Stock Charts in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Select Stock Chart</strong>:</p>
+<ul>
+<li>Use the <code>Candlestick chart</code> visual from a custom visual marketplace.</li>
+</ul></li>
+<li><p><strong>Add Data Fields</strong>:</p>
+<ul>
+<li>Drag fields to the Open, High, Low, and Close areas.</li>
+</ul></li>
+</ol>
+<p><strong>Creating Parallel Coordinates Plots in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Select Parallel Coordinates Plot</strong>:</p>
+<ul>
+<li>Use a custom visual from the marketplace.</li>
+</ul></li>
+<li><p><strong>Add Data Fields</strong>:</p>
+<ul>
+<li>Drag multiple numerical fields to the Values area.</li>
+</ul></li>
+</ol>
+</section>
+<section id="geospatial-data-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="geospatial-data-visualization">9. Geospatial Data Visualization</h3>
+<p><strong>Purpose</strong>:</p>
+<ul>
+<li><p><strong>Choropleth Maps</strong>: Visualize data across geographical regions.</p></li>
+<li><p><strong>Cartograms</strong>: Distort map shapes to represent data values.</p></li>
+</ul>
+<p><strong>Creating Choropleth Maps in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Select Map</strong>:</p>
+<ul>
+<li><p>Go to the <code>Visualizations</code> pane.</p></li>
+<li><p>Click on the Map or Filled Map icon.</p></li>
+</ul></li>
+<li><p><strong>Add Data Fields</strong>:</p>
+<ul>
+<li>Drag geographical fields to the Location area and data fields to the Values area.</li>
+</ul></li>
+</ol>
+<p><strong>Creating Cartograms in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Select Cartogram</strong>:</p>
+<ul>
+<li>Use a custom visual from the marketplace.</li>
+</ul></li>
+<li><p><strong>Add Data Fields</strong>:</p>
+<ul>
+<li>Drag geographical fields to the Location area and data fields to the Values area.</li>
+</ul></li>
+</ol>
+</section>
+<section id="effective-data-dashboards" class="level3">
+<h3 class="anchored" data-anchor-id="effective-data-dashboards">10. Effective Data Dashboards</h3>
+<p><strong>Principles</strong>:</p>
+<ul>
+<li><p><strong>Clarity</strong>: Ensure the dashboard is easy to read.</p></li>
+<li><p><strong>Conciseness</strong>: Present only the most important data.</p></li>
+<li><p><strong>Customization</strong>: Allow users to interact with the data.</p></li>
+</ul>
+<p><strong>Design Suggestions</strong>:</p>
+<ul>
+<li><p><strong>Layout</strong>: Organize visualizations logically.</p></li>
+<li><p><strong>Interactivity</strong>: Use slicers and filters.</p></li>
+<li><p><strong>Real-Time Data</strong>: Connect to live data sources for up-to-date information.</p></li>
+</ul>
+<p><strong>Creating Dashboards in Power BI</strong>:</p>
+<ol type="1">
+<li><p><strong>Create Visualizations</strong>:</p>
+<ul>
+<li><p>In the Report view, select the type of visualization you want from the <code>Visualizations</code> pane.</p></li>
+<li><p>Drag and drop fields from the <code>Fields</code> pane onto the visualization.</p></li>
+</ul></li>
+<li><p><strong>Customize Visualizations</strong>:</p>
+<ul>
+<li><p>Use the <code>Format</code> pane to customize the appearance of each chart (e.g., colors, labels, titles).</p></li>
+<li><p>Add filters by dragging fields to the <code>Filters</code> area.</p></li>
+</ul></li>
+</ol>
+</section>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/sta210-s22\.github\.io\/website\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Copyright 2024, Dr.&nbsp;Joan Tan</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

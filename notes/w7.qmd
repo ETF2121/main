@@ -1,0 +1,53 @@
+---
+title: "Lecture Note Week 7"
+filters: 
+  - webr
+execute: 
+  echo: false
+---
+
+::: callout-note
+Learning Objective:
+
+LO1: Take random samples from population.
+
+LO2: Calculate and interpret point estimates and confidence intervals for population parameters.
+
+LO3: Calculate and interpret the margin of error for a confidence interval.
+
+LO4: Identify the sampling distributions for sample means and sample proportions.
+
+LO5: Formulate and interpret hypotheses for population parameters.
+
+LO6: Identify Type I and Type II errors.
+:::
+
+```{r}
+#| include: false
+
+library(tidyverse)
+library(knitr)
+```
+
+## 
+
+## Section 2: Introduction to R Language
+
+### What is R?
+
+R is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.
+
+### Why R?
+
+-   R is open-source and free
+-   R is a powerful tool for data analysis
+-   R has a large and active community
+-   R has a large number of packages for data analysis
+-   R is a programming language and can be used for automating data analysis tasks
+-   R is a great tool for reproducible research
+
+### RStudio
+
+Rsudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.
+
+### 

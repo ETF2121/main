@@ -1,0 +1,30 @@
+---
+title: "Lecture Note 3"
+filters: 
+  - webr
+execute: 
+  echo: false
+---
+
+::: callout-note
+Learning Objective:
+
+LO1: Identifying an underlying pattern from a time-series plot.
+
+LO2: Calculate and measures of forecasting accuracy.
+
+LO3: Use various techniques to forecast a time series data.
+
+LO4:  Using linear regression to forecast a time series data.
+:::
+
+```{r}
+#| include: false
+
+library(tidyverse)
+library(knitr)
+```
+
+## 
+
+## 
