@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sta210-s22.github.io/website/index.html</loc>
-    <lastmod>2024-06-30T02:31:27.578Z</lastmod>
+    <lastmod>2024-07-13T23:03:59.301Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/course-overview.html</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/course-syllabus.html</loc>
-    <lastmod>2024-06-22T12:43:37.744Z</lastmod>
+    <lastmod>2024-07-15T10:53:36.584Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/exams/exam-2.html</loc>
@@ -34,7 +34,7 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/notes/w1.html</loc>
-    <lastmod>2024-06-29T10:07:01.581Z</lastmod>
+    <lastmod>2024-07-06T21:57:58.377Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/exams/exam-3.html</loc>
@@ -54,7 +54,7 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/course-team.html</loc>
-    <lastmod>2024-06-22T11:29:55.314Z</lastmod>
+    <lastmod>2024-07-15T11:12:05.061Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/supplementary/supp1.html</loc>
@@ -86,11 +86,11 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/labs/lab-1.html</loc>
-    <lastmod>2024-06-23T12:09:13.138Z</lastmod>
+    <lastmod>2024-07-05T11:49:20.563Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/notes/w3.html</loc>
-    <lastmod>2024-06-28T05:33:46.372Z</lastmod>
+    <lastmod>2024-07-13T22:32:06.639Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/weeks/week-2.html</loc>
@@ -106,7 +106,7 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/labs/lab-2.html</loc>
-    <lastmod>2024-06-23T12:25:05.219Z</lastmod>
+    <lastmod>2024-07-06T12:42:04.658Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/labs/lab-4.html</loc>
@@ -118,7 +118,7 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/notes/w5.html</loc>
-    <lastmod>2024-06-29T10:03:32.916Z</lastmod>
+    <lastmod>2024-07-08T11:59:29.821Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/weeks/week-3.html</loc>
@@ -146,7 +146,7 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/notes/w10.html</loc>
-    <lastmod>2024-06-29T09:38:54.232Z</lastmod>
+    <lastmod>2024-06-30T08:39:47.818Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/notes/w9.html</loc>
@@ -154,6 +154,10 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/notes/w6.html</loc>
-    <lastmod>2024-06-29T10:03:11.010Z</lastmod>
+    <lastmod>2024-07-08T11:58:40.017Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta210-s22.github.io/website/hw/hw-1.html</loc>
+    <lastmod>2024-07-15T10:45:10.421Z</lastmod>
   </url>
 </urlset>

@@ -1,9 +1,9 @@
 ---
-title: "Lecture Note Week 11"
+title: "Lecture Note Week 12"
 filters: 
   - webr
 execute: 
-  echo: true
+  echo: false
 ---
 
 ::: callout-note
@@ -11,11 +11,11 @@ Learning Objective:
 
 LO1: Evaluate out-of-sample predictive performance of a model.
 
-LO2: Compute and interpret performance measures for regression methods.
+LO2: Compute and interpret performance measures for classification methods.
 
-LO3: Describe and apply regression trees
+LO3: Describe and apply logistic regression.
 
-LO4: Describe various ways of selecting features for a regression task.
+LO4: Describe and apply classification trees.
 :::
 
 ```{r}
@@ -25,280 +25,592 @@ library(tidyverse)
 library(knitr)
 ```
 
-## Section 1: Introduction to Predictive Data Mining
+### 1. Introduction to
 
-Predictive data mining, also known as supervised learning, is a powerful set of techniques used to forecast future outcomes based on historical data. In supervised learning, the process involves utilizing known values of an outcome variable to guide the learning algorithm in identifying patterns and relationships with the input features. By doing so, predictive models are developed that can make accurate predictions on new, unseen data.
+Evaluating the out-of-sample predictive performance of a model is crucial in determining its generalizability to new, unseen data. Two common methods for this evaluation are the static holdout method and k-fold cross-validation. This lecture note will cover both methods, their implementation, advantages, and limitations.
 
-The predictive data mining process includes several critical steps:
+### 2. Static Holdout Method
 
-1.  **Data Sampling:** Selecting a representative subset of data to ensure the models can generalize well to new data.
+#### 2.1. Concept
 
-2.  **Data Preparation:** Cleaning and transforming the data to address missing values, errors, and refining the set of variables.
+The static holdout method involves splitting the dataset into two distinct sets:
 
-3.  **Data Partitioning:** Dividing the dataset into training, validation, and test sets to evaluate model performance.
+-   **Training Set:** Used to train the model.
 
-4.  **Model Construction and Assessment:** Building and assessing various predictive models to select the best one based on performance metrics.
+-   **Testing (Holdout) Set:** Used to evaluate the model’s performance on unseen data.
 
-By following these steps, predictive data mining aims to create robust models that can provide valuable insights and predictions, driving informed decision-making across various fields and applications.
+#### 2.2. Implementation
 
-### Step 1: Data Sampling
+1.  **Split the Dataset:**
 
-Data sampling involves selecting a representative subset of the data from a dataset. This step is crucial because it ensures that the models trained later can generalize well to new, unseen data. Sampling should be done carefully to maintain the statistical properties of the original dataset.
+    -   Typically, a common split ratio is 70-80% for training and 20-30% for testing.
 
-#### 1. Random Sampling
+    ```         
+    r
+    ```
 
-**Definition:** Selecting a subset randomly from the entire dataset. Each data point has an equal chance of being included in the sample.
+    Copy code
 
-**Example:** Suppose you have a dataset of 10,000 customer records from a retail store. To create a sample, you randomly select 1,000 records. This random selection ensures that the sample is representative of the entire customer base, avoiding any bias.
+    `# Assuming data is in a data frame df and target variable is y set.seed(42) sample <- sample.int(n = nrow(df), size = floor(.8*nrow(df)), replace = F) train <- df[sample, ] test <- df[-sample, ]`
 
-Random sampling is simple and effective for large datasets. It’s commonly used because it maintains the statistical properties of the original dataset. However, if there are important subgroups within the data, random sampling might not capture them proportionally.
+2.  **Train the Model:**
 
-#### 2. Stratified Sampling
+    -   Fit the model on the training data.
 
-**Definition:** Ensuring that the sample represents different subgroups (strata) within the population. Strata are defined based on one or more attributes of the data.
+    ```         
+    r
+    ```
 
-**Example:** Consider the same dataset of 10,000 customer records, but this time the data includes a categorical variable indicating customer segments (e.g., Regular, Premium, and VIP). If you want to ensure each segment is proportionately represented in your sample, you use stratified sampling. If Regular customers make up 70% of the total, Premium 20%, and VIP 10%, your sample of 1,000 should contain 700 Regular, 200 Premium, and 100 VIP customers.
+    Copy code
 
-Stratified sampling is particularly useful when certain subgroups are of interest, or when there is a risk that these groups might be underrepresented in a random sample. This technique ensures that the sample accurately reflects the population's diversity.
+    `# Assuming using a linear model model <- lm(y ~ ., data = train)`
 
-#### 3. Systematic Sampling
+3.  **Evaluate the Model:**
 
-**Definition:** Selecting every $n^{th}$ item from a list or sequence. The starting point is chosen randomly, and then every $n^{th}$ item is included in the sample.
+    -   Predict on the test data and evaluate performance.
 
-**Example:** Imagine you have a dataset sorted by customer ID. To perform systematic sampling on a dataset of 10,000 customers to get a sample of 1,000, you could randomly choose a starting point between 1 and 10 (say you pick 5). You would then select every 10th customer (5, 15, 25, 35, etc.) until you reach 1,000 customers.
+    ```         
+    r
+    ```
 
-Systematic sampling is straightforward and easy to implement, especially with ordered data. It’s efficient when dealing with large datasets. However, if there is a hidden pattern in the data that corresponds to the sampling interval, it could introduce bias. For instance, if every $10^{th}$ customer tends to be from a particular region due to how the data was collected, this could skew the sample.
+    Copy code
 
-### Practical Considerations
+    `predictions <- predict(model, newdata = test) actuals <- test$y mse <- mean((predictions - actuals)^2)  # Mean Squared Error`
 
--   **Random Sampling:** Best for simplicity and general representativeness.
+#### 2.3. Advantages and Limitations
 
--   **Stratified Sampling:** Ideal when subgroups are crucial to the analysis and need proportional representation.
+-   **Advantages:**
 
--   **Systematic Sampling:** Useful for ordered data and when quick, evenly spaced samples are needed.
+    -   Simple to implement and understand.
 
-### Step 2: Data preparation
+    -   Computationally efficient.
 
-This is a critical step in the data mining process that involves cleaning and transforming raw data into a format suitable for modeling. This stage addresses various issues such as missing data, errors, and outliers, and refines the set of variables (features) to enhance the performance of the model.
+-   **Limitations:**
 
-#### 1. Handling Missing Data
+    -   Performance estimate can be highly dependent on the particular train-test split.
 
-Handling missing data involves imputing or removing missing values to ensure the dataset is complete and suitable for analysis.
+    -   Not ideal for small datasets.
 
-**Methods and Examples:**
+### 3. K-Fold Cross-Validation
 
--   **Mean/Mode Imputation:** Replace missing numerical values with the mean or categorical values with the mode of the available data.
+#### 3.1. Concept
 
-    -   **Example:** If a dataset of house prices has missing values for the number of rooms, replace those missing values with the mean number of rooms from the dataset.
+K-fold cross-validation involves splitting the dataset into `k` equally sized folds. The model is trained `k` times, each time using `k-1` folds for training and the remaining fold for testing. The average performance across all `k` iterations is then used as the final performance estimate.
 
--   **Median Imputation:** Replace missing values with the median value, which is useful when the data has outliers.
+#### 3.2. Implementation
 
-    -   **Example:** For a dataset with highly skewed income data, using the median income to replace missing values can be more robust than the mean.
+1.  **Split the Dataset into K Folds:**
 
--   **K-Nearest Neighbors (KNN) Imputation:** Use the average value of the k-nearest neighbors to impute missing data.
+    -   Typically, `k` is set to 5 or 10.
 
-    -   **Example:** In a dataset of customer demographics, if the age is missing, find the k-nearest neighbors (e.g., 5 neighbors) based on other features (like income, education) and use their average age to fill in the missing value.
+    ```         
+    r
+    ```
 
--   **Interpolation:** Estimate missing values using linear or polynomial interpolation based on adjacent data points.
+    Copy code
 
-    -   **Example:** In a time series dataset of temperature readings, use linear interpolation to estimate missing temperature values.
+    `library(caret) set.seed(42) folds <- createFolds(df$y, k = 5, list = TRUE)`
 
-#### 2. Data Cleaning
+2.  **Train and Evaluate the Model:**
 
-Data cleaning involves identifying and correcting errors, inconsistencies, and outliers in the data to ensure its integrity.
+    -   Iterate over each fold, train the model on `k-1` folds and evaluate on the remaining fold.
 
-**Methods and Examples:**
+    ```         
+    r
+    ```
 
--   **Outlier Detection and Treatment:** Identify and handle outliers using statistical methods or domain knowledge.
+    Copy code
 
-    -   **Example:** In a dataset of employee salaries, identify outliers by calculating the z-scores and removing or capping extreme values that fall beyond three standard deviations from the mean.
+    \`results \<- lapply(folds, function(fold) { train \<- df\[-fold, \] test \<- df\[fold, \]
 
--   **Consistency Checks:** Ensure that data entries are consistent across different records.
+    model \<- lm(y \~ ., data = train) predictions \<- predict(model, newdata = test) actuals \<- test\$y mse \<- mean((predictions - actuals)\^2) return(mse) })
 
-    -   **Example:** In a customer database, ensure that phone numbers are consistently formatted (e.g., all in the format +1-XXX-XXX-XXXX).
+    mean_mse \<- mean(unlist(results)) \# Average Mean Squared Error\`
 
--   **Duplicate Removal:** Identify and remove duplicate records.
+#### 3.3. Advantages and Limitations
 
-    -   **Example:** In an e-commerce transaction dataset, check for and remove duplicate transactions to avoid double-counting sales.
+-   **Advantages:**
 
-#### 3. Feature Engineering
+    -   More reliable performance estimate as it reduces variability due to data splitting.
 
-Feature engineering involves creating new features from existing data to improve model performance.
+    -   Utilizes the entire dataset for both training and testing, ensuring no data is wasted.
 
-**Methods and Examples:**
+-   **Limitations:**
 
--   **Interaction Terms:** Create features that capture interactions between existing variables.
+    -   More computationally intensive due to multiple training iterations.
 
-    -   **Example:** In a housing dataset, create an interaction term between the number of rooms and the size of the garden to capture their combined effect on house price.
+    -   Not as simple as the static holdout method.
 
--   **Polynomial Features:** Generate polynomial terms from existing features.
+### 4. Conclusion
 
-    -   **Example:** For a dataset predicting car prices, create a squared term for mileage (mileage\^2) to capture the non-linear relationship between mileage and price.
+Both the static holdout method and k-fold cross-validation are essential tools for evaluating the out-of-sample predictive performance of a model. The static holdout method is simpler and faster, suitable for large datasets. In contrast, k-fold cross-validation provides a more robust performance estimate, especially valuable for small to medium-sized datasets. Understanding and correctly implementing these methods will enhance the reliability of your model's performance assessment.
 
--   **Binning:** Transform continuous variables into categorical variables by grouping values into bins.
+## Lecture Notes: Computing and Interpreting Performance Measures for Classification Methods
 
-    -   **Example:** Convert age into age groups (e.g., 0-18, 19-35, 36-50, 51+) to simplify the model.
+### 1. Introduction
 
--   **Normalization/Scaling**
+Evaluating the performance of classification models is crucial for understanding their effectiveness in predicting categorical outcomes. This lecture note covers key performance measures, their computation, and interpretation for classification methods.
 
-    -   Normalization and scaling involve transforming features to a similar scale, which is crucial for algorithms sensitive to the scale of input data.
+### 2. Key Performance Measures
 
-  **Methods and Examples:**
+#### 2.1. Confusion Matrix
 
-    -   **Standardization (Z-score Normalization):** Transform features to have a mean of 0 and a standard deviation of 1.
+A confusion matrix is a table that summarizes the performance of a classification model by comparing the actual and predicted classifications.
 
-        -   **Example:** Standardize height and weight data in a health dataset to ensure they have the same scale when used in a k-nearest neighbors algorithm.
+-   **True Positive (TP):** Correctly predicted positive cases.
 
-        -   Formula: $z=\frac{x - \bar{x}}{SD_{x}}$
+-   **True Negative (TN):** Correctly predicted negative cases.
 
-    -   **Robust Scaling:** Scale features using the median and the interquartile range (IQR) to reduce the impact of outliers.
+-   **False Positive (FP):** Incorrectly predicted positive cases (Type I error).
 
-        -   **Example:** For a dataset with income data that has outliers, use robust scaling to transform the data by subtracting the median and dividing by the interquartile range (IQR).
-        -   Formula: $z=\frac{x - Median_{x}}{IQR_{x}}$
+-   **False Negative (FN):** Incorrectly predicted negative cases (Type II error).
 
-### Step 3. Data Partitioning
+#### 2.2. Accuracy
 
-Data partitioning divides the dataset into distinct subsets used for training, validating, and testing the model. This ensures that the model’s performance is evaluated on data that it has not seen during training, which helps in assessing its generalizability.
+Accuracy measures the proportion of correct predictions (both true positives and true negatives) among the total number of cases.
 
-#### Holdout method
+Accuracy=TP+TNTP+TN+FP+FN\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}Accuracy=TP+TN+FP+FNTP+TN​
 
-1.  **Training set (Construction)**:
+```         
+r
+```
 
-    -   During this phase, candidate models were built by training them on available data.
+Copy code
 
-    -   The model learns from the training data to recognize patterns and make predictions.
+`accuracy <- (TP + TN) / (TP + TN + FP + FN)`
 
-    -   Typically about 60% of the data.
+#### 2.3. Precision
 
-2.  **Validation set (Performance Comparison)**:
+Precision (also called Positive Predictive Value) measures the proportion of true positive predictions among all positive predictions.
 
-    -   In this step, the performance of different candidate models were compared.
+Precision=TPTP+FP\text{Precision} = \frac{TP}{TP + FP}Precision=TP+FPTP​
 
-    -   The validation set helps fine-tune hyperparameters and assess how well each model generalizes to unseen data.
+```         
+r
+```
 
-    -   Typically comprises 20-30% of the data.
+Copy code
 
-3.  **Test set (Future Performance Assessment)**:
+`precision <- TP / (TP + FP)`
 
-    -   Once the model is selected, have to evaluate its performance on a separate testing dataset.
+#### 2.4. Recall
 
-    -   This assessment provides insights into how the model will perform in real-world scenarios.
+Recall (also called Sensitivity or True Positive Rate) measures the proportion of true positive cases among all actual positive cases.
 
-    -   Typically comprises 10-20% of the data.
+Recall=TPTP+FN\text{Recall} = \frac{TP}{TP + FN}Recall=TP+FNTP​
 
-#### k-Fold cross validation
+```         
+r
+```
 
-Step-by-step guide:
+Copy code
 
-1.  **Dataset Partitioning:**
+`recall <- TP / (TP + FN)`
 
-    -   The dataset is randomly divided into k subsets, called folds.
+#### 2.5. F1 Score
 
-    -   Common choices for k are 5 or 10.
+The F1 Score is the harmonic mean of precision and recall, providing a balance between the two.
 
-2.  **Pre-Processing Step:**
+F1 Score=2⋅Precision⋅RecallPrecision+Recall\text{F1 Score} = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}F1 Score=2⋅Precision+RecallPrecision⋅Recall​
 
-    -   If an unbiased estimate of the final model is desired, set aside a specific number of observations to create a test set.
+```         
+r
+```
 
-3.  **Training and Validation:**
+Copy code
 
-    -   In each iteration, k-1 folds are combined to form the training set.
+`f1_score <- 2 * (precision * recall) / (precision + recall)`
 
-    -   The remaining fold is used as the validation set.
+#### 2.6. Specificity
 
-4.  **Iteration Process:**
+Specificity (also called True Negative Rate) measures the proportion of true negative cases among all actual negative cases.
 
-    -   This process is repeated k times, each time with a different fold as the validation set.
+Specificity=TNTN+FP\text{Specificity} = \frac{TN}{TN + FP}Specificity=TN+FPTN​
 
-5.  **Result Aggregation:**
+```         
+r
+```
 
-    -   The results from the k iterations are aggregated and averaged to provide an overall performance estimate.
+Copy code
 
-#### Leave-One-Out Cross-Validation (LOOCV)
+`specificity <- TN / (TN + FP)`
 
--   A special case of k-fold cross-validation.
+### 3. Implementation in R
 
--   The number of folds equals the number of observations.
+Assuming you have a binary classification model and a dataset with actual and predicted values, here's how to compute these performance measures in R.
 
--   Each iteration uses a single observation as the validation set and the rest as the training set.
+1.  **Generate Predictions:**
 
-### Step 4: Model Selection
+    ```         
+    r
+    ```
 
--   see section 2.
+    Copy code
 
-### Step 5: Assessing Model Performance
+    `# Example using a logistic regression model model <- glm(y ~ ., data = train, family = binomial) predictions <- predict(model, newdata = test, type = "response") predicted_classes <- ifelse(predictions > 0.5, 1, 0)`
 
-#### Mean Squared Error (MSE)
+2.  **Create a Confusion Matrix:**
 
--   **Definition:** MSE measures the average squared difference between the predicted values and the actual values.
+    ```         
+    r
+    ```
 
--   **Formula:** $MSE=1/n\sum_{i=1}^{n}(y_i-\hat{y_{i}})^2$
+    Copy code
 
-    -   Where nnn is the number of observations, yiy_iyi​ is the actual value, and y\^i\hat{y}\_iy\^​i​ is the predicted value.
+    `library(caret) confusion_matrix <- confusionMatrix(as.factor(predicted_classes), as.factor(test$y))`
 
--   **Interpretation:** MSE provides an indication of the average error magnitude, with a greater penalty on larger errors due to the squaring of differences. Lower MSE values indicate better model performance, with zero being a perfect score.
+3.  **Extract Performance Measures:**
 
--   **Example:** If predicting house prices, MSE would represent how far off, on average, the model's predictions are from the actual prices, emphasizing larger discrepancies more heavily.
+    ```         
+    r
+    ```
 
-#### Root Mean Squared Error (RMSE)
+    Copy code
 
--   **Definition:** RMSE is the square root of MSE, providing an error measurement in the same units as the outcome variable.
+    \`confusion \<- confusion_matrix\$table TP \<- confusion\[2, 2\] TN \<- confusion\[1, 1\] FP \<- confusion\[1, 2\] FN \<- confusion\[2, 1\]
 
--   **Formula:** $RMSE=\sqrt{1/n\sum_{i=1}^{n}(y_i-\hat{y_{i}})^2}$
+    accuracy \<- (TP + TN) / (TP + TN + FP + FN) precision \<- TP / (TP + FP) recall \<- TP / (TP + FN) f1_score \<- 2 \* (precision \* recall) / (precision + recall) specificity \<- TN / (TN + FP)\`
 
--   **Interpretation:** RMSE is more interpretable than MSE because it is in the same unit as the outcome variable. It still penalizes larger errors more significantly. Lower RMSE values indicate a better fit.
+### 4. Interpretation
 
--   **Example:** For house price predictions, an RMSE of \$20,000 would mean that, on average, the model's predictions are off by \$20,000 from the actual prices.
+-   **Accuracy:** High accuracy indicates that the model correctly classifies most cases. However, it may be misleading if the classes are imbalanced.
 
-#### Mean Absolute Error (MAE)
+-   **Precision:** High precision means that when the model predicts a positive case, it is usually correct. It is important when the cost of false positives is high.
 
--   **Definition:** MAE measures the average absolute difference between the predicted values and the actual values.
+-   **Recall:** High recall means that the model can identify most actual positive cases. It is important when the cost of false negatives is high.
 
--   **Formula:**
+-   **F1 Score:** A balanced measure that is useful when you need to balance precision and recall.
 
-    -   $RMSE=\sqrt{1/n\sum_{i=1}^{n}(y_i-\hat{y_{i}})^2}$
+-   **Specificity:** High specificity means that the model can identify most actual negative cases. It is important when the cost of false positives is high.
 
--   **Interpretation:** MAE provides a straightforward measure of model accuracy by calculating the average magnitude of errors in the predictions, without considering their direction (i.e., whether the predictions are under or over). It is less sensitive to outliers than MSE and RMSE. Lower MAE values indicate better model performance.
+### 5. Conclusion
 
--   **Example:** For house price predictions, an MAE of \$15,000 means that, on average, the model's predictions are off by \$15,000 from the actual prices.
+Understanding and correctly interpreting performance measures are essential for evaluating the effectiveness of classification models. Each measure provides unique insights, and the choice of which to prioritize depends on the specific context and costs associated with false positives and false negatives.
 
-## Section 2: Predictive Model: Regression Trees
+## Logistic Regression
 
-### Introduction to Regression Trees
+### 1. Introduction
 
-A regression tree is a type of predictive model that employs a series of decision rules applied to the input features. This method is useful for predicting continuous outcomes based on various input variables.
+Logistic regression is a powerful statistical method used for binary classification problems. It is widely applied to scenarios where the outcome variable is binary (e.g., yes/no, success/failure). This lecture note will describe the logistic regression model and demonstrate its application using examples inspired by the "Business Analytics" book by Jeffrey D. Camm and others.
 
-#### How Regression Trees Work?
+### 2. Logistic Regression Model
 
-1.  **Sequential Splitting:**
+#### 2.1. Concept
 
-    -   The model starts by asking a series of questions at each node, which sequentially split the data into two more homogeneous groups (branches). Each question involves comparing the value of an input variable to a certain threshold.
+Logistic regression models the probability of a binary outcome using a logistic function. Unlike linear regression, which predicts continuous outcomes, logistic regression predicts the probability that a given input point belongs to a particular class.
 
-2.  **Selection of Input Variables and Thresholds:**
+The logistic function (also known as the sigmoid function) is defined as:
 
-    -   At each node, the model selects the input variable and threshold value that best minimize the overall variance in the outcome variable. This ensures that each split results in groups that are as homogeneous as possible.
+P(Y=1∣X)=11+e−(β0+β1X1+β2X2+…+βkXk)P(Y=1\|X) = \frac{1}{1 + e^{-(\beta_0 + \beta_1X_1 + \beta_2X_2 + \ldots + \beta_kX_k)}}P(Y=1∣X)=1+e−(β0​+β1​X1​+β2​X2​+…+βk​Xk​)1​
 
-3.  **Building the Tree:**
+Where:
 
-    -   This process of splitting and minimizing variance continues until a predefined stopping criterion is met, such as a minimum number of observations in each terminal node or a maximum depth of the tree.
+-   P(Y=1∣X)P(Y=1\|X)P(Y=1∣X) is the probability that the outcome YYY is 1 given the input XXX.
 
-4.  **Application to Validation Set:**
+-   β0,β1,…,βk\beta\_0, \beta\_1, \ldots, \beta\_kβ0​,β1​,…,βk​ are the coefficients of the model.
 
-    -   Once the tree is built, it is used to classify observations in a validation set. Each observation is guided down the tree, following the rules at each node until it reaches a terminal node.
+#### 2.2. Odds and Logit
 
-5.  **Prediction:**
+-   **Odds:** The odds of an event are the ratio of the probability of the event occurring to the probability of it not occurring.
 
-    -   The predicted value for each observation is the average value of the outcome variable for all observations in the terminal node to which it belongs.
+Odds=P(Y=1∣X)1−P(Y=1∣X)\text{Odds} = \frac{P(Y=1|X)}{1 - P(Y=1|X)}Odds=1−P(Y=1∣X)P(Y=1∣X)​
 
-#### Advantages of Regression Trees
+-   **Logit:** The logit function is the natural logarithm of the odds.
 
--   **Interpretability:** The decision rules at each node are straightforward, making the model easy to interpret and understand.
+Logit(P)=log⁡(P1−P)=β0+β1X1+β2X2+…+βkXk\text{Logit}(P) = \log\left(\frac{P}{1-P}\right) = \beta\_0 + \beta\_1X_1 + \beta\_2X_2 + \ldots + \beta\_kX_kLogit(P)=log(1−PP​)=β0​+β1​X1​+β2​X2​+…+βk​Xk​
 
--   **Flexibility:** Regression trees can handle both numerical and categorical data and can model complex, non-linear relationships between the input and output variables.
+### 3. Applying Logistic Regression in R
 
--   **No Assumptions:** Unlike linear regression models, regression trees do not assume a specific form of the relationship between the input and output variables.
+#### 3.1. Data Preparation
 
-## Section 3: Case Problem - Housing Bubble 🏘️
+1.  **Load the Data:**
 
-Click [here]().
+    ```         
+    r
+    ```
 
+    Copy code
+
+    `# Example dataset data <- read.csv("path_to_dataset.csv")`
+
+2.  **Split the Data into Training and Testing Sets:**
+
+    ```         
+    r
+    ```
+
+    Copy code
+
+    `set.seed(123) sample <- sample.int(n = nrow(data), size = floor(0.8*nrow(data)), replace = FALSE) train <- data[sample, ] test <- data[-sample, ]`
+
+#### 3.2. Model Training
+
+1.  **Fit the Logistic Regression Model:**
+
+    ```         
+    r
+    ```
+
+    Copy code
+
+    `model <- glm(binary_outcome ~ ., data = train, family = binomial)`
+
+2.  **View Model Summary:**
+
+    ```         
+    r
+    ```
+
+    Copy code
+
+    `summary(model)`
+
+#### 3.3. Model Evaluation
+
+1.  **Make Predictions:**
+
+    ```         
+    r
+    ```
+
+    Copy code
+
+    `predictions <- predict(model, newdata = test, type = "response") predicted_classes <- ifelse(predictions > 0.5, 1, 0)`
+
+2.  **Create a Confusion Matrix:**
+
+    ```         
+    r
+    ```
+
+    Copy code
+
+    `library(caret) confusion_matrix <- confusionMatrix(as.factor(predicted_classes), as.factor(test$binary_outcome)) print(confusion_matrix)`
+
+3.  **Calculate Performance Metrics:**
+
+    ```         
+    r
+    ```
+
+    Copy code
+
+    \`confusion \<- confusion_matrix\$table TP \<- confusion\[2, 2\] TN \<- confusion\[1, 1\] FP \<- confusion\[1, 2\] FN \<- confusion\[2, 1\]
+
+    accuracy \<- (TP + TN) / (TP + TN + FP + FN) precision \<- TP / (TP + FP) recall \<- TP / (TP + FN) f1_score \<- 2 \* (precision \* recall) / (precision + recall) specificity \<- TN / (TN + FP)
+
+    cat("Accuracy:", accuracy, "\n") cat("Precision:", precision, "\n") cat("Recall:", recall, "\n") cat("F1 Score:", f1_score, "\n") cat("Specificity:", specificity, "\n")\`
+
+### 4. Interpretation
+
+-   **Coefficients:** The coefficients (β values) in the logistic regression model indicate the change in the log odds of the outcome for a one-unit increase in the predictor variable.
+
+-   **Odds Ratio:** The exponentiated coefficients (e\^β) represent the odds ratio, showing how the odds of the outcome change with a one-unit increase in the predictor.
+
+-   **Performance Metrics:** The confusion matrix and derived metrics (accuracy, precision, recall, F1 score, specificity) help evaluate the model's performance on the test data.
+
+#### 5.1. Example Scenario: Predicting Customer Churn
+
+-   **Dataset:** Customer data with features like age, account length, service usage, etc.
+
+-   **Binary Outcome:** Whether the customer churned (1) or not (0).
+
+```         
+r
+```
+
+Copy code
+
+\`# Example code based on a hypothetical dataset data \<- read.csv("customer_churn.csv") set.seed(123) sample \<- sample.int(n = nrow(data), size = floor(0.8\*nrow(data)), replace = FALSE) train \<- data\[sample, \] test \<- data\[-sample, \]
+
+# Fit logistic regression model
+
+model \<- glm(churn \~ age + account_length + service_usage, data = train, family = binomial)
+
+# Summary of the model
+
+summary(model)
+
+# Predictions
+
+predictions \<- predict(model, newdata = test, type = "response") predicted_classes \<- ifelse(predictions \> 0.5, 1, 0)
+
+# Confusion matrix
+
+library(caret) confusion_matrix \<- confusionMatrix(as.factor(predicted_classes), as.factor(test\$churn)) print(confusion_matrix)
+
+# Performance metrics
+
+confusion \<- confusion_matrix\$table TP \<- confusion\[2, 2\] TN \<- confusion\[1, 1\] FP \<- confusion\[1, 2\] FN \<- confusion\[2, 1\]
+
+accuracy \<- (TP + TN) / (TP + TN + FP + FN) precision \<- TP / (TP + FP) recall \<- TP / (TP + FN) f1_score \<- 2 \* (precision \* recall) / (precision + recall) specificity \<- TN / (TN + FP)
+
+cat("Accuracy:", accuracy, "\n") cat("Precision:", precision, "\n") cat("Recall:", recall, "\n") cat("F1 Score:", f1_score, "\n") cat("Specificity:", specificity, "\n")\`
+
+### 6. Conclusion
+
+Logistic regression is a fundamental tool for binary classification problems. Understanding how to apply and interpret logistic regression models is essential for making informed business decisions. By using the examples and techniques from the "Business Analytics" book, you can effectively implement logistic regression in your data analysis projects.
+
+### . Introduction
+
+A classification tree is a decision tree that is used to classify observations into categories. It is a non-parametric method that splits the data into subsets based on the value of input features, leading to a tree structure where each node represents a decision rule and each leaf represents a class label. This lecture note will describe the classification tree model and demonstrate its application using examples inspired by the "Business Analytics" book by Jeffrey D. Camm and others.
+
+### 2. Classification Tree Model
+
+#### 2.1. Concept
+
+A classification tree is built by recursively partitioning the dataset into subsets based on the value of input features. The objective is to create subsets that are as homogeneous as possible concerning the target variable.
+
+#### 2.2. Tree Structure
+
+-   **Root Node:** The topmost node representing the entire dataset.
+
+-   **Internal Nodes:** Nodes that split into further nodes based on a decision rule.
+
+-   **Leaf Nodes:** Terminal nodes that represent the final class label.
+
+#### 2.3. Splitting Criteria
+
+Common criteria for splitting nodes include:
+
+-   **Gini Index:** Measures impurity. Lower values indicate more homogeneous nodes.
+
+-   **Entropy:** Measures disorder. Lower values indicate more homogeneous nodes.
+
+-   **Misclassification Error:** Measures the frequency of incorrect classifications.
+
+### 3. Applying Classification Trees in R
+
+#### 3.1. Data Preparation
+
+1.  **Load the Data:**
+
+    ```         
+    r
+    ```
+
+    Copy code
+
+    `# Example dataset data <- read.csv("path_to_dataset.csv")`
+
+2.  **Split the Data into Training and Testing Sets:**
+
+    ```         
+    r
+    ```
+
+    Copy code
+
+    `set.seed(123) sample <- sample.int(n = nrow(data), size = floor(0.8*nrow(data)), replace = FALSE) train <- data[sample, ] test <- data[-sample, ]`
+
+#### 3.2. Model Training
+
+1.  **Fit the Classification Tree:**
+
+    ```         
+    r
+    ```
+
+    Copy code
+
+    `library(rpart) model <- rpart(binary_outcome ~ ., data = train, method = "class")`
+
+2.  **View the Tree:**
+
+    ```         
+    r
+    ```
+
+    Copy code
+
+    `library(rpart.plot) rpart.plot(model)`
+
+#### 3.3. Model Evaluation
+
+1.  **Make Predictions:**
+
+    ```         
+    r
+    ```
+
+    Copy code
+
+    `predictions <- predict(model, newdata = test, type = "class")`
+
+2.  **Create a Confusion Matrix:**
+
+    ```         
+    r
+    ```
+
+    Copy code
+
+    `library(caret) confusion_matrix <- confusionMatrix(predictions, as.factor(test$binary_outcome)) print(confusion_matrix)`
+
+3.  **Calculate Performance Metrics:**
+
+    ```         
+    r
+    ```
+
+    Copy code
+
+    \`confusion \<- confusion_matrix\$table TP \<- confusion\[2, 2\] TN \<- confusion\[1, 1\] FP \<- confusion\[1, 2\] FN \<- confusion\[2, 1\]
+
+    accuracy \<- (TP + TN) / (TP + TN + FP + FN) precision \<- TP / (TP + FP) recall \<- TP / (TP + FN) f1_score \<- 2 \* (precision \* recall) / (precision + recall) specificity \<- TN / (TN + FP)
+
+    cat("Accuracy:", accuracy, "\n") cat("Precision:", precision, "\n") cat("Recall:", recall, "\n") cat("F1 Score:", f1_score, "\n") cat("Specificity:", specificity, "\n")\`
+
+### 4. Interpretation
+
+-   **Tree Structure:** The tree diagram provides a visual representation of the decision rules used to classify observations.
+
+-   **Decision Rules:** Each internal node represents a decision rule based on a feature and a threshold value.
+
+-   **Performance Metrics:** The confusion matrix and derived metrics (accuracy, precision, recall, F1 score, specificity) help evaluate the model's performance on the test data.
+
+### 5. Example from "Business Analytics"
+
+In "Business Analytics" by Jeffrey D. Camm and others, classification trees are often applied to real-world business problems, such as customer segmentation, fraud detection, or risk assessment.
+
+#### 5.1. Example Scenario: Predicting Customer Churn
+
+-   **Dataset:** Customer data with features like age, account length, service usage, etc.
+
+-   **Binary Outcome:** Whether the customer churned (1) or not (0).
+
+```         
+r
+```
+
+Copy code
+
+\`# Example code based on a hypothetical dataset data \<- read.csv("customer_churn.csv") set.seed(123) sample \<- sample.int(n = nrow(data), size = floor(0.8\*nrow(data)), replace = FALSE) train \<- data\[sample, \] test \<- data\[-sample, \]
+
+# Fit classification tree
+
+library(rpart) model \<- rpart(churn \~ age + account_length + service_usage, data = train, method = "class")
+
+# Visualize the tree
+
+library(rpart.plot) rpart.plot(model)
+
+# Predictions
+
+predictions \<- predict(model, newdata = test, type = "class")
+
+# Confusion matrix
+
+library(caret) confusion_matrix \<- confusionMatrix(predictions, as.factor(test\$churn)) print(confusion_matrix)
+
+# Performance metrics
+
+confusion \<- confusion_matrix\$table TP \<- confusion\[2, 2\] TN \<- confusion\[1, 1\] FP \<- confusion\[1, 2\] FN \<- confusion\[2, 1\]
+
+accuracy \<- (TP + TN) / (TP + TN + FP + FN) precision \<- TP / (TP + FP) recall \<- TP / (TP + FN) f1_score \<- 2 \* (precision \* recall) / (precision + recall) specificity \<- TN / (TN + FP)
+
+cat("Accuracy:", accuracy, "\n") cat("Precision:", precision, "\n") cat("Recall:", recall, "\n") cat("F1 Score:", f1_score, "\n") cat("Specificity:", specificity, "\n")\`
+
+### 6. Conclusion
+
+Classification trees are intuitive and powerful tools for binary classification problems. They provide a clear visual representation of decision rules, making them easy to interpret.

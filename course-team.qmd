@@ -8,22 +8,32 @@ title: "Teaching team"
 
 **Dr.** **Joan Tan** (she/her) works as Senior Teaching Fellow at the Department of Business Statistics and Econometrics at Monash University and also currently working in a bank as an Associate Director. Joan's work focuses on bringing industry experience into teaching with student centered innovative learning.
 
+[Email me](mailto:joan.tan@monash.edu)
+
+☎️ Consultation hours: 12-1pm Tuesday
+
 ## Teaching Associates
 
-+-------------------------------------------------------+---------------------------+--------------------+
-| Contact                                               | Tutorial Slots (Location) | Consultation Hours |
-+=======================================================+===========================+====================+
-| **Mr. Chin Quek**                                     |                           |                    |
-|                                                       |                           |                    |
-| ![](images/team/chin.jpg){width="4cm" height="2.6cm"} |                           |                    |
-+-------------------------------------------------------+---------------------------+--------------------+
-| **Mr. Elvis Yang**                                    |                           |                    |
-|                                                       |                           |                    |
-| ![](images/team/elvis.jpeg){width="3cm" height="4cm"} |                           |                    |
-+-------------------------------------------------------+---------------------------+--------------------+
-| **Mr. Krisanat**                                      |                           |                    |
-|                                                       |                           |                    |
-| ![](images/team/krisanat.jpg){width="3cm"}            |                           |                    |
-+-------------------------------------------------------+---------------------------+--------------------+
-|                                                       |                           |                    |
-+-------------------------------------------------------+---------------------------+--------------------+
++-------------------------------------------------------+----------------------------+--------------------+
+| Contact                                               | Tutorial Slots (Location)  | Consultation Hours |
++=======================================================+============================+====================+
+| **Mr. Elvis Yang (Head Tutor)**                       | Wednesday 9.30am (T6) N122 |                    |
+|                                                       |                            |                    |
+| ![](images/team/elvis.jpeg){width="3cm" height="4cm"} |                            |                    |
+|                                                       |                            |                    |
+| 📧 elvis.yang\@monash.edu                             |                            |                    |
++-------------------------------------------------------+----------------------------+--------------------+
+| **Mr. Chin Quek**                                     | Tuesday 5pm (T1), C302A    |                    |
+|                                                       |                            |                    |
+| ![](images/team/chin.jpg){width="4cm" height="2.6cm"} | Tuesday 6.30pm (T4) C302A  |                    |
+|                                                       |                            |                    |
+| 📧 chin.quek\@monash.edu                              |                            |                    |
++-------------------------------------------------------+----------------------------+--------------------+
+| **Mr. Krisanat Anukarnsakulchularp**                  | Tuesday 9.30am (T2), N122; |                    |
+|                                                       |                            |                    |
+| ![](images/team/krisanat.jpg){width="3cm"}            | Tuesday 11am (T3) N122;    |                    |
+|                                                       |                            |                    |
+| 📧 Krisanat.Anukarnsakulchularp\@monash.edu           | Wednesday 3.30pm (T7)      |                    |
++-------------------------------------------------------+----------------------------+--------------------+
+|                                                       |                            |                    |
++-------------------------------------------------------+----------------------------+--------------------+

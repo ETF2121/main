@@ -17,17 +17,18 @@ On successful completion of this unit, you should be able to:
 
 ## Unit Outline
 
-1.  Introduction to data analysis
-2.  Descriptive statistics
-3.  Data visualization
-4.  Data wrangling
-5.  Probability: An introduction to modelling uncertainty
-6.  Descriptive data mining
-7.  Statistical inference
-8.  Linear regression
-9.  Time series analysis and forecasting
-10. Regression
-11. Classification
+1.  Business Analytics & Database Management System
+2.  Structured Query Language
+3.  Descriptive Statistics with Power BI
+4.  Data Visualization with Power BI
+5.  Data Wrangling
+6.  Modelling Uncertainty
+7.  Descriptive Analytics
+8.  Linear Regression
+9.  Time Series Analysis
+10. Predictive Analytics: Continuous Outcome Variables
+11. Predictive Analytics: Binary Outcome Variables
+12. Revision
 
 ## Textbooks
 
@@ -47,26 +48,29 @@ The textbook for this course is just a supplement to the lectures and labs. The 
 
 This unit contains a hurdle requirement that you must achieve to be able to pass the unit. The consequence of not achieving a hurdle requirement is a fail grade (NH) and a maximum mark of 45 for the unit.
 
-| Assessments  | Weight | Due Date    | Learnkng Oucomes |
-|--------------|--------|-------------|------------------|
-| Quizzes      | 10%    | Weekly      | Weeks 2-12       |
-| Assignment 1 | 20%    | Weeks 6     | Weeks 1-5        |
-| Assignment 2 | 20%    | Week 11     | Weeks 1-10       |
-| Final exam   | 50%    | Exam period | Weeks 1-12       |
+| Assessments           | Weight | Due Date    | Learning Outcomes |
+|-----------------------|--------|-------------|-------------------|
+| Quizzes               | 10%    | Weekly      | Weeks 2-12        |
+| Individual Assignment | 20%    | Weeks 6     | Weeks 1-5         |
+| Group Assignment\*    | 20%    | Week 11     | Weeks 1-10        |
+| Final exam            | 50%    | Exam period | Weeks 1-11        |
 
 -   *The lowest quiz grade will be dropped at the end of the semester.*
 -   It is your responsibility to check your assignment grading and to report any discrepancies within one week of the grade being posted.
+-   \*Maximum of 3 persons and minimum of 2 per group.
 
 ## Course info
 
-|            | Day | Time              | Location               |
-|------------|-----|-------------------|------------------------|
-| Lectures   | Tue | 2.00 pm - 3.50 pm | K312, Caulfield Campus |
-| Tutorial 1 | Tue | 5.00 pm - 6:30 pm | C302A                  |
-| Tutorial 2 | Tue | 9.30 am - 10:30 pm | N122                  |
-| Tutorial 3 | Tue | 11.00 am - 12:30 pm | N122                   |
-| Tutorial 4 | Tue | 6.30 pm - 7:30 pm | C302A                  |
-| Tutorial 5 | Wed | 9.30 am - 10:30 pm | N122                  |
+|             | Day | Time                | Location               |
+|-------------|-----|---------------------|------------------------|
+| Lectures    | Tue | 2.00 pm - 3.30 pm   | K312, Caulfield Campus |
+| Tutorial 01 | Tue | 5.00 pm - 6:30 pm   | C302A                  |
+| Tutorial 02 | Tue | 9.30 am - 12:00 pm  | N122                   |
+| Tutorial 03 | Tue | 11.00 am - 12:30 pm | N122                   |
+| Tutorial 04 | Tue | 6.30 pm - 7:30 pm   | C302A                  |
+| Tutorial 05 | Wed | 9.30 am - 10:30 pm  | N122                   |
+| Tutorial 06 | Wed | 9.30 am - 10:30 pm  | N122                   |
+| Tutorial 07 | Wed | 3.30 am - 5:00 pm   | N122                   |
 
 ### Communication
 
@@ -106,6 +110,6 @@ Assignment deadlines are set to facilitate your progression through the course c
 
 -   **Every Sunday**: Quiz closed at 11.55pm
 
--   **28th August 2024**: Assignment 1 submission deadline
+-   **28th August 2024**: Individual assignment submission deadline
 
--   **9th October 2024**: Assignment 2 submission deadline
+-   **9th October 2024**: Groulp assignment submission deadline

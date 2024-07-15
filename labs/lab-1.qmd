@@ -7,6 +7,8 @@ editor: visual
 
 Introduce yourself to your instructor and friends.
 
+Your tutor will show you how to do the following if you are reluctant to read all the text below. 😁
+
 ### Section 1: Sign up and Register for Oracle Live SQL?
 
 1.  Open your web browser and go to the Oracle Live SQL website: [Oracle Live SQL](https://livesql.oracle.com/).
@@ -150,13 +152,7 @@ Power BI Desktop is a powerful data visualization tool that allows you to connec
 
     -   Follow the prompts to load your data into Power BI Desktop.
 
-#### Exercises
-
-1.  **Connect to a Sample Data Source:**
-
-    -   Connect to a sample data source (e.g., an Excel file or a web data source) to practice loading data into Power BI Desktop.
-
-    -   Explore the data in the Data View and create a simple visualization in the Report View.
+### Alternative: MOVE platform!
 
 ### Section 3: Installing R and RStudio
 
@@ -264,25 +260,21 @@ To run R code in RStudio, you can either type commands directly into the console
 
 #### Exercises
 
-1.  **Calculate the Sum of Two Numbers:** using R/Rstudio
+1.  Calculate the following:
+
+    -   5 + 9
+
+    -   $20\times 4$
+
+    -   $9/2\times 9$
+
+2.  Run the below in your R console and discuss what is the difference between these three
 
     -   5 \* 3 - 7
     -   (5 \* 3) - 7
     -   5 \* (3 - 7)
 
 Discuss the results, is it as what you expected?
-
-2.  **Create a Vector:** using R/Rstudio
-
-    -   Create a vector named `numbers` with the values 1, 2, 3, 4, 5.
-    -   Calculate the sum of the vector using the `sum()` function.
-    -   Calculate the mean of the vector using the `mean()` function.
-
-3.  **Create a Data Frame:** using R/Rstudio
-
-    -   Create a data frame named `students` with the following columns: `name`, `age`, `gender`.
-    -   Add the following data to the data frame:
-        -   Name: Alice, Age
 
 Phew....feel overwhelm?
 

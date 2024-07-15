@@ -9,18 +9,13 @@ execute:
 ::: callout-note
 Learning Objective:
 
-LO1: Estimate simple linear regression model and multiple linear regression model.
+LO1: Identifying an underlying pattern from a time-series plot.
 
-LO2: Assessing the fit of the model.
+LO2: Calculate and measures of forecasting accuracy.
 
-LO3: Compute and interpret the coefficients of the model.
+LO3: Use various techniques to forecast a time series data.
 
-LO4: Use dummy variables to incorporate categorical variables in the model.
-
-LO5: Use quadratic and interaction terms in the model.
-
-LO4: Model inference.
-
+LO4:  Using linear regression to forecast a time series data.
 :::
 
 ```{r}
@@ -30,3 +25,6 @@ library(tidyverse)
 library(knitr)
 ```
 
+## 
+
+## 

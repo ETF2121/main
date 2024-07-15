@@ -1,5 +1,5 @@
 ---
-title: "Lecture Note Weeek 8"
+title: "Lecture Note 3"
 filters: 
   - webr
 execute: 
@@ -9,15 +9,17 @@ execute:
 ::: callout-note
 Learning Objective:
 
-LO1: Use and interpret principal component analysis (PCA) 
+LO1: Estimate simple linear regression model and multiple linear regression model.
 
-LO2: Describe and apply distance measures for observations consisting of quantitative variables.
+LO2: Assessing the fit of the model.
 
-LO3: Describe and apply distance measures for observations consisting of qualitative variables.
+LO3: Compute and interpret the coefficients of the model.
 
-LO4: Construct clusters with k-means clustering.
+LO4: Use dummy variables to incorporate categorical variables in the model.
 
-LO5: Construct clusters with hierarchical clustering.
+LO5: Use quadratic and interaction terms in the model.
+
+LO4: Model inference.
 
 :::
 
@@ -28,25 +30,3 @@ library(tidyverse)
 library(knitr)
 ```
 
-## 
-
-## Section 2: Introduction to R Language
-
-### What is R?
-
-R is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.
-
-### Why R?
-
--   R is open-source and free
--   R is a powerful tool for data analysis
--   R has a large and active community
--   R has a large number of packages for data analysis
--   R is a programming language and can be used for automating data analysis tasks
--   R is a great tool for reproducible research
-
-### RStudio
-
-Rsudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.
-
-### 

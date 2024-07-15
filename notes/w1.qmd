@@ -9,14 +9,11 @@ execute:
 ::: callout-note
 Learning Objective:
 
-LO1: Understand the basic concepts of SQL
+LO1: Understand business analytics
 
-LO2: Learn how to use SQL to communicate with the database
+LO2: Understand the concept of database management system
 
-LO3: Understand the different categories of SQL commands
-
-LO4: Learn the SQL syntax
-
+LO3: Understand the concept of SQL
 :::
 
 ```{r}
@@ -26,9 +23,53 @@ library(tidyverse)
 library(knitr)
 ```
 
-## 
+## Section 1: Introduction to Database Management System
 
-## Section 1: Introduction to SQL
+### What is a Database Management System?
+
+A database management system (DBMS) is a software system that enables users to define, create, maintain, and control access to a database. It is a collection of programs that enables users to create and maintain a database. A database is an organized collection of data that can be accessed, managed, and updated. A DBMS provides an interface for users to interact with the database, allowing them to perform operations such as querying, updating, and deleting data.
+
+### Why do we need a Database Management System?
+
+A DBMS provides several benefits over traditional file-based systems:
+
+-   Data Integrity: A DBMS enforces data integrity constraints to ensure that data is accurate and consistent. It prevents data duplication and enforces referential integrity between related data.
+-   Data Security: A DBMS provides access control mechanisms to restrict unauthorized access to data. It allows users to define roles and permissions to control who can access, modify, and delete data.
+-   Data Consistency: A DBMS ensures that data is consistent across the database. It enforces constraints to maintain data consistency and prevents anomalies such as data duplication and inconsistency.
+-   Data Recovery: A DBMS provides mechanisms for data backup and recovery. It allows users to restore data to a previous state in case of data loss or corruption.
+-   Data Scalability: A DBMS can scale to handle large volumes of data and users. It provides mechanisms for data partitioning, replication, and clustering to distribute data across multiple servers.
+-   Data Performance: A DBMS optimizes data access and retrieval to improve performance. It uses indexing, caching, and query optimization techniques to speed up data processing.
+-   Data Accessibility: A DBMS provides a centralized repository for data storage and management. It allows users to access data from multiple applications and locations.
+
+### What is a Database?
+
+A database is an organized collection of data that can be accessed, managed, and updated. It is a structured set of data stored in a computer system. A database typically consists of one or more tables that contain rows and columns of data. Each table represents a different entity or object, and each row represents a record or instance of that entity. A database can store data in various formats, such as text, numbers, dates, images, and multimedia files.
+
+### Types of Databases
+
+There are several types of databases, including:
+
+-   Relational Databases: Relational databases store data in tables that are related to each other through common fields. They use structured query language (SQL) to query and manipulate data. Examples of relational databases include MySQL, PostgreSQL, Oracle, and SQL Server.
+-   NoSQL Databases: NoSQL databases store data in a non-tabular format, such as key-value pairs, document stores, column-family stores, and graph databases. They are designed to handle large volumes of unstructured data and provide high scalability and performance. Examples of NoSQL databases include MongoDB, Cassandra, Redis, and Neo4j.
+-   Object-Oriented Databases: Object-oriented databases store data as objects, which encapsulate data and behavior. They are designed to model complex data structures and relationships. Examples of object-oriented databases include db4o, ObjectDB, and ObjectStore.
+
+### Components of a Database
+
+A database consists of several components, including:
+
+-   Tables: Tables are the primary storage structures in a database. They store data in rows and columns, where each row represents a record and each column represents a field.
+-   Columns: Columns are the vertical elements in a table that define the attributes of the data. Each column has a data type that specifies the type of data it can store.
+-   Rows: Rows are the horizontal elements in a table that represent individual records. Each row contains data values for each column in the table.
+
+### Keys
+
+A key is a field or combination of fields that uniquely identifies a record in a table. There are several types of keys, including:
+
+-   Primary Key: A primary key is a unique identifier for a record in a table. It enforces data integrity and ensures that each record is uniquely identified.
+-   Foreign Key: A foreign key is a field in a table that references the primary key of another table. It establishes a relationship between two tables and enforces referential integrity.
+-   Composite Key: A composite key is a combination of two or more fields that uniquely identifies a record in a table. It is used when a single field cannot uniquely identify a record.
+
+## Section 3: Introduction to SQL
 
 ### What is SQL?
 
@@ -58,7 +99,7 @@ Data Definition Language (DDL) is used to define the structure that holds the da
 -   TRUNCATE
 -   COMMENT
 
-### Data Manipulation Language (DML)
+### Data Manipulation Language (DML) 👈 [Most Important!]{style="color:red;"}
 
 Data Manipulation Language (DML) is used to manipulate the data itself. It is used to insert, update, delete, and retrieve data from the database. DML commands are not auto-committed. It means that the changes made by the DML command are not saved to the database automatically. You have to use the COMMIT command to save the changes. The following are the DML commands:
 
@@ -84,13 +125,19 @@ Data Control Language (DCL) is used to control the visibility of data. It is use
 -   GRANT
 -   REVOKE
 
-### Transaction Control Language (TCL)
+## Basic SQL Syntax
 
-Transaction Control Language (TCL) is used to manage the transactions in the database. It is used to manage the changes made by the DML commands. The following are the TCL commands:
+The `SELECT` statement is used to retrieve data from a database. The basic syntax of the `SELECT` statement is as follows:
 
--   COMMIT
--   ROLLBACK
--   SAVEPOINT
+``` sql
+SELECT column1, column2, ...
+FROM table_name;
+```
+
+-   `SELECT`: Keyword used to select data from a database.\
+-   `column1, column2, ...`: Columns that you want to retrieve from the database.
+-   `FROM`: Keyword used to specify the table from which you want to retrieve data.
+-   `table_name`: Name of the table from which you want to retrieve data.
 
 ## Section 2: Live SQL Oracle
 

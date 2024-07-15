@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -184,17 +218,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
-  <li><a href="#section-1-introduction-to-sql" id="toc-section-1-introduction-to-sql" class="nav-link" data-scroll-target="#section-1-introduction-to-sql">Section 1: Introduction to SQL</a>
+  <li><a href="#section-1-introduction-to-database-management-system" id="toc-section-1-introduction-to-database-management-system" class="nav-link active" data-scroll-target="#section-1-introduction-to-database-management-system">Section 1: Introduction to Database Management System</a>
+  <ul class="collapse">
+  <li><a href="#what-is-a-database-management-system" id="toc-what-is-a-database-management-system" class="nav-link" data-scroll-target="#what-is-a-database-management-system">What is a Database Management System?</a></li>
+  <li><a href="#why-do-we-need-a-database-management-system" id="toc-why-do-we-need-a-database-management-system" class="nav-link" data-scroll-target="#why-do-we-need-a-database-management-system">Why do we need a Database Management System?</a></li>
+  <li><a href="#what-is-a-database" id="toc-what-is-a-database" class="nav-link" data-scroll-target="#what-is-a-database">What is a Database?</a></li>
+  <li><a href="#types-of-databases" id="toc-types-of-databases" class="nav-link" data-scroll-target="#types-of-databases">Types of Databases</a></li>
+  <li><a href="#components-of-a-database" id="toc-components-of-a-database" class="nav-link" data-scroll-target="#components-of-a-database">Components of a Database</a></li>
+  <li><a href="#keys" id="toc-keys" class="nav-link" data-scroll-target="#keys">Keys</a></li>
+  </ul></li>
+  <li><a href="#section-3-introduction-to-sql" id="toc-section-3-introduction-to-sql" class="nav-link" data-scroll-target="#section-3-introduction-to-sql">Section 3: Introduction to SQL</a>
   <ul class="collapse">
   <li><a href="#what-is-sql" id="toc-what-is-sql" class="nav-link" data-scroll-target="#what-is-sql">What is SQL?</a></li>
   <li><a href="#sql-syntax" id="toc-sql-syntax" class="nav-link" data-scroll-target="#sql-syntax">SQL Syntax</a></li>
   <li><a href="#data-definition-language-ddl" id="toc-data-definition-language-ddl" class="nav-link" data-scroll-target="#data-definition-language-ddl">Data Definition Language (DDL)</a></li>
-  <li><a href="#data-manipulation-language-dml" id="toc-data-manipulation-language-dml" class="nav-link" data-scroll-target="#data-manipulation-language-dml">Data Manipulation Language (DML)</a></li>
+  <li><a href="#data-manipulation-language-dml-most-important" id="toc-data-manipulation-language-dml-most-important" class="nav-link" data-scroll-target="#data-manipulation-language-dml-most-important">Data Manipulation Language (DML) 👈 <span style="color:red;">Most Important!</span></a></li>
   <li><a href="#data-query-language-dql" id="toc-data-query-language-dql" class="nav-link" data-scroll-target="#data-query-language-dql">Data Query Language (DQL)</a></li>
   <li><a href="#data-control-language-dcl" id="toc-data-control-language-dcl" class="nav-link" data-scroll-target="#data-control-language-dcl">Data Control Language (DCL)</a></li>
-  <li><a href="#transaction-control-language-tcl" id="toc-transaction-control-language-tcl" class="nav-link" data-scroll-target="#transaction-control-language-tcl">Transaction Control Language (TCL)</a></li>
   </ul></li>
+  <li><a href="#basic-sql-syntax" id="toc-basic-sql-syntax" class="nav-link" data-scroll-target="#basic-sql-syntax">Basic SQL Syntax</a></li>
   <li><a href="#section-2-live-sql-oracle" id="toc-section-2-live-sql-oracle" class="nav-link" data-scroll-target="#section-2-live-sql-oracle">Section 2: Live SQL Oracle</a></li>
   </ul>
 </nav>
@@ -232,17 +274,64 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <p>Learning Objective:</p>
-<p>LO1: Understand the basic concepts of SQL</p>
-<p>LO2: Learn how to use SQL to communicate with the database</p>
-<p>LO3: Understand the different categories of SQL commands</p>
-<p>LO4: Learn the SQL syntax</p>
+<p>LO1: Understand business analytics</p>
+<p>LO2: Understand the concept of database management system</p>
+<p>LO3: Understand the concept of SQL</p>
 </div>
 </div>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
+<section id="section-1-introduction-to-database-management-system" class="level2">
+<h2 class="anchored" data-anchor-id="section-1-introduction-to-database-management-system">Section 1: Introduction to Database Management System</h2>
+<section id="what-is-a-database-management-system" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-database-management-system">What is a Database Management System?</h3>
+<p>A database management system (DBMS) is a software system that enables users to define, create, maintain, and control access to a database. It is a collection of programs that enables users to create and maintain a database. A database is an organized collection of data that can be accessed, managed, and updated. A DBMS provides an interface for users to interact with the database, allowing them to perform operations such as querying, updating, and deleting data.</p>
 </section>
-<section id="section-1-introduction-to-sql" class="level2">
-<h2 class="anchored" data-anchor-id="section-1-introduction-to-sql">Section 1: Introduction to SQL</h2>
+<section id="why-do-we-need-a-database-management-system" class="level3">
+<h3 class="anchored" data-anchor-id="why-do-we-need-a-database-management-system">Why do we need a Database Management System?</h3>
+<p>A DBMS provides several benefits over traditional file-based systems:</p>
+<ul>
+<li>Data Integrity: A DBMS enforces data integrity constraints to ensure that data is accurate and consistent. It prevents data duplication and enforces referential integrity between related data.</li>
+<li>Data Security: A DBMS provides access control mechanisms to restrict unauthorized access to data. It allows users to define roles and permissions to control who can access, modify, and delete data.</li>
+<li>Data Consistency: A DBMS ensures that data is consistent across the database. It enforces constraints to maintain data consistency and prevents anomalies such as data duplication and inconsistency.</li>
+<li>Data Recovery: A DBMS provides mechanisms for data backup and recovery. It allows users to restore data to a previous state in case of data loss or corruption.</li>
+<li>Data Scalability: A DBMS can scale to handle large volumes of data and users. It provides mechanisms for data partitioning, replication, and clustering to distribute data across multiple servers.</li>
+<li>Data Performance: A DBMS optimizes data access and retrieval to improve performance. It uses indexing, caching, and query optimization techniques to speed up data processing.</li>
+<li>Data Accessibility: A DBMS provides a centralized repository for data storage and management. It allows users to access data from multiple applications and locations.</li>
+</ul>
+</section>
+<section id="what-is-a-database" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-database">What is a Database?</h3>
+<p>A database is an organized collection of data that can be accessed, managed, and updated. It is a structured set of data stored in a computer system. A database typically consists of one or more tables that contain rows and columns of data. Each table represents a different entity or object, and each row represents a record or instance of that entity. A database can store data in various formats, such as text, numbers, dates, images, and multimedia files.</p>
+</section>
+<section id="types-of-databases" class="level3">
+<h3 class="anchored" data-anchor-id="types-of-databases">Types of Databases</h3>
+<p>There are several types of databases, including:</p>
+<ul>
+<li>Relational Databases: Relational databases store data in tables that are related to each other through common fields. They use structured query language (SQL) to query and manipulate data. Examples of relational databases include MySQL, PostgreSQL, Oracle, and SQL Server.</li>
+<li>NoSQL Databases: NoSQL databases store data in a non-tabular format, such as key-value pairs, document stores, column-family stores, and graph databases. They are designed to handle large volumes of unstructured data and provide high scalability and performance. Examples of NoSQL databases include MongoDB, Cassandra, Redis, and Neo4j.</li>
+<li>Object-Oriented Databases: Object-oriented databases store data as objects, which encapsulate data and behavior. They are designed to model complex data structures and relationships. Examples of object-oriented databases include db4o, ObjectDB, and ObjectStore.</li>
+</ul>
+</section>
+<section id="components-of-a-database" class="level3">
+<h3 class="anchored" data-anchor-id="components-of-a-database">Components of a Database</h3>
+<p>A database consists of several components, including:</p>
+<ul>
+<li>Tables: Tables are the primary storage structures in a database. They store data in rows and columns, where each row represents a record and each column represents a field.</li>
+<li>Columns: Columns are the vertical elements in a table that define the attributes of the data. Each column has a data type that specifies the type of data it can store.</li>
+<li>Rows: Rows are the horizontal elements in a table that represent individual records. Each row contains data values for each column in the table.</li>
+</ul>
+</section>
+<section id="keys" class="level3">
+<h3 class="anchored" data-anchor-id="keys">Keys</h3>
+<p>A key is a field or combination of fields that uniquely identifies a record in a table. There are several types of keys, including:</p>
+<ul>
+<li>Primary Key: A primary key is a unique identifier for a record in a table. It enforces data integrity and ensures that each record is uniquely identified.</li>
+<li>Foreign Key: A foreign key is a field in a table that references the primary key of another table. It establishes a relationship between two tables and enforces referential integrity.</li>
+<li>Composite Key: A composite key is a combination of two or more fields that uniquely identifies a record in a table. It is used when a single field cannot uniquely identify a record.</li>
+</ul>
+</section>
+</section>
+<section id="section-3-introduction-to-sql" class="level2">
+<h2 class="anchored" data-anchor-id="section-3-introduction-to-sql">Section 3: Introduction to SQL</h2>
 <section id="what-is-sql" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-sql">What is SQL?</h3>
 <p>SQL stands for <strong><em>Structured Query Language</em></strong>. It is a language used to communicate with databases. It is the standard language for relational database management systems. Why we need SQL? Let’s say you are suppose to design for a system that will store the information of students in a university. How would you store the information of students? You can store the information in a spreadsheet, but what if you have to store the information of thousands of students? It will be very difficult to manage the data in a spreadsheet. Also, where do you want to store the information? In a table? Will a table suffice? What if you have to store the information of the courses that the students are enrolled in? How will you manage the data? This is where databases come in.</p>
@@ -271,8 +360,8 @@ Note
 <li>COMMENT</li>
 </ul>
 </section>
-<section id="data-manipulation-language-dml" class="level3">
-<h3 class="anchored" data-anchor-id="data-manipulation-language-dml">Data Manipulation Language (DML)</h3>
+<section id="data-manipulation-language-dml-most-important" class="level3">
+<h3 class="anchored" data-anchor-id="data-manipulation-language-dml-most-important">Data Manipulation Language (DML) 👈 <span style="color:red;">Most Important!</span></h3>
 <p>Data Manipulation Language (DML) is used to manipulate the data itself. It is used to insert, update, delete, and retrieve data from the database. DML commands are not auto-committed. It means that the changes made by the DML command are not saved to the database automatically. You have to use the COMMIT command to save the changes. The following are the DML commands:</p>
 <ul>
 <li>SELECT</li>
@@ -300,15 +389,19 @@ Note
 <li>REVOKE</li>
 </ul>
 </section>
-<section id="transaction-control-language-tcl" class="level3">
-<h3 class="anchored" data-anchor-id="transaction-control-language-tcl">Transaction Control Language (TCL)</h3>
-<p>Transaction Control Language (TCL) is used to manage the transactions in the database. It is used to manage the changes made by the DML commands. The following are the TCL commands:</p>
-<ul>
-<li>COMMIT</li>
-<li>ROLLBACK</li>
-<li>SAVEPOINT</li>
-</ul>
 </section>
+<section id="basic-sql-syntax" class="level2">
+<h2 class="anchored" data-anchor-id="basic-sql-syntax">Basic SQL Syntax</h2>
+<p>The <code>SELECT</code> statement is used to retrieve data from a database. The basic syntax of the <code>SELECT</code> statement is as follows:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> column1, column2, <span class="op">..</span>.</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> table_name;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><code>SELECT</code>: Keyword used to select data from a database.<br>
+</li>
+<li><code>column1, column2, ...</code>: Columns that you want to retrieve from the database.</li>
+<li><code>FROM</code>: Keyword used to specify the table from which you want to retrieve data.</li>
+<li><code>table_name</code>: Name of the table from which you want to retrieve data.</li>
+</ul>
 </section>
 <section id="section-2-live-sql-oracle" class="level2">
 <h2 class="anchored" data-anchor-id="section-2-live-sql-oracle">Section 2: Live SQL Oracle</h2>

@@ -1,5 +1,5 @@
 ---
-title: "Lecture Note Week 7"
+title: "Lecture Note Weeek 8"
 filters: 
   - webr
 execute: 
@@ -9,17 +9,16 @@ execute:
 ::: callout-note
 Learning Objective:
 
-LO1: Take random samples from population.
+LO1: Use and interpret principal component analysis (PCA) 
 
-LO2: Calculate and interpret point estimates and confidence intervals for population parameters.
+LO2: Describe and apply distance measures for observations consisting of quantitative variables.
 
-LO3: Calculate and interpret the margin of error for a confidence interval.
+LO3: Describe and apply distance measures for observations consisting of qualitative variables.
 
-LO4: Identify the sampling distributions for sample means and sample proportions.
+LO4: Construct clusters with k-means clustering.
 
-LO5: Formulate and interpret hypotheses for population parameters.
+LO5: Construct clusters with hierarchical clustering.
 
-LO6: Identify Type I and Type II errors.
 :::
 
 ```{r}

@@ -190,17 +190,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started"><strong>Getting Started</strong></a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><strong>Conclusion</strong></a></li>
   </ul></li>
-  <li><a href="#section-2.-descriptive-statistics" id="toc-section-2.-descriptive-statistics" class="nav-link" data-scroll-target="#section-2.-descriptive-statistics">Section 2. Descriptive Statistics</a>
+  <li><a href="#section-2-data-wrangling-in-power-bi" id="toc-section-2-data-wrangling-in-power-bi" class="nav-link" data-scroll-target="#section-2-data-wrangling-in-power-bi">Section 2: Data Wrangling in Power BI</a>
   <ul class="collapse">
-  <li><a href="#types-of-data" id="toc-types-of-data" class="nav-link" data-scroll-target="#types-of-data">2. Types of Data</a></li>
-  <li><a href="#frequency-distributions" id="toc-frequency-distributions" class="nav-link" data-scroll-target="#frequency-distributions">3. Frequency Distributions</a></li>
-  <li><a href="#histograms-and-cumulative-distributions" id="toc-histograms-and-cumulative-distributions" class="nav-link" data-scroll-target="#histograms-and-cumulative-distributions">4. Histograms and Cumulative Distributions</a></li>
-  <li><a href="#measures-of-central-tendency" id="toc-measures-of-central-tendency" class="nav-link" data-scroll-target="#measures-of-central-tendency">5. Measures of Central Tendency</a></li>
-  <li><a href="#measures-of-variability" id="toc-measures-of-variability" class="nav-link" data-scroll-target="#measures-of-variability">6. Measures of Variability</a></li>
-  <li><a href="#percentiles-and-quartiles" id="toc-percentiles-and-quartiles" class="nav-link" data-scroll-target="#percentiles-and-quartiles">7. Percentiles and Quartiles</a></li>
-  <li><a href="#z-scores-and-the-empirical-rule" id="toc-z-scores-and-the-empirical-rule" class="nav-link" data-scroll-target="#z-scores-and-the-empirical-rule">8. Z-Scores and the Empirical Rule</a></li>
-  <li><a href="#outliers-and-boxplots" id="toc-outliers-and-boxplots" class="nav-link" data-scroll-target="#outliers-and-boxplots">9. Outliers and Boxplots</a></li>
-  <li><a href="#conclusion-1" id="toc-conclusion-1" class="nav-link" data-scroll-target="#conclusion-1">Conclusion</a></li>
+  <li><a href="#practical-example-using-the-store-sales-dataset." id="toc-practical-example-using-the-store-sales-dataset." class="nav-link" data-scroll-target="#practical-example-using-the-store-sales-dataset.">Practical Example Using the “Store Sales” Dataset.</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -305,8 +297,8 @@ Note
 <li><p>Add titles, labels, and other elements to enhance your report.</p></li>
 </ul>
 </section>
-<section id="save-and-publish-your-report" class="level4">
-<h4 class="anchored" data-anchor-id="save-and-publish-your-report"><strong>7. Save and Publish Your Report</strong></h4>
+<section id="save-and-publish-your-report-this-feature-will-not-be-taught-for-this-course-as-it-needs-a-paid-version" class="level4">
+<h4 class="anchored" data-anchor-id="save-and-publish-your-report-this-feature-will-not-be-taught-for-this-course-as-it-needs-a-paid-version"><strong>7. Save and Publish Your Report 👈 (This feature will not be taught for this course as it needs a paid version)</strong></h4>
 <ul>
 <li><p>Click on the “File” tab.</p></li>
 <li><p>Select “Save As” to save your report locally.</p></li>
@@ -321,303 +313,142 @@ Note
 <p>Congratulations! You have successfully created your first Power BI report. Power BI is a versatile tool with many advanced features, so continue exploring and experimenting to unlock its full potential. Happy data analyzing!</p>
 </section>
 </section>
-<section id="section-2.-descriptive-statistics" class="level2">
-<h2 class="anchored" data-anchor-id="section-2.-descriptive-statistics">Section 2. Descriptive Statistics</h2>
-<section id="types-of-data" class="level3">
-<h3 class="anchored" data-anchor-id="types-of-data">2. Types of Data</h3>
-<section id="population-and-sample-data" class="level4">
-<h4 class="anchored" data-anchor-id="population-and-sample-data">Population and Sample Data</h4>
+<section id="section-2-data-wrangling-in-power-bi" class="level1">
+<h1>Section 2: Data Wrangling in Power BI</h1>
+<section id="introduction-to-power-bi" class="level4">
+<h4 class="anchored" data-anchor-id="introduction-to-power-bi">1. Introduction to Power BI</h4>
+<p><strong>Overview of Power BI:</strong> Power BI is a suite of business analytics tools that deliver insights throughout your organization. You can connect to hundreds of data sources, simplify data prep, and drive ad hoc analysis. Produce beautiful reports, then publish them for your organization to consume on the web and across mobile devices.</p>
+<p><strong>Understanding the Power BI Interface:</strong></p>
 <ul>
-<li><p><strong>Population Data:</strong> Refers to the entire set of data or items of interest.</p>
+<li><p><strong>Home Ribbon:</strong> Access common actions like getting data, viewing data transformations, and publishing reports.</p></li>
+<li><p><strong>Report View:</strong> Design your report using various visualizations.</p></li>
+<li><p><strong>Data View:</strong> See the data tables and make transformations.</p></li>
+<li><p><strong>Model View:</strong> Manage the relationships between different tables in your dataset.</p></li>
+<li><p><strong>Fields Pane:</strong> Contains the tables and fields in your data model.</p></li>
+<li><p><strong>Visualizations Pane:</strong> Choose from a variety of visualizations to represent your data.</p></li>
+</ul>
+<p><strong>Connecting to Various Data Sources:</strong> To get started, open Power BI and load your dataset:</p>
+<ol type="1">
+<li><p>Go to the <strong>Home</strong> tab and click <strong>Get Data</strong>.</p></li>
+<li><p>Choose the type of data source (e.g., Excel, SQL Server, etc.).</p></li>
+<li><p>Navigate to the location of your dataset (in this case, the “Store Sales.pbix” file) and load it into Power BI.</p></li>
+</ol>
+</section>
+<section id="data-import-and-transformation" class="level4">
+<h4 class="anchored" data-anchor-id="data-import-and-transformation">2. Data Import and Transformation</h4>
+<p><strong>Importing Data:</strong> Once the dataset is loaded, you can see the data in the <strong>Data View</strong>. If needed, you can refresh the data to get the latest updates.</p>
+<p><strong>Using Power Query Editor:</strong></p>
+<ol type="1">
+<li><p>Click on <strong>Transform Data</strong> to open the Power Query Editor.</p></li>
+<li><p>In the Power Query Editor, you can see a list of queries (tables) on the left, the data preview in the middle, and applied steps on the right.</p></li>
+</ol>
+<p><strong>Applying Transformations:</strong></p>
 <ul>
-<li>Example: All employees in a company.</li>
-</ul></li>
-<li><p><strong>Sample Data:</strong> A subset of the population data.</p>
-<ul>
-<li>Example: Employees in one department.</li>
-</ul></li>
+<li><p><strong>Filtering:</strong> Remove rows that don’t meet certain criteria.</p></li>
+<li><p><strong>Sorting:</strong> Sort data based on one or more columns.</p></li>
+<li><p><strong>Merging:</strong> Combine columns or rows from different tables.</p></li>
+<li><p><strong>Appending:</strong> Add rows from one table to another.</p></li>
 </ul>
 </section>
-<section id="quantitative-and-categorical-data" class="level4">
-<h4 class="anchored" data-anchor-id="quantitative-and-categorical-data">Quantitative and Categorical Data</h4>
+<section id="data-cleaning-techniques" class="level4">
+<h4 class="anchored" data-anchor-id="data-cleaning-techniques">3. Data Cleaning Techniques</h4>
+<p><strong>Handling Missing Values:</strong></p>
 <ul>
-<li><p><strong>Quantitative (Numerical) Data:</strong> Data that represents quantities and can be measured.</p>
+<li>Use the <strong>Remove Rows</strong> or <strong>Replace Values</strong> feature to handle missing data.</li>
+</ul>
+<p><strong>Removing Duplicates:</strong></p>
 <ul>
-<li>Example: Sales figures, ages.</li>
-</ul></li>
-<li><p><strong>Categorical (Qualitative) Data:</strong> Data that represents categories or groups.</p>
+<li>Select the column(s) where you want to remove duplicates and use the <strong>Remove Duplicates</strong> feature.</li>
+</ul>
+<p><strong>Text Cleaning:</strong></p>
 <ul>
-<li>Example: Product categories, regions.</li>
-</ul></li>
+<li><p><strong>Trim:</strong> Remove leading and trailing spaces.</p></li>
+<li><p><strong>Replace Values:</strong> Replace specific text values with others.</p></li>
+<li><p><strong>Case Conversion:</strong> Convert text to uppercase, lowercase, or proper case.</p></li>
+</ul>
+<p><strong>Splitting and Merging Columns:</strong></p>
+<ul>
+<li><p><strong>Split Column:</strong> Split a column into multiple columns based on a delimiter or fixed number of characters.</p></li>
+<li><p><strong>Merge Columns:</strong> Combine multiple columns into one, separated by a delimiter.</p></li>
 </ul>
 </section>
-<section id="cross-sectional-and-time-series-data" class="level4">
-<h4 class="anchored" data-anchor-id="cross-sectional-and-time-series-data">Cross-Sectional and Time Series Data</h4>
+<section id="data-shaping" class="level4">
+<h4 class="anchored" data-anchor-id="data-shaping">4. Data Shaping</h4>
+<p><strong>Pivoting and Unpivoting Data:</strong></p>
 <ul>
-<li><p><strong>Cross-Sectional Data:</strong> Data collected at a single point in time.</p>
+<li><p><strong>Pivot Columns:</strong> Turn unique values from one column into multiple columns.</p></li>
+<li><p><strong>Unpivot Columns:</strong> Transform columns into rows to normalize data.</p></li>
+</ul>
+<p><strong>Grouping and Summarizing Data:</strong></p>
 <ul>
-<li>Example: Survey results collected on a specific date.</li>
-</ul></li>
-<li><p><strong>Time Series Data:</strong> Data collected over different time periods.</p>
+<li>Use the <strong>Group By</strong> feature to aggregate data (e.g., sum, average) based on one or more columns.</li>
+</ul>
+<p><strong>Creating Custom Columns:</strong></p>
 <ul>
-<li>Example: Monthly sales data.</li>
-</ul></li>
+<li>Use the <strong>Add Column</strong> tab to create custom columns with M language formulas or pre-built functions.</li>
+</ul>
+<p><strong>Using Conditional Column:</strong></p>
+<ul>
+<li>Create new columns based on conditions using the <strong>Conditional Column</strong> feature.</li>
 </ul>
 </section>
-<section id="sorting-and-filtering-data" class="level4">
-<h4 class="anchored" data-anchor-id="sorting-and-filtering-data">Sorting and Filtering Data</h4>
+<section id="data-types-and-formats" class="level4">
+<h4 class="anchored" data-anchor-id="data-types-and-formats">5. Data Types and Formats</h4>
+<p><strong>Changing Data Types:</strong></p>
 <ul>
-<li><p><strong>Sorting Data:</strong></p>
+<li>Ensure each column has the correct data type (e.g., text, number, date). Change the data type by selecting the column and choosing the appropriate type from the <strong>Transform</strong> tab.</li>
+</ul>
+<p><strong>Formatting Numbers, Dates, and Text:</strong></p>
 <ul>
-<li>Click on the column header to sort data in ascending or descending order.</li>
-</ul></li>
-<li><p><strong>Filtering Data:</strong></p>
+<li>Format numbers (e.g., currency, percentage), dates (e.g., short date, long date), and text to ensure consistency and readability.</li>
+</ul>
+<p><strong>Importance of Data Types in Power BI:</strong></p>
 <ul>
-<li>Use the filter pane to apply filters to your data.</li>
-</ul></li>
+<li>Correct data types are crucial for accurate calculations, aggregations, and visualizations. Incorrect data types can lead to errors and misleading insights.</li>
 </ul>
 </section>
-</section>
-<section id="frequency-distributions" class="level3">
-<h3 class="anchored" data-anchor-id="frequency-distributions">3. Frequency Distributions</h3>
-<section id="categorical-data" class="level4">
-<h4 class="anchored" data-anchor-id="categorical-data">Categorical Data</h4>
+<section id="practical-example-using-the-store-sales-dataset." class="level3">
+<h3 class="anchored" data-anchor-id="practical-example-using-the-store-sales-dataset.">Practical Example Using the “Store Sales” Dataset.</h3>
+<p>Click <a href="&quot;./data/Store Sales.pbix&quot;">here</a> to get the store data.</p>
+<section id="step-by-step-guide" class="level4">
+<h4 class="anchored" data-anchor-id="step-by-step-guide">Step-by-Step Guide:</h4>
+<ol type="1">
+<li><p><strong>Load the Dataset:</strong></p>
 <ul>
-<li><p><strong>Creating Frequency Distributions:</strong></p>
-<ul>
-<li><p>Use the “Visualizations” pane to create a bar chart.</p></li>
-<li><p>Drag the categorical field to the Axis and the Value fields.</p></li>
+<li><p>Open Power BI Desktop.</p></li>
+<li><p>Click <strong>File</strong> &gt; <strong>Open</strong> and select “Store Sales.pbix”.</p></li>
 </ul></li>
-</ul>
-</section>
-<section id="quantitative-data" class="level4">
-<h4 class="anchored" data-anchor-id="quantitative-data">Quantitative Data</h4>
+<li><p><strong>Transform Data:</strong></p>
 <ul>
-<li><p><strong>Creating Frequency Distributions:</strong></p>
-<ul>
-<li><p>Use the “Visualizations” pane to create a histogram.</p></li>
-<li><p>Drag the quantitative field to the Axis and the Value fields.</p></li>
+<li><p>Click <strong>Transform Data</strong> to open the Power Query Editor.</p></li>
+<li><p><strong>Filter Rows:</strong> Remove rows with null values in critical columns (e.g., Sales Amount).</p></li>
+<li><p><strong>Remove Duplicates:</strong> Select the “Transaction ID” column and remove duplicates.</p></li>
+<li><p><strong>Trim Text:</strong> Select text columns like “Customer Name” and trim spaces.</p></li>
+<li><p><strong>Split Column:</strong> Split “Full Name” into “First Name” and “Last Name” using space as a delimiter.</p></li>
+<li><p><strong>Group By:</strong> Group data by “Store” to calculate the total sales per store.</p></li>
+<li><p><strong>Pivot Data:</strong> Pivot the “Month” column to create a monthly sales report.</p></li>
 </ul></li>
-<li><p><strong>Relative Frequency:</strong></p>
+<li><p><strong>Data Cleaning:</strong></p>
 <ul>
-<li>Calculate the relative frequency by dividing the count of each category by the total count.</li>
+<li><p>Replace missing values in the “Sales Amount” column with 0.</p></li>
+<li><p>Convert the “Date” column to the Date type.</p></li>
+<li><p>Format the “Sales Amount” column as Currency.</p></li>
 </ul></li>
-</ul>
-</section>
-</section>
-<section id="histograms-and-cumulative-distributions" class="level3">
-<h3 class="anchored" data-anchor-id="histograms-and-cumulative-distributions">4. Histograms and Cumulative Distributions</h3>
-<section id="histograms" class="level4">
-<h4 class="anchored" data-anchor-id="histograms">Histograms</h4>
+<li><p><strong>Data Shaping:</strong></p>
 <ul>
-<li><p><strong>What is a Histogram?</strong></p>
-<ul>
-<li><p>A graphical representation of the distribution of numerical data.</p></li>
-<li><p>Used to visualize the frequency of data points within certain ranges.</p></li>
+<li><p>Unpivot columns to normalize the data structure.</p></li>
+<li><p>Create a new custom column to categorize sales amounts (e.g., Low, Medium, High).</p></li>
 </ul></li>
-<li><p><strong>Creating Histograms in Power BI:</strong></p>
+<li><p><strong>Finalizing the Data Model:</strong></p>
 <ul>
-<li><p>Use the “Visualizations” pane to create a histogram.</p></li>
-<li><p>Drag the quantitative field to the Axis and the Value fields.</p></li>
+<li><p>Ensure all columns have the correct data types.</p></li>
+<li><p>Check relationships between tables in the <strong>Model View</strong>.</p></li>
 </ul></li>
-</ul>
-</section>
-<section id="cumulative-distributions" class="level4">
-<h4 class="anchored" data-anchor-id="cumulative-distributions">Cumulative Distributions</h4>
-<ul>
-<li><p><strong>What is a Cumulative Distribution?</strong></p>
-<ul>
-<li>A graph showing the cumulative frequency of data points up to a certain value.</li>
-</ul></li>
-<li><p><strong>Creating Cumulative Distributions:</strong></p>
-<ul>
-<li><p>Use line charts to visualize cumulative distributions.</p></li>
-<li><p>Calculate cumulative frequencies and plot them.</p></li>
-</ul></li>
-</ul>
-</section>
-</section>
-<section id="measures-of-central-tendency" class="level3">
-<h3 class="anchored" data-anchor-id="measures-of-central-tendency">5. Measures of Central Tendency</h3>
-<section id="mean" class="level4">
-<h4 class="anchored" data-anchor-id="mean">Mean</h4>
-<ul>
-<li><p><strong>Definition:</strong></p>
-<ul>
-<li>The average of a set of numbers.</li>
-</ul></li>
-<li><p><strong>Calculating Mean in Power BI:</strong></p>
-<ul>
-<li>Use the “AVERAGE” function in a measure or calculated column.</li>
-</ul></li>
-</ul>
-</section>
-<section id="median" class="level4">
-<h4 class="anchored" data-anchor-id="median">Median</h4>
-<ul>
-<li><p><strong>Definition:</strong></p>
-<ul>
-<li>The middle value of a data set when ordered.</li>
-</ul></li>
-<li><p><strong>Calculating Median in Power BI:</strong></p>
-<ul>
-<li>Use the “MEDIAN” function in a measure or calculated column.</li>
-</ul></li>
-</ul>
-</section>
-<section id="mode" class="level4">
-<h4 class="anchored" data-anchor-id="mode">Mode</h4>
-<ul>
-<li><p><strong>Definition:</strong></p>
-<ul>
-<li>The most frequently occurring value in a data set.</li>
-</ul></li>
-<li><p><strong>Calculating Mode in Power BI:</strong></p>
-<ul>
-<li>Use the “MODE” function in a measure or calculated column.</li>
-</ul></li>
-</ul>
-</section>
-</section>
-<section id="measures-of-variability" class="level3">
-<h3 class="anchored" data-anchor-id="measures-of-variability">6. Measures of Variability</h3>
-<section id="range" class="level4">
-<h4 class="anchored" data-anchor-id="range">Range</h4>
-<ul>
-<li><p><strong>Definition:</strong></p>
-<ul>
-<li>The difference between the highest and lowest values in a data set.</li>
-</ul></li>
-<li><p><strong>Calculating Range:</strong></p>
-<ul>
-<li>Subtract the minimum value from the maximum value in a measure or calculated column.</li>
-</ul></li>
-</ul>
-</section>
-<section id="variance-and-standard-deviation" class="level4">
-<h4 class="anchored" data-anchor-id="variance-and-standard-deviation">Variance and Standard Deviation</h4>
-<ul>
-<li><p><strong>Variance:</strong></p>
-<ul>
-<li>Measures how much the data points deviate from the mean.</li>
-</ul></li>
-<li><p><strong>Standard Deviation:</strong></p>
-<ul>
-<li>The square root of the variance.</li>
-</ul></li>
-<li><p><strong>Calculating Variance and Standard Deviation in Power BI:</strong></p>
-<ul>
-<li>Use the “VAR” and “STDEV” functions in measures or calculated columns.</li>
-</ul></li>
-</ul>
-</section>
-</section>
-<section id="percentiles-and-quartiles" class="level3">
-<h3 class="anchored" data-anchor-id="percentiles-and-quartiles">7. Percentiles and Quartiles</h3>
-<section id="percentiles" class="level4">
-<h4 class="anchored" data-anchor-id="percentiles">Percentiles</h4>
-<ul>
-<li><p><strong>Definition:</strong></p>
-<ul>
-<li>Values below which a certain percentage of data points fall.</li>
-</ul></li>
-<li><p><strong>Calculating Percentiles in Power BI:</strong></p>
-<ul>
-<li>Use the “PERCENTILE.INC” function in measures or calculated columns.</li>
-</ul></li>
-</ul>
-</section>
-<section id="quartiles" class="level4">
-<h4 class="anchored" data-anchor-id="quartiles">Quartiles</h4>
-<ul>
-<li><p><strong>Definition:</strong></p>
-<ul>
-<li>Divides the data into four equal parts.</li>
-</ul></li>
-<li><p><strong>Calculating Quartiles in Power BI:</strong></p>
-<ul>
-<li>Use the “QUARTILE.INC” function in measures or calculated columns.</li>
-</ul></li>
-</ul>
-</section>
-</section>
-<section id="z-scores-and-the-empirical-rule" class="level3">
-<h3 class="anchored" data-anchor-id="z-scores-and-the-empirical-rule">8. Z-Scores and the Empirical Rule</h3>
-<section id="z-scores" class="level4">
-<h4 class="anchored" data-anchor-id="z-scores">Z-Scores</h4>
-<ul>
-<li><p><strong>Definition:</strong></p>
-<ul>
-<li>Measures how many standard deviations a data point is from the mean.</li>
-</ul></li>
-<li><p><strong>Calculating Z-Scores in Power BI:</strong></p>
-<ul>
-<li>Use the formula: Z=(X−Mean)Standard&nbsp;DeviationZ = Z=Standard&nbsp;Deviation(X−Mean)​ in a calculated column.</li>
-</ul></li>
-</ul>
-</section>
-<section id="empirical-rule" class="level4">
-<h4 class="anchored" data-anchor-id="empirical-rule">Empirical Rule</h4>
-<ul>
-<li><p><strong>Definition:</strong></p>
-<ul>
-<li><p>States that for a normal distribution:</p>
-<ul>
-<li><p>68% of data falls within 1 standard deviation of the mean.</p></li>
-<li><p>95% of data falls within 2 standard deviations of the mean.</p></li>
-<li><p>99.7% of data falls within 3 standard deviations of the mean.</p></li>
-</ul></li>
-</ul></li>
-<li><p><strong>Application:</strong></p>
-<ul>
-<li>Visualize data distribution and standard deviations in Power BI.</li>
-</ul></li>
-</ul>
-</section>
-</section>
-<section id="outliers-and-boxplots" class="level3">
-<h3 class="anchored" data-anchor-id="outliers-and-boxplots">9. Outliers and Boxplots</h3>
-<section id="outliers" class="level4">
-<h4 class="anchored" data-anchor-id="outliers">Outliers</h4>
-<ul>
-<li><p><strong>Definition:</strong></p>
-<ul>
-<li>Data points significantly different from other observations.</li>
-</ul></li>
-<li><p><strong>Identifying Outliers in Power BI:</strong></p>
-<ul>
-<li>Use visualizations like scatter plots and boxplots.</li>
-</ul></li>
-</ul>
-</section>
-<section id="boxplots" class="level4">
-<h4 class="anchored" data-anchor-id="boxplots">Boxplots</h4>
-<ul>
-<li><p><strong>What is a Boxplot?</strong></p>
-<ul>
-<li>A graphical representation of data showing minimum, first quartile, median, third quartile, and maximum.</li>
-</ul></li>
-<li><p><strong>Creating Boxplots in Power BI:</strong></p>
-<ul>
-<li>Use custom visuals or R scripts to create boxplots.</li>
-</ul></li>
-</ul>
-</section>
-</section>
-<section id="conclusion-1" class="level3">
-<h3 class="anchored" data-anchor-id="conclusion-1">Conclusion</h3>
-<ul>
-<li><p>Key Points:</p>
-<ul>
-<li><p>Reviewed Power BI interface and data types.</p></li>
-<li><p>Explained frequency distributions, histograms, and cumulative distributions.</p></li>
-<li><p>Covered measures of central tendency and variability.</p></li>
-<li><p>Discussed percentiles, quartiles, z-scores, and the empirical rule.</p></li>
-<li><p>Identified outliers and created boxplots.</p></li>
-</ul></li>
-</ul>
+</ol>
+<p>By following these steps, you can effectively wrangle data in Power BI, ensuring it’s clean, structured, and ready for analysis and visualization.</p>
 
 
+</section>
 </section>
 </section>
 

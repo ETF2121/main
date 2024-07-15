@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lecture Note 3 – ETF2121/5912 - S2 2024</title>
+<title>Lecture Note Week 6 – ETF2121/5912 - S2 2024</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,10 +68,41 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta property="og:title" content="ETF2121/5912 - S2 2024 - Lecture Note 3">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="ETF2121/5912 - S2 2024 - Lecture Note Week 6">
+<meta property="og:description" content="Homepage for ETF2121/5921 - Data Analysis in Business at Monash University, S2 2023.">
 <meta property="og:site_name" content="ETF2121/5912 - S2 2024">
-<meta name="twitter:title" content="ETF2121/5912 - S2 2024 - Lecture Note 3">
+<meta name="twitter:title" content="ETF2121/5912 - S2 2024 - Lecture Note Week 6">
+<meta name="twitter:description" content="Homepage for ETF2121/5921 - Data Analysis in Business at Monash University, S2 2023.">
 <meta name="twitter:image" content="https://sta210-s22.github.io/website/notes/images/twitter-card.png">
 <meta name="twitter:creator" content="@minebocek">
 <meta name="twitter:card" content="summary_large_image">
@@ -86,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lecture Note 3</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lecture Note Week 6</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -183,12 +214,15 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
-  <li><a href="#section-2-introduction-to-r-language" id="toc-section-2-introduction-to-r-language" class="nav-link" data-scroll-target="#section-2-introduction-to-r-language">Section 2: Introduction to R Language</a>
+  <li><a href="#section-1-introduction-to-r-language" id="toc-section-1-introduction-to-r-language" class="nav-link" data-scroll-target="#section-1-introduction-to-r-language">Section 1: Introduction to R Language</a>
   <ul class="collapse">
   <li><a href="#what-is-r" id="toc-what-is-r" class="nav-link" data-scroll-target="#what-is-r">What is R?</a></li>
   <li><a href="#why-r" id="toc-why-r" class="nav-link" data-scroll-target="#why-r">Why R?</a></li>
   <li><a href="#rstudio" id="toc-rstudio" class="nav-link" data-scroll-target="#rstudio">RStudio</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
+  </ul></li>
+  <li><a href="#section-2-modeling-uncertainty" id="toc-section-2-modeling-uncertainty" class="nav-link" data-scroll-target="#section-2-modeling-uncertainty">Section 2: Modeling Uncertainty</a>
+  <ul class="collapse">
+  <li><a href="#random-experiment-and-sample-space" id="toc-random-experiment-and-sample-space" class="nav-link" data-scroll-target="#random-experiment-and-sample-space">5.1 Random Experiment and Sample Space</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -198,7 +232,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lecture Note 3</h1>
+<h1 class="title">Lecture Note Week 6</h1>
 </div>
 
 
@@ -236,8 +270,8 @@ Note
 <section id="section" class="level2">
 <h2 class="anchored" data-anchor-id="section"></h2>
 </section>
-<section id="section-2-introduction-to-r-language" class="level2">
-<h2 class="anchored" data-anchor-id="section-2-introduction-to-r-language">Section 2: Introduction to R Language</h2>
+<section id="section-1-introduction-to-r-language" class="level2">
+<h2 class="anchored" data-anchor-id="section-1-introduction-to-r-language">Section 1: Introduction to R Language</h2>
 <section id="what-is-r" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-r">What is R?</h3>
 <p>R is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.</p>
@@ -257,10 +291,73 @@ Note
 <h3 class="anchored" data-anchor-id="rstudio">RStudio</h3>
 <p>Rsudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.</p>
 </section>
-<section id="section-1" class="level3">
-<h3 class="anchored" data-anchor-id="section-1"></h3>
+</section>
+<section id="section-2-modeling-uncertainty" class="level2">
+<h2 class="anchored" data-anchor-id="section-2-modeling-uncertainty">Section 2: Modeling Uncertainty</h2>
+<p>Uncertainty is a fundamental concept in many fields, including statistics, economics, engineering, and everyday decision-making. It refers to the state of having limited knowledge about an event, outcome, or condition. This lack of certainty means that we cannot predict the outcome with complete confidence.</p>
+<p><strong>Probability and Uncertainty:</strong></p>
+<p>Probability is a mathematical framework used to quantify uncertainty. It provides a way to measure how likely an event is to occur. Here are some key concepts:</p>
+<ol type="1">
+<li><p><strong>Probability of an Event:</strong> The probability of an event AAA, denoted as P(A)P(A)P(A), ranges from 0 (the event will not occur) to 1 (the event will certainly occur). For example, the probability of flipping a fair coin and getting heads is P(Heads)=0.5P() = 0.5P(Heads)=0.5.</p></li>
+<li><p><strong>Random Variables:</strong> A random variable is a variable whose possible values are numerical outcomes of a random phenomenon. For example, the number of heads in 10 coin tosses is a random variable.</p></li>
+<li><p><strong>Probability Distributions:</strong> A probability distribution describes how the probabilities are distributed over the values of the random variable. Common distributions include the binomial distribution (for binary outcomes), the normal distribution (for continuous outcomes), and the Poisson distribution (for count data).</p></li>
+</ol>
+<section id="random-experiment-and-sample-space" class="level3">
+<h3 class="anchored" data-anchor-id="random-experiment-and-sample-space">5.1 Random Experiment and Sample Space</h3>
+<section id="definition-of-a-random-experiment" class="level4">
+<h4 class="anchored" data-anchor-id="definition-of-a-random-experiment">Definition of a Random Experiment</h4>
+<p>A random experiment is a process or procedure that leads to one of several possible outcomes, where the outcome cannot be predicted with certainty beforehand. Each performance of the experiment is independent and can yield any of the possible outcomes.</p>
+</section>
+<section id="characteristics-of-a-random-experiment" class="level4">
+<h4 class="anchored" data-anchor-id="characteristics-of-a-random-experiment">Characteristics of a Random Experiment</h4>
+<ol type="1">
+<li><p><strong>Uncertainty</strong>: The outcome of the experiment cannot be determined with certainty before it is conducted.</p></li>
+<li><p><strong>Repeatability</strong>: The experiment can be repeated under identical conditions.</p></li>
+<li><p><strong>Well-defined Outcomes</strong>: All possible outcomes are known and can be listed.</p></li>
+</ol>
+</section>
+<section id="sample-space" class="level4">
+<h4 class="anchored" data-anchor-id="sample-space">Sample Space</h4>
+<p>The sample space, denoted by SSS, of a random experiment is the set of all possible outcomes of that experiment. Each possible outcome in the sample space is known as a sample point or an elementary event.</p>
+</section>
+<section id="examples-of-random-experiments-and-sample-spaces" class="level4">
+<h4 class="anchored" data-anchor-id="examples-of-random-experiments-and-sample-spaces">Examples of Random Experiments and Sample Spaces</h4>
+<p><strong>Example 1: Tossing a Coin</strong></p>
+<ul>
+<li><p><strong>Random Experiment</strong>: Tossing a coin.</p></li>
+<li><p><strong>Possible Outcomes (Sample Points)</strong>: The coin can land on either Head (H) or Tail (T).</p></li>
+<li><p><strong>Sample Space</strong>: The sample space for this experiment is: S={Head,Tail}S = { , }S={Head,Tail}</p></li>
+</ul>
+<p><strong>Example 2: Rolling a Die</strong></p>
+<ul>
+<li><p><strong>Random Experiment</strong>: Rolling a six-sided die.</p></li>
+<li><p><strong>Possible Outcomes (Sample Points)</strong>: The die can land on any one of the six faces, showing 1, 2, 3, 4, 5, or 6.</p></li>
+<li><p><strong>Sample Space</strong>: The sample space for this experiment is: S={1,2,3,4,5,6}S = { 1, 2, 3, 4, 5, 6 }S={1,2,3,4,5,6}</p></li>
+</ul>
+</section>
+<section id="further-examples-and-concepts" class="level4">
+<h4 class="anchored" data-anchor-id="further-examples-and-concepts">Further Examples and Concepts</h4>
+<p><strong>Example 3: Drawing a Card from a Deck</strong></p>
+<ul>
+<li><p><strong>Random Experiment</strong>: Drawing a single card from a standard 52-card deck.</p></li>
+<li><p><strong>Possible Outcomes (Sample Points)</strong>: Each card in the deck is a distinct outcome, such as Ace of Spades, 2 of Hearts, etc.</p></li>
+<li><p><strong>Sample Space</strong>: The sample space for this experiment is: S={Ace&nbsp;of&nbsp;Spades,2&nbsp;of&nbsp;Hearts,…,King&nbsp;of&nbsp;Clubs}S = { , , , }S={Ace&nbsp;of&nbsp;Spades,2&nbsp;of&nbsp;Hearts,…,King&nbsp;of&nbsp;Clubs} Here, SSS contains 52 elements, representing each card in the deck.</p></li>
+</ul>
+<p><strong>Example 4: Flipping Two Coins</strong></p>
+<ul>
+<li><p><strong>Random Experiment</strong>: Flipping two coins simultaneously.</p></li>
+<li><p><strong>Possible Outcomes (Sample Points)</strong>: The outcomes can be both heads, both tails, head on the first coin and tail on the second, or tail on the first coin and head on the second.</p></li>
+<li><p><strong>Sample Space</strong>: The sample space for this experiment is: <span class="math inline">\(S={(Head,&nbsp;Head),(Head,&nbsp;Tail),(Tail,&nbsp;Head),(Tail,&nbsp;Tail)}S = \{ (\text{Head, Head}), (\text{Head, Tail}), (\text{Tail, Head}), (\text{Tail, Tail}) \}\)</span>={(Head,&nbsp;Head),(Head,&nbsp;Tail),(Tail,&nbsp;Head),(Tail,&nbsp;Tail)}</p></li>
+</ul>
+<p><strong>Example 5: Rolling Two Dice</strong></p>
+<ul>
+<li><p><strong>Random Experiment</strong>: Rolling two six-sided dice simultaneously.</p></li>
+<li><p><strong>Possible Outcomes (Sample Points)</strong>: Each die can show a number from 1 to 6, resulting in pairs such as (1,1), (1,2), …, (6,6).</p></li>
+<li><p><strong>Sample Space</strong>: The sample space for this experiment is: S={(1,1),(1,2),…,(6,6)}S = { (1,1), (1,2), , (6,6) }S={(1,1),(1,2),…,(6,6)} Here, SSS contains 36 elements, representing each possible pair of outcomes.</p></li>
+</ul>
 
 
+</section>
 </section>
 </section>
 

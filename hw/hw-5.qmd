@@ -1,7 +1,0 @@
----
-title: "Tutorial 5 - Introduction to Modeling Uncertainty"
-subtitle: "Week 5"
-editor: visual
----
-
-# Case Problem: McNeil's Auto Mall

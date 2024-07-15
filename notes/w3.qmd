@@ -91,7 +91,7 @@ Combine multiple visualizations into a report:
 
 -   Add titles, labels, and other elements to enhance your report.
 
-#### **7. Save and Publish Your Report**
+#### **7. Save and Publish Your Report 👈 (This feature will not be taught for this course as it needs a paid version)**
 
 -   Click on the "File" tab.
 
@@ -107,240 +107,158 @@ Follow the prompts to publish your report to the Power BI service, where you can
 
 Congratulations! You have successfully created your first Power BI report. Power BI is a versatile tool with many advanced features, so continue exploring and experimenting to unlock its full potential. Happy data analyzing!
 
-## Section 2. Descriptive Statistics
+# Section 2: Data Wrangling in Power BI
 
-### 2. Types of Data
+#### 1. Introduction to Power BI
 
-#### Population and Sample Data
+**Overview of Power BI:** Power BI is a suite of business analytics tools that deliver insights throughout your organization. You can connect to hundreds of data sources, simplify data prep, and drive ad hoc analysis. Produce beautiful reports, then publish them for your organization to consume on the web and across mobile devices.
 
--   **Population Data:** Refers to the entire set of data or items of interest.
+**Understanding the Power BI Interface:**
 
-    -   Example: All employees in a company.
+-   **Home Ribbon:** Access common actions like getting data, viewing data transformations, and publishing reports.
 
--   **Sample Data:** A subset of the population data.
+-   **Report View:** Design your report using various visualizations.
 
-    -   Example: Employees in one department.
+-   **Data View:** See the data tables and make transformations.
 
-#### Quantitative and Categorical Data
+-   **Model View:** Manage the relationships between different tables in your dataset.
 
--   **Quantitative (Numerical) Data:** Data that represents quantities and can be measured.
+-   **Fields Pane:** Contains the tables and fields in your data model.
 
-    -   Example: Sales figures, ages.
+-   **Visualizations Pane:** Choose from a variety of visualizations to represent your data.
 
--   **Categorical (Qualitative) Data:** Data that represents categories or groups.
+**Connecting to Various Data Sources:** To get started, open Power BI and load your dataset:
 
-    -   Example: Product categories, regions.
+1.  Go to the **Home** tab and click **Get Data**.
 
-#### Cross-Sectional and Time Series Data
+2.  Choose the type of data source (e.g., Excel, SQL Server, etc.).
 
--   **Cross-Sectional Data:** Data collected at a single point in time.
+3.  Navigate to the location of your dataset (in this case, the "Store Sales.pbix" file) and load it into Power BI.
 
-    -   Example: Survey results collected on a specific date.
+#### 2. Data Import and Transformation
 
--   **Time Series Data:** Data collected over different time periods.
+**Importing Data:** Once the dataset is loaded, you can see the data in the **Data View**. If needed, you can refresh the data to get the latest updates.
 
-    -   Example: Monthly sales data.
+**Using Power Query Editor:**
 
-#### Sorting and Filtering Data
+1.  Click on **Transform Data** to open the Power Query Editor.
 
--   **Sorting Data:**
+2.  In the Power Query Editor, you can see a list of queries (tables) on the left, the data preview in the middle, and applied steps on the right.
 
-    -   Click on the column header to sort data in ascending or descending order.
+**Applying Transformations:**
 
--   **Filtering Data:**
+-   **Filtering:** Remove rows that don’t meet certain criteria.
 
-    -   Use the filter pane to apply filters to your data.
+-   **Sorting:** Sort data based on one or more columns.
 
-### 3. Frequency Distributions
+-   **Merging:** Combine columns or rows from different tables.
 
-#### Categorical Data
+-   **Appending:** Add rows from one table to another.
 
--   **Creating Frequency Distributions:**
+#### 3. Data Cleaning Techniques
 
-    -   Use the "Visualizations" pane to create a bar chart.
+**Handling Missing Values:**
 
-    -   Drag the categorical field to the Axis and the Value fields.
+-   Use the **Remove Rows** or **Replace Values** feature to handle missing data.
 
-#### Quantitative Data
+**Removing Duplicates:**
 
--   **Creating Frequency Distributions:**
+-   Select the column(s) where you want to remove duplicates and use the **Remove Duplicates** feature.
 
-    -   Use the "Visualizations" pane to create a histogram.
+**Text Cleaning:**
 
-    -   Drag the quantitative field to the Axis and the Value fields.
+-   **Trim:** Remove leading and trailing spaces.
 
--   **Relative Frequency:**
+-   **Replace Values:** Replace specific text values with others.
 
-    -   Calculate the relative frequency by dividing the count of each category by the total count.
+-   **Case Conversion:** Convert text to uppercase, lowercase, or proper case.
 
-### 4. Histograms and Cumulative Distributions
+**Splitting and Merging Columns:**
 
-#### Histograms
+-   **Split Column:** Split a column into multiple columns based on a delimiter or fixed number of characters.
 
--   **What is a Histogram?**
+-   **Merge Columns:** Combine multiple columns into one, separated by a delimiter.
 
-    -   A graphical representation of the distribution of numerical data.
+#### 4. Data Shaping
 
-    -   Used to visualize the frequency of data points within certain ranges.
+**Pivoting and Unpivoting Data:**
 
--   **Creating Histograms in Power BI:**
+-   **Pivot Columns:** Turn unique values from one column into multiple columns.
 
-    -   Use the "Visualizations" pane to create a histogram.
+-   **Unpivot Columns:** Transform columns into rows to normalize data.
 
-    -   Drag the quantitative field to the Axis and the Value fields.
+**Grouping and Summarizing Data:**
 
-#### Cumulative Distributions
+-   Use the **Group By** feature to aggregate data (e.g., sum, average) based on one or more columns.
 
--   **What is a Cumulative Distribution?**
+**Creating Custom Columns:**
 
-    -   A graph showing the cumulative frequency of data points up to a certain value.
+-   Use the **Add Column** tab to create custom columns with M language formulas or pre-built functions.
 
--   **Creating Cumulative Distributions:**
+**Using Conditional Column:**
 
-    -   Use line charts to visualize cumulative distributions.
+-   Create new columns based on conditions using the **Conditional Column** feature.
 
-    -   Calculate cumulative frequencies and plot them.
+#### 5. Data Types and Formats
 
-### 5. Measures of Central Tendency
+**Changing Data Types:**
 
-#### Mean
+-   Ensure each column has the correct data type (e.g., text, number, date). Change the data type by selecting the column and choosing the appropriate type from the **Transform** tab.
 
--   **Definition:**
+**Formatting Numbers, Dates, and Text:**
 
-    -   The average of a set of numbers.
+-   Format numbers (e.g., currency, percentage), dates (e.g., short date, long date), and text to ensure consistency and readability.
 
--   **Calculating Mean in Power BI:**
+**Importance of Data Types in Power BI:**
 
-    -   Use the "AVERAGE" function in a measure or calculated column.
+-   Correct data types are crucial for accurate calculations, aggregations, and visualizations. Incorrect data types can lead to errors and misleading insights.
 
-#### Median
+### Practical Example Using the "Store Sales" Dataset.
 
--   **Definition:**
+Click [here](%22./data/Store%20Sales.pbix%22) to get the store data.
 
-    -   The middle value of a data set when ordered.
+#### Step-by-Step Guide:
 
--   **Calculating Median in Power BI:**
+1.  **Load the Dataset:**
 
-    -   Use the "MEDIAN" function in a measure or calculated column.
+    -   Open Power BI Desktop.
 
-#### Mode
+    -   Click **File** \> **Open** and select "Store Sales.pbix".
 
--   **Definition:**
+2.  **Transform Data:**
 
-    -   The most frequently occurring value in a data set.
+    -   Click **Transform Data** to open the Power Query Editor.
 
--   **Calculating Mode in Power BI:**
+    -   **Filter Rows:** Remove rows with null values in critical columns (e.g., Sales Amount).
 
-    -   Use the "MODE" function in a measure or calculated column.
+    -   **Remove Duplicates:** Select the "Transaction ID" column and remove duplicates.
 
-### 6. Measures of Variability
+    -   **Trim Text:** Select text columns like "Customer Name" and trim spaces.
 
-#### Range
+    -   **Split Column:** Split "Full Name" into "First Name" and "Last Name" using space as a delimiter.
 
--   **Definition:**
+    -   **Group By:** Group data by "Store" to calculate the total sales per store.
 
-    -   The difference between the highest and lowest values in a data set.
+    -   **Pivot Data:** Pivot the "Month" column to create a monthly sales report.
 
--   **Calculating Range:**
+3.  **Data Cleaning:**
 
-    -   Subtract the minimum value from the maximum value in a measure or calculated column.
+    -   Replace missing values in the "Sales Amount" column with 0.
 
-#### Variance and Standard Deviation
+    -   Convert the "Date" column to the Date type.
 
--   **Variance:**
+    -   Format the "Sales Amount" column as Currency.
 
-    -   Measures how much the data points deviate from the mean.
+4.  **Data Shaping:**
 
--   **Standard Deviation:**
+    -   Unpivot columns to normalize the data structure.
 
-    -   The square root of the variance.
+    -   Create a new custom column to categorize sales amounts (e.g., Low, Medium, High).
 
--   **Calculating Variance and Standard Deviation in Power BI:**
+5.  **Finalizing the Data Model:**
 
-    -   Use the "VAR" and "STDEV" functions in measures or calculated columns.
+    -   Ensure all columns have the correct data types.
 
-### 7. Percentiles and Quartiles
+    -   Check relationships between tables in the **Model View**.
 
-#### Percentiles
-
--   **Definition:**
-
-    -   Values below which a certain percentage of data points fall.
-
--   **Calculating Percentiles in Power BI:**
-
-    -   Use the "PERCENTILE.INC" function in measures or calculated columns.
-
-#### Quartiles
-
--   **Definition:**
-
-    -   Divides the data into four equal parts.
-
--   **Calculating Quartiles in Power BI:**
-
-    -   Use the "QUARTILE.INC" function in measures or calculated columns.
-
-### 8. Z-Scores and the Empirical Rule
-
-#### Z-Scores
-
--   **Definition:**
-
-    -   Measures how many standard deviations a data point is from the mean.
-
--   **Calculating Z-Scores in Power BI:**
-
-    -   Use the formula: Z=(X−Mean)Standard DeviationZ = \frac{(X - \text{Mean})}{\text{Standard Deviation}}Z=Standard Deviation(X−Mean)​ in a calculated column.
-
-#### Empirical Rule
-
--   **Definition:**
-
-    -   States that for a normal distribution:
-
-        -   68% of data falls within 1 standard deviation of the mean.
-
-        -   95% of data falls within 2 standard deviations of the mean.
-
-        -   99.7% of data falls within 3 standard deviations of the mean.
-
--   **Application:**
-
-    -   Visualize data distribution and standard deviations in Power BI.
-
-### 9. Outliers and Boxplots
-
-#### Outliers
-
--   **Definition:**
-
-    -   Data points significantly different from other observations.
-
--   **Identifying Outliers in Power BI:**
-
-    -   Use visualizations like scatter plots and boxplots.
-
-#### Boxplots
-
--   **What is a Boxplot?**
-
-    -   A graphical representation of data showing minimum, first quartile, median, third quartile, and maximum.
-
--   **Creating Boxplots in Power BI:**
-
-    -   Use custom visuals or R scripts to create boxplots.
-
-### Conclusion
-
--   Key Points:
-
-    -   Reviewed Power BI interface and data types.
-
-    -   Explained frequency distributions, histograms, and cumulative distributions.
-
-    -   Covered measures of central tendency and variability.
-
-    -   Discussed percentiles, quartiles, z-scores, and the empirical rule.
-
-    -   Identified outliers and created boxplots.
+By following these steps, you can effectively wrangle data in Power BI, ensuring it's clean, structured, and ready for analysis and visualization.

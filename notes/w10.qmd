@@ -1,21 +1,21 @@
 ---
-title: "Lecture Note 3"
+title: "Lecture Note Week 11"
 filters: 
   - webr
 execute: 
-  echo: false
+  echo: true
 ---
 
 ::: callout-note
 Learning Objective:
 
-LO1: Identifying an underlying pattern from a time-series plot.
+LO1: Evaluate out-of-sample predictive performance of a model.
 
-LO2: Calculate and measures of forecasting accuracy.
+LO2: Compute and interpret performance measures for regression methods.
 
-LO3: Use various techniques to forecast a time series data.
+LO3: Describe and apply regression trees
 
-LO4:  Using linear regression to forecast a time series data.
+LO4: Describe various ways of selecting features for a regression task.
 :::
 
 ```{r}
@@ -25,6 +25,280 @@ library(tidyverse)
 library(knitr)
 ```
 
-## 
+## Section 1: Introduction to Predictive Data Mining
 
-## 
+Predictive data mining, also known as supervised learning, is a powerful set of techniques used to forecast future outcomes based on historical data. In supervised learning, the process involves utilizing known values of an outcome variable to guide the learning algorithm in identifying patterns and relationships with the input features. By doing so, predictive models are developed that can make accurate predictions on new, unseen data.
+
+The predictive data mining process includes several critical steps:
+
+1.  **Data Sampling:** Selecting a representative subset of data to ensure the models can generalize well to new data.
+
+2.  **Data Preparation:** Cleaning and transforming the data to address missing values, errors, and refining the set of variables.
+
+3.  **Data Partitioning:** Dividing the dataset into training, validation, and test sets to evaluate model performance.
+
+4.  **Model Construction and Assessment:** Building and assessing various predictive models to select the best one based on performance metrics.
+
+By following these steps, predictive data mining aims to create robust models that can provide valuable insights and predictions, driving informed decision-making across various fields and applications.
+
+### Step 1: Data Sampling
+
+Data sampling involves selecting a representative subset of the data from a dataset. This step is crucial because it ensures that the models trained later can generalize well to new, unseen data. Sampling should be done carefully to maintain the statistical properties of the original dataset.
+
+#### 1. Random Sampling
+
+**Definition:** Selecting a subset randomly from the entire dataset. Each data point has an equal chance of being included in the sample.
+
+**Example:** Suppose you have a dataset of 10,000 customer records from a retail store. To create a sample, you randomly select 1,000 records. This random selection ensures that the sample is representative of the entire customer base, avoiding any bias.
+
+Random sampling is simple and effective for large datasets. It’s commonly used because it maintains the statistical properties of the original dataset. However, if there are important subgroups within the data, random sampling might not capture them proportionally.
+
+#### 2. Stratified Sampling
+
+**Definition:** Ensuring that the sample represents different subgroups (strata) within the population. Strata are defined based on one or more attributes of the data.
+
+**Example:** Consider the same dataset of 10,000 customer records, but this time the data includes a categorical variable indicating customer segments (e.g., Regular, Premium, and VIP). If you want to ensure each segment is proportionately represented in your sample, you use stratified sampling. If Regular customers make up 70% of the total, Premium 20%, and VIP 10%, your sample of 1,000 should contain 700 Regular, 200 Premium, and 100 VIP customers.
+
+Stratified sampling is particularly useful when certain subgroups are of interest, or when there is a risk that these groups might be underrepresented in a random sample. This technique ensures that the sample accurately reflects the population's diversity.
+
+#### 3. Systematic Sampling
+
+**Definition:** Selecting every $n^{th}$ item from a list or sequence. The starting point is chosen randomly, and then every $n^{th}$ item is included in the sample.
+
+**Example:** Imagine you have a dataset sorted by customer ID. To perform systematic sampling on a dataset of 10,000 customers to get a sample of 1,000, you could randomly choose a starting point between 1 and 10 (say you pick 5). You would then select every 10th customer (5, 15, 25, 35, etc.) until you reach 1,000 customers.
+
+Systematic sampling is straightforward and easy to implement, especially with ordered data. It’s efficient when dealing with large datasets. However, if there is a hidden pattern in the data that corresponds to the sampling interval, it could introduce bias. For instance, if every $10^{th}$ customer tends to be from a particular region due to how the data was collected, this could skew the sample.
+
+### Practical Considerations
+
+-   **Random Sampling:** Best for simplicity and general representativeness.
+
+-   **Stratified Sampling:** Ideal when subgroups are crucial to the analysis and need proportional representation.
+
+-   **Systematic Sampling:** Useful for ordered data and when quick, evenly spaced samples are needed.
+
+### Step 2: Data preparation
+
+This is a critical step in the data mining process that involves cleaning and transforming raw data into a format suitable for modeling. This stage addresses various issues such as missing data, errors, and outliers, and refines the set of variables (features) to enhance the performance of the model.
+
+#### 1. Handling Missing Data
+
+Handling missing data involves imputing or removing missing values to ensure the dataset is complete and suitable for analysis.
+
+**Methods and Examples:**
+
+-   **Mean/Mode Imputation:** Replace missing numerical values with the mean or categorical values with the mode of the available data.
+
+    -   **Example:** If a dataset of house prices has missing values for the number of rooms, replace those missing values with the mean number of rooms from the dataset.
+
+-   **Median Imputation:** Replace missing values with the median value, which is useful when the data has outliers.
+
+    -   **Example:** For a dataset with highly skewed income data, using the median income to replace missing values can be more robust than the mean.
+
+-   **K-Nearest Neighbors (KNN) Imputation:** Use the average value of the k-nearest neighbors to impute missing data.
+
+    -   **Example:** In a dataset of customer demographics, if the age is missing, find the k-nearest neighbors (e.g., 5 neighbors) based on other features (like income, education) and use their average age to fill in the missing value.
+
+-   **Interpolation:** Estimate missing values using linear or polynomial interpolation based on adjacent data points.
+
+    -   **Example:** In a time series dataset of temperature readings, use linear interpolation to estimate missing temperature values.
+
+#### 2. Data Cleaning
+
+Data cleaning involves identifying and correcting errors, inconsistencies, and outliers in the data to ensure its integrity.
+
+**Methods and Examples:**
+
+-   **Outlier Detection and Treatment:** Identify and handle outliers using statistical methods or domain knowledge.
+
+    -   **Example:** In a dataset of employee salaries, identify outliers by calculating the z-scores and removing or capping extreme values that fall beyond three standard deviations from the mean.
+
+-   **Consistency Checks:** Ensure that data entries are consistent across different records.
+
+    -   **Example:** In a customer database, ensure that phone numbers are consistently formatted (e.g., all in the format +1-XXX-XXX-XXXX).
+
+-   **Duplicate Removal:** Identify and remove duplicate records.
+
+    -   **Example:** In an e-commerce transaction dataset, check for and remove duplicate transactions to avoid double-counting sales.
+
+#### 3. Feature Engineering
+
+Feature engineering involves creating new features from existing data to improve model performance.
+
+**Methods and Examples:**
+
+-   **Interaction Terms:** Create features that capture interactions between existing variables.
+
+    -   **Example:** In a housing dataset, create an interaction term between the number of rooms and the size of the garden to capture their combined effect on house price.
+
+-   **Polynomial Features:** Generate polynomial terms from existing features.
+
+    -   **Example:** For a dataset predicting car prices, create a squared term for mileage (mileage\^2) to capture the non-linear relationship between mileage and price.
+
+-   **Binning:** Transform continuous variables into categorical variables by grouping values into bins.
+
+    -   **Example:** Convert age into age groups (e.g., 0-18, 19-35, 36-50, 51+) to simplify the model.
+
+-   **Normalization/Scaling**
+
+    -   Normalization and scaling involve transforming features to a similar scale, which is crucial for algorithms sensitive to the scale of input data.
+
+  **Methods and Examples:**
+
+    -   **Standardization (Z-score Normalization):** Transform features to have a mean of 0 and a standard deviation of 1.
+
+        -   **Example:** Standardize height and weight data in a health dataset to ensure they have the same scale when used in a k-nearest neighbors algorithm.
+
+        -   Formula: $z=\frac{x - \bar{x}}{SD_{x}}$
+
+    -   **Robust Scaling:** Scale features using the median and the interquartile range (IQR) to reduce the impact of outliers.
+
+        -   **Example:** For a dataset with income data that has outliers, use robust scaling to transform the data by subtracting the median and dividing by the interquartile range (IQR).
+        -   Formula: $z=\frac{x - Median_{x}}{IQR_{x}}$
+
+### Step 3. Data Partitioning
+
+Data partitioning divides the dataset into distinct subsets used for training, validating, and testing the model. This ensures that the model’s performance is evaluated on data that it has not seen during training, which helps in assessing its generalizability.
+
+#### Holdout method
+
+1.  **Training set (Construction)**:
+
+    -   During this phase, candidate models were built by training them on available data.
+
+    -   The model learns from the training data to recognize patterns and make predictions.
+
+    -   Typically about 60% of the data.
+
+2.  **Validation set (Performance Comparison)**:
+
+    -   In this step, the performance of different candidate models were compared.
+
+    -   The validation set helps fine-tune hyperparameters and assess how well each model generalizes to unseen data.
+
+    -   Typically comprises 20-30% of the data.
+
+3.  **Test set (Future Performance Assessment)**:
+
+    -   Once the model is selected, have to evaluate its performance on a separate testing dataset.
+
+    -   This assessment provides insights into how the model will perform in real-world scenarios.
+
+    -   Typically comprises 10-20% of the data.
+
+#### k-Fold cross validation
+
+Step-by-step guide:
+
+1.  **Dataset Partitioning:**
+
+    -   The dataset is randomly divided into k subsets, called folds.
+
+    -   Common choices for k are 5 or 10.
+
+2.  **Pre-Processing Step:**
+
+    -   If an unbiased estimate of the final model is desired, set aside a specific number of observations to create a test set.
+
+3.  **Training and Validation:**
+
+    -   In each iteration, k-1 folds are combined to form the training set.
+
+    -   The remaining fold is used as the validation set.
+
+4.  **Iteration Process:**
+
+    -   This process is repeated k times, each time with a different fold as the validation set.
+
+5.  **Result Aggregation:**
+
+    -   The results from the k iterations are aggregated and averaged to provide an overall performance estimate.
+
+#### Leave-One-Out Cross-Validation (LOOCV)
+
+-   A special case of k-fold cross-validation.
+
+-   The number of folds equals the number of observations.
+
+-   Each iteration uses a single observation as the validation set and the rest as the training set.
+
+### Step 4: Model Selection
+
+-   see section 2.
+
+### Step 5: Assessing Model Performance
+
+#### Mean Squared Error (MSE)
+
+-   **Definition:** MSE measures the average squared difference between the predicted values and the actual values.
+
+-   **Formula:** $MSE=1/n\sum_{i=1}^{n}(y_i-\hat{y_{i}})^2$
+
+    -   Where nnn is the number of observations, yiy_iyi​ is the actual value, and y\^i\hat{y}\_iy\^​i​ is the predicted value.
+
+-   **Interpretation:** MSE provides an indication of the average error magnitude, with a greater penalty on larger errors due to the squaring of differences. Lower MSE values indicate better model performance, with zero being a perfect score.
+
+-   **Example:** If predicting house prices, MSE would represent how far off, on average, the model's predictions are from the actual prices, emphasizing larger discrepancies more heavily.
+
+#### Root Mean Squared Error (RMSE)
+
+-   **Definition:** RMSE is the square root of MSE, providing an error measurement in the same units as the outcome variable.
+
+-   **Formula:** $RMSE=\sqrt{1/n\sum_{i=1}^{n}(y_i-\hat{y_{i}})^2}$
+
+-   **Interpretation:** RMSE is more interpretable than MSE because it is in the same unit as the outcome variable. It still penalizes larger errors more significantly. Lower RMSE values indicate a better fit.
+
+-   **Example:** For house price predictions, an RMSE of \$20,000 would mean that, on average, the model's predictions are off by \$20,000 from the actual prices.
+
+#### Mean Absolute Error (MAE)
+
+-   **Definition:** MAE measures the average absolute difference between the predicted values and the actual values.
+
+-   **Formula:**
+
+    -   $RMSE=\sqrt{1/n\sum_{i=1}^{n}(y_i-\hat{y_{i}})^2}$
+
+-   **Interpretation:** MAE provides a straightforward measure of model accuracy by calculating the average magnitude of errors in the predictions, without considering their direction (i.e., whether the predictions are under or over). It is less sensitive to outliers than MSE and RMSE. Lower MAE values indicate better model performance.
+
+-   **Example:** For house price predictions, an MAE of \$15,000 means that, on average, the model's predictions are off by \$15,000 from the actual prices.
+
+## Section 2: Predictive Model: Regression Trees
+
+### Introduction to Regression Trees
+
+A regression tree is a type of predictive model that employs a series of decision rules applied to the input features. This method is useful for predicting continuous outcomes based on various input variables.
+
+#### How Regression Trees Work?
+
+1.  **Sequential Splitting:**
+
+    -   The model starts by asking a series of questions at each node, which sequentially split the data into two more homogeneous groups (branches). Each question involves comparing the value of an input variable to a certain threshold.
+
+2.  **Selection of Input Variables and Thresholds:**
+
+    -   At each node, the model selects the input variable and threshold value that best minimize the overall variance in the outcome variable. This ensures that each split results in groups that are as homogeneous as possible.
+
+3.  **Building the Tree:**
+
+    -   This process of splitting and minimizing variance continues until a predefined stopping criterion is met, such as a minimum number of observations in each terminal node or a maximum depth of the tree.
+
+4.  **Application to Validation Set:**
+
+    -   Once the tree is built, it is used to classify observations in a validation set. Each observation is guided down the tree, following the rules at each node until it reaches a terminal node.
+
+5.  **Prediction:**
+
+    -   The predicted value for each observation is the average value of the outcome variable for all observations in the terminal node to which it belongs.
+
+#### Advantages of Regression Trees
+
+-   **Interpretability:** The decision rules at each node are straightforward, making the model easy to interpret and understand.
+
+-   **Flexibility:** Regression trees can handle both numerical and categorical data and can model complex, non-linear relationships between the input and output variables.
+
+-   **No Assumptions:** Unlike linear regression models, regression trees do not assume a specific form of the relationship between the input and output variables.
+
+## Section 3: Case Problem - Housing Bubble 🏘️
+
+Click [here]().
+
