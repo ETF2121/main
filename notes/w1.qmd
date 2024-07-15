@@ -69,7 +69,7 @@ A key is a field or combination of fields that uniquely identifies a record in a
 -   Foreign Key: A foreign key is a field in a table that references the primary key of another table. It establishes a relationship between two tables and enforces referential integrity.
 -   Composite Key: A composite key is a combination of two or more fields that uniquely identifies a record in a table. It is used when a single field cannot uniquely identify a record.
 
-## Section 3: Introduction to SQL
+## Section 2: Introduction to SQL
 
 ### What is SQL?
 
@@ -139,7 +139,7 @@ FROM table_name;
 -   `FROM`: Keyword used to specify the table from which you want to retrieve data.
 -   `table_name`: Name of the table from which you want to retrieve data.
 
-## Section 2: Live SQL Oracle
+## Section 3: Live SQL Oracle
 
 Oracle Live SQL is a free, interactive, web-based tool that allows users to write, run, and share SQL scripts and PL/SQL code. It provides a convenient platform for learning and practicing SQL without needing to install Oracle Database software locally. Key benefits include:
 
