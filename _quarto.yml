@@ -34,7 +34,7 @@ website:
           - href: course-overview.qmd
             text: Overview
           - href: course-syllabus.qmd
-            text: Syllabus
+            text: Course structure
           - href: course-team.qmd
             text: Teaching team
           - href: index.qmd

@@ -1,5 +1,5 @@
 ---
-title: "Syllabus/Outline"
+title: "Syllabus/Outline/Course Information"
 ---
 
 ## Unit Synopsis
@@ -44,10 +44,6 @@ The textbook for this course is just a supplement to the lectures and labs. The 
 
 ### Examination: 50%
 
-**Hurdle description for Examination:**
-
-This unit contains a hurdle requirement that you must achieve to be able to pass the unit. The consequence of not achieving a hurdle requirement is a fail grade (NH) and a maximum mark of 45 for the unit.
-
 | Assessments           | Weight | Due Date    | Learning Outcomes |
 |-----------------------|--------|-------------|-------------------|
 | Quizzes               | 10%    | Weekly      | Weeks 2-12        |
@@ -70,7 +66,7 @@ This unit contains a hurdle requirement that you must achieve to be able to pass
 | Tutorial 04 | Tue | 6.30 pm - 7:30 pm   | C302A                  |
 | Tutorial 05 | Wed | 9.30 am - 10:30 pm  | N122                   |
 | Tutorial 06 | Wed | 9.30 am - 10:30 pm  | N122                   |
-| Tutorial 07 | Wed | 3.30 am - 5:00 pm   | N122                   |
+| Tutorial 07 | Wed | 3.30 am - 5:00 pm   | H226                   |
 
 ### Communication
 
@@ -95,6 +91,10 @@ Attendance and active participation in both lectures and tutorials are expected.
 
 **Final exam**. The exam will be held during the exam period, and it will be a closed-book exam with 5 pieces of A4 paper (10 pages) of handwritten/typed notes allowed. It is a supervised exam, and you will not be allowed to access the internet.
 
+### Software
+
+All software used in this course can be downloaded for free. However, Power BI will not be available for Mac users, so I would encourage you to access it via MOVE. Please refer to [this](<https://www.monash.edu/student-academic-success/build-digital-capabilities/master-online-learning-systems/move>) instruction.
+
 ### Late work submission policy
 
 Assignment deadlines are set to facilitate your progression through the course content and to enable timely feedback from the teaching team. I understand that unforeseen circumstances may occasionally arise, hindering your ability to meet a deadline. In such cases, you can request an extension through the Monash extension unit for extenuating circumstances. Please note that **I do not grant individual approvals for late submissions**, and requests should **solely** be made through the Monash extension unit.
@@ -112,4 +112,4 @@ Assignment deadlines are set to facilitate your progression through the course c
 
 -   **28th August 2024**: Individual assignment submission deadline
 
--   **9th October 2024**: Groulp assignment submission deadline
+-   **9th October 2024**: Group assignment submission deadline

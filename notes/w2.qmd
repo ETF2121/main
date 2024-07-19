@@ -133,7 +133,7 @@ In Oracle SQL, the `FETCH FIRST` clause limits the number of rows returned by a 
 SELECT column1, column2, ... 
 FROM table_name 
 ORDER BY column1 [ASC|DESC] 
-LIMIT number;
+FETCH FIRST number ROWS ONLY;
 ```
 
 **Example:**
@@ -142,7 +142,7 @@ LIMIT number;
 SELECT first_name, last_name 
 FROM employees 
 ORDER BY last_name ASC 
-LIMIT 10;
+FETCH FIRST 10 ROWS ONLY;
 ```
 
 This query retrieves the first 10 rows from the `EMPLOYEES` table, sorted by `last_name` in ascending order.
@@ -343,6 +343,28 @@ WHERE department_id = 50;
 ```
 
 This query calculates the average salary of employees in department 50.
+
+#### BETWEEN Operator
+
+The `BETWEEN` operator selects values within a specified range.
+
+**Syntax:**
+
+``` sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE columnN BETWEEN value1 AND value2;
+```
+
+**Example:**
+
+``` sql
+SELECT first_name, last_name
+FROM employees
+WHERE salary BETWEEN 5000 AND 10000;
+```
+
+This query retrieves the `first_name` and `last_name` columns from the `EMPLOYEES` table where the `salary` is between 5000 and 10000.
 
 ### GROUP BY Clause
 

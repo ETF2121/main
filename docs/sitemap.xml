@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sta210-s22.github.io/website/index.html</loc>
-    <lastmod>2024-07-13T23:03:59.301Z</lastmod>
+    <lastmod>2024-07-19T12:32:29.687Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/course-overview.html</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/course-syllabus.html</loc>
-    <lastmod>2024-07-15T10:53:36.584Z</lastmod>
+    <lastmod>2024-07-19T12:23:30.616Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/exams/exam-2.html</loc>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/weeks/week-1.html</loc>
-    <lastmod>2024-06-23T12:44:30.970Z</lastmod>
+    <lastmod>2024-07-16T11:37:08.709Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/course-team.html</loc>
@@ -90,11 +90,11 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/notes/w3.html</loc>
-    <lastmod>2024-07-13T22:32:06.639Z</lastmod>
+    <lastmod>2024-07-18T09:17:00.515Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/weeks/week-2.html</loc>
-    <lastmod>2024-06-23T13:14:41.411Z</lastmod>
+    <lastmod>2024-07-19T12:27:19.127Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/labs/lab-5.html</loc>
@@ -106,7 +106,7 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/labs/lab-2.html</loc>
-    <lastmod>2024-07-06T12:42:04.658Z</lastmod>
+    <lastmod>2024-07-19T12:24:31.237Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/labs/lab-4.html</loc>
@@ -114,7 +114,7 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/notes/w2.html</loc>
-    <lastmod>2024-06-29T10:09:45.835Z</lastmod>
+    <lastmod>2024-07-16T10:55:26.818Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/notes/w5.html</loc>
@@ -126,7 +126,7 @@
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/notes/w4.html</loc>
-    <lastmod>2024-06-29T09:05:51.367Z</lastmod>
+    <lastmod>2024-07-18T09:09:51.491Z</lastmod>
   </url>
   <url>
     <loc>https://sta210-s22.github.io/website/notes/w12.html</loc>
@@ -159,5 +159,9 @@
   <url>
     <loc>https://sta210-s22.github.io/website/hw/hw-1.html</loc>
     <lastmod>2024-07-15T10:45:10.421Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sta210-s22.github.io/website/labs/lab-2a.html</loc>
+    <lastmod>2024-07-16T10:03:09.312Z</lastmod>
   </url>
 </urlset>

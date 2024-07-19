@@ -1,6 +1,6 @@
 ---
-title: "Week 1"
-subtitle: "Welcome to ETF2121/5912"
+title: "Week 2"
+subtitle: "Structured Query Language (SQL)"
 editor: visual
 ---
 
@@ -10,9 +10,9 @@ Make sure you can successfully login to Oracle Live SQL. If you are not, please 
 
 ## Lecture (real-time)
 
-🖥️ [Lecture 2 - SQL](/slides/lec-2.html)
+🖥️ [Lecture 2 - SQL](tba)
 
-<iframe src="https://learning.monash.edu/pluginfile.php/3800248/mod_resource/content/1/lec-1.html" width="100%" height="500">
+<iframe src="https://learning.monash.edu/pluginfile.php/3937400/mod_resource/content/1/lec-2.html" width="100%" height="500">
 
 </iframe>
 
@@ -20,7 +20,7 @@ Make sure you can successfully login to Oracle Live SQL. If you are not, please 
 
 ## Tutorial (real-time)
 
-📋 [Tutorial 2 - SQL](/labs/lab-2.html)
+📋 [Tutorial 2 - SQL](https://learning.monash.edu/pluginfile.php/3937376/mod_resource/content/2/lab-2.html)
 
 ## Quiz (own-time)
 

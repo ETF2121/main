@@ -17,7 +17,291 @@ library(tidyverse)
 library(knitr)
 ```
 
-## Section 1: Introduction to Power BI
+## Section 1: Introduction to R Language
+
+### What is R?
+
+R is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.
+
+### Why R?
+
+-   R is open-source and free
+-   R is a powerful tool for data analysis
+-   R has a large and active community
+-   R has a large number of packages for data analysis
+-   R is a programming language and can be used for automating data analysis tasks
+-   R is a great tool for reproducible research
+
+### RStudio
+
+Rsudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.
+
+### Basic of R
+
+#### **R as a Calculator**
+
+```{webr-r}
+# Addition
+2 + 3
+
+# Subtraction
+5 - 3
+
+# Multiplication
+2 * 3
+
+# Division
+6 / 3
+
+# Exponentiation
+2 ^ 3
+```
+
+#### **R Objects**
+
+In R, everything is an object. These objects serve as containers for various types of data. Whether you’re dealing with a single number, a character string (like a word), or a complex structure like the output of a plot or a statistical analysis summary, it’s all represented as an object.
+
+**Creating Objects:**
+
+To create an object, you simply give it a name. For instance
+
+```{webr-r}
+x <- 5
+```
+
+In this example, an object is created called `x` and it is assigned the value `5`. The `<-` is the assignment operator. It assigns the value on the right to the object on the left. You can also use `=` to assign values to objects, but it's considered bad practice.
+
+**Viewing Objects:**
+
+To view the value of an object, you simply type the name of the object and press enter. For instance:
+
+```{webr-r}
+x
+```
+
+R keeps track of all objects in the current workspace during the session. You can see all the objects in the current workspace by typing `ls()` in the console.
+
+**Opearations with Objects:**
+
+You can perform operations with objects. For instance:
+
+```{webr-r}
+y <- 3
+z <- x + y
+
+z
+```
+
+**Objects names:**
+
+Object names can contain letters, numbers, periods, and underscores. However, they can only starts with letters or underscore and nothing else. They are case-sensitive, so `x` and `X` are different objects. They cannot start with a number or a period. If you would like to insist to have numbers or period as the first character, you can use backticks to define the object name. It is called nonsyntactic names. For instance, you can define the following:
+
+```{webr-r}
+`1x` <- 10
+`1x`
+```
+
+**Exercises:**
+
+```{webr-r}
+
+```
+
+1.  Create an object called `a` and assign the value `10` to it.
+2.  Create an object called `b` and assign the value `20` to it.\
+3.  Create an object called `star` and assign the value `a + b` to it.
+4.  View the value of `star`.
+5.  Which of the following is not the syntactic name for an object?
+    -   `x`
+    -   `X`
+    -   `1x`
+    -   `x1`
+    -   `x.y`
+    -   `x_y`
+
+#### **Data Types**
+
+R has several data types. The most common data types are:
+
+1.  Numeric (double)
+
+-   represents eal numbers (e.g., 3.14, 0.0001, 1000.0).
+-   can be positive or negative.
+-   can be in scientific notation (e.g., 1.23e-5).
+-   used for continuous data like measurements, weights, heights, etc.
+
+2.  Character
+
+-   represents text data (e.g., "hello", "world", "R is fun").
+-   must be enclosed in quotes.
+-   used for categorical data (e.g., "High School", "Primary School", "University").
+
+3.  Logical (boolean)
+
+-   represents binary data (e.g., TRUE or FALSE).
+-   used for logical operations.
+
+4.  Integer
+
+-   represents whole numbers (e.g., 1, 2, 3, 1000).
+-   can be positive or negative.
+-   used for counting data like number of students, number of cars, etc.
+-   sometimes you will see it ends with `L` (e.g., 1L, 2L, 3L, 1000L). This is to indicate that the number is an integer.
+
+5.  Factors
+
+-   represents categorical data (e.g., "High School", "Primary School", "University").
+-   used for categorical data.
+
+6.  Complex
+
+-   represents complex numbers (e.g., 1 + 2i, 3 + 4i, 5 + 6i).
+-   used for complex data like electrical engineering, physics, etc.
+
+However, we seldom deal with complex data types. We will focus on the first four data types.
+
+**Exercises:**
+
+```{webr-r}
+
+```
+
+1.  What is the data type of `3.14`?
+2.  What is the data type of `"hello"`?
+3.  What is the data type of `TRUE`?
+4.  What is the data type of `1L`?
+5.  What is the data type of `factor("High School")`?
+6.  What is the data type of `1 + 2i`?
+7.  What is the data type of `"1"`?
+
+Note: You can check your answers using `typeof()` function.
+
+#### **Functions**
+
+A function is a block of code that performs a specific task. R has a large number of in-built functions and also allows users to define their own functions. We will learn more about how to create functions in the coming weeks. But so far, we will use some of the in-built functions. Anything that starts with `(` and end with `)` is a function.
+
+**Exercises:**
+
+Which of the following is a function?
+
+1.  `mean()`
+2.  `median`
+3.  `sd()`
+4.  `var()`
+5.  `sum[]`
+
+#### **Vectors**
+
+Vectors are the most basic data structure in R. They are one-dimensional arrays that can hold numeric, character, or logical data. You can create a vector using the `c()` function. For instance:
+
+```{webr-r}
+x <- c(1, 2, 3, 4, 5)
+y <- c("a", "b", "c", "d", "e")
+z <- c(TRUE, FALSE, TRUE, FALSE, TRUE)
+```
+
+**Accessing Elements:**
+
+You can access the elements of a vector using the index. For instance:
+
+```{webr-r}
+x[1] # Access the first element of x
+y[3] # Access the third element of y
+```
+
+**Exercises:**
+
+1.  Create a vector called `a` with the values `11, 2, 33, 4, 5`.
+2.  Create a vector called `b` with the values `"a", "bc", "c", "d", "ef"`.
+
+```{webr-r}
+a <- c(11, 2, 33, 4, 5)
+b <- c("a", "bc", "c", "d", "ef")
+```
+
+#### Data Frames
+
+Data frames are the most common data structure in R. They are used to store tabular data. A data frame is a list of vectors of equal length. Each vector represents a column in the data frame, and each element in the vector represents a row in the data frame.
+
+**Creating Data Frames:**
+
+You can create a data frame using the `data.frame()` function. For instance:
+
+```{webr-r}
+name <- c("Alice", "Bob", "Charlie", "David")
+age <- c(25, 30, 35, 40)
+height <- c(5.5, 6.0, 5.8, 5.9)
+data <- data.frame(name, age, height)
+```
+
+**Accessing Data Frames:**
+
+You can access the elements of a data frame using the row and column indices. For instance:
+
+```{webr-r}
+data[1, 2] # Access the element in the first row and second column
+data[, 1] # Access the first column
+data[2, ] # Access the second row
+         
+data$name  # Access using column name
+data$age   # Access using column name
+
+data[1, "name"] # Access the element in the first row and the column named "name"
+```
+
+**Exercises:**
+
+1.  Create a data frame called `students` with the following columns: `name`, `age`, `gender`, `height`, and `weight`. The data should be as follows:
+
+-   `name`: "Alice", "Bob", "Charlie", "David"
+-   `age`: 25, 30, 35, 40
+-   `gender`: "F", "M", "M", "M"
+
+```{webr-r}
+name <- c("Alice", "Bob", "Charlie", "David")
+age <- c(25, 30, 35, 40)
+gender <- c("F", "M", "M", "M")
+students <- cbind(name, age, students)
+```
+
+#### Lists
+
+Lists are another data structure in R that can hold elements of different data types. You can create a list using the `list()` function. For instance:
+
+```{webr-r}
+x <- list(1, "a", TRUE)
+x
+```
+
+You can access the elements of a list using the index. For instance:
+
+```{webr-r}
+x[[1]] # Access the first element of x
+x[[2]] # Access the second element of x
+```
+
+**Exercises:**
+
+1.  Create a list called `y` with the following elements: `1`, `"b"`, `FALSE`.
+
+```{webr-r}
+y <- list(1, "b", FALSE)
+```
+
+#### Packages
+
+R packages are collections of functions and data sets developed by the community. They increase the power of R by improving existing base R functionalities, or by adding new ones.
+
+You can install packages using the `install.packages()` function, and load them using the `library()` function. For instance:
+
+```{webr-r}
+install.packages("ggplot2")
+library(ggplot2)
+```
+
+You do not need to install packages every time. You just need to install it once, and you can use them directly by loading them using the `library()` function.
+
+# Section 2: Introduction to Power BI
 
 **Welcome to Power BI!**
 
@@ -45,15 +329,16 @@ Once installed, open Power BI Desktop. You will see the following interface:
 
 To start working with data, you need to connect Power BI to your data source. Here's how:
 
--   Click on the "Home" tab.
-
--   Click on the "Get Data" button.
+1.  Click on the "Home" tab.
+2.  Click on the "Get Data" button.
 
 ![](https://learn.microsoft.com/vi-vn/power-bi/connect-data/media/desktop-quickstart-connect-to-data/qs-connect-data_02.png)
 
--   Select your data source from the list (e.g., Excel, SQL Server, Web, etc.).
+3.  Select your data source from the list (e.g., Excel, SQL Server, Web, etc.).
 
--   Follow the prompts to load your data into Power BI.
+![](images/clipboard-2041992954.png)
+
+4.  Follow the prompts to load your data into Power BI.
 
 #### **4. Transform Data with Power Query Editor**
 
@@ -107,7 +392,7 @@ Follow the prompts to publish your report to the Power BI service, where you can
 
 Congratulations! You have successfully created your first Power BI report. Power BI is a versatile tool with many advanced features, so continue exploring and experimenting to unlock its full potential. Happy data analyzing!
 
-# Section 2: Data Wrangling in Power BI
+# Section 3: Data Wrangling in Power BI
 
 #### 1. Introduction to Power BI
 
@@ -115,23 +400,29 @@ Congratulations! You have successfully created your first Power BI report. Power
 
 **Understanding the Power BI Interface:**
 
--   **Home Ribbon:** Access common actions like getting data, viewing data transformations, and publishing reports.
+![](images/clipboard-1965339299.png)
 
--   **Report View:** Design your report using various visualizations.
+-   **Home Ribbon (1):** Access common actions like getting data, viewing data transformations, and publishing reports.
 
--   **Data View:** See the data tables and make transformations.
+-   **Report View (2):** Design your report using various visualizations.
 
--   **Model View:** Manage the relationships between different tables in your dataset.
+-   **Data View (2) :** See the data tables and make transformations.
 
--   **Fields Pane:** Contains the tables and fields in your data model.
+-   **Model View (2):** Manage the relationships between different tables in your dataset.
 
--   **Visualizations Pane:** Choose from a variety of visualizations to represent your data.
+-   **Fields Pane (3):** Contains the tables and fields in your data model.
+
+-   **Visualizations Pane (3):** Choose from a variety of visualizations to represent your data.
 
 **Connecting to Various Data Sources:** To get started, open Power BI and load your dataset:
 
 1.  Go to the **Home** tab and click **Get Data**.
 
+    ![](images/clipboard-1475392506.png)
+
 2.  Choose the type of data source (e.g., Excel, SQL Server, etc.).
+
+![](images/clipboard-2041992954.png)
 
 3.  Navigate to the location of your dataset (in this case, the "Store Sales.pbix" file) and load it into Power BI.
 
@@ -139,126 +430,31 @@ Congratulations! You have successfully created your first Power BI report. Power
 
 **Importing Data:** Once the dataset is loaded, you can see the data in the **Data View**. If needed, you can refresh the data to get the latest updates.
 
-**Using Power Query Editor:**
+![](images/clipboard-1702478595.png)
+
+#### **Using Power Query Editor:**
 
 1.  Click on **Transform Data** to open the Power Query Editor.
 
+    ![](images/clipboard-770890964.png)
+
 2.  In the Power Query Editor, you can see a list of queries (tables) on the left, the data preview in the middle, and applied steps on the right.
 
-**Applying Transformations:**
+    ![](images/clipboard-4037991218.png)
 
--   **Filtering:** Remove rows that don’t meet certain criteria.
+### Video Resources for Power BI
 
--   **Sorting:** Sort data based on one or more columns.
-
--   **Merging:** Combine columns or rows from different tables.
-
--   **Appending:** Add rows from one table to another.
-
-#### 3. Data Cleaning Techniques
-
-**Handling Missing Values:**
-
--   Use the **Remove Rows** or **Replace Values** feature to handle missing data.
-
-**Removing Duplicates:**
-
--   Select the column(s) where you want to remove duplicates and use the **Remove Duplicates** feature.
-
-**Text Cleaning:**
-
--   **Trim:** Remove leading and trailing spaces.
-
--   **Replace Values:** Replace specific text values with others.
-
--   **Case Conversion:** Convert text to uppercase, lowercase, or proper case.
-
-**Splitting and Merging Columns:**
-
--   **Split Column:** Split a column into multiple columns based on a delimiter or fixed number of characters.
-
--   **Merge Columns:** Combine multiple columns into one, separated by a delimiter.
-
-#### 4. Data Shaping
-
-**Pivoting and Unpivoting Data:**
-
--   **Pivot Columns:** Turn unique values from one column into multiple columns.
-
--   **Unpivot Columns:** Transform columns into rows to normalize data.
-
-**Grouping and Summarizing Data:**
-
--   Use the **Group By** feature to aggregate data (e.g., sum, average) based on one or more columns.
-
-**Creating Custom Columns:**
-
--   Use the **Add Column** tab to create custom columns with M language formulas or pre-built functions.
-
-**Using Conditional Column:**
-
--   Create new columns based on conditions using the **Conditional Column** feature.
-
-#### 5. Data Types and Formats
-
-**Changing Data Types:**
-
--   Ensure each column has the correct data type (e.g., text, number, date). Change the data type by selecting the column and choosing the appropriate type from the **Transform** tab.
-
-**Formatting Numbers, Dates, and Text:**
-
--   Format numbers (e.g., currency, percentage), dates (e.g., short date, long date), and text to ensure consistency and readability.
-
-**Importance of Data Types in Power BI:**
-
--   Correct data types are crucial for accurate calculations, aggregations, and visualizations. Incorrect data types can lead to errors and misleading insights.
-
-### Practical Example Using the "Store Sales" Dataset.
-
-Click [here](%22./data/Store%20Sales.pbix%22) to get the store data.
-
-#### Step-by-Step Guide:
-
-1.  **Load the Dataset:**
-
-    -   Open Power BI Desktop.
-
-    -   Click **File** \> **Open** and select "Store Sales.pbix".
-
-2.  **Transform Data:**
-
-    -   Click **Transform Data** to open the Power Query Editor.
-
-    -   **Filter Rows:** Remove rows with null values in critical columns (e.g., Sales Amount).
-
-    -   **Remove Duplicates:** Select the "Transaction ID" column and remove duplicates.
-
-    -   **Trim Text:** Select text columns like "Customer Name" and trim spaces.
-
-    -   **Split Column:** Split "Full Name" into "First Name" and "Last Name" using space as a delimiter.
-
-    -   **Group By:** Group data by "Store" to calculate the total sales per store.
-
-    -   **Pivot Data:** Pivot the "Month" column to create a monthly sales report.
-
-3.  **Data Cleaning:**
-
-    -   Replace missing values in the "Sales Amount" column with 0.
-
-    -   Convert the "Date" column to the Date type.
-
-    -   Format the "Sales Amount" column as Currency.
-
-4.  **Data Shaping:**
-
-    -   Unpivot columns to normalize the data structure.
-
-    -   Create a new custom column to categorize sales amounts (e.g., Low, Medium, High).
-
-5.  **Finalizing the Data Model:**
-
-    -   Ensure all columns have the correct data types.
-
-    -   Check relationships between tables in the **Model View**.
-
-By following these steps, you can effectively wrangle data in Power BI, ensuring it's clean, structured, and ready for analysis and visualization.
+1.  Loading data
+2.  Removing rows and columns
+3.  Changing data types
+4.  Working with columns
+5.  Data transformation
+6.  Mathematical operations
+7.  Refreshing data source
+8.  Sorting data
+9.  Filtering values
+10. Replacing values
+11. Removing duplicates/missing values
+12. Transpose
+13. Group By
+14. Pivot

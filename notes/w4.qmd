@@ -27,6 +27,8 @@ library(tidyverse)
 library(knitr)
 ```
 
+## Data Visualization
+
 ### 1. Preattentive Attributes and Data-Ink Ratio
 
 **Preattentive Attributes**:
@@ -413,4 +415,4 @@ library(knitr)
 
     -   Add filters by dragging fields to the `Filters` area.
 
-### 
+## 
