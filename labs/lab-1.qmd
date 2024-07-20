@@ -1,6 +1,10 @@
 ---
 title: "Tutorial 1 - Meet + greet + Software Installation"
 editor: visual
+filters:
+  - webr
+execute: 
+  echo: false
 ---
 
 ### Warm up
@@ -268,11 +272,23 @@ To run R code in RStudio, you can either type commands directly into the console
 
     -   $9/2\times 9$
 
+    ```{webr-r}
+    5 + 9
+
+    20 * 4
+
+    9/2 * 9
+    ```
+
 2.  Run the below in your R console and discuss what is the difference between these three
 
     -   5 \* 3 - 7
     -   (5 \* 3) - 7
     -   5 \* (3 - 7)
+
+    ```{webr-r}
+    # try your code here
+    ```
 
 Discuss the results, is it as what you expected?
 

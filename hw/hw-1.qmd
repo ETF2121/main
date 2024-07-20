@@ -1,71 +1,182 @@
 ---
-title: "Individual Assignment"
-subtitle: "Due Wednesday, 28 August, 11.55pm via Moodle"
+title: "ETF2121/5912: Individual Assignment"
+subtitle: "Due Wednesday, 28 August 2024, 11.55pm via Moodle"
+format: 
+  html:
+    toc: true
 editor: visual
 ---
 
-
-### Learning goals 🏈
+::: callout-important
+## Learning goals 🏈
 
 In this assignment, you will learn...
 
 -   able to use SQL effectively to
-  
+
     -   Write SQL queries to extract data from a database
-    
+
     -   Use SQL to perform data cleaning and transformation
-    
+
     -   Use SQL to perform data analysis and derive insights
 
 -   able to use Power BI effectively to
-  
+
     -   Import and clean data in Power BI
-    
+
     -   Create calculated columns and measures
-    
+
     -   Design various types of charts and graphs
-    
+
     -   Build an interactive dashboard
-    
+
     -   Derive and present meaningful insights from data
+:::
 
-## Section 1: SQL 🍀
+This assignment constitute 20% of the total mark of this course.
 
-You will be provided with a SQLite database file containing tables with data on a fictional global retail company. The database includes information on sales transactions, products, customers, and locations.
+## Section 1 (10%): SQL 🍀
 
 ### Objective
 
 Demonstrate your proficiency in SQL by writing queries to extract, clean, and analyze data from a given database.
 
+#### Dataset: Student Accomodation
+
+You are given the dataset [here](https://learning.monash.edu/pluginfile.php/3938969/mod_assign/introattachment/0/accommodation.sql?forcedownload=1). Please upload the sql script into oracle live sql and continue to work from there. Please watch the video above on how to upload the script. You can proceed to answer the related question once all the tables are created successfully.
+
+The detail of the dataset as below:
+
+Tables and Columns:
+
+1.  **OWNER**
+
+    -   Columns: `OWNER_NUM (PK)`, `LAST_NAME`, `FIRST_NAME`, `ADDRESS`, `CITY`, `STATE`, `ZIP_CODE`
+
+2.  **PROPERTY**
+
+    -   Columns: `PROPERTY_ID (PK)`, `OFFICE_NUM`, `ADDRESS`, `SQR_FT`, `BDRMS`, `FLOORS`, `MONTHLY_RENT`, `OWNER_NUM (FK)`
+
+3.  **OFFICE**
+
+    -   Columns: `OFFICE_NUM (PK)`, `OFFICE_NAME`, `ADDRESS`, `AREA`, `CITY`, `STATE`, `ZIP_CODE`
+
+4.  **SERVICE_CATEGORY**
+
+    -   Columns: `CATEGORY_NUM (PK)`, `CATEGORY_DESCRIPTION`
+
+5.  **SERVICE_REQUEST**
+
+    -   Columns: `SERVICE_ID (PK)`, `PROPERTY_ID (FK)`, `CATEGORY_NUMBER (FK)`, `OFFICE_ID (FK)`, `DESCRIPTION`, `STATUS`, `EST_HOURS`, `SPENT_HOURS`, `NEXT_SERVICE_DATE`
+
+6.  **RESIDENTS**
+
+    -   Columns: `RESIDENT_ID (PK)`, `FIRST_NAME`, `SURNAME`, `PROPERTY_ID (FK)`
+
+Notes: `FK` stands for foreign key and `PK` stands for primary key in the corresponding table.
+
 ### Tasks:
 
+1.  Based on the information given above, draft a schema diagram to show the relationship between all tables.
+2.  Which properties have a monthly rent between \$1000 and \$2500?
+3.  How many properties are there in each state?
+4.  What is the total number of bedrooms in all properties?
+5.  What is the average estimated and spent hours on service requests?
+6.  How many properties are managed by each office?
+7.  What is the average monthly rent of properties in each city?
+8.  Which properties have service requests where the spent hours exceed the estimated hours?
+9.  What is the percentage distribution of service requests by their status?
+10. What are the average monthly rent and average square footage per bedroom in each city?
 
+Show your sql queries for each question and submit. Paste your sql command and the screenshot of your result in a .docx file.
 
-## Section 2: Power BI  🖼
+## Section 2 (10%): Power BI 🖼
+
+**💝 This is a competition assignment, the best top 3 get a mystery gift! 🎁**
 
 You will be provided with a CSV file containing sales data for a hotel booking. The dataset includes information on sales transactions, products, customers, and locations.
 
 ### Objective
 
-Demonstrate your proficiency in data wrangling and visualization using Power BI by creating a comprehensive dashboard from a given dataset.
+Demonstrate your proficiency in data wrangling and visualization using Power BI by creating a comprehensive dashboard from [this](https://learning.monash.edu/pluginfile.php/3938969/mod_assign/introattachment/0/hotel_bookings.csv?forcedownload=1) dataset. (Source: [Hotel Booking Demand](https://www.kaggle.com/jessemostipak/hotel-booking-demand))
+
+Create a comprehensive dashboard using Power BI to assist hotel management in making data-driven decisions. Your dashboard should provide insights into key performance indicators (KPIs) and trends that can help improve hotel operations, guest satisfaction, and revenue management.
+
+#### Dataset:
+
+You will be using the provided dataset which contains information on hotel bookings. The dataset includes the following columns:
+
+-   `hotel`: Type of hotel (Resort Hotel or City Hotel)
+
+-   `is_canceled`: Booking cancellation status (0: Not Canceled, 1: Canceled)
+
+-   `lead_time`: Number of days before the actual arrival date when the booking was made
+
+-   `arrival_date_year`, `arrival_date_month`, `arrival_date_week_number`, `arrival_date_day_of_month`: Information on the arrival date
+
+-   `stays_in_weekend_nights`: Number of weekend nights (Saturday or Sunday) the guest stayed or booked to stay at the hotel
+
+-   `stays_in_week_nights`: Number of week nights (Monday to Friday) the guest stayed or booked to stay at the hotel
+
+-   `adults`, `children`, `babies`: Number of adults, children, and babies
+
+-   `meal`: Type of meal booked
+
+-   `country`: Country of origin of the guest
+
+-   `market_segment`: Market segment designation
+
+-   `distribution_channel`: Booking distribution channel
+
+-   `is_repeated_guest`: Whether the guest is a repeated guest (0: No, 1: Yes)
+
+-   `previous_cancellations`, `previous_bookings_not_canceled`: Number of previous bookings that were canceled or not canceled
+
+-   `reserved_room_type`, `assigned_room_type`: Code of room type reserved and assigned
+
+-   `booking_changes`: Number of changes made to the booking
+
+-   `deposit_type`: Type of deposit made
+
+-   `agent`, `company`: ID of the travel agent and company that made the booking
+
+-   `days_in_waiting_list`: Number of days the booking was in the waiting list
+
+-   `customer_type`: Type of customer (Transient, Contract, Group, Transient-Party)
+
+-   `adr`: Average Daily Rate
+
+-   `required_car_parking_spaces`: Number of car parking spaces required
+
+-   `total_of_special_requests`: Total number of special requests made by the guest
+
+-   `reservation_status`: Reservation last status (Canceled, Check-Out, No-Show)
+
+-   `reservation_status_date`: Date at which the last status was set
 
 ### Tasks:
 
-1.  Data Wrangling (40% of total marks)
-    a. Import the CSV file into Power BI.
-    b. Clean the data, addressing any inconsistencies, missing values, or errors.
-    c. Create at least 3 calculated measures using DAX. Ensure that your calculated measures are meaningful and correctly implemented. At least two of these measures should be used effectively in your dashboard visualizations.
-    e. Document your data wrangling process within the Power BI file.
+1.  Data Wrangling (40%)
 
-2.  Dashboard Creation (50% of total marks)
-    Create a dashboard with at least 5 different types of visualizations.
-    Ensure that your visualizations are interactive and provide meaningful insights.
+    a.  Import the CSV file into Power BI.
+    b.  Clean the data, addressing any inconsistencies, missing values, or errors.
+    c.  Create at least 3 calculated measures. Ensure that your calculated measures are meaningful and correctly implemented.
+    d.  Document your data wrangling process within the Power BI file.
 
-3.  Presentation and Usability (10% of total marks)
-    a. Organize your dashboard logically and aesthetically.
-    b. Include slicers or filters for user interactivity.
-    c. Provide clear titles and labels for all visualizations.
+2.  Dashboard Creation (50%).
 
-### Submit:
+    Create a dashboard with at least 5 different types of visualizations. Use appropriate chart types (bar charts, line charts, pie charts, etc.) to display the data effectively. Include slicers and filters to allow users to interact with the data (e.g., filter by hotel type, date range, market segment). Ensure that your visualizations are interactive and provide meaningful insights. For example, you can identify key performance indicators (KPIs) relevant to hotel management. Examples include: Occupancy Rate, Cancellation Rate, Average Daily Rate (ADR), Revenue Per Available Room (RevPAR), Number of Repeat Guests, Average Lead Time
 
--   Your Power BI file (.pbix) showing your data preparation, calculated measures, and final dashboard
+3.  Presentation and Usability (10%)
+
+    a.  Organize your dashboard logically and aesthetically.
+    b.  Provide clear titles and labels for all visualizations.
+    c.  Based on the visualized data, provide insights and actionable recommendations for hotel management. Add this to the last page of your dashboard that should serve as a report to highlight any trends, anomalies, or areas that require attention.
+
+4.  Submit one Power BI file (.pbix) showing your data preparation, calculated measures, and final dashboard.
+
+[Submit](https://learning.monash.edu/mod/assign/view.php?id=2988571){.btn .btn-primary}
+
+::: callout-important
+Notes: This assignment requires you to submit 2 files: 1 .sql file, 1 .pbix file.
+:::
