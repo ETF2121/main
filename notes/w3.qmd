@@ -442,7 +442,7 @@ Congratulations! You have successfully created your first Power BI report. Power
 
     ![](images/clipboard-4037991218.png)
 
-### Video Resources for Power BI
+### Video Resources for Power BI (Please refer to lecture slides)
 
 1.  Loading data
 2.  Removing rows and columns
