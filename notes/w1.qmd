@@ -99,7 +99,7 @@ Data Definition Language (DDL) is used to define the structure that holds the da
 -   TRUNCATE
 -   COMMENT
 
-### Data Manipulation Language (DML) 👈 [Most Important!]{style="color:red;"}
+### Data Manipulation Language (DML) 
 
 Data Manipulation Language (DML) is used to manipulate the data itself. It is used to insert, update, delete, and retrieve data from the database. DML commands are not auto-committed. It means that the changes made by the DML command are not saved to the database automatically. You have to use the COMMIT command to save the changes. The following are the DML commands:
 
@@ -108,7 +108,7 @@ Data Manipulation Language (DML) is used to manipulate the data itself. It is us
 -   UPDATE
 -   DELETE
 
-### Data Query Language (DQL)
+### Data Query Language (DQL) 👈 [Most Important!]{style="color:red;"}
 
 Data Query Language (DQL) is used to retrieve the data from the database. The SELECT statement is the most commonly used DQL command. The following are the DQL commands:
 
