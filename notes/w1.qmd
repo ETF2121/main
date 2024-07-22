@@ -97,7 +97,6 @@ Data Definition Language (DDL) is used to define the structure that holds the da
 -   ALTER
 -   DROP
 -   TRUNCATE
--   COMMENT
 
 ### Data Manipulation Language (DML) 
 
@@ -113,9 +112,15 @@ Data Manipulation Language (DML) is used to manipulate the data itself. It is us
 Data Query Language (DQL) is used to retrieve the data from the database. The SELECT statement is the most commonly used DQL command. The following are the DQL commands:
 
 -   SELECT
+
+    use together with 👇
+
 -   WHERE
+
 -   GROUP BY
+
 -   HAVING
+
 -   ORDER BY
 
 ### Data Control Language (DCL)
