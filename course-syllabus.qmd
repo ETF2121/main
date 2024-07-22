@@ -93,7 +93,7 @@ Attendance and active participation in both lectures and tutorials are expected.
 
 ### Software
 
-All software used in this course can be downloaded for free. However, Power BI will not be available for Mac users, so I would encourage you to access it via MOVE. Please refer to [this](<https://www.monash.edu/student-academic-success/build-digital-capabilities/master-online-learning-systems/move>) instruction.
+All software used in this course can be downloaded for free. However, Power BI will not be available for Mac users, so I would encourage you to access it via MOVE. Please refer to [this](https://www.monash.edu/student-academic-success/build-digital-capabilities/master-online-learning-systems/move) instruction.
 
 ### Late work submission policy
 

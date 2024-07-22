@@ -1,12 +1,14 @@
 ---
-title: "Week 1"
-subtitle: "Welcome to ETF2121/5912"
+title: "Week 3"
+subtitle: "Data Wrangling"
 editor: visual
 ---
 
 ## Pre-class activities (own-time)
 
-Make sure you can successfully login to Oracle Live SQL. If you are not, please refer to tutorial 1.
+Make sure you can either have Power BI desktop installed or have access to Power BI via MOVE platform.
+
+Make sure you can run Rstudio in your computer.
 
 ## Lecture (real-time)
 
@@ -28,12 +30,11 @@ Make sure you can successfully login to Oracle Live SQL. If you are not, please 
 
 ## Supplementary (own-time)
 
-🔕 Please take note that the below resources is just for you to advance the SQL topic and you are not required to complete it.
+🔕 You do not have to complete these but if you wish you can.
 
-1.  W3school has a very intensive resources on learning SQL. Click [here](https://www.w3schools.com/sql/default.asp).
-2.  Oracle Live Online - Give "Introduction to SQL" a go if you are interested to learn more SQL.
+📚 [Introduction to R](https://ebsmonash.shinyapps.io/ida-W1/#section-how-r-works)
 
-![](images/clipboard-1246714449.png)
+💣 [Get started with Power BI Desktop](https://learn.microsoft.com/en-us/training/modules/get-data-power-bi/)
 
 <br><br>
 

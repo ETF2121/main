@@ -573,7 +573,7 @@
     "href": "course-team.html#teaching-associates",
     "title": "Teaching team",
     "section": "Teaching Associates",
-    "text": "Teaching Associates\n\n\n\nContact\nTutorial Slots (Location)\nConsultation Hours\n\n\n\n\nMr. Elvis Yang (Head Tutor)\n\n📧 elvis.yang@monash.edu\nWednesday 9.30am (T6), N122\nThursday: 4 - 4.45pm Zoom\n\n\nMr. Chin Quek\n\n📧 chin.quek@monash.edu\nTuesday 5pm (T1), C302A\nTuesday 6.30pm (T4), C302A\nWednesday: 6.15-7pm Zoom\nFriday: 6.15-7pm Zoom\n\n\nMr. Krisanat Anukarnsakulchularp\n\n📧 Krisanat.Anukarnsakulchularp@monash.edu\nTuesday 9.30am (T2), N122\nTuesday 11am (T3), N122\nWednesday 3.30pm (T7), N122\nWednesday: 1.30 - 3pm. H4.62 / Zoom\nThursday: 3.15 - 4pm Zoom",
+    "text": "Teaching Associates\n\n\n\nContact\nTutorial Slots (Location)\nConsultation Hours\n\n\n\n\nMr. Elvis Yang (Head Tutor)\n\n📧 elvis.yang@monash.edu\nWednesday 9.30am (T6), N122\nWednesday: 4 - 4.45pm Zoom\n\n\nMr. Chin Quek\n\n📧 chin.quek@monash.edu\nTuesday 5pm (T1), C302A\nTuesday 6.30pm (T4), C302A\nThursday: 6.15-7pm Zoom\nFriday: 6.15-7pm Zoom\n\n\nMr. Krisanat Anukarnsakulchularp\n\n📧 Krisanat.Anukarnsakulchularp@monash.edu\nTuesday 9.30am (T2), N122\nTuesday 11am (T3), N122\nWednesday 3.30pm (T7), N122\nWednesday: 1.30 - 3pm. H4.62 / Zoom\nThursday: 3.15 - 4pm Zoom",
     "crumbs": [
       "Course information",
       "Teaching team"
@@ -1361,7 +1361,7 @@
     "href": "notes/w3.html",
     "title": "Lecture Note Week 3",
     "section": "",
-    "text": "Note\n\n\n\nLearning Objective:"
+    "text": "Note\n\n\n\nLearning Objective:\nLO1: Understand basic R syntax\nLO2: Understand basic Power BI point and click function"
   },
   {
     "objectID": "notes/w3.html#part-1-introduction-to-power-bi-extended-lecture-notes",
@@ -1576,44 +1576,44 @@
   {
     "objectID": "weeks/week-3.html",
     "href": "weeks/week-3.html",
-    "title": "Week 1",
+    "title": "Week 3",
     "section": "",
-    "text": "Make sure you can successfully login to Oracle Live SQL. If you are not, please refer to tutorial 1."
+    "text": "Make sure you can either have Power BI desktop installed or have access to Power BI via MOVE platform.\nMake sure you can run Rstudio in your computer."
   },
   {
     "objectID": "weeks/week-3.html#pre-class-activities-own-time",
     "href": "weeks/week-3.html#pre-class-activities-own-time",
-    "title": "Week 1",
+    "title": "Week 3",
     "section": "",
-    "text": "Make sure you can successfully login to Oracle Live SQL. If you are not, please refer to tutorial 1."
+    "text": "Make sure you can either have Power BI desktop installed or have access to Power BI via MOVE platform.\nMake sure you can run Rstudio in your computer."
   },
   {
     "objectID": "weeks/week-3.html#lecture-real-time",
     "href": "weeks/week-3.html#lecture-real-time",
-    "title": "Week 1",
+    "title": "Week 3",
     "section": "Lecture (real-time)",
     "text": "Lecture (real-time)\n🖥️ Lecture 2 - SQL\n\n\n📋 Note - SQL Resources"
   },
   {
     "objectID": "weeks/week-3.html#tutorial-real-time",
     "href": "weeks/week-3.html#tutorial-real-time",
-    "title": "Week 1",
+    "title": "Week 3",
     "section": "Tutorial (real-time)",
     "text": "Tutorial (real-time)\n📋 Tutorial 2 - SQL"
   },
   {
     "objectID": "weeks/week-3.html#quiz-own-time",
     "href": "weeks/week-3.html#quiz-own-time",
-    "title": "Week 1",
+    "title": "Week 3",
     "section": "Quiz (own-time)",
     "text": "Quiz (own-time)\n🧪 Quiz 2"
   },
   {
     "objectID": "weeks/week-3.html#supplementary-own-time",
     "href": "weeks/week-3.html#supplementary-own-time",
-    "title": "Week 1",
+    "title": "Week 3",
     "section": "Supplementary (own-time)",
-    "text": "Supplementary (own-time)\n🔕 Please take note that the below resources is just for you to advance the SQL topic and you are not required to complete it.\n\nW3school has a very intensive resources on learning SQL. Click here.\nOracle Live Online - Give “Introduction to SQL” a go if you are interested to learn more SQL.\n\n\n\n\nBack to course schedule ⏎"
+    "text": "Supplementary (own-time)\n🔕 You do not have to complete these but if you wish you can.\n📚 Introduction to R\n💣 Get started with Power BI Desktop\n\n\nBack to course schedule ⏎"
   },
   {
     "objectID": "notes/w3.html#section-1-introduction-to-power-bi",
