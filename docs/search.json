@@ -59,7 +59,7 @@
     "href": "course-syllabus.html#unit-outline",
     "title": "Syllabus/Outline/Course Information",
     "section": "Unit Outline",
-    "text": "Unit Outline\n\nBusiness Analytics & Database Management System\nStructured Query Language\nDescriptive Statistics with Power BI\nData Visualization with Power BI\nData Wrangling\nModelling Uncertainty\nDescriptive Analytics\nLinear Regression\nTime Series Analysis\nPredictive Analytics: Continuous Outcome Variables\nPredictive Analytics: Binary Outcome Variables\nRevision",
+    "text": "Unit Outline\n\nBusiness Analytics & Database Management System\nStructured Query Language\nData Wrangling with R and Power BI\nData Visualization with Power BI\nDescriptive Statistics with R and Power BI\nModelling Uncertainty\nDescriptive Analytics\nLinear Regression\nTime Series Analysis\nPredictive Analytics: Continuous Outcome Variables\nPredictive Analytics: Binary Outcome Variables\nRevision",
     "crumbs": [
       "Course information",
       "Course structure"

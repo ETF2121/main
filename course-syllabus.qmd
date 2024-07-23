@@ -19,9 +19,9 @@ On successful completion of this unit, you should be able to:
 
 1.  Business Analytics & Database Management System
 2.  Structured Query Language
-3.  Descriptive Statistics with Power BI
+3.  Data Wrangling with R and Power BI
 4.  Data Visualization with Power BI
-5.  Data Wrangling
+5.  Descriptive Statistics with R and Power BI
 6.  Modelling Uncertainty
 7.  Descriptive Analytics
 8.  Linear Regression
