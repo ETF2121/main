@@ -59,7 +59,7 @@ The textbook for this course is just a supplement to the lectures and labs. The 
 
 |             | Day | Time                | Location               |
 |-------------|-----|---------------------|------------------------|
-| Lectures    | Tue | 2.00 pm - 3.30 pm   | K312, Caulfield Campus |
+| Lectures    | Tue | 2.00 pm - 3.30 pm   | K321, Caulfield Campus |
 | Tutorial 01 | Tue | 5.00 pm - 6:30 pm   | C302A                  |
 | Tutorial 02 | Tue | 9.30 am - 12:00 pm  | N122                   |
 | Tutorial 03 | Tue | 11.00 am - 12:30 pm | N122                   |
