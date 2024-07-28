@@ -86,7 +86,7 @@ Notes: `FK` stands for foreign key and `PK` stands for primary key in the corres
 7.  What is the average monthly rent of properties in each city?
 8.  Which properties have service requests where the spent hours exceed the estimated hours?
 9.  What is the percentage distribution of service requests by their status?
-10. What are the average monthly rent and average square footage per bedroom in each city?
+10. Which owners own more than one property. List their owner number, last name, first name, and the total number of count.
 
 Show your sql queries for each question and submit. Paste your sql command and the screenshot of your result in a .docx file.
 
