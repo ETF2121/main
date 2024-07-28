@@ -428,7 +428,7 @@ Congratulations! You have successfully created your first Power BI report. Power
 
 ![](images/clipboard-2041992954.png)
 
-3.  Navigate to the location of your dataset (in this case, the "Store Sales.pbix" file) and load it into Power BI.
+3.  Navigate to the location of your dataset and load it into Power BI.
 
 #### 2. Data Import and Transformation
 
@@ -448,17 +448,157 @@ Congratulations! You have successfully created your first Power BI report. Power
 
 ### Video Resources for Power BI (Please refer to lecture video)
 
-1.  Loading data
-2.  Removing rows and columns
-3.  Changing data types
-4.  Working with columns
-5.  Data transformation
-6.  Mathematical operations
-7.  Refreshing data source
-8.  Sorting data
-9.  Filtering values
-10. Replacing values
-11. Removing duplicates/missing values
-12. Transpose
-13. Group By
-14. Pivot
+#### Enter data manually
+
+Step 1: Open Power BI Desktop 1. Start Power BI Desktop on your computer.
+
+Step 2: Import Data from a CSV File
+
+1\. Click on the **Home** tab in the top menu.
+
+2\. Click on **Get Data** in the ribbon.
+
+3\. From the dropdown menu, select **Text/CSV**.
+
+4\. Locate and select your CSV file from your computer, then click **Open**.
+
+5\. In the preview window, review your data to ensure it looks correct.
+
+6\. Click **Load** to import the data into Power BI.
+
+Step 3: Manually Enter Data
+
+1\. Click on the **Home** tab in the top menu.
+
+2\. Click on **Enter Data** in the ribbon.
+
+3\. In the new window that opens, you can manually enter your data. Here is an example: - Column1: Product - Column2: Sales - Row1: "Product A", 100 - Row2: "Product B", 200
+
+4\. After entering your data, click **Load** to add the table to your model.
+
+#### Importing data
+
+1.  Click on the **Home** tab in the top menu.
+2.  Click on **Get Data** in the ribbon.
+3.  Select the data source you want to import (e.g., Excel, SQL Server, Web, etc.).
+4.  Follow the prompts to connect to your data source and load the data into Power BI.
+5.  Review the data preview to ensure it looks correct.
+6.  Click **Load** to import the data into Power BI.
+
+#### Removing rows and columns
+
+1.  Under the **Home** tab, click on **Transform Data** to open the Power Query Editor.
+
+    ![](images/clipboard-3555606525.png)
+
+2.  In the Power Query Editor, select the column or row you want to remove.
+
+3.  Right-click on the selected column or row and choose **Remove**.
+
+4.  Click **Close & Apply** to save your changes and return to Power BI.
+
+    ![](images/clipboard-2742113413.png)
+
+#### Changing data types
+
+1.  In the Power Query Editor, select the column you want to change the data type for.
+
+2.  Right-click on the column header and choose **Change Type**.
+
+    ![](images/clipboard-3569179069.png)
+
+#### Data transformation
+
+1.  In the Power Query Editor, select the column you want to transform.
+
+2.  Click on the **Transform** tab in the top menu.
+
+    ![](images/clipboard-2481821170.png)
+
+3.  Choose from various transformation options, such as splitting columns, merging columns, or replacing values.
+
+4.  Go back to **Home** tab and click **Close & Apply** to save your changes and return to Power BI.
+
+#### Mathematical operations
+
+1.  In the Power Query Editor, select the column you want to perform mathematical operations on.
+
+2.  Click on the **Add Column** tab in the top menu.
+
+    ![](images/clipboard-3999307661.png)
+
+3.  Choose from various mathematical operations, such as addition, subtraction, multiplication, or division.
+
+4.  Go to **Standard** and select the operation you want to perform.
+
+    ![](images/clipboard-3209397444.png)
+
+5.  Now highlight two different columns and you should be able to see **Statistics** tab is not greyed out anymore. Click on **Statistics** and select the operation you want to perform.
+
+    ![](images/clipboard-3209397444.png)
+
+6.  Go to **Statistics** and select the operation you want to perform.
+
+    ![](images/clipboard-2876135435.png)
+
+7.  Go back to **Home** tab and click **Close & Apply** to save your changes and return to Power BI.
+
+#### Refreshing data source
+
+1.  In Power BI, go to the **Home** tab.
+
+2.  Click on **Refresh** to update the data from the original data source.
+
+    ![](images/clipboard-1314656863.png)
+
+#### Filtering values
+
+1.  In the Power Query Editor, select the column you want to filter.
+
+2.  Click on the **Transform** tab in the top menu.
+
+3.  Click on the variable side drop-down list and choose **Text Filters** or **Number Filters** to filter the values based on your criteria.
+
+    ![](images/clipboard-4245933973.png)
+
+#### Replacing values
+
+1.  In the Power Query Editor, select the column you want to replace values in.
+
+2.  Click on the **Transform** tab in the top menu.
+
+3.  Click on **Replace Values** and enter the old value and new value you want to replace it with.
+
+    ![](images/clipboard-561438521.png)
+
+#### Removing duplicates/missing values
+
+1.  In the Power Query Editor, select the column you want to remove duplicates or missing values from.
+
+2.  Click on the **Home** tab in the top menu.
+
+3.  Click on **Remove Rows** and choose **Remove Duplicates** or **Remove Blank Rows**.
+
+    ![](images/clipboard-1322387617.png)
+
+#### Group By
+
+1.  In the Power Query Editor, select the column you want to group by.
+
+2.  Click on the **Home** tab in the top menu.
+
+3.  Click on **Group By** and choose the column you want to group by and the operation you want to perform (e.g., sum, average, count).
+
+    ![](images/clipboard-1321674540.png)
+
+#### Pivot
+
+1.  In the Power Query Editor, select the columns you want to pivot.
+
+2.  Click on the **Transform** tab in the top menu.
+
+3.  Click on **Pivot Column** and choose the values you want to pivot.
+
+    ![](images/clipboard-4172566116.png)
+
+4.  Click **Close & Apply** to save your changes and return to Power BI.

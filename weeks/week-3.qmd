@@ -12,23 +12,23 @@ Make sure you can run Rstudio in your computer.
 
 ## Lecture (real-time)
 
-🖥️ [Lecture 2 - SQL](/slides/lec-2.html)
+🖥️ [Lecture 3 - Data Wrangling ](/slides/lec-2.html)
 
-<iframe src="https://learning.monash.edu/pluginfile.php/3800248/mod_resource/content/1/lec-1.html" width="100%" height="500">
+<iframe src="https://learning.monash.edu/pluginfile.php/3977860/mod_resource/content/1/lec-3.html" width="100%" height="500">
 
 </iframe>
 
-📋 [Note - SQL Resources](/notes/w2.html)
+📋 [Note - Data Wrangling using R and Power BI](/notes/w3.html)
 
 ## Tutorial (real-time)
 
-📋 [Tutorial 2 - SQL](/labs/lab-2.html)
+📋 [Tutorial 3](/labs/lab-2.html)
 
 ## Quiz (own-time)
 
-🧪 [Quiz 2](https://learning.monash.edu/mod/quiz/view.php?id=2893560)
+🧪 [Quiz 3](https://learning.monash.edu/mod/quiz/view.php?id=2989083)
 
-## Supplementary (own-time)
+## Supplementary (own-time)![Close document tab](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAbElEQVR4Xs2RQQrAMAgEfZgf7W9LAguybljJpR3wEse5JOL3ZObDb4x1loDhHbBOFU6i2Ddnw2KNiXcdAXygJlwE8OFVBHDgKrLgSInN4WMe9iXiqIVsTMjH7z/GhNTEibOxQswcYIWYOR/zAjBJfiXh3jZ6AAAAAElFTkSuQmCC){alt="Close document tab"}
 
 🔕 You do not have to complete these but if you wish you can.
 

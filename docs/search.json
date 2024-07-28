@@ -1592,21 +1592,21 @@
     "href": "weeks/week-3.html#lecture-real-time",
     "title": "Week 3",
     "section": "Lecture (real-time)",
-    "text": "Lecture (real-time)\n🖥️ Lecture 2 - SQL\n\n\n📋 Note - SQL Resources"
+    "text": "Lecture (real-time)\n🖥️ Lecture 3 - Data Wrangling\n\n\n📋 Note - Data Wrangling using R and Power BI"
   },
   {
     "objectID": "weeks/week-3.html#tutorial-real-time",
     "href": "weeks/week-3.html#tutorial-real-time",
     "title": "Week 3",
     "section": "Tutorial (real-time)",
-    "text": "Tutorial (real-time)\n📋 Tutorial 2 - SQL"
+    "text": "Tutorial (real-time)\n📋 Tutorial 3"
   },
   {
     "objectID": "weeks/week-3.html#quiz-own-time",
     "href": "weeks/week-3.html#quiz-own-time",
     "title": "Week 3",
     "section": "Quiz (own-time)",
-    "text": "Quiz (own-time)\n🧪 Quiz 2"
+    "text": "Quiz (own-time)\n🧪 Quiz 3"
   },
   {
     "objectID": "weeks/week-3.html#supplementary-own-time",
@@ -2012,5 +2012,12 @@
       "Assessment",
       "Individual Assignment"
     ]
+  },
+  {
+    "objectID": "weeks/week-3.html#supplementary-own-timeclose-document-tab",
+    "href": "weeks/week-3.html#supplementary-own-timeclose-document-tab",
+    "title": "Week 3",
+    "section": "Supplementary (own-time)",
+    "text": "Supplementary (own-time)\n🔕 You do not have to complete these but if you wish you can.\n📚 Introduction to R\n💣 Get started with Power BI Desktop\n\n\nBack to course schedule ⏎"
   }
 ]
