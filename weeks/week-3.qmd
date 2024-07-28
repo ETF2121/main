@@ -12,7 +12,7 @@ Make sure you can run Rstudio in your computer.
 
 ## Lecture (real-time)
 
-🖥️ [Lecture 3 - Data Wrangling ](/slides/lec-2.html)
+🖥️ [Lecture 3 - Data Wrangling](https://learning.monash.edu/pluginfile.php/3977860/mod_resource/content/1/lec-3.html)
 
 <iframe src="https://learning.monash.edu/pluginfile.php/3977860/mod_resource/content/1/lec-3.html" width="100%" height="500">
 
@@ -22,7 +22,7 @@ Make sure you can run Rstudio in your computer.
 
 ## Tutorial (real-time)
 
-📋 [Tutorial 3](/labs/lab-2.html)
+📋 [Tutorial 3](https://learning.monash.edu/pluginfile.php/3977906/mod_resource/content/3/lab-3.html)
 
 ## Quiz (own-time)
 

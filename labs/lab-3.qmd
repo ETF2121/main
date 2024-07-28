@@ -1,0 +1,186 @@
+---
+title: "Tutorial 3 - SQL"
+format: 
+  html:
+    toc: true
+editor: visual
+params:
+  solutions: FALSE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(include = params$solutions) # set to TRUE for solutions document
+```
+
+::: callout-important
+## Learning Objective
+
+1.  able to identify prescriptive, descriptive and predictive analytics.
+2.  understand database management system.
+:::
+
+### Question 1
+
+A control chart is a graphical tool to help determine if a process is in control or out of control. The following figure shows a control chart for a production line that fills boxes of cereal. Based on past data, we can calculate the mean weight of a box of cereal when the process is in control. The mean weight is 16.05 ounces. We can also calculate control limits, an upper control limit (UCL) and a lower control limit (LCL). New samples are collected over time and the data indicates that the process is in control so long as the new sample weights are between UCL and LCL. As shown in the chart, only sample 5 is outside of the control limits.
+
+![](images/clipboard-2825817021.png)
+
+a\. Is the control chart an example of descriptive, predictive, or prescriptive analytics?
+
+```{asis}
+👉 The control chart simply describes the production data, so it is descriptive analytics.
+```
+
+b\. Suppose the control chart is part of a data dashboard and the chart is combined with a rule that does the following. If four consecutive sample mean weights are outside of the control limits, the production line is automatically stopped, and a message appears on the dashboard. The message says “The production line is stopped. The process may be out of control. Please inspect the fill machine.” Is this new enhanced control chart combined with a rule an example of descriptive, predictive, or prescriptive analytics?
+
+```{asis}
+👉 The new enhanced control chart combines a descriptive tool (the chart) with a rule that causes a course of action to take place. Hence, the new rule-based system is an example of prescriptive analytics.
+```
+
+### Question 2
+
+An example of a response from Amazon when this Camm et al. (2024) you are reading was chosen online, is given below. It indicates that some people who purchased this text also tended to purchase *The World Is Flat*, *Fundamentals of Corporate Finance*, and *Strategic Marketing Management*. In this application of analytics, is Amazon using descriptive, predictive, or prescriptive analytics? Explain.
+
+```{asis}
+📖 Amazon is describing other books that tend to be purchased with the text Business Analytics, based on past consumer purchases. Therefore, this is an example of descriptive analytics.
+```
+
+![](images/clipboard-3462295734.png)
+
+### Question 3
+
+Human Resource (HR) Analytics or People analytics are terms used for the use of analytics to manage a company’s workforce. Google, Microsoft, and Walmart, for example, use people analytics to help retain their best people, ensure a diverse workforce, and better understand the strengths and areas needing improvement.
+
+a\. One application of people analytics is to build a model that estimates the probability of an employee departing the company within the next six months. Inputs to the model could be market demand for the skills the person possesses, how long the person has been with the company, and a major life event recently occurring for the person (for example, divorce). Is this type of model descriptive, predictive, or prescriptive? Explain.
+
+```{asis}
+🧑‍🤝‍🧑 Since the model estimates a probability, that is, how likely it is that a person will depart the company in the next six months, it is an example of predictive analytics. It predicts how likely a person is to depart in the next 6 months.
+```
+
+b\. How could you use the model described in part (a) to help improve the workforce?
+
+```{asis}
+🧑‍🤝‍🧑 The predictive model could be used to improve the workforce by applying a rule to the model to make it prescriptive. For example, a rule might be “for a high-performing employee, if the estimated probability of departure is greater than 0.4, proactively give a 10% increase in salary to that person, with the hope that the person will likely stay.”
+```
+
+### Question 4
+
+A supermarket has been experiencing long lines during peak periods of the day. The problem is noticeably worse on certain days of the week, and the peak periods are sometimes different according to the day of the week. There are usually enough workers on the job to open all checkout lanes. The problem is knowing when to call some of the workers stocking shelves up to the front of the store to work the checkout lanes.
+
+a. How could analytics be used to help the supermarket?
+
+```{asis}
+🏠 Analytics could prove helpful by providing a predictive model that estimates the expected number of shoppers and how long they are expected to shop before checking out, by day of week and time of day. For example, the model might predict that for a given supermarket location, from 5:00 p.m. to 5:15 p.m. on a Wednesday, 37 shoppers are expected with 80% of them shopping for less than 6 minutes. This predictive model could be used to know when more checkout workers need to be called to the front of the store to ensure lines do not grow too long.
+```
+
+b. What data would be needed?
+
+```{asis}
+🏘️: The following data would need to be collected over time with special considerations for holidays: the number of people who enter the store and how long they shop before checking out by day of week and time of day. This data could be collected by observation, but would more likely be collected electronically through sensors that would also maintain the anonymity of the shoppers.
+```
+
+### Question 5
+
+Setting the right price for a product is an important business decision. Price the product too high and demand could be too low. Set the price too low, demand may be high, but we are potentially leaving money on the table because the revenue per unit is low. Pricing analytics involves finding the right trade-off between the price charged and demand so as to maximize revenue. Suppose we need to set the price for renting a subcompact automobile for one day. Let us outline the decision process:
+
+1.  **Identify and define the problem.** We need to set a price per day for a midsize rental car.
+2.  **Determine the criteria that will be used to evaluate alternative solutions.** Our goal in setting the price is to maximize revenue.
+3.  **Determine the set of alternative solutions.** Based on historical data and the competition, we will consider a broad price range from \$10 per day to \$60 per day.
+4.  **Evaluate the alternatives.** We will evaluate proposed prices based on the expected revenue per day.
+5.  **Choose an alternative.** We will choose the price that maximizes expected revenue.
+
+We can use data and analytics to complete steps 4 and 5 of the decision process.
+
+a.  Based on historical or test market data, we can estimate a model that gives expected revenue as a function of price, as shown below. The dots represent the data (price and demand combinations) and the estimated model is the line in the chart: Demand = –1.4028 (Price) + 102.65. For example, for the price of \$35 Demand = –1.4028(35) + 102.65 = 53.552 vehicles. So, we estimate that at a price of \$35 per day, the demand will be about 54 vehicles. Is this estimated equation, a descriptive, predictive, or prescriptive model? Explain.
+
+![](images/clipboard-1629067941.png)
+
+```{asis}
+🚗 The estimated equation is a predictive model because it predicts the quantity demanded based on the price per day of the rental car.
+
+Our goal (step 5) is to find the price that maximizes expected revenue. Revenue = demand x price which is (–1.4028(Price) + 102.65)  x (Price) = –1.40228(Price)^2^ + 102.65(Price). The revenue as a function of price is shown below for \$10 increments of price.
+```
+
+b.  What is the price that maximizes revenue?
+
+```{asis}
+🚗 Based on the chart of revenue, since the peak of the curve is at a price of \$40,\
+it appears that the optimal price is \$40. The estimated maximum revenue is\
+(–1.4028(Price) + 102.65) x (Price) = (–1.4028(40) + 102.65)(40) = \$1861.52.
+```
+
+c.   Is step 5, visually expecting the revenue function to find a revenue-maximizing price, descriptive, predictive, or prescriptive analytics? Explain.
+
+![](images/clipboard-2372438138.png)
+
+```{asis}
+🚗 By visually finding the price that maximizes revenue and using that price to maximize revenue, we are performing prescriptive analytics, as we are recommending a course of action (setting the price at \$40).
+```
+
+### Question 6
+
+You are managing a small bookstore's database. The database has the following tables:
+
+**Books**
+
+-   BookID (Primary Key)
+
+-   Title
+
+-   Author
+
+-   Price
+
+**Customers**
+
+-   CustomerID (Primary Key)
+
+-   Name
+
+-   Email
+
+**Orders**
+
+-   OrderID (Primary Key)
+
+-   CustomerID (Foreign Key)
+
+-   OrderDate
+
+**OrderDetails**
+
+-   OrderDetailID (Primary Key)
+
+-   OrderID (Foreign Key)
+
+-   BookID (Foreign Key)
+
+-   Quantity
+
+a.  Explain why a Database Management System (DBMS) is important for managing data in an organization. List at least three key benefits of using a DBMS compared to traditional file-based systems.
+
+```{asis}
+**⚾ Importance of DBMS**:
+
+- **Data Integrity and Security**: A DBMS ensures that the data stored is accurate and consistent and provides mechanisms to enforce security policies, ensuring that only authorized users can access or modify the data.
+
+- **Data Redundancy and Inconsistency**: Unlike traditional file-based systems, a DBMS reduces data redundancy by ensuring that data is stored in a single, centralized location, which helps maintain consistency.
+
+- **Data Sharing and Concurrency**: A DBMS allows multiple users to access and work with the data simultaneously without conflicts, supporting data sharing across the organization while maintaining data integrity through concurrency control mechanisms.
+```
+
+b.  Explain what a primary key is and why it is important.
+
+```{asis}
+**🔑 Primary Key**: A primary key is a unique identifier for each record in a table. It is important because it ensures that each record can be uniquely identified, preventing duplicate records and establishing relationships between tables.
+```
+
+c.  What is the purpose of a foreign key in a database?
+
+```{asis}
+🔑 **Foreign Key**: A foreign key is a field in one table that uniquely identifies a row of another table. The purpose of a foreign key is to enforce referential integrity between the two tables, ensuring that the relationship between the tables remains consistent.
+```
+
+### Reference
+
+[Business Analytics](https://au.cengage.com/c/mindtap-for-camm-cochran-fry-ohlmann-s-business-analytics-2-terms-instant-access-5e-camm-cochran-fry-ohlmann/9780357902240/) by Camm, Cochran, Fry, Ohlmann, Anderson & Sweeney, 2024, 5th Edition.
