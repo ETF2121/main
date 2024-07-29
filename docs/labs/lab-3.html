@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lab 3 - Coffee ratings – ETF2121/5912 - S2 2024</title>
+<title>Tutorial 3 - SQL – ETF2121/5912 - S2 2024</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,10 +69,10 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="ETF2121/5912 - S2 2024 - Lab 3 - Coffee ratings">
+<meta property="og:title" content="ETF2121/5912 - S2 2024 - Tutorial 3 - SQL">
 <meta property="og:description" content="Homepage for ETF2121/5921 - Data Analysis in Business at Monash University, S2 2023.">
 <meta property="og:site_name" content="ETF2121/5912 - S2 2024">
-<meta name="twitter:title" content="ETF2121/5912 - S2 2024 - Lab 3 - Coffee ratings">
+<meta name="twitter:title" content="ETF2121/5912 - S2 2024 - Tutorial 3 - SQL">
 <meta name="twitter:description" content="Homepage for ETF2121/5921 - Data Analysis in Business at Monash University, S2 2023.">
 <meta name="twitter:image" content="https://sta210-s22.github.io/website/labs/images/twitter-card.png">
 <meta name="twitter:creator" content="@minebocek">
@@ -88,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lab 3 - Coffee ratings</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Tutorial 3 - SQL</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -134,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Syllabus</span></a>
+ <span class="menu-text">Course structure</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -168,8 +168,25 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/week-5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 5</span></a>
+  <a href="../weeks/week-2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Assessment</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../hw/hw-1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Individual Assignment</span></a>
   </div>
 </li>
       </ul>
@@ -184,11 +201,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
-  <ul class="collapse">
-  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link" data-scroll-target="#learning-goals">Learning goals</a></li>
-  <li><a href="#section-1-downloading-and-installing-power-bi-desktop" id="toc-section-1-downloading-and-installing-power-bi-desktop" class="nav-link" data-scroll-target="#section-1-downloading-and-installing-power-bi-desktop">Section 1: Downloading and Installing Power BI Desktop</a></li>
-  </ul></li>
+  <li><a href="#question-1" id="toc-question-1" class="nav-link active" data-scroll-target="#question-1">Question 1</a></li>
+  <li><a href="#question-2" id="toc-question-2" class="nav-link" data-scroll-target="#question-2">Question 2</a></li>
+  <li><a href="#question-3" id="toc-question-3" class="nav-link" data-scroll-target="#question-3">Question 3</a></li>
+  <li><a href="#question-4" id="toc-question-4" class="nav-link" data-scroll-target="#question-4">Question 4</a></li>
+  <li><a href="#question-5" id="toc-question-5" class="nav-link" data-scroll-target="#question-5">Question 5</a></li>
+  <li><a href="#question-6" id="toc-question-6" class="nav-link" data-scroll-target="#question-6">Question 6</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
   </ul>
 </nav>
     </div>
@@ -197,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lab 3 - Coffee ratings</h1>
+<h1 class="title">Tutorial 3 - SQL</h1>
 </div>
 
 
@@ -214,91 +233,107 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>In today’s lab you will analyze data from over 1,000 different coffees to explore the relationship between a coffee’s aroma and it’s overall quality. You will also begin working with your team and practicing a collaborative data analysis workflow.</p>
-<section id="learning-goals" class="level3">
-<h3 class="anchored" data-anchor-id="learning-goals">Learning goals</h3>
-<p>By the end of the lab you will…</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Learning Objective
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>able to identify prescriptive, descriptive and predictive analytics.</li>
+<li>understand database management system.</li>
+</ol>
+</div>
+</div>
+<section id="question-1" class="level3">
+<h3 class="anchored" data-anchor-id="question-1">Question 1</h3>
+<p>A control chart is a graphical tool to help determine if a process is in control or out of control. The following figure shows a control chart for a production line that fills boxes of cereal. Based on past data, we can calculate the mean weight of a box of cereal when the process is in control. The mean weight is 16.05 ounces. We can also calculate control limits, an upper control limit (UCL) and a lower control limit (LCL). New samples are collected over time and the data indicates that the process is in control so long as the new sample weights are between UCL and LCL. As shown in the chart, only sample 5 is outside of the control limits.</p>
+<p><img src="images/clipboard-2825817021.png" class="img-fluid"></p>
+<p>a. Is the control chart an example of descriptive, predictive, or prescriptive analytics?</p>
+<p>b. Suppose the control chart is part of a data dashboard and the chart is combined with a rule that does the following. If four consecutive sample mean weights are outside of the control limits, the production line is automatically stopped, and a message appears on the dashboard. The message says “The production line is stopped. The process may be out of control. Please inspect the fill machine.” Is this new enhanced control chart combined with a rule an example of descriptive, predictive, or prescriptive analytics?</p>
+</section>
+<section id="question-2" class="level3">
+<h3 class="anchored" data-anchor-id="question-2">Question 2</h3>
+<p>An example of a response from Amazon when this Camm et al.&nbsp;(2024) you are reading was chosen online, is given below. It indicates that some people who purchased this text also tended to purchase <em>The World Is Flat</em>, <em>Fundamentals of Corporate Finance</em>, and <em>Strategic Marketing Management</em>. In this application of analytics, is Amazon using descriptive, predictive, or prescriptive analytics? Explain.</p>
+<p><img src="images/clipboard-3462295734.png" class="img-fluid"></p>
+</section>
+<section id="question-3" class="level3">
+<h3 class="anchored" data-anchor-id="question-3">Question 3</h3>
+<p>Human Resource (HR) Analytics or People analytics are terms used for the use of analytics to manage a company’s workforce. Google, Microsoft, and Walmart, for example, use people analytics to help retain their best people, ensure a diverse workforce, and better understand the strengths and areas needing improvement.</p>
+<p>a. One application of people analytics is to build a model that estimates the probability of an employee departing the company within the next six months. Inputs to the model could be market demand for the skills the person possesses, how long the person has been with the company, and a major life event recently occurring for the person (for example, divorce). Is this type of model descriptive, predictive, or prescriptive? Explain.</p>
+<p>b. How could you use the model described in part (a) to help improve the workforce?</p>
+</section>
+<section id="question-4" class="level3">
+<h3 class="anchored" data-anchor-id="question-4">Question 4</h3>
+<p>A supermarket has been experiencing long lines during peak periods of the day. The problem is noticeably worse on certain days of the week, and the peak periods are sometimes different according to the day of the week. There are usually enough workers on the job to open all checkout lanes. The problem is knowing when to call some of the workers stocking shelves up to the front of the store to work the checkout lanes.</p>
+<p>a.&nbsp;How could analytics be used to help the supermarket?</p>
+<p>b.&nbsp;What data would be needed?</p>
+</section>
+<section id="question-5" class="level3">
+<h3 class="anchored" data-anchor-id="question-5">Question 5</h3>
+<p>Setting the right price for a product is an important business decision. Price the product too high and demand could be too low. Set the price too low, demand may be high, but we are potentially leaving money on the table because the revenue per unit is low. Pricing analytics involves finding the right trade-off between the price charged and demand so as to maximize revenue. Suppose we need to set the price for renting a subcompact automobile for one day. Let us outline the decision process:</p>
+<ol type="1">
+<li><strong>Identify and define the problem.</strong> We need to set a price per day for a midsize rental car.</li>
+<li><strong>Determine the criteria that will be used to evaluate alternative solutions.</strong> Our goal in setting the price is to maximize revenue.</li>
+<li><strong>Determine the set of alternative solutions.</strong> Based on historical data and the competition, we will consider a broad price range from $10 per day to $60 per day.</li>
+<li><strong>Evaluate the alternatives.</strong> We will evaluate proposed prices based on the expected revenue per day.</li>
+<li><strong>Choose an alternative.</strong> We will choose the price that maximizes expected revenue.</li>
+</ol>
+<p>We can use data and analytics to complete steps 4 and 5 of the decision process.</p>
+<ol type="a">
+<li>Based on historical or test market data, we can estimate a model that gives expected revenue as a function of price, as shown below. The dots represent the data (price and demand combinations) and the estimated model is the line in the chart: Demand = –1.4028 (Price) + 102.65. For example, for the price of $35 Demand = –1.4028(35) + 102.65 = 53.552 vehicles. So, we estimate that at a price of $35 per day, the demand will be about 54 vehicles. Is this estimated equation, a descriptive, predictive, or prescriptive model? Explain.</li>
+</ol>
+<p><img src="images/clipboard-1629067941.png" class="img-fluid"></p>
+<ol start="2" type="a">
+<li>What is the price that maximizes revenue?</li>
+</ol>
+<p>c.&nbsp;&nbsp; Is step 5, visually expecting the revenue function to find a revenue-maximizing price, descriptive, predictive, or prescriptive analytics? Explain.</p>
+<p><img src="images/clipboard-2372438138.png" class="img-fluid"></p>
+</section>
+<section id="question-6" class="level3">
+<h3 class="anchored" data-anchor-id="question-6">Question 6</h3>
+<p>You are managing a small bookstore’s database. The database has the following tables:</p>
+<p><strong>Books</strong></p>
 <ul>
-<li>Create plots and calculate associated statistics to assess model diagnostics.</li>
-<li>Practice collaborating with others using a single Github repo.</li>
+<li><p>BookID (Primary Key)</p></li>
+<li><p>Title</p></li>
+<li><p>Author</p></li>
+<li><p>Price</p></li>
 </ul>
-</section>
-<section id="section-1-downloading-and-installing-power-bi-desktop" class="level3">
-<h3 class="anchored" data-anchor-id="section-1-downloading-and-installing-power-bi-desktop">Section 1: Downloading and Installing Power BI Desktop</h3>
-<p>Power BI Desktop is a powerful data visualization tool that allows you to connect to various data sources, transform data, and create interactive reports. Follow these steps to download and install Power BI Desktop on your computer.</p>
-<section id="downloading-power-bi-desktop" class="level4">
-<h4 class="anchored" data-anchor-id="downloading-power-bi-desktop">2.1 Downloading Power BI Desktop</h4>
-<ol type="1">
-<li><p><strong>Visit the Power BI Website:</strong></p>
+<p><strong>Customers</strong></p>
 <ul>
-<li>Go to the <a href="https://powerbi.microsoft.com/">Power BI website</a>.</li>
-</ul></li>
-<li><p><strong>Navigate to the Download Page:</strong></p>
+<li><p>CustomerID (Primary Key)</p></li>
+<li><p>Name</p></li>
+<li><p>Email</p></li>
+</ul>
+<p><strong>Orders</strong></p>
 <ul>
-<li>Click on the <code>Products</code> menu at the top of the page and select <code>Power BI Desktop</code>.</li>
-</ul></li>
-<li><p><strong>Download the Installer:</strong></p>
+<li><p>OrderID (Primary Key)</p></li>
+<li><p>CustomerID (Foreign Key)</p></li>
+<li><p>OrderDate</p></li>
+</ul>
+<p><strong>OrderDetails</strong></p>
 <ul>
-<li><p>Click on the <code>Download free</code> button to go to the Microsoft Store page for Power BI Desktop.</p></li>
-<li><p>If you prefer to download the installer directly (instead of through the Microsoft Store), click on the <code>See download or language options</code> link and choose the version suitable for your operating system.</p></li>
-</ul></li>
+<li><p>OrderDetailID (Primary Key)</p></li>
+<li><p>OrderID (Foreign Key)</p></li>
+<li><p>BookID (Foreign Key)</p></li>
+<li><p>Quantity</p></li>
+</ul>
+<ol type="a">
+<li><p>Explain why a Database Management System (DBMS) is important for managing data in an organization. List at least three key benefits of using a DBMS compared to traditional file-based systems.</p></li>
+<li><p>Explain what a primary key is and why it is important.</p></li>
+<li><p>What is the purpose of a foreign key in a database?</p></li>
 </ol>
 </section>
-<section id="installing-power-bi-desktop" class="level4">
-<h4 class="anchored" data-anchor-id="installing-power-bi-desktop">2.2 Installing Power BI Desktop</h4>
-<ol type="1">
-<li><p><strong>Run the Installer:</strong></p>
-<ul>
-<li><p>If you downloaded Power BI Desktop from the Microsoft Store, it will install automatically after you click the <code>Get</code> button.</p></li>
-<li><p>If you downloaded the installer directly, locate the downloaded file (typically a .msi file) and double-click it to run the installer.</p></li>
-</ul></li>
-<li><p><strong>Follow the Installation Prompts:</strong></p>
-<ul>
-<li><p>Click <code>Next</code> on the welcome screen.</p></li>
-<li><p>Accept the license agreement and click <code>Next</code>.</p></li>
-<li><p>Choose the installation folder or accept the default path and click <code>Next</code>.</p></li>
-<li><p>Click <code>Install</code> to begin the installation process.</p></li>
-</ul></li>
-<li><p><strong>Complete the Installation:</strong></p>
-<ul>
-<li>Once the installation is complete, click <code>Finish</code> to close the installer.</li>
-</ul></li>
-<li><p><strong>Launch Power BI Desktop:</strong></p>
-<ul>
-<li>After installation, you can launch Power BI Desktop from the Start menu (Windows) or by searching for it in your applications.</li>
-</ul></li>
-</ol>
-</section>
-<section id="initial-setup-and-configuration" class="level4">
-<h4 class="anchored" data-anchor-id="initial-setup-and-configuration">2.3 Initial Setup and Configuration</h4>
-<ol type="1">
-<li><p><strong>Sign In to Power BI:</strong></p>
-<ul>
-<li>When you first open Power BI Desktop, you may be prompted to sign in. If you have a Power BI account, sign in with your credentials. If not, you can create a new account or skip this step.</li>
-</ul></li>
-<li><p><strong>Explore the Interface:</strong></p>
-<ul>
-<li><p>Familiarize yourself with the Power BI Desktop interface, which includes the following key components:</p>
-<ul>
-<li><p><strong>Report View:</strong> Where you create and arrange visualizations.</p></li>
-<li><p><strong>Data View:</strong> Where you can see your data tables.</p></li>
-<li><p><strong>Model View:</strong> Where you can manage relationships between tables.</p></li>
-<li><p><strong>Fields Pane:</strong> Displays the tables and fields in your data model.</p></li>
-<li><p><strong>Visualizations Pane:</strong> Contains various types of visualizations you can add to your reports.</p></li>
-</ul></li>
-</ul></li>
-<li><p><strong>Connect to Data Sources:</strong></p>
-<ul>
-<li><p>Click on <code>Get Data</code> in the Home ribbon to connect to a variety of data sources, such as Excel, SQL Server, web data, and more.</p></li>
-<li><p>Follow the prompts to load your data into Power BI Desktop.</p></li>
-</ul></li>
-</ol>
+<section id="reference" class="level3">
+<h3 class="anchored" data-anchor-id="reference">Reference</h3>
+<p><a href="https://au.cengage.com/c/mindtap-for-camm-cochran-fry-ohlmann-s-business-analytics-2-terms-instant-access-5e-camm-cochran-fry-ohlmann/9780357902240/">Business Analytics</a> by Camm, Cochran, Fry, Ohlmann, Anderson &amp; Sweeney, 2024, 5th Edition.</p>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->

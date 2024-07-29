@@ -524,7 +524,7 @@ FULL OUTER JOIN employees e ON d.department_id = e.department_id;
 
 This query joins the `DEPARTMENTS` table with the `EMPLOYEES` table, including all departments and employees even if they don't have matches.
 
-#### 5. CROSS JOIN
+#### 5. CROSS JOIN 👈 (not included in syllabus)
 
 A `CROSS JOIN` returns the Cartesian product of the two tables, meaning it returns all possible combinations of rows.
 
@@ -548,7 +548,7 @@ CROSS JOIN departments d;
 
 This query combines each employee with every department, producing a large number of rows.
 
-#### 6. SELF JOIN
+#### 6. SELF JOIN 👈 (not included in syllabus)
 
 A `SELF JOIN` is a regular join, but the table is joined with itself.
 
