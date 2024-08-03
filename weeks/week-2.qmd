@@ -22,6 +22,8 @@ Make sure you can successfully login to Oracle Live SQL. If you are not, please 
 
 📋 [Tutorial 2 - SQL](https://learning.monash.edu/pluginfile.php/3937376/mod_resource/content/2/lab-2.html)
 
+📑 [Tutorial 2 Solution](https://learning.monash.edu/pluginfile.php/3999900/mod_resource/content/1/lab-2-solution.html)
+
 ## Quiz (own-time)
 
 🧪 [Quiz 2](https://learning.monash.edu/mod/quiz/view.php?id=2893560)
