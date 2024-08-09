@@ -1,0 +1,43 @@
+---
+title: "Week 4"
+subtitle: "Data Visualization"
+editor: visual
+---
+
+## Pre-class activities (own-time)
+
+Read textbook Chapter 3.1.
+
+## Lecture (real-time)
+
+🖥️ [Lecture 4 - Data Visualization](https://learning.monash.edu/pluginfile.php/3977860/mod_resource/content/1/lec-3.html)
+
+<iframe src="https://learning.monash.edu/pluginfile.php/3977860/mod_resource/content/1/lec-4.html" width="100%" height="500">
+
+</iframe>
+
+📋 [Note - Data Wrangling using R and Power BI](/notes/w3.html)
+
+## Tutorial (real-time)
+
+📋 [Tutorial 4](https://learning.monash.edu/pluginfile.php/3977906/mod_resource/content/3/lab-3.html)
+
+## Quiz (own-time)
+
+🧪 [Quiz 4](https://learning.monash.edu/mod/quiz/view.php?id=2989083)
+
+## Supplementary (own-time)
+
+🔕 You do not have to complete these but if you wish you can.
+
+Please remember that in order to master to fullness on data visualization in R, you might want to learn `ggplot2` package. Since `ggplot2` is extremely useful, I will stroungly encourage you to take ETC2250/ETF5922.
+
+I have created the learning material for Clayton student years ago and if you are just interested to know how it works. The following link might help.
+
+<https://ebsmonash.shinyapps.io/ida-W3/>
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/ "Course schedule") ⏎
+:::

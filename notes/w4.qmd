@@ -1,5 +1,5 @@
 ---
-title: "Lecture Note 4"
+title: "Lecture Note Week 4"
 filters: 
   - webr
 execute: 
@@ -27,7 +27,7 @@ library(tidyverse)
 library(knitr)
 ```
 
-## Data Visualization
+## Data Visualization with Power BI
 
 ### 1. Preattentive Attributes and Data-Ink Ratio
 
@@ -415,4 +415,148 @@ library(knitr)
 
     -   Add filters by dragging fields to the `Filters` area.
 
-## 
+## Data Visualization with R
+
+#### 1. Introduction to Base Plotting in R
+
+Base R provides a powerful system for creating a wide range of visualizations without the need for additional packages. While `ggplot2` and other libraries have gained popularity, base plotting remains an essential tool due to its simplicity, speed, and integration with the rest of R's functionality.
+
+#### **2. Basic Plot Types**
+
+-   **Scatter Plot (`plot`)**
+
+    -   The `plot()` function is versatile and can create different types of plots depending on the input data. It's most commonly used for scatter plots.
+
+    ```{webr-r}
+    # Scatter plot
+    x <- rnorm(100)
+    y <- rnorm(100)
+    plot(x, y, main = "Scatter Plot", xlab = "X Axis", ylab = "Y Axis")
+    ```
+
+-   **Line Plot (`plot` with type = "l")**
+
+    -   Setting `type = "l"` in the `plot()` function produces a line plot.
+
+    ```{webr-r}
+       # Line plot
+    plot(x, type = "l", main = "Line Plot", xlab = "Index", ylab = "Values")
+    ```
+
+-   **Histogram (`hist`)**
+
+    -   The `hist()` function creates a histogram, useful for visualizing the distribution of a dataset.
+
+    ```{webr-r}
+    # Histogram
+    data <- rnorm(1000)
+    hist(data, breaks = 30, main = "Histogram", xlab = "Values")
+    ```
+
+-   **Boxplot (`boxplot`)**
+
+    -   The `boxplot()` function provides a visualization of the distribution of data across different categories.
+
+    ```{webr-r}
+    # Boxplot
+    data <- list(A = rnorm(100), B = rnorm(100, 1), C = rnorm(100, 2))
+    boxplot(data, main = "Boxplot", ylab = "Values")
+    ```
+
+-   **Barplot (`barplot`)**
+
+    -   The `barplot()` function is used to create bar charts.
+
+    ```{webr-r}
+    # Barplot
+    counts <- table(mtcars$cyl)
+    barplot(counts, main = "Barplot of Car Cylinders", xlab = "Number of Cylinders", ylab = "Frequency")
+    ```
+
+#### **3. Customizing Plots**
+
+-   **Titles and Labels**
+
+    -   You can add titles, axis labels, and customize them using `main`, `xlab`, and `ylab` arguments.
+
+    ```{webr-r}
+    mtcars
+    plot(mtcars$wt, mtcars$mpg, main = "Miles per Gallon vs. Weight", xlab = "Weight", ylab = "Miles per Gallon")
+    ```
+
+-   **Colors and Point Types**
+
+    -   Customize the appearance of points and lines using arguments like `col`, `pch`, and `lty`.
+
+    ```{webr-r}
+    plot(mtcars$wt, mtcars$mpg, col = "blue", pch = 16, main = "Colored Scatter Plot")
+    lines(lowess(mtcars$wt, mtcars$mpg), col = "red", lty = 2)
+    ```
+
+-   **Multiple Plots**
+
+    -   You can create multiple plots in a single window using `par(mfrow = c(nrows, ncols))`.
+
+    ```{webr-r}
+    par(mfrow = c(2, 2))
+    plot(mtcars$wt, mtcars$mpg, main = "Scatter Plot 1")
+    plot(mtcars$wt, mtcars$hp, main = "Scatter Plot 2")
+    hist(mtcars$mpg, main = "Histogram")
+    boxplot(mtcars$mpg, main = "Boxplot")
+    ```
+
+-   **Legends**
+
+    -   Add legends using the `legend()` function to describe different elements in your plot.
+
+    ```{webr-r}
+    plot(mtcars$wt, mtcars$mpg, col = mtcars$cyl, pch = 16, main = "Colored Scatter Plot")
+    legend("topright", legend = levels(factor(mtcars$cyl)), col = 1:3, pch = 16)
+    ```
+
+#### **4. Advanced Customizations**
+
+-   **Plot Annotations**
+
+    -   Use `text()` to add text annotations to your plots.
+
+    ```{webr-r}
+    plot(mtcars$wt, mtcars$mpg, main = "Miles per Gallon vs. Weight", xlab = "Weight", ylab = "Miles per Gallon")
+    text(5, 30, "I am here!", col = "red")
+    ```
+
+-   **Axes Customization**
+
+    -   You can control axis limits, labels, and ticks using `xlim`, `ylim`, `axes = FALSE`, and `axis()`.
+
+    ```{webr-r}
+    plot(mtcars$wt, mtcars$mpg, main = "Miles per Gallon vs. Weight", xlab = "Weight", ylab = "Miles per Gallon", axes = FALSE)
+    axis(1, at = seq(2, 4, 1), labels = c("Low", "Medium", "High"))
+    axis(2, at = seq(10, 35, 5))
+    ```
+
+-   **Adding Gridlines**
+
+    -   Use the `grid()` function to add gridlines to a plot.
+
+    ```{webr-r}
+    plot(mtcars$wt, mtcars$mpg, main = "Miles per Gallon vs. Weight", xlab = "Weight", ylab = "Miles per Gallon")
+    grid()
+    ```
+
+#### **5. Saving Plots**
+
+-   **Saving to File**
+
+    -   Use functions like `pdf()`, `png()`, `jpeg()`, etc., to save plots to files.
+
+    ```{webr-r}
+    # Do not run it here.
+    png("plot.png")
+    plot(x, y)
+    dev.off()  # Close the device to finalize the file`
+    ```
+
+#### **6. Conclusion**
+
+Base R plotting is a flexible and powerful tool for creating a wide range of visualizations. While it may lack the more advanced features of libraries like `ggplot2`, its simplicity and speed make it an essential tool for quick data exploration and visualization.

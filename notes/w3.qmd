@@ -63,7 +63,7 @@ Rsudio is an integrated development environment (IDE) for R. It includes a conso
 
 #### **R Objects**
 
-In R, everything is an object. These objects serve as containers for various types of data. Whether you’re dealing with a single number, a character string (like a word), or a complex structure like the output of a plot or a statistical analysis summary, it’s all represented as an object.
+In R, everything is an object. These objects serve as containers for various types of data. Whether you're dealing with a single number, a character string (like a word), or a complex structure like the output of a plot or a statistical analysis summary, it's all represented as an object.
 
 **Creating Objects:**
 

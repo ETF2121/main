@@ -24,6 +24,8 @@ Make sure you can run Rstudio in your computer.
 
 📋 [Tutorial 3](https://learning.monash.edu/pluginfile.php/3977906/mod_resource/content/3/lab-3.html)
 
+📑 [Tutorial 3 Solution](https://learning.monash.edu/pluginfile.php/4021292/mod_resource/content/2/lab-3-solution.html)
+
 ## Quiz (own-time)
 
 🧪 [Quiz 3](https://learning.monash.edu/mod/quiz/view.php?id=2989083)
