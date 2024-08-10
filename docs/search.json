@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "ETF2121/5912: Data Analysis in Business",
     "section": "",
-    "text": "This page provides a comprehensive outline of the topics, content, and assignments planned for the semester. Please note that this schedule is subject to updates as the semester progresses. Any changes or adjustments will be documented here to ensure you have the most current information available. In the event of any discrepancies between the information on this website and the exam timetable or course handbook, the exam timetable and course handbook will serve as the authoritative sources.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nQuiz/Assignments\nReading\n\n\n\n\n1\nTue, Jul 23\nBusiness Analytics & Database Management System\n📖\n📋\n📝\n📕 Camm 1.1, 1.2, 1.3 and 1.5\n\n\n2\nTue, Jul 30\nDatabase Query Language: SQL\n📖\n📋\n📝\n✍️\n\n\n3\nTue, Aug 6\nData Wrangling\n📖\n📋\n📝\n\n\n\n4\nTue, Aug 13\nData Visualization\n📖\n\n\n\n\n\n5\nTue, Aug 20\nDescriptive Statistics\n\n\n\n\n\n\n6\nTue, Aug 27\nProbability: An Introduction to Modelling Uncertainty\n\n\n\n\n\n\n\nWed, Aug 28\nIndividual assignment submission deadline\n\n\n\n\n\n\n7\nTue, Sep 3\nDescriptive Analytics: Clustering\n\n\n\n\n\n\n8\nTue, Sep 10\nLinear Regression\n\n\n\n\n\n\n9\nTue, Sep 17\nTime Series Analysis and Forecasting\n\n\n\n\n\n\nSemester Break\nSep 23 - Sep 27\nMid semester break\n\n\n\n\n\n\n10\nTue, Oct 1\nPredictive Analytics: Continuous Outcome Variables\n\n\n\n\n\n\n11\nTue, Oct 8\nPredictive Analytics: Binary Outcome Variables\n\n\n\n\n\n\n\nWed, Oct 9\nGroup Assignment Submission Deadline\n\n\n\n\n\n\n12\nTue, Oct 15\nRevision/Presentation\n\n\n\n\n\n\nSWOT\nOct 21 - Oct 25\nSWOT",
+    "text": "This page provides a comprehensive outline of the topics, content, and assignments planned for the semester. Please note that this schedule is subject to updates as the semester progresses. Any changes or adjustments will be documented here to ensure you have the most current information available. In the event of any discrepancies between the information on this website and the exam timetable or course handbook, the exam timetable and course handbook will serve as the authoritative sources.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nSlides\nQuiz/Assignments\nReading\n\n\n\n\n1\nTue, Jul 23\nBusiness Analytics & Database Management System\n📖\n📋\n📝\n📕 Camm 1.1, 1.2, 1.3 and 1.5\n\n\n2\nTue, Jul 30\nDatabase Query Language: SQL\n📖\n📋\n📝\n✍️\n\n\n3\nTue, Aug 6\nData Wrangling\n📖\n📋\n📝\n\n\n\n4\nTue, Aug 13\nData Visualization\n📖\n📋\n📝\n📕 Camm 3.1, 3.2, 3.6\n\n\n5\nTue, Aug 20\nDescriptive Statistics\n\n\n\n\n\n\n6\nTue, Aug 27\nProbability: An Introduction to Modelling Uncertainty\n\n\n\n\n\n\n\nWed, Aug 28\nIndividual assignment submission deadline\n\n\n\n\n\n\n7\nTue, Sep 3\nDescriptive Analytics: Clustering\n\n\n\n\n\n\n8\nTue, Sep 10\nLinear Regression\n\n\n\n\n\n\n9\nTue, Sep 17\nTime Series Analysis and Forecasting\n\n\n\n\n\n\nSemester Break\nSep 23 - Sep 27\nMid semester break\n\n\n\n\n\n\n10\nTue, Oct 1\nPredictive Analytics: Continuous Outcome Variables\n\n\n\n\n\n\n11\nTue, Oct 8\nPredictive Analytics: Binary Outcome Variables\n\n\n\n\n\n\n\nWed, Oct 9\nGroup Assignment Submission Deadline\n\n\n\n\n\n\n12\nTue, Oct 15\nRevision/Presentation\n\n\n\n\n\n\nSWOT\nOct 21 - Oct 25\nSWOT",
     "crumbs": [
       "Course information",
       "Schedule"
@@ -2063,41 +2063,65 @@
     "href": "weeks/week-4.html",
     "title": "Week 4",
     "section": "",
-    "text": "Read textbook Chapter 3.1, 3.2, 3.6."
+    "text": "Read textbook Chapter 3.1, 3.2, 3.6.",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 4"
+    ]
   },
   {
     "objectID": "weeks/week-4.html#pre-class-activities-own-time",
     "href": "weeks/week-4.html#pre-class-activities-own-time",
     "title": "Week 4",
     "section": "",
-    "text": "Read textbook Chapter 3.1, 3.2, 3.6."
+    "text": "Read textbook Chapter 3.1, 3.2, 3.6.",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 4"
+    ]
   },
   {
     "objectID": "weeks/week-4.html#lecture-real-time",
     "href": "weeks/week-4.html#lecture-real-time",
     "title": "Week 4",
     "section": "Lecture (real-time)",
-    "text": "Lecture (real-time)\n🖥️ Lecture 4 - Data Visualization\n\n\n📋 Note - Data Wrangling using R and Power BI"
+    "text": "Lecture (real-time)\n🖥️ Lecture 4 - Data Visualization\n\n\n📋 Note - Data Wrangling using R and Power BI",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 4"
+    ]
   },
   {
     "objectID": "weeks/week-4.html#tutorial-real-time",
     "href": "weeks/week-4.html#tutorial-real-time",
     "title": "Week 4",
     "section": "Tutorial (real-time)",
-    "text": "Tutorial (real-time)\n📋 Tutorial 4"
+    "text": "Tutorial (real-time)\n📋 Tutorial 4",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 4"
+    ]
   },
   {
     "objectID": "weeks/week-4.html#quiz-own-time",
     "href": "weeks/week-4.html#quiz-own-time",
     "title": "Week 4",
     "section": "Quiz (own-time)",
-    "text": "Quiz (own-time)\n🧪 Quiz 4"
+    "text": "Quiz (own-time)\n🧪 Quiz 4",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 4"
+    ]
   },
   {
     "objectID": "weeks/week-4.html#supplementary-own-time",
     "href": "weeks/week-4.html#supplementary-own-time",
     "title": "Week 4",
     "section": "Supplementary (own-time)",
-    "text": "Supplementary (own-time)\n🔕 You do not have to complete these but if you wish you can.\nPlease remember that in order to master to fullness on data visualization in R, you might want to learn ggplot2 package. Since ggplot2 is extremely useful, I will stroungly encourage you to take ETC2250/ETF5922.\nI have created the learning material for Clayton student years ago and if you are just interested to know how it works. The following link might help.\nhttps://ebsmonash.shinyapps.io/ida-W3/\n\n\nBack to course schedule ⏎"
+    "text": "Supplementary (own-time)\n🔕 You do not have to complete these but if you wish you can.\nPlease remember that in order to master to fullness on data visualization in R, you might want to learn ggplot2 package. Since ggplot2 is extremely useful, I will stroungly encourage you to take ETC2250/ETF5922.\nI have created the learning material for Clayton student years ago and if you are just interested to know how it works. The following link might help.\nhttps://ebsmonash.shinyapps.io/ida-W3/\n\n\nBack to course schedule ⏎",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 4"
+    ]
   }
 ]
