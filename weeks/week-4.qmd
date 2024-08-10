@@ -12,19 +12,19 @@ Read textbook Chapter 3.1.
 
 🖥️ [Lecture 4 - Data Visualization](https://learning.monash.edu/pluginfile.php/3977860/mod_resource/content/1/lec-3.html)
 
-<iframe src="https://learning.monash.edu/pluginfile.php/3977860/mod_resource/content/1/lec-4.html" width="100%" height="500">
+<iframe src="https://learning.monash.edu/pluginfile.php/4022053/mod_resource/content/1/lec-4.html" width="100%" height="500">
 
 </iframe>
 
-📋 [Note - Data Wrangling using R and Power BI](/notes/w3.html)
+📋 [Note - Data Wrangling using R and Power BI](/notes/w4.html)
 
 ## Tutorial (real-time)
 
-📋 [Tutorial 4](https://learning.monash.edu/pluginfile.php/3977906/mod_resource/content/3/lab-3.html)
+📋 [Tutorial 4](https://learning.monash.edu/pluginfile.php/4021915/mod_resource/content/1/lab-4.html)
 
 ## Quiz (own-time)
 
-🧪 [Quiz 4](https://learning.monash.edu/mod/quiz/view.php?id=2989083)
+🧪 [Quiz 4](https://learning.monash.edu/mod/quiz/view.php?id=29897713)
 
 ## Supplementary (own-time)
 

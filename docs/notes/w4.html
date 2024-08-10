@@ -272,7 +272,7 @@ globalThis.qwebrCustomizedWebROptions = {
 };
 
 // Store cell data
-globalThis.qwebrCellDetails = [{"code":"# Scatter plot\nx <- rnorm(100)\ny <- rnorm(100)\nplot(x, y, main = \"Scatter Plot\", xlab = \"X Axis\", ylab = \"Y Axis\")","id":1,"options":{"read-only":"false","label":"unnamed-chunk-1","comment":"","dpi":72,"out-height":"","autorun":"false","fig-height":5,"message":"true","out-width":"700px","fig-width":7,"classes":"","warning":"true","fig-cap":"","output":"true","editor-quick-suggestions":"false","results":"markup","context":"interactive","editor-max-height":"","editor-font-scale":1}},{"code":"   # Line plot\nplot(x, type = \"l\", main = \"Line Plot\", xlab = \"Index\", ylab = \"Values\")","id":2,"options":{"read-only":"false","label":"unnamed-chunk-2","comment":"","dpi":72,"out-height":"","autorun":"false","fig-height":5,"message":"true","out-width":"700px","fig-width":7,"classes":"","warning":"true","fig-cap":"","output":"true","editor-quick-suggestions":"false","results":"markup","context":"interactive","editor-max-height":"","editor-font-scale":1}},{"code":"# Histogram\ndata <- rnorm(1000)\nhist(data, breaks = 30, main = \"Histogram\", xlab = \"Values\")","id":3,"options":{"read-only":"false","label":"unnamed-chunk-3","comment":"","dpi":72,"out-height":"","autorun":"false","fig-height":5,"message":"true","out-width":"700px","fig-width":7,"classes":"","warning":"true","fig-cap":"","output":"true","editor-quick-suggestions":"false","results":"markup","context":"interactive","editor-max-height":"","editor-font-scale":1}},{"code":"# Boxplot\ndata <- list(A = rnorm(100), B = rnorm(100, 1), C = rnorm(100, 2))\nboxplot(data, main = \"Boxplot\", ylab = \"Values\")","id":4,"options":{"read-only":"false","label":"unnamed-chunk-4","comment":"","dpi":72,"out-height":"","autorun":"false","fig-height":5,"message":"true","out-width":"700px","fig-width":7,"classes":"","warning":"true","fig-cap":"","output":"true","editor-quick-suggestions":"false","results":"markup","context":"interactive","editor-max-height":"","editor-font-scale":1}},{"code":"# Barplot\ncounts <- table(mtcars$cyl)\nbarplot(counts, main = \"Barplot of Car Cylinders\", xlab = \"Number of Cylinders\", ylab = \"Frequency\")","id":5,"options":{"read-only":"false","label":"unnamed-chunk-5","comment":"","dpi":72,"out-height":"","autorun":"false","fig-height":5,"message":"true","out-width":"700px","fig-width":7,"classes":"","warning":"true","fig-cap":"","output":"true","editor-quick-suggestions":"false","results":"markup","context":"interactive","editor-max-height":"","editor-font-scale":1}},{"code":"mtcars\nplot(mtcars$wt, mtcars$mpg, main = \"Miles per Gallon vs. Weight\", xlab = \"Weight\", ylab = \"Miles per Gallon\")","id":6,"options":{"read-only":"false","label":"unnamed-chunk-6","comment":"","dpi":72,"out-height":"","autorun":"false","fig-height":5,"message":"true","out-width":"700px","fig-width":7,"classes":"","warning":"true","fig-cap":"","output":"true","editor-quick-suggestions":"false","results":"markup","context":"interactive","editor-max-height":"","editor-font-scale":1}},{"code":"plot(mtcars$wt, mtcars$mpg, col = \"blue\", pch = 16, main = \"Colored Scatter Plot\")\nlines(lowess(mtcars$wt, mtcars$mpg), col = \"red\", lty = 2)","id":7,"options":{"read-only":"false","label":"unnamed-chunk-7","comment":"","dpi":72,"out-height":"","autorun":"false","fig-height":5,"message":"true","out-width":"700px","fig-width":7,"classes":"","warning":"true","fig-cap":"","output":"true","editor-quick-suggestions":"false","results":"markup","context":"interactive","editor-max-height":"","editor-font-scale":1}},{"code":"par(mfrow = c(2, 2))\nplot(mtcars$wt, mtcars$mpg, main = \"Scatter Plot 1\")\nplot(mtcars$wt, mtcars$hp, main = \"Scatter Plot 2\")\nhist(mtcars$mpg, main = \"Histogram\")\nboxplot(mtcars$mpg, main = \"Boxplot\")","id":8,"options":{"read-only":"false","label":"unnamed-chunk-8","comment":"","dpi":72,"out-height":"","autorun":"false","fig-height":5,"message":"true","out-width":"700px","fig-width":7,"classes":"","warning":"true","fig-cap":"","output":"true","editor-quick-suggestions":"false","results":"markup","context":"interactive","editor-max-height":"","editor-font-scale":1}},{"code":"plot(mtcars$wt, mtcars$mpg, col = mtcars$cyl, pch = 16, main = \"Colored Scatter Plot\")\nlegend(\"topright\", legend = levels(factor(mtcars$cyl)), col = 1:3, pch = 16)","id":9,"options":{"read-only":"false","label":"unnamed-chunk-9","comment":"","dpi":72,"out-height":"","autorun":"false","fig-height":5,"message":"true","out-width":"700px","fig-width":7,"classes":"","warning":"true","fig-cap":"","output":"true","editor-quick-suggestions":"false","results":"markup","context":"interactive","editor-max-height":"","editor-font-scale":1}},{"code":"plot(mtcars$wt, mtcars$mpg, main = \"Miles per Gallon vs. Weight\", xlab = \"Weight\", ylab = \"Miles per Gallon\")\ntext(5, 30, \"I am here!\", col = \"red\")","id":10,"options":{"read-only":"false","label":"unnamed-chunk-10","comment":"","dpi":72,"out-height":"","autorun":"false","fig-height":5,"message":"true","out-width":"700px","fig-width":7,"classes":"","warning":"true","fig-cap":"","output":"true","editor-quick-suggestions":"false","results":"markup","context":"interactive","editor-max-height":"","editor-font-scale":1}},{"code":"plot(mtcars$wt, mtcars$mpg, main = \"Miles per Gallon vs. Weight\", xlab = \"Weight\", ylab = \"Miles per Gallon\", axes = FALSE)\naxis(1, at = seq(2, 4, 1), labels = c(\"Low\", \"Medium\", \"High\"))\naxis(2, at = seq(10, 35, 5))","id":11,"options":{"read-only":"false","label":"unnamed-chunk-11","comment":"","dpi":72,"out-height":"","autorun":"false","fig-height":5,"message":"true","out-width":"700px","fig-width":7,"classes":"","warning":"true","fig-cap":"","output":"true","editor-quick-suggestions":"false","results":"markup","context":"interactive","editor-max-height":"","editor-font-scale":1}},{"code":"plot(mtcars$wt, mtcars$mpg, main = \"Miles per Gallon vs. Weight\", xlab = \"Weight\", ylab = \"Miles per Gallon\")\ngrid()","id":12,"options":{"read-only":"false","label":"unnamed-chunk-12","comment":"","dpi":72,"out-height":"","autorun":"false","fig-height":5,"message":"true","out-width":"700px","fig-width":7,"classes":"","warning":"true","fig-cap":"","output":"true","editor-quick-suggestions":"false","results":"markup","context":"interactive","editor-max-height":"","editor-font-scale":1}},{"code":"# Do not run it here.\npng(\"plot.png\")\nplot(x, y)\ndev.off()  # Close the device to finalize the file`","id":13,"options":{"read-only":"false","label":"unnamed-chunk-13","comment":"","dpi":72,"out-height":"","autorun":"false","fig-height":5,"message":"true","out-width":"700px","fig-width":7,"classes":"","warning":"true","fig-cap":"","output":"true","editor-quick-suggestions":"false","results":"markup","context":"interactive","editor-max-height":"","editor-font-scale":1}}];
+globalThis.qwebrCellDetails = [{"options":{"editor-max-height":"","dpi":72,"message":"true","classes":"","out-width":"700px","results":"markup","comment":"","editor-font-scale":1,"output":"true","label":"unnamed-chunk-1","fig-width":7,"warning":"true","autorun":"false","fig-height":5,"read-only":"false","context":"interactive","editor-quick-suggestions":"false","out-height":"","fig-cap":""},"id":1,"code":"# Scatter plot\nx <- rnorm(100)\ny <- rnorm(100)\nplot(x, y, main = \"Scatter Plot\", xlab = \"X Axis\", ylab = \"Y Axis\")"},{"options":{"editor-max-height":"","dpi":72,"message":"true","classes":"","out-width":"700px","results":"markup","comment":"","editor-font-scale":1,"output":"true","label":"unnamed-chunk-2","fig-width":7,"warning":"true","autorun":"false","fig-height":5,"read-only":"false","context":"interactive","editor-quick-suggestions":"false","out-height":"","fig-cap":""},"id":2,"code":"   # Line plot\nplot(x, type = \"l\", main = \"Line Plot\", xlab = \"Index\", ylab = \"Values\")"},{"options":{"editor-max-height":"","dpi":72,"message":"true","classes":"","out-width":"700px","results":"markup","comment":"","editor-font-scale":1,"output":"true","label":"unnamed-chunk-3","fig-width":7,"warning":"true","autorun":"false","fig-height":5,"read-only":"false","context":"interactive","editor-quick-suggestions":"false","out-height":"","fig-cap":""},"id":3,"code":"# Histogram\ndata <- rnorm(1000)\nhist(data, breaks = 30, main = \"Histogram\", xlab = \"Values\")"},{"options":{"editor-max-height":"","dpi":72,"message":"true","classes":"","out-width":"700px","results":"markup","comment":"","editor-font-scale":1,"output":"true","label":"unnamed-chunk-4","fig-width":7,"warning":"true","autorun":"false","fig-height":5,"read-only":"false","context":"interactive","editor-quick-suggestions":"false","out-height":"","fig-cap":""},"id":4,"code":"# Boxplot\ndata <- list(A = rnorm(100), B = rnorm(100, 1), C = rnorm(100, 2))\nboxplot(data, main = \"Boxplot\", ylab = \"Values\")"},{"options":{"editor-max-height":"","dpi":72,"message":"true","classes":"","out-width":"700px","results":"markup","comment":"","editor-font-scale":1,"output":"true","label":"unnamed-chunk-5","fig-width":7,"warning":"true","autorun":"false","fig-height":5,"read-only":"false","context":"interactive","editor-quick-suggestions":"false","out-height":"","fig-cap":""},"id":5,"code":"# Barplot\ncounts <- table(mtcars$cyl)\nbarplot(counts, main = \"Barplot of Car Cylinders\", xlab = \"Number of Cylinders\", ylab = \"Frequency\")"},{"options":{"editor-max-height":"","dpi":72,"message":"true","classes":"","out-width":"700px","results":"markup","comment":"","editor-font-scale":1,"output":"true","label":"unnamed-chunk-6","fig-width":7,"warning":"true","autorun":"false","fig-height":5,"read-only":"false","context":"interactive","editor-quick-suggestions":"false","out-height":"","fig-cap":""},"id":6,"code":"mtcars\nplot(mtcars$wt, mtcars$mpg, main = \"Miles per Gallon vs. Weight\", xlab = \"Weight\", ylab = \"Miles per Gallon\")"},{"options":{"editor-max-height":"","dpi":72,"message":"true","classes":"","out-width":"700px","results":"markup","comment":"","editor-font-scale":1,"output":"true","label":"unnamed-chunk-7","fig-width":7,"warning":"true","autorun":"false","fig-height":5,"read-only":"false","context":"interactive","editor-quick-suggestions":"false","out-height":"","fig-cap":""},"id":7,"code":"plot(mtcars$wt, mtcars$mpg, col = \"blue\", pch = 16, main = \"Colored Scatter Plot\")\nlines(lowess(mtcars$wt, mtcars$mpg), col = \"red\", lty = 2)"},{"options":{"editor-max-height":"","dpi":72,"message":"true","classes":"","out-width":"700px","results":"markup","comment":"","editor-font-scale":1,"output":"true","label":"unnamed-chunk-8","fig-width":7,"warning":"true","autorun":"false","fig-height":5,"read-only":"false","context":"interactive","editor-quick-suggestions":"false","out-height":"","fig-cap":""},"id":8,"code":"par(mfrow = c(2, 2))\nplot(mtcars$wt, mtcars$mpg, main = \"Scatter Plot 1\")\nplot(mtcars$wt, mtcars$hp, main = \"Scatter Plot 2\")\nhist(mtcars$mpg, main = \"Histogram\")\nboxplot(mtcars$mpg, main = \"Boxplot\")"},{"options":{"editor-max-height":"","dpi":72,"message":"true","classes":"","out-width":"700px","results":"markup","comment":"","editor-font-scale":1,"output":"true","label":"unnamed-chunk-9","fig-width":7,"warning":"true","autorun":"false","fig-height":5,"read-only":"false","context":"interactive","editor-quick-suggestions":"false","out-height":"","fig-cap":""},"id":9,"code":"plot(mtcars$wt, mtcars$mpg, col = mtcars$cyl, pch = 16, main = \"Colored Scatter Plot\")\nlegend(\"topright\", legend = levels(factor(mtcars$cyl)), col = 1:3, pch = 16)"},{"options":{"editor-max-height":"","dpi":72,"message":"true","classes":"","out-width":"700px","results":"markup","comment":"","editor-font-scale":1,"output":"true","label":"unnamed-chunk-10","fig-width":7,"warning":"true","autorun":"false","fig-height":5,"read-only":"false","context":"interactive","editor-quick-suggestions":"false","out-height":"","fig-cap":""},"id":10,"code":"plot(mtcars$wt, mtcars$mpg, main = \"Miles per Gallon vs. Weight\", xlab = \"Weight\", ylab = \"Miles per Gallon\")\ntext(5, 30, \"I am here!\", col = \"red\")"},{"options":{"editor-max-height":"","dpi":72,"message":"true","classes":"","out-width":"700px","results":"markup","comment":"","editor-font-scale":1,"output":"true","label":"unnamed-chunk-11","fig-width":7,"warning":"true","autorun":"false","fig-height":5,"read-only":"false","context":"interactive","editor-quick-suggestions":"false","out-height":"","fig-cap":""},"id":11,"code":"plot(mtcars$wt, mtcars$mpg, main = \"Miles per Gallon vs. Weight\", xlab = \"Weight\", ylab = \"Miles per Gallon\", axes = FALSE)\naxis(1, at = seq(2, 4, 1), labels = c(\"Low\", \"Medium\", \"High\"))\naxis(2, at = seq(10, 35, 5))"},{"options":{"editor-max-height":"","dpi":72,"message":"true","classes":"","out-width":"700px","results":"markup","comment":"","editor-font-scale":1,"output":"true","label":"unnamed-chunk-12","fig-width":7,"warning":"true","autorun":"false","fig-height":5,"read-only":"false","context":"interactive","editor-quick-suggestions":"false","out-height":"","fig-cap":""},"id":12,"code":"plot(mtcars$wt, mtcars$mpg, main = \"Miles per Gallon vs. Weight\", xlab = \"Weight\", ylab = \"Miles per Gallon\")\ngrid()"},{"options":{"editor-max-height":"","dpi":72,"message":"true","classes":"","out-width":"700px","results":"markup","comment":"","editor-font-scale":1,"output":"true","label":"unnamed-chunk-13","fig-width":7,"warning":"true","autorun":"false","fig-height":5,"read-only":"false","context":"interactive","editor-quick-suggestions":"false","out-height":"","fig-cap":""},"id":13,"code":"# Do not run it here.\npng(\"plot.png\")\nplot(x, y)\ndev.off()  # Close the device to finalize the file`"}];
 
 </script>
 <script type="module">
@@ -1113,7 +1113,7 @@ globalThis.qwebrExecuteCode = async function (
 <meta property="og:title" content="ETF2121/5912 - S2 2024 - Lecture Note Week 4">
 <meta property="og:site_name" content="ETF2121/5912 - S2 2024">
 <meta name="twitter:title" content="ETF2121/5912 - S2 2024 - Lecture Note Week 4">
-<meta name="twitter:image" content="https://sta210-s22.github.io/website/notes/images/twitter-card.png">
+<meta name="twitter:image" content="https://etf2121.github.io/main/notes/images/twitter-card.png">
 <meta name="twitter:creator" content="@minebocek">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -1157,13 +1157,13 @@ globalThis.qwebrExecuteCode = async function (
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Course information</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../course-overview.html" class="sidebar-item-text sidebar-link">
@@ -1192,13 +1192,13 @@ globalThis.qwebrExecuteCode = async function (
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Weekly Schedule</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../weeks/week-1.html" class="sidebar-item-text sidebar-link">
@@ -1221,13 +1221,13 @@ globalThis.qwebrExecuteCode = async function (
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Assessment</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../hw/hw-1.html" class="sidebar-item-text sidebar-link">
@@ -1248,16 +1248,13 @@ globalThis.qwebrExecuteCode = async function (
   <ul>
   <li><a href="#data-visualization-with-power-bi" id="toc-data-visualization-with-power-bi" class="nav-link active" data-scroll-target="#data-visualization-with-power-bi">Data Visualization with Power BI</a>
   <ul class="collapse">
-  <li><a href="#preattentive-attributes-and-data-ink-ratio" id="toc-preattentive-attributes-and-data-ink-ratio" class="nav-link" data-scroll-target="#preattentive-attributes-and-data-ink-ratio">1. Preattentive Attributes and Data-Ink Ratio</a></li>
-  <li><a href="#pivottables-and-pivotcharts" id="toc-pivottables-and-pivotcharts" class="nav-link" data-scroll-target="#pivottables-and-pivotcharts">2. PivotTables and PivotCharts</a></li>
-  <li><a href="#scatter-charts" id="toc-scatter-charts" class="nav-link" data-scroll-target="#scatter-charts">3. Scatter Charts</a></li>
-  <li><a href="#line-charts-bar-charts-and-column-charts" id="toc-line-charts-bar-charts-and-column-charts" class="nav-link" data-scroll-target="#line-charts-bar-charts-and-column-charts">4. Line Charts, Bar Charts, and Column Charts</a></li>
-  <li><a href="#trendlines" id="toc-trendlines" class="nav-link" data-scroll-target="#trendlines">5. Trendlines</a></li>
-  <li><a href="#sorted-clustered-and-stacked-bar-column-charts" id="toc-sorted-clustered-and-stacked-bar-column-charts" class="nav-link" data-scroll-target="#sorted-clustered-and-stacked-bar-column-charts">6. Sorted, Clustered, and Stacked Bar (Column) Charts</a></li>
-  <li><a href="#bubble-charts-scatter-chart-matrices-and-table-lenses" id="toc-bubble-charts-scatter-chart-matrices-and-table-lenses" class="nav-link" data-scroll-target="#bubble-charts-scatter-chart-matrices-and-table-lenses">7. Bubble Charts, Scatter Chart Matrices, and Table Lenses</a></li>
-  <li><a href="#advanced-visualization-types" id="toc-advanced-visualization-types" class="nav-link" data-scroll-target="#advanced-visualization-types">8. Advanced Visualization Types</a></li>
-  <li><a href="#geospatial-data-visualization" id="toc-geospatial-data-visualization" class="nav-link" data-scroll-target="#geospatial-data-visualization">9. Geospatial Data Visualization</a></li>
-  <li><a href="#effective-data-dashboards" id="toc-effective-data-dashboards" class="nav-link" data-scroll-target="#effective-data-dashboards">10. Effective Data Dashboards</a></li>
+  <li><a href="#pivottables" id="toc-pivottables" class="nav-link" data-scroll-target="#pivottables">1. PivotTables</a></li>
+  <li><a href="#scatter-charts" id="toc-scatter-charts" class="nav-link" data-scroll-target="#scatter-charts">2. Scatter Charts</a></li>
+  <li><a href="#line-charts-bar-charts-and-column-charts" id="toc-line-charts-bar-charts-and-column-charts" class="nav-link" data-scroll-target="#line-charts-bar-charts-and-column-charts">3. Line Charts, Bar Charts, and Column Charts</a></li>
+  <li><a href="#sorted-clustered-and-stacked-bar-column-charts" id="toc-sorted-clustered-and-stacked-bar-column-charts" class="nav-link" data-scroll-target="#sorted-clustered-and-stacked-bar-column-charts">4. Sorted, Clustered, and Stacked Bar (Column) Charts</a></li>
+  <li><a href="#bubble-charts" id="toc-bubble-charts" class="nav-link" data-scroll-target="#bubble-charts">5. Bubble Charts</a></li>
+  <li><a href="#advanced-visualization-types" id="toc-advanced-visualization-types" class="nav-link" data-scroll-target="#advanced-visualization-types">6. Advanced Visualization Types</a></li>
+  <li><a href="#geospatial-data-visualization" id="toc-geospatial-data-visualization" class="nav-link" data-scroll-target="#geospatial-data-visualization">7. Geospatial Data Visualization</a></li>
   </ul></li>
   <li><a href="#data-visualization-with-r" id="toc-data-visualization-with-r" class="nav-link" data-scroll-target="#data-visualization-with-r">Data Visualization with R</a></li>
   </ul>
@@ -1534,29 +1531,9 @@ Note
 </div>
 <section id="data-visualization-with-power-bi" class="level2">
 <h2 class="anchored" data-anchor-id="data-visualization-with-power-bi">Data Visualization with Power BI</h2>
-<section id="preattentive-attributes-and-data-ink-ratio" class="level3">
-<h3 class="anchored" data-anchor-id="preattentive-attributes-and-data-ink-ratio">1. Preattentive Attributes and Data-Ink Ratio</h3>
-<p><strong>Preattentive Attributes</strong>:</p>
-<ul>
-<li><p><strong>Color</strong>: Use contrasting colors to highlight key data points.</p></li>
-<li><p><strong>Size</strong>: Larger elements draw attention.</p></li>
-<li><p><strong>Orientation</strong>: Different shapes and orientations can guide focus.</p></li>
-<li><p><strong>Position</strong>: Place important data at prominent positions.</p></li>
-</ul>
-<p><strong>Data-Ink Ratio</strong>:</p>
-<ul>
-<li><p><strong>Definition</strong>: The ratio of data-ink (ink used to present data) to the total ink used in the chart.</p></li>
-<li><p><strong>Goal</strong>: Maximize the data-ink ratio by minimizing non-essential ink.</p></li>
-<li><p><strong>Implementation in Power BI</strong>:</p>
-<ul>
-<li><p>Use minimalist design principles.</p></li>
-<li><p>Avoid unnecessary gridlines and borders.</p></li>
-<li><p>Focus on essential data representation.</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="pivottables-and-pivotcharts" class="level3">
-<h3 class="anchored" data-anchor-id="pivottables-and-pivotcharts">2. PivotTables and PivotCharts</h3>
+<p><img src="images/plotoption.png" class="img-fluid"></p>
+<section id="pivottables" class="level3">
+<h3 class="anchored" data-anchor-id="pivottables">1. PivotTables</h3>
 <p><strong>Purpose</strong>:</p>
 <ul>
 <li><p><strong>PivotTables</strong>: Summarize, analyze, explore, and present summary data.</p></li>
@@ -1571,10 +1548,7 @@ Note
 </ul></li>
 <li><p><strong>Create PivotTable</strong>:</p>
 <ul>
-<li><p>Go to <code>Modeling &gt; New Table</code>.</p></li>
-<li><p>Write a DAX formula to create your PivotTable. For example:</p>
-<pre><code>DAX</code></pre>
-<p><code>SUMMARIZE(   'Sales',   'Sales'[Region],   'Sales'[Category],   "Total Sales", SUM('Sales'[SalesAmount]) )</code></p></li>
+<li>Go to <code>Visualization &gt; Build Visual &gt; Choose Table</code>.</li>
 </ul></li>
 <li><p><strong>Visualize Data</strong>:</p>
 <ul>
@@ -1582,22 +1556,9 @@ Note
 <li><p>Adjust the fields to refine your table.</p></li>
 </ul></li>
 </ol>
-<p><strong>Creating PivotCharts in Power BI</strong>:</p>
-<ol type="1">
-<li><p><strong>Select Data</strong>:</p>
-<ul>
-<li><p>Click on your PivotTable to activate it.</p></li>
-<li><p>Go to <code>Visualizations</code> pane and choose a chart type (e.g., Clustered Column Chart).</p></li>
-</ul></li>
-<li><p><strong>Customize Chart</strong>:</p>
-<ul>
-<li><p>Drag and drop fields into the Axis, Legend, and Values areas.</p></li>
-<li><p>Customize the chart using the Format pane.</p></li>
-</ul></li>
-</ol>
 </section>
 <section id="scatter-charts" class="level3">
-<h3 class="anchored" data-anchor-id="scatter-charts">3. Scatter Charts</h3>
+<h3 class="anchored" data-anchor-id="scatter-charts">2. Scatter Charts</h3>
 <p><strong>Purpose</strong>: Examine relationships between two variables.</p>
 <p><strong>Creating Scatter Charts in Power BI</strong>:</p>
 <ol type="1">
@@ -1612,6 +1573,7 @@ Note
 <li><p>Optionally, add a third numerical field to the <code>Size</code> field well.</p></li>
 </ul></li>
 <li><p><strong>Customize and Interpret</strong>:</p>
+<p><img src="images/formatvisual.png" class="img-fluid"></p>
 <ul>
 <li><p>Use the <code>Format</code> pane to customize the chart’s appearance.</p></li>
 <li><p>Interpret the relationship between variables by examining the pattern of points.</p></li>
@@ -1619,7 +1581,7 @@ Note
 </ol>
 </section>
 <section id="line-charts-bar-charts-and-column-charts" class="level3">
-<h3 class="anchored" data-anchor-id="line-charts-bar-charts-and-column-charts">4. Line Charts, Bar Charts, and Column Charts</h3>
+<h3 class="anchored" data-anchor-id="line-charts-bar-charts-and-column-charts">3. Line Charts, Bar Charts, and Column Charts</h3>
 <p><strong>Purpose</strong>:</p>
 <ul>
 <li><p><strong>Line Charts</strong>: Show trends over time.</p></li>
@@ -1651,28 +1613,8 @@ Note
 </ul></li>
 </ol>
 </section>
-<section id="trendlines" class="level3">
-<h3 class="anchored" data-anchor-id="trendlines">5. Trendlines</h3>
-<p><strong>Purpose</strong>: Identify trends within scatter and line charts.</p>
-<p><strong>Adding Trendlines in Power BI</strong>:</p>
-<ol type="1">
-<li><p><strong>Select Chart</strong>:</p>
-<ul>
-<li>Click on the chart where you want to add a trendline (e.g., scatter chart or line chart).</li>
-</ul></li>
-<li><p><strong>Add Trendline</strong>:</p>
-<ul>
-<li><p>Go to the <code>Analytics</code> pane.</p></li>
-<li><p>Click on <code>Trend Line</code>, then click <code>+ Add</code>.</p></li>
-</ul></li>
-<li><p><strong>Customize Trendline</strong>:</p>
-<ul>
-<li>Set properties such as color, style, and transparency.</li>
-</ul></li>
-</ol>
-</section>
 <section id="sorted-clustered-and-stacked-bar-column-charts" class="level3">
-<h3 class="anchored" data-anchor-id="sorted-clustered-and-stacked-bar-column-charts">6. Sorted, Clustered, and Stacked Bar (Column) Charts</h3>
+<h3 class="anchored" data-anchor-id="sorted-clustered-and-stacked-bar-column-charts">4. Sorted, Clustered, and Stacked Bar (Column) Charts</h3>
 <p><strong>Purpose</strong>:</p>
 <ul>
 <li><p><strong>Sorted Bar/Column Charts</strong>: Rank data in ascending or descending order.</p></li>
@@ -1684,7 +1626,7 @@ Note
 <li><p><strong>Sort Data</strong>:</p>
 <ul>
 <li><p>Click on the ellipsis (…) in the top right corner of the chart.</p></li>
-<li><p>Select <code>Sort by</code> and choose the desired field.</p></li>
+<li><p>Select <code>Sort axis</code> and choose the desired field.</p></li>
 </ul></li>
 </ol>
 <p><strong>Creating Clustered Bar/Column Charts</strong>:</p>
@@ -1712,13 +1654,11 @@ Note
 </ul></li>
 </ol>
 </section>
-<section id="bubble-charts-scatter-chart-matrices-and-table-lenses" class="level3">
-<h3 class="anchored" data-anchor-id="bubble-charts-scatter-chart-matrices-and-table-lenses">7. Bubble Charts, Scatter Chart Matrices, and Table Lenses</h3>
+<section id="bubble-charts" class="level3">
+<h3 class="anchored" data-anchor-id="bubble-charts">5. Bubble Charts</h3>
 <p><strong>Purpose</strong>:</p>
 <ul>
-<li><p><strong>Bubble Charts</strong>: Visualize three dimensions of data.</p></li>
-<li><p><strong>Scatter Chart Matrices</strong>: Show relationships across multiple variables.</p></li>
-<li><p><strong>Table Lenses</strong>: Combine tabular data with visual elements.</p></li>
+<li><strong>Bubble Charts</strong>: Visualize three dimensions of data.</li>
 </ul>
 <p><strong>Creating Bubble Charts in Power BI</strong>:</p>
 <ol type="1">
@@ -1732,34 +1672,9 @@ Note
 <li>Drag fields to the X-axis, Y-axis, and Size areas.</li>
 </ul></li>
 </ol>
-<p><strong>Creating Scatter Chart Matrices in Power BI</strong>:</p>
-<ol type="1">
-<li><p><strong>Select Matrix</strong>:</p>
-<ul>
-<li><p>Go to the <code>Visualizations</code> pane.</p></li>
-<li><p>Click on the Matrix icon.</p></li>
-</ul></li>
-<li><p><strong>Add Data Fields</strong>:</p>
-<ul>
-<li>Drag fields to the Rows, Columns, and Values areas.</li>
-</ul></li>
-</ol>
-<p><strong>Creating Table Lenses in Power BI</strong>:</p>
-<ol type="1">
-<li><p><strong>Select Table</strong>:</p>
-<ul>
-<li><p>Go to the <code>Visualizations</code> pane.</p></li>
-<li><p>Click on the Table icon.</p></li>
-</ul></li>
-<li><p><strong>Add Data Fields</strong>:</p>
-<ul>
-<li><p>Drag fields to the Values area.</p></li>
-<li><p>Use conditional formatting to add visual cues.</p></li>
-</ul></li>
-</ol>
 </section>
 <section id="advanced-visualization-types" class="level3">
-<h3 class="anchored" data-anchor-id="advanced-visualization-types">8. Advanced Visualization Types</h3>
+<h3 class="anchored" data-anchor-id="advanced-visualization-types">6. Advanced Visualization Types</h3>
 <p><strong>Purpose</strong>:</p>
 <ul>
 <li><p><strong>Heat Maps</strong>: Show data density or intensity.</p></li>
@@ -1816,31 +1731,9 @@ Note
 <li>Drag fields to the Category and Y-axis areas.</li>
 </ul></li>
 </ol>
-<p><strong>Creating Stock Charts in Power BI</strong>:</p>
-<ol type="1">
-<li><p><strong>Select Stock Chart</strong>:</p>
-<ul>
-<li>Use the <code>Candlestick chart</code> visual from a custom visual marketplace.</li>
-</ul></li>
-<li><p><strong>Add Data Fields</strong>:</p>
-<ul>
-<li>Drag fields to the Open, High, Low, and Close areas.</li>
-</ul></li>
-</ol>
-<p><strong>Creating Parallel Coordinates Plots in Power BI</strong>:</p>
-<ol type="1">
-<li><p><strong>Select Parallel Coordinates Plot</strong>:</p>
-<ul>
-<li>Use a custom visual from the marketplace.</li>
-</ul></li>
-<li><p><strong>Add Data Fields</strong>:</p>
-<ul>
-<li>Drag multiple numerical fields to the Values area.</li>
-</ul></li>
-</ol>
 </section>
 <section id="geospatial-data-visualization" class="level3">
-<h3 class="anchored" data-anchor-id="geospatial-data-visualization">9. Geospatial Data Visualization</h3>
+<h3 class="anchored" data-anchor-id="geospatial-data-visualization">7. Geospatial Data Visualization</h3>
 <p><strong>Purpose</strong>:</p>
 <ul>
 <li><p><strong>Choropleth Maps</strong>: Visualize data across geographical regions.</p></li>
@@ -1856,45 +1749,6 @@ Note
 <li><p><strong>Add Data Fields</strong>:</p>
 <ul>
 <li>Drag geographical fields to the Location area and data fields to the Values area.</li>
-</ul></li>
-</ol>
-<p><strong>Creating Cartograms in Power BI</strong>:</p>
-<ol type="1">
-<li><p><strong>Select Cartogram</strong>:</p>
-<ul>
-<li>Use a custom visual from the marketplace.</li>
-</ul></li>
-<li><p><strong>Add Data Fields</strong>:</p>
-<ul>
-<li>Drag geographical fields to the Location area and data fields to the Values area.</li>
-</ul></li>
-</ol>
-</section>
-<section id="effective-data-dashboards" class="level3">
-<h3 class="anchored" data-anchor-id="effective-data-dashboards">10. Effective Data Dashboards</h3>
-<p><strong>Principles</strong>:</p>
-<ul>
-<li><p><strong>Clarity</strong>: Ensure the dashboard is easy to read.</p></li>
-<li><p><strong>Conciseness</strong>: Present only the most important data.</p></li>
-<li><p><strong>Customization</strong>: Allow users to interact with the data.</p></li>
-</ul>
-<p><strong>Design Suggestions</strong>:</p>
-<ul>
-<li><p><strong>Layout</strong>: Organize visualizations logically.</p></li>
-<li><p><strong>Interactivity</strong>: Use slicers and filters.</p></li>
-<li><p><strong>Real-Time Data</strong>: Connect to live data sources for up-to-date information.</p></li>
-</ul>
-<p><strong>Creating Dashboards in Power BI</strong>:</p>
-<ol type="1">
-<li><p><strong>Create Visualizations</strong>:</p>
-<ul>
-<li><p>In the Report view, select the type of visualization you want from the <code>Visualizations</code> pane.</p></li>
-<li><p>Drag and drop fields from the <code>Fields</code> pane onto the visualization.</p></li>
-</ul></li>
-<li><p><strong>Customize Visualizations</strong>:</p>
-<ul>
-<li><p>Use the <code>Format</code> pane to customize the appearance of each chart (e.g., colors, labels, titles).</p></li>
-<li><p>Add filters by dragging fields to the <code>Filters</code> area.</p></li>
 </ul></li>
 </ol>
 </section>
@@ -2004,7 +1858,7 @@ Note
 </ul>
 </section>
 <section id="conclusion" class="level4">
-<h4 class="anchored" data-anchor-id="conclusion"><strong>6. Conclusion</strong></h4>
+<h4 class="anchored" data-anchor-id="conclusion">6. Conclusion</h4>
 <p>Base R plotting is a flexible and powerful tool for creating a wide range of visualizations. While it may lack the more advanced features of libraries like <code>ggplot2</code>, its simplicity and speed make it an essential tool for quick data exploration and visualization.</p>
 
 
@@ -2248,7 +2102,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/sta210-s22\.github\.io\/website\/");
+      var filterRegex = new RegExp("https:\/\/etf2121\.github\.io\/main");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

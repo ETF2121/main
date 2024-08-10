@@ -29,33 +29,9 @@ library(knitr)
 
 ## Data Visualization with Power BI
 
-### 1. Preattentive Attributes and Data-Ink Ratio
+![](images/plotoption.png)
 
-**Preattentive Attributes**:
-
--   **Color**: Use contrasting colors to highlight key data points.
-
--   **Size**: Larger elements draw attention.
-
--   **Orientation**: Different shapes and orientations can guide focus.
-
--   **Position**: Place important data at prominent positions.
-
-**Data-Ink Ratio**:
-
--   **Definition**: The ratio of data-ink (ink used to present data) to the total ink used in the chart.
-
--   **Goal**: Maximize the data-ink ratio by minimizing non-essential ink.
-
--   **Implementation in Power BI**:
-
-    -   Use minimalist design principles.
-
-    -   Avoid unnecessary gridlines and borders.
-
-    -   Focus on essential data representation.
-
-### 2. PivotTables and PivotCharts
+### 1. PivotTables
 
 **Purpose**:
 
@@ -73,15 +49,7 @@ library(knitr)
 
 2.  **Create PivotTable**:
 
-    -   Go to `Modeling > New Table`.
-
-    -   Write a DAX formula to create your PivotTable. For example:
-
-        ```         
-        DAX
-        ```
-
-        `SUMMARIZE(   'Sales',   'Sales'[Region],   'Sales'[Category],   "Total Sales", SUM('Sales'[SalesAmount]) )`
+    -   Go to `Visualization > Build Visual > Choose Table`.
 
 3.  **Visualize Data**:
 
@@ -89,21 +57,7 @@ library(knitr)
 
     -   Adjust the fields to refine your table.
 
-**Creating PivotCharts in Power BI**:
-
-1.  **Select Data**:
-
-    -   Click on your PivotTable to activate it.
-
-    -   Go to `Visualizations` pane and choose a chart type (e.g., Clustered Column Chart).
-
-2.  **Customize Chart**:
-
-    -   Drag and drop fields into the Axis, Legend, and Values areas.
-
-    -   Customize the chart using the Format pane.
-
-### 3. Scatter Charts
+### 2. Scatter Charts
 
 **Purpose**: Examine relationships between two variables.
 
@@ -123,11 +77,13 @@ library(knitr)
 
 3.  **Customize and Interpret**:
 
+    ![](images/formatvisual.png)
+
     -   Use the `Format` pane to customize the chart's appearance.
 
     -   Interpret the relationship between variables by examining the pattern of points.
 
-### 4. Line Charts, Bar Charts, and Column Charts
+### 3. Line Charts, Bar Charts, and Column Charts
 
 **Purpose**:
 
@@ -161,27 +117,7 @@ library(knitr)
 
     -   Drag a categorical field to the Axis area and a numerical field to the Values area.
 
-### 5. Trendlines
-
-**Purpose**: Identify trends within scatter and line charts.
-
-**Adding Trendlines in Power BI**:
-
-1.  **Select Chart**:
-
-    -   Click on the chart where you want to add a trendline (e.g., scatter chart or line chart).
-
-2.  **Add Trendline**:
-
-    -   Go to the `Analytics` pane.
-
-    -   Click on `Trend Line`, then click `+ Add`.
-
-3.  **Customize Trendline**:
-
-    -   Set properties such as color, style, and transparency.
-
-### 6. Sorted, Clustered, and Stacked Bar (Column) Charts
+### 4. Sorted, Clustered, and Stacked Bar (Column) Charts
 
 **Purpose**:
 
@@ -197,7 +133,7 @@ library(knitr)
 
     -   Click on the ellipsis (...) in the top right corner of the chart.
 
-    -   Select `Sort by` and choose the desired field.
+    -   Select `Sort axis` and choose the desired field.
 
 **Creating Clustered Bar/Column Charts**:
 
@@ -223,15 +159,11 @@ library(knitr)
 
     -   Drag a categorical field to the Axis area and another categorical field to the Legend area.
 
-### 7. Bubble Charts, Scatter Chart Matrices, and Table Lenses
+### 5. Bubble Charts
 
 **Purpose**:
 
 -   **Bubble Charts**: Visualize three dimensions of data.
-
--   **Scatter Chart Matrices**: Show relationships across multiple variables.
-
--   **Table Lenses**: Combine tabular data with visual elements.
 
 **Creating Bubble Charts in Power BI**:
 
@@ -245,33 +177,7 @@ library(knitr)
 
     -   Drag fields to the X-axis, Y-axis, and Size areas.
 
-**Creating Scatter Chart Matrices in Power BI**:
-
-1.  **Select Matrix**:
-
-    -   Go to the `Visualizations` pane.
-
-    -   Click on the Matrix icon.
-
-2.  **Add Data Fields**:
-
-    -   Drag fields to the Rows, Columns, and Values areas.
-
-**Creating Table Lenses in Power BI**:
-
-1.  **Select Table**:
-
-    -   Go to the `Visualizations` pane.
-
-    -   Click on the Table icon.
-
-2.  **Add Data Fields**:
-
-    -   Drag fields to the Values area.
-
-    -   Use conditional formatting to add visual cues.
-
-### 8. Advanced Visualization Types
+### 6. Advanced Visualization Types
 
 **Purpose**:
 
@@ -333,27 +239,8 @@ library(knitr)
 
     -   Drag fields to the Category and Y-axis areas.
 
-**Creating Stock Charts in Power BI**:
 
-1.  **Select Stock Chart**:
-
-    -   Use the `Candlestick chart` visual from a custom visual marketplace.
-
-2.  **Add Data Fields**:
-
-    -   Drag fields to the Open, High, Low, and Close areas.
-
-**Creating Parallel Coordinates Plots in Power BI**:
-
-1.  **Select Parallel Coordinates Plot**:
-
-    -   Use a custom visual from the marketplace.
-
-2.  **Add Data Fields**:
-
-    -   Drag multiple numerical fields to the Values area.
-
-### 9. Geospatial Data Visualization
+### 7. Geospatial Data Visualization
 
 **Purpose**:
 
@@ -373,47 +260,6 @@ library(knitr)
 
     -   Drag geographical fields to the Location area and data fields to the Values area.
 
-**Creating Cartograms in Power BI**:
-
-1.  **Select Cartogram**:
-
-    -   Use a custom visual from the marketplace.
-
-2.  **Add Data Fields**:
-
-    -   Drag geographical fields to the Location area and data fields to the Values area.
-
-### 10. Effective Data Dashboards
-
-**Principles**:
-
--   **Clarity**: Ensure the dashboard is easy to read.
-
--   **Conciseness**: Present only the most important data.
-
--   **Customization**: Allow users to interact with the data.
-
-**Design Suggestions**:
-
--   **Layout**: Organize visualizations logically.
-
--   **Interactivity**: Use slicers and filters.
-
--   **Real-Time Data**: Connect to live data sources for up-to-date information.
-
-**Creating Dashboards in Power BI**:
-
-1.  **Create Visualizations**:
-
-    -   In the Report view, select the type of visualization you want from the `Visualizations` pane.
-
-    -   Drag and drop fields from the `Fields` pane onto the visualization.
-
-2.  **Customize Visualizations**:
-
-    -   Use the `Format` pane to customize the appearance of each chart (e.g., colors, labels, titles).
-
-    -   Add filters by dragging fields to the `Filters` area.
 
 ## Data Visualization with R
 
@@ -557,6 +403,6 @@ Base R provides a powerful system for creating a wide range of visualizations wi
     dev.off()  # Close the device to finalize the file`
     ```
 
-#### **6. Conclusion**
+#### 6. Conclusion
 
 Base R plotting is a flexible and powerful tool for creating a wide range of visualizations. While it may lack the more advanced features of libraries like `ggplot2`, its simplicity and speed make it an essential tool for quick data exploration and visualization.
