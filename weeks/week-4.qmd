@@ -6,7 +6,7 @@ editor: visual
 
 ## Pre-class activities (own-time)
 
-Read textbook Chapter 3.1.
+Read textbook Chapter 3.1, 3.2, 3.6.
 
 ## Lecture (real-time)
 
