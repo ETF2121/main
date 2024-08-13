@@ -47,7 +47,7 @@ The textbook for this course is just a supplement to the lectures and labs. The 
 | Assessments           | Weight | Due Date    | Learning Outcomes |
 |-----------------------|--------|-------------|-------------------|
 | Quizzes               | 10%    | Weekly      | Weeks 2-12        |
-| Individual Assignment | 20%    | Weeks 6     | Weeks 1-5         |
+| Individual Assignment | 20%    | Week 7      | Weeks 1-5         |
 | Group Assignment\*    | 20%    | Week 11     | Weeks 1-10        |
 | Final exam            | 50%    | Exam period | Weeks 1-11        |
 
@@ -83,7 +83,7 @@ I will regularly send course announcements via Ed discussion board, make sure to
 
 ## Lectures and tutorials
 
-Our goal in both lectures and labs is to encourage maximum interaction. As your instructor, I will introduce you to new tools and techniques, but it’s up to you to apply them effectively. Coding is best learned through practice, so much of our coursework will involve hands-on coding tasks. Each session will include various activities and assignments designed to enhance your skills.
+Our goal in both lectures and labs is to encourage maximum interaction. As your instructor, I will introduce you to new tools and techniques, but it's up to you to apply them effectively. Coding is best learned through practice, so much of our coursework will involve hands-on coding tasks. Each session will include various activities and assignments designed to enhance your skills.
 
 Attendance and active participation in both lectures and tutorials are expected. Attending lectures and tutorials in person will provide the best learning experience. Some lectures will feature application exercises and periodic activities to foster a supportive learning community. These activities will be brief and enjoyable, aimed at strengthening connections among classmates throughout the semester.
 
@@ -100,7 +100,7 @@ All software used in this course can be downloaded for free. However, Power BI w
 Assignment deadlines are set to facilitate your progression through the course content and to enable timely feedback from the teaching team. I understand that unforeseen circumstances may occasionally arise, hindering your ability to meet a deadline. In such cases, you can request an extension through the Monash extension unit for extenuating circumstances. Please note that **I do not grant individual approvals for late submissions**, and requests should **solely** be made through the Monash extension unit.
 
 -   There will be a 10% deduction for each 24-hour period the assignment is late.
--   If you submit an assessment task more than seven days after the due date, you’ll receive a mark of zero and you won’t get any feedback.
+-   If you submit an assessment task more than seven days after the due date, you'll receive a mark of zero and you won't get any feedback.
 -   Strictly no late submission without approval.
 -   I will not reply to any email related to request on late submission.
 
