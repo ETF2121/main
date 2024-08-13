@@ -1,6 +1,6 @@
 ---
 title: "ETF2121/5912: Individual Assignment"
-subtitle: "Due Wednesday, 28 August 2024, 11.55pm via Moodle"
+subtitle: "Due Wednesday, 4 September 2024, 11.55pm via Moodle"
 format: 
   html:
     toc: true
