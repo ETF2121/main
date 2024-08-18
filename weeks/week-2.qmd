@@ -37,7 +37,6 @@ Make sure you can successfully login to Oracle Live SQL. If you are not, please 
 
 ![](images/clipboard-1246714449.png)
 
-
 <br><br>
 
 ::: {style="font-size: 0.875em;"}
