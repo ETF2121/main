@@ -752,7 +752,11 @@
     "href": "weeks/week-5.html",
     "title": "Week 5",
     "section": "",
-    "text": "Important\n\n\n\n\nIndividual assignment 1 due in 2 weeks!"
+    "text": "Important\n\n\n\n\nIndividual assignment 1 due in 2 weeks!",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 5"
+    ]
   },
   {
     "objectID": "weeks/week-5.html#prepare",
@@ -1151,28 +1155,44 @@
     "href": "weeks/week-5.html#pre-class-activities-own-time",
     "title": "Week 5",
     "section": "Pre-class activities (own-time)",
-    "text": "Pre-class activities (own-time)\n📖 Read Business Analytics, 5th Edition: Chapter 2"
+    "text": "Pre-class activities (own-time)\n📖 Read Business Analytics, 5th Edition: Chapter 2",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 5"
+    ]
   },
   {
     "objectID": "weeks/week-5.html#lecture-real-time",
     "href": "weeks/week-5.html#lecture-real-time",
     "title": "Week 5",
     "section": "Lecture (real-time)",
-    "text": "Lecture (real-time)\n🖥️ Lecture 5 - Descriptive Statistics"
+    "text": "Lecture (real-time)\n🖥️ Lecture 5 - Descriptive Statistics",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 5"
+    ]
   },
   {
     "objectID": "weeks/week-5.html#tutorial-real-time",
     "href": "weeks/week-5.html#tutorial-real-time",
     "title": "Week 5",
     "section": "Tutorial (real-time)",
-    "text": "Tutorial (real-time)\n📋 Tutorial 5 - Descriptive Statistics"
+    "text": "Tutorial (real-time)\n📋 Tutorial 5 - Descriptive Statistics",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 5"
+    ]
   },
   {
     "objectID": "weeks/week-5.html#supplementary-own-time",
     "href": "weeks/week-5.html#supplementary-own-time",
     "title": "Week 5",
     "section": "Supplementary (own-time)",
-    "text": "Supplementary (own-time)\n🔕 You do not have to complete these but if you wish you can. This book has a good discussion on descriptive statistics.\n⌨️ Supp 5 - Descriptive Statistics Using R\n\n\nBack to course schedule ⏎"
+    "text": "Supplementary (own-time)\n🔕 You do not have to complete these but if you wish you can. This book has a good discussion on descriptive statistics.\n⌨️ Supp 5 - Descriptive Statistics Using R\n\n\nBack to course schedule ⏎",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 5"
+    ]
   },
   {
     "objectID": "slides/lec-1.html#accounting-analytics",
@@ -2129,6 +2149,10 @@
     "href": "weeks/week-5.html#quiz-own-time",
     "title": "Week 5",
     "section": "Quiz (own-time)",
-    "text": "Quiz (own-time)\n🧪 Quiz 5"
+    "text": "Quiz (own-time)\n🧪 Quiz 5",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 5"
+    ]
   }
 ]
