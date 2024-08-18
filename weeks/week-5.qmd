@@ -5,32 +5,30 @@ editor: visual
 ---
 
 ::: callout-important
--   Individual assignment 1 due next week!
+-   Individual assignment 1 due in 2 weeks!
 :::
 
 ## Pre-class activities (own-time)
 
-📖 Read Business Analytics, Sec 5.4: Random Variables
-
-📖 Read Business Analytics, Sec 5.5: Discrete Probability Distributions
-
-📖 Read Business Analytics, Sec 5.6: Continuous Probability Distributions
+📖 Read Business Analytics, 5th Edition: Chapter 2
 
 ## Lecture (real-time)
 
-🖥️ [Lab 3 - Coffee ratings](/slides/lab-3.html)
-
-🖥️ [Lecture 5 - Introduction to Modeling Uncertainty](/slides/lec-5.html)
-
-[Testing](https://learning.monash.edu/pluginfile.php/3721006/mod_resource/content/1/Assignmen4Solutions.html)
+🖥️ [Lecture 5 - Descriptive Statistics](https://learning.monash.edu/pluginfile.php/4038721/mod_resource/content/1/lec-5.html)
 
 ## Tutorial (real-time)
 
-📋 [Tutorial 5 -](tba)[Modeling](hw/hw-5.qmd)[Uncertainty](tba)
+📋 [Tutorial 5 - Descriptive Statistics](https://learning.monash.edu/pluginfile.php/4038700/mod_resource/content/1/lab-5.html)
+
+## Quiz (own-time)
+
+🧪 [Quiz 5](https://learning.monash.edu/mod/quiz/view.php?id=3059917)
 
 ## Supplementary (own-time)
 
-⌨️ Supp 5 - Understanding distribution in R
+🔕 You do not have to complete these but if you wish you can. This book has a good discussion on descriptive statistics.
+
+⌨️ Supp 5 - [Descriptive Statistics Using R](https://learningstatisticswithr.com/book/descriptives.html)
 
 <br><br>
 
