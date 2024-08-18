@@ -2138,7 +2138,7 @@
     "href": "weeks/week-4.html#supplementary-own-time",
     "title": "Week 4",
     "section": "Supplementary (own-time)",
-    "text": "Supplementary (own-time)\n🔕 You do not have to complete these but if you wish you can.\nPlease remember that in order to master to fullness on data visualization in R, you might want to learn ggplot2 package. Since ggplot2 is extremely useful, I will stroungly encourage you to take ETC2250/ETF5922.\nI have created the learning material for Clayton student years ago and if you are just interested to know how it works. The following link might help.\nhttps://ebsmonash.shinyapps.io/ida-W3/\n\n\nBack to course schedule ⏎",
+    "text": "Supplementary (own-time)\n🔕 You do not have to complete these but if you wish you can.\nPlease remember that in order to master to fullness on data visualization in R, you might want to learn ggplot2 package. Since ggplot2 is extremely useful, I will stroungly encourage you to take ETX2250/ETF5922.\nI have created the learning material for Clayton student years ago and if you are just interested to know how it works. The following link might help.\nhttps://ebsmonash.shinyapps.io/ida-W3/\n\n\nBack to course schedule ⏎",
     "crumbs": [
       "Weekly Schedule",
       "Week 4"
@@ -2153,6 +2153,17 @@
     "crumbs": [
       "Weekly Schedule",
       "Week 5"
+    ]
+  },
+  {
+    "objectID": "weeks/week-4.html#power-bi-instructions-video-own-time",
+    "href": "weeks/week-4.html#power-bi-instructions-video-own-time",
+    "title": "Week 4",
+    "section": "Power BI Instructions Video (own-time)",
+    "text": "Power BI Instructions Video (own-time)\n\nCreate Relationship\n\n\n\n\nCreating Dashboard\n\n\n\n\nInserting Textbox\n\n\n\n\nDuplicating Page\n\n\n\n\nAction Button\n\n\n\n\nCard Visual",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 4"
     ]
   }
 ]
