@@ -54,7 +54,7 @@ Read textbook Chapter 3.1, 3.2, 3.6.
 
 #### Column Chart
 
-<iframe src="https://monash.au.panopto.com/Panopto/Pages/Embed.aspx?id=fa6223e8-d303-4104-b048-b1d000b164cd&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Doughnut Chart" ></iframe>
+<iframe src="https://monash.au.panopto.com/Panopto/Pages/Embed.aspx?id=1e3226b7-f9b8-4b97-b964-b1d000b173ce&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="Column Chart" ></iframe>
 
 #### Doughnut Chart
 
