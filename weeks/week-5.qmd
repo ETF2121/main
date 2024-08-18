@@ -16,6 +16,10 @@ editor: visual
 
 🖥️ [Lecture 5 - Descriptive Statistics](https://learning.monash.edu/pluginfile.php/4038721/mod_resource/content/1/lec-5.html)
 
+<iframe src="https://learning.monash.edu/pluginfile.php/4038721/mod_resource/content/1/lec-5.html" width="100%" height="500">
+
+</iframe>
+
 ## Tutorial (real-time)
 
 📋 [Tutorial 5 - Descriptive Statistics](https://learning.monash.edu/pluginfile.php/4038700/mod_resource/content/1/lab-5.html)

@@ -6,6 +6,7 @@ website:
   title: "ETF2121/5912 - S2 2024"
   description: "Homepage for ETF2121/5921 - Data Analysis in Business at Monash University, S2 2023."
   site-url: "https://etf2121.github.io/main"
+  back-to-top-navigation: true
 
   open-graph: true
 
