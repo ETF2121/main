@@ -20,6 +20,8 @@ editor: visual
 
 </iframe>
 
+📋 [Case study - Descriptive Statistics](https://learning.monash.edu/mod/folder/view.php?id=3063771)
+
 ## Tutorial (real-time)
 
 📋 [Tutorial 5 - Descriptive Statistics](https://learning.monash.edu/pluginfile.php/4038700/mod_resource/content/1/lab-5.html)
