@@ -184,5 +184,5 @@ You will be using the provided dataset which contains information on hotel booki
 [Submit](https://learning.monash.edu/mod/assign/view.php?id=2988571){.btn .btn-primary}
 
 ::: callout-important
-Notes: This assignment requires you to submit 2 files: 1 .sql file, 1 .pbix file.
+Notes: This assignment requires you to submit 2 files: 1 .docx file (with sql and the result screenshot), 1 .pbix file.
 :::
