@@ -1,6 +1,6 @@
 ---
 title: "Week 5"
-subtitle: "Introduction to Modeling Uncertainty"
+subtitle: "Descriptive Statistics"
 editor: visual
 ---
 
@@ -24,7 +24,7 @@ editor: visual
 
 ## Tutorial (real-time)
 
-📋 [Tutorial 5 - Descriptive Statistics](https://learning.monash.edu/pluginfile.php/4038700/mod_resource/content/1/lab-5.html)
+📋 [Tutorial 5 - Power BI ](https://learning.monash.edu/pluginfile.php/4038700/mod_resource/content/1/lab-5.html)
 
 ## Quiz (own-time)
 
