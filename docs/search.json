@@ -2237,62 +2237,98 @@
     "href": "hw/hw-2.html",
     "title": "Group Assignment - Data Analysis Report",
     "section": "",
-    "text": "The objective of this assignment is to develop the skills necessary for a comprehensive data analysis process, including the selection of an appropriate dataset, formulation of a meaningful research question, application of relevant statistical methods, and clear communication of findings through a full report. By completing this project, you will gain hands-on experience in data cleaning, exploratory analysis, statistical modeling, and reporting, preparing them to effectively analyze and interpret data to support data-driven decision-making."
+    "text": "The objective of this assignment is to develop the skills necessary for a comprehensive data analysis process, including the selection of an appropriate dataset, formulation of a meaningful research question, application of relevant statistical methods, and clear communication of findings through a full report. By completing this project, you will gain hands-on experience in data cleaning, exploratory analysis, statistical modeling, and reporting, preparing them to effectively analyze and interpret data to support data-driven decision-making.",
+    "crumbs": [
+      "Assessment",
+      "Group Assignment"
+    ]
   },
   {
     "objectID": "hw/hw-2.html#objective",
     "href": "hw/hw-2.html#objective",
     "title": "Group Assignment - Data Analysis Report",
     "section": "",
-    "text": "The objective of this assignment is to develop the skills necessary for a comprehensive data analysis process, including the selection of an appropriate dataset, formulation of a meaningful research question, application of relevant statistical methods, and clear communication of findings through a full report. By completing this project, you will gain hands-on experience in data cleaning, exploratory analysis, statistical modeling, and reporting, preparing them to effectively analyze and interpret data to support data-driven decision-making."
+    "text": "The objective of this assignment is to develop the skills necessary for a comprehensive data analysis process, including the selection of an appropriate dataset, formulation of a meaningful research question, application of relevant statistical methods, and clear communication of findings through a full report. By completing this project, you will gain hands-on experience in data cleaning, exploratory analysis, statistical modeling, and reporting, preparing them to effectively analyze and interpret data to support data-driven decision-making.",
+    "crumbs": [
+      "Assessment",
+      "Group Assignment"
+    ]
   },
   {
     "objectID": "hw/hw-2.html#instructions",
     "href": "hw/hw-2.html#instructions",
     "title": "Group Assignment - Data Analysis Report",
     "section": "Instructions:",
-    "text": "Instructions:\n\nDataset: Use the dataset provided inside the Kaggle competition via the link below. You are required to use this dataset for your analysis. You may use additional datasets if necessary, but the primary focus should be on the dataset provided.\nFormulate a research question: Develop a research question that can be answered using the dataset you have selected. The research question should be specific, relevant, and clearly defined. It should also be answerable using the statistical methods covered in this course.\nConduct data analysis: Perform a comprehensive data analysis to answer the research question you have formulated. This should include data cleaning, exploratory analysis, and statistical modeling as appropriate. You should use the tools and techniques covered in this course to analyze the data and draw meaningful conclusions.\nWrite a report: Prepare a report summarizing your findings. The report should include an introduction, data description, methodology, results, and conclusion. It should be well-organized, clearly written, and include appropriate visualizations to support your analysis. Fold your code in your rmd/qmd report by setting the following yaml header.\n\n---\ntitle: \"xxx\"\nauthor: \"xxx\"\nformat: \n  html:\n    code-fold: true\n---\n\nSubmit your report: Submit your report as a html file by the deadline. Be sure to include your name and the names of your group members on the report."
+    "text": "Instructions:\n\nDataset: Use the dataset provided inside the Kaggle competition via the link below. You are required to use this dataset for your analysis. You may use additional datasets if necessary, but the primary focus should be on the dataset provided.\nFormulate a research question: Develop a research question that can be answered using the dataset you have selected. The research question should be specific, relevant, and clearly defined. It should also be answerable using the statistical methods covered in this course.\nConduct data analysis: Perform a comprehensive data analysis to answer the research question you have formulated. This should include data cleaning, exploratory analysis, and statistical modeling as appropriate. You should use the tools and techniques covered in this course to analyze the data and draw meaningful conclusions.\nWrite a report: Prepare a report summarizing your findings. The report should include an introduction, data description, methodology, results, and conclusion. It should be well-organized, clearly written, and include appropriate visualizations to support your analysis. Fold your code in your rmd/qmd report by setting the following yaml header.\n\n---\ntitle: \"xxx\"\nauthor: \"xxx\"\nformat: \n  html:\n    code-fold: true\n---\n\nSubmit your report: Submit your report as a html file by the deadline. Be sure to include your name and the names of your group members on the report.",
+    "crumbs": [
+      "Assessment",
+      "Group Assignment"
+    ]
   },
   {
     "objectID": "hw/hw-2.html#datasets",
     "href": "hw/hw-2.html#datasets",
     "title": "Group Assignment - Data Analysis Report",
     "section": "Datasets:",
-    "text": "Datasets:\nBank Churn Data\n👉 https://www.kaggle.com/t/c0c9fcc6785347a38b5e6e508eb2f901"
+    "text": "Datasets:\nBank Churn Data\n👉 https://www.kaggle.com/t/c0c9fcc6785347a38b5e6e508eb2f901",
+    "crumbs": [
+      "Assessment",
+      "Group Assignment"
+    ]
   },
   {
     "objectID": "hw/hw-2.html#evaluation",
     "href": "hw/hw-2.html#evaluation",
     "title": "Group Assignment - Data Analysis Report",
     "section": "Evaluation:",
-    "text": "Evaluation:\nYour report will be evaluated based on the following criteria:\n\nIntroduction: Provide background information on your dataset and clearly state your research question and hypotheses. Include a data dictionary for the variables used. Is the research question clearly defined and relevant?\nData Description: Describe the dataset, including the variables used in your analysis. Are the data cleaning and preprocessing steps clearly explained?\nMethodology: Describe the statistical methods used to analyze the data. Are the methods appropriate for the research question? Are the assumptions of the methods met?\nResults: Present the results of your analysis, including any visualizations or tables used to summarize the data. Are the results clearly presented and relevant to the research question?\nDiscussion: Discuss the implications of your findings and their relevance to the research question.\nConclusion: Summarize your findings and discuss their implications. Are the conclusions supported by the data and analysis?\nCode: Include any code used to conduct the analysis in an appendix. Is the code well-documented and easy to follow?\nPresentation: Finally, prepare a presentation summarizing your project, including your research question, methodology, main results, and conclusions. Make sure to highlight the most interesting aspects of your project and be prepared to discuss your findings."
+    "text": "Evaluation:\nYour report will be evaluated based on the following criteria:\n\nIntroduction: Provide background information on your dataset and clearly state your research question and hypotheses. Include a data dictionary for the variables used. Is the research question clearly defined and relevant?\nData Description: Describe the dataset, including the variables used in your analysis. Are the data cleaning and preprocessing steps clearly explained?\nMethodology: Describe the statistical methods used to analyze the data. Are the methods appropriate for the research question? Are the assumptions of the methods met?\nResults: Present the results of your analysis, including any visualizations or tables used to summarize the data. Are the results clearly presented and relevant to the research question?\nDiscussion: Discuss the implications of your findings and their relevance to the research question.\nConclusion: Summarize your findings and discuss their implications. Are the conclusions supported by the data and analysis?\nCode: Include any code used to conduct the analysis in an appendix. Is the code well-documented and easy to follow?\nPresentation: Finally, prepare a presentation summarizing your project, including your research question, methodology, main results, and conclusions. Make sure to highlight the most interesting aspects of your project and be prepared to discuss your findings.",
+    "crumbs": [
+      "Assessment",
+      "Group Assignment"
+    ]
   },
   {
     "objectID": "hw/hw-2.html#submission",
     "href": "hw/hw-2.html#submission",
     "title": "Group Assignment - Data Analysis Report",
     "section": "Submission:",
-    "text": "Submission:\n\nSubmit your report as a html file by the deadline. Be sure to include your name and the names of your group members on the report. You should also submit your code as a separate file.\nSubmit your analysis via Kaggle Competition website. You should attach the proof of your submission in your report."
+    "text": "Submission:\n\nSubmit your report as a html file by the deadline. Be sure to include your name and the names of your group members on the report. You should also submit your code as a separate file.\nSubmit your analysis via Kaggle Competition website. You should attach the proof of your submission in your report.",
+    "crumbs": [
+      "Assessment",
+      "Group Assignment"
+    ]
   },
   {
     "objectID": "hw/hw-2.html#how-to-participate-in-private-kaggle-competition",
     "href": "hw/hw-2.html#how-to-participate-in-private-kaggle-competition",
     "title": "Group Assignment - Data Analysis Report",
     "section": "How to participate in Private Kaggle Competition",
-    "text": "How to participate in Private Kaggle Competition\n\nJoin the competition https://www.kaggle.com/t/c0c9fcc6785347a38b5e6e508eb2f901\nMake sure your group name is the same as the one that you register via the Moodle page. Else, it will not be counted."
+    "text": "How to participate in Private Kaggle Competition\n\nJoin the competition https://www.kaggle.com/t/c0c9fcc6785347a38b5e6e508eb2f901\nMake sure your group name is the same as the one that you register via the Moodle page. Else, it will not be counted.",
+    "crumbs": [
+      "Assessment",
+      "Group Assignment"
+    ]
   },
   {
     "objectID": "hw/hw-2.html#caution",
     "href": "hw/hw-2.html#caution",
     "title": "Group Assignment - Data Analysis Report",
     "section": "Caution",
-    "text": "Caution\nI choose the data from Kaggle Competition website is because it has a lot of examples for you to refer to. In fact, I encouraged you to take a look at the examples and learn from them. However, you should not copy the analysis from the examples. You should do the analysis by yourself. All your submission will go through plagiarism check. If you are found to copy the analysis from the examples, you will get zero for the assignment."
+    "text": "Caution\nI choose the data from Kaggle Competition website is because it has a lot of examples for you to refer to. In fact, I encouraged you to take a look at the examples and learn from them. However, you should not copy the analysis from the examples. You should do the analysis by yourself. All your submission will go through plagiarism check. If you are found to copy the analysis from the examples, you will get zero for the assignment.",
+    "crumbs": [
+      "Assessment",
+      "Group Assignment"
+    ]
   },
   {
     "objectID": "hw/hw-2.html#note",
     "href": "hw/hw-2.html#note",
     "title": "Group Assignment - Data Analysis Report",
     "section": "Note:",
-    "text": "Note:\n\nYou may work in groups of up to 3 students.\nYou only can use R to conduct the analysis.\nYou have to submit your report as a html file and also submit your prediction via the provided Kaggle Competition website link above.\nLate submissions will not be accepted.\nIf you have any questions or need clarification on the assignment, please post them on the discussion forum.\n\nGood luck! ♥️"
+    "text": "Note:\n\nYou may work in groups of up to 3 students.\nYou only can use R to conduct the analysis.\nYou have to submit your report as a html file and also submit your prediction via the provided Kaggle Competition website link above.\nLate submissions will not be accepted.\nIf you have any questions or need clarification on the assignment, please post them on the discussion forum.\n\nGood luck! ♥️",
+    "crumbs": [
+      "Assessment",
+      "Group Assignment"
+    ]
   }
 ]
