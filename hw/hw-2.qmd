@@ -1,6 +1,9 @@
 ---
 title: "Group Assignment - Data Analysis Report"
 subtitle: "Due Sunday, October 13, 11.55pm"
+format: 
+  html:
+    toc: true
 editor: visual
 ---
 
