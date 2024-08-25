@@ -22,7 +22,7 @@ editor: visual
 
 ## Tutorial (real-time)
 
-📋 [Tutorial 6 - Descriptive Statistics](https://learning.monash.edu/mod/resource/view.php?id=3072188)
+📋 [Tutorial 6 - Descriptive Statistics](https://learning.monash.edu/mod/folder/view.php?id=3072768)
 
 ## Quiz (own-time)
 
@@ -31,7 +31,6 @@ editor: visual
 ## Supplementary (own-time)
 
 🔕 Revisit your first year statistics on the topic of probability.
-
 
 <br><br>
 
