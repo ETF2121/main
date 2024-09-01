@@ -94,3 +94,5 @@ I chose the data from Kaggle Competition website is because it has a lot of exam
 -   If you have any questions or need clarification on the assignment, please post them on the discussion forum.
 
 Good luck! ♥️
+
+[Submit](test){.btn .btn-primary}

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Group Assignment - Data Analysis Report – ETF2121/5912 - S2 2024</title>
+<title>Week 7 – ETF2121/5912 - S2 2024</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -103,8 +69,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<meta property="og:title" content="ETF2121/5912 - S2 2024 - Group Assignment - Data Analysis Report">
-<meta property="og:description" content="Due Sunday, October 13, 11.55pm">
+<meta property="og:title" content="ETF2121/5912 - S2 2024 - Week 7">
+<meta property="og:description" content="Descriptive Data Mining">
 <meta property="og:site_name" content="ETF2121/5912 - S2 2024">
 </head>
 
@@ -117,7 +83,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../hw/hw-1.html">Assessment</a></li><li class="breadcrumb-item"><a href="../hw/hw-2.html">Group Assignment</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../weeks/week-1.html">Weekly Schedule</a></li><li class="breadcrumb-item"><a href="../weeks/week-7.html">Week 7</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -227,7 +193,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../weeks/week-7.html" class="sidebar-item-text sidebar-link">
+  <a href="../weeks/week-7.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Week 7</span></a>
   </div>
 </li>
@@ -250,7 +216,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../hw/hw-2.html" class="sidebar-item-text sidebar-link active">
+  <a href="../hw/hw-2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Group Assignment</span></a>
   </div>
 </li>
@@ -266,24 +232,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective:</a></li>
-  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions:</a></li>
-  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets">Datasets:</a></li>
-  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation">Evaluation:</a></li>
-  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission:</a></li>
-  <li><a href="#how-to-participate-in-private-kaggle-competition" id="toc-how-to-participate-in-private-kaggle-competition" class="nav-link" data-scroll-target="#how-to-participate-in-private-kaggle-competition">How to participate in Private Kaggle Competition</a></li>
-  <li><a href="#caution" id="toc-caution" class="nav-link" data-scroll-target="#caution">Caution</a></li>
-  <li><a href="#note" id="toc-note" class="nav-link" data-scroll-target="#note">Note:</a></li>
+  <li><a href="#pre-class-activities-own-time" id="toc-pre-class-activities-own-time" class="nav-link active" data-scroll-target="#pre-class-activities-own-time">Pre-class activities (own-time)</a></li>
+  <li><a href="#lecture-real-time" id="toc-lecture-real-time" class="nav-link" data-scroll-target="#lecture-real-time">Lecture (real-time)</a></li>
+  <li><a href="#tutorial-real-time" id="toc-tutorial-real-time" class="nav-link" data-scroll-target="#tutorial-real-time">Tutorial (real-time)</a></li>
+  <li><a href="#quiz-own-time" id="toc-quiz-own-time" class="nav-link" data-scroll-target="#quiz-own-time">Quiz (own-time)</a></li>
+  <li><a href="#supplementary-own-time" id="toc-supplementary-own-time" class="nav-link" data-scroll-target="#supplementary-own-time">Supplementary (own-time)</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../hw/hw-1.html">Assessment</a></li><li class="breadcrumb-item"><a href="../hw/hw-2.html">Group Assignment</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../weeks/week-1.html">Weekly Schedule</a></li><li class="breadcrumb-item"><a href="../weeks/week-7.html">Week 7</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Group Assignment - Data Analysis Report</h1>
-<p class="subtitle lead">Due Sunday, October 13, 11.55pm</p>
+<h1 class="title">Week 7</h1>
+<p class="subtitle lead">Descriptive Data Mining</p>
 </div>
 
 
@@ -300,80 +263,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="objective" class="level2">
-<h2 class="anchored" data-anchor-id="objective">Objective:</h2>
-<p>The objective of this assignment is to develop the skills necessary for a comprehensive data analysis process, including the selection of an appropriate dataset, formulation of a meaningful research question, application of relevant statistical methods, and clear communication of findings through a full report. By completing this project, you will gain hands-on experience in data cleaning, exploratory analysis, statistical modeling, and reporting, preparing them to effectively analyze and interpret data to support data-driven decision-making.</p>
-</section>
-<section id="instructions" class="level2">
-<h2 class="anchored" data-anchor-id="instructions">Instructions:</h2>
-<ol type="1">
-<li><p><strong>Dataset</strong>: Use the dataset provided inside the Kaggle competition via the link below. You are required to use this dataset for your analysis. You may use additional datasets if necessary, but the primary focus should be on the dataset provided.</p></li>
-<li><p><strong>Formulate a research question</strong>: Develop a research question that can be answered using the dataset you have selected. The research question should be specific, relevant, and clearly defined. It should also be answerable using the statistical methods covered in this course.</p></li>
-<li><p><strong>Conduct data analysis</strong>: Perform a comprehensive data analysis to answer the research question you have formulated. This should include data cleaning, exploratory analysis, and statistical modeling as appropriate. You should use the tools and techniques covered in this course to analyze the data and draw meaningful conclusions.</p></li>
-<li><p><strong>Write a report</strong>: Prepare a report summarizing your findings. The report should include an introduction, data description, methodology, results, and conclusion. It should be well-organized, clearly written, and include appropriate visualizations to support your analysis. Fold your code in your rmd/qmd report by setting the following yaml header.</p></li>
-</ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"xxx"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"xxx"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">code-fold</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol start="5" type="1">
-<li><strong>Submit your report</strong>: Submit your report as a html file by the deadline. Be sure to include your name and the names of your group members on the report.</li>
-</ol>
-</section>
-<section id="datasets" class="level2">
-<h2 class="anchored" data-anchor-id="datasets">Datasets:</h2>
-<p>Bank Churn Data</p>
-<p>👉 <a href="https://www.kaggle.com/t/c0c9fcc6785347a38b5e6e508eb2f901" class="uri">https://www.kaggle.com/t/c0c9fcc6785347a38b5e6e508eb2f901</a></p>
-</section>
-<section id="evaluation" class="level2">
-<h2 class="anchored" data-anchor-id="evaluation">Evaluation:</h2>
-<p>Your report will be evaluated based on the following criteria:</p>
-<ol type="1">
-<li><p><strong>Introduction</strong>: Provide background information on your dataset and clearly state your research question and hypotheses. Include a data dictionary for the variables used. Is the research question clearly defined and relevant?</p></li>
-<li><p><strong>Data Description</strong>: Describe the dataset, including the variables used in your analysis. Are the data cleaning and preprocessing steps clearly explained?</p></li>
-<li><p><strong>Methodology</strong>: Describe the statistical methods used to analyze the data (you are required to use only the tools and methodologies that have been taught during the course. Utilizing external techniques or software not covered in the curriculum is not permitted). Are the methods appropriate for the research question? Are the assumptions of this methods met?</p>
-<p>For <strong>postgraduate</strong> student ONLY: In addition to the requirement above. You have to survey/research one methodology which is not covered in this course and make comparison on both of your chosen methods and discuss. This is to test your ability to think critically and be able to research and make better judgement and decision.</p></li>
-<li><p><strong>Results</strong>: Present the results of your analysis, including any visualizations or tables where appropriate. Are the results clearly presented and relevant to the research question?</p></li>
-<li><p><strong>Discussion</strong>: Discuss the implications of your findings and their relevance to the research question.</p></li>
-<li><p><strong>Conclusion</strong>: Summarize your findings and discuss their implications. Are the conclusions supported by the data and analysis?</p></li>
-<li><p><strong>Code</strong>: Include any code used to conduct the analysis in an appendix. Is the code well-documented and easy to follow?</p></li>
-<li><p><strong>Presentation</strong>: Finally, prepare a presentation summarizing your project, including your research question, methodology, main results, and conclusions. Make sure to highlight the most interesting aspects of your project and be prepared to discuss your findings.</p></li>
-<li><p><strong>Word limit</strong>: Maximum of 1500 words for undergraduate and 2000 words for postgraduate.</p></li>
-<li><p><strong>Generative AI:</strong> You are permitted to use generative AI tools to stimulate ideas and enhance your understanding of the assignment. However, directly copying or reproducing content generated by AI is not allowed. All submissions must be original work, reflecting your own understanding and effort. Proper attribution should be given if AI tools are used to assist in brainstorming or idea development.</p></li>
-</ol>
-</section>
-<section id="submission" class="level2">
-<h2 class="anchored" data-anchor-id="submission">Submission:</h2>
-<ol type="1">
-<li><p>Submit your report as a html file by the deadline. Be sure to include your name and the names of your group members on the report. You should also submit your code as a separate file.</p></li>
-<li><p>Submit your analysis via Kaggle Competition website. You should attach the proof of your submission in your report.</p></li>
-</ol>
-</section>
-<section id="how-to-participate-in-private-kaggle-competition" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-participate-in-private-kaggle-competition">How to participate in Private Kaggle Competition</h2>
-<ol type="1">
-<li><p>Join the competition https://www.kaggle.com/t/c0c9fcc6785347a38b5e6e508eb2f901</p></li>
-<li><p>Make sure your group name is the same as the one that you register via the Moodle page. Else, it will not be counted.</p></li>
-</ol>
-</section>
-<section id="caution" class="level2">
-<h2 class="anchored" data-anchor-id="caution">Caution</h2>
-<p>I chose the data from Kaggle Competition website is because it has a lot of examples for you to refer to. In fact, I encouraged you to take a look at the examples and learn from them. However, you should not copy the analysis from the examples. You should do the analysis by yourself. All your submission will go through plagiarism check. If you are found to copy the analysis from the examples, you will get <strong>zero</strong> for the assignment.</p>
-</section>
-<section id="note" class="level2">
-<h2 class="anchored" data-anchor-id="note">Note:</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li><p>You may work in groups of up to 3 students.</p></li>
-<li><p>You only can use R to conduct the analysis.</p></li>
-<li><p>You have to submit your report as a html file and also submit your prediction via the provided Kaggle Competition website link above.</p></li>
-<li><p>Late submissions will not be accepted.</p></li>
-<li><p>If you have any questions or need clarification on the assignment, please post them on the discussion forum.</p></li>
+<li>Individual assignment 1 due tomorrow!</li>
 </ul>
-<p>Good luck! ♥️</p>
-<p><a href="test" class="btn btn-primary">Submit</a></p>
+</div>
+</div>
+<section id="pre-class-activities-own-time" class="level2">
+<h2 class="anchored" data-anchor-id="pre-class-activities-own-time">Pre-class activities (own-time)</h2>
+<p>📖 Read Business Analytics, 5th Edition: Chapter 6.2</p>
+</section>
+<section id="lecture-real-time" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-real-time">Lecture (real-time)</h2>
+<p>🖥️ <a href="https://learning.monash.edu/pluginfile.php/4081279/mod_resource/content/1/lec-7.html">Lecture 7 - Descriptive Data Mining</a></p>
+<iframe src="https://learning.monash.edu/pluginfile.php/4081279/mod_resource/content/1/lec-7.html#/title-slide" width="100%" height="500">
+</iframe>
+</section>
+<section id="tutorial-real-time" class="level2">
+<h2 class="anchored" data-anchor-id="tutorial-real-time">Tutorial (real-time)</h2>
+<p>📋 <a href="https://learning.monash.edu/mod/folder/view.php?id=3096615">Tutorial 7 - Modelling Uncertainty</a></p>
+</section>
+<section id="quiz-own-time" class="level2">
+<h2 class="anchored" data-anchor-id="quiz-own-time">Quiz (own-time)</h2>
+<p>🧪 <a href="https://learning.monash.edu/mod/quiz/view.php?id=3096610">Quiz 7</a></p>
+</section>
+<section id="supplementary-own-time" class="level2">
+<h2 class="anchored" data-anchor-id="supplementary-own-time">Supplementary (own-time)</h2>
+<p>🔕 NONE :)</p>
+<p><br><br></p>
+<div style="font-size: 0.875em;">
+<p>Back to <a href=".." title="Course schedule">course schedule</a> ⏎</p>
+</div>
 
 
 </section>
