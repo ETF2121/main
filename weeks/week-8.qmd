@@ -7,13 +7,13 @@ editor: visual
 
 ## Pre-class activities (own-time)
 
-📖 Read Business Analytics, 5th Edition: Chapter 6.2
+📖 Read Business Analytics, 5th Edition: Chapter 8.1-8.6, 8.8
 
 ## Lecture (real-time)
 
-🖥️ [Lecture87 -Linear Regression](tba)
+🖥️ [Lecture8- Linear Regression](tba)
 
-<iframe src="tba" width="100%" height="500">
+<iframe src="https://learning.monash.edu/mod/resource/view.php?id=3117990" width="100%" height="500">
 
 </iframe>
 
