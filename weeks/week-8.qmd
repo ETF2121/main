@@ -11,7 +11,7 @@ editor: visual
 
 ## Lecture (real-time)
 
-🖥️ [Lecture8- Linear Regression]https://learning.monash.edu/pluginfile.php/4105703/mod_resource/content/2/lec-8.html#/title-slide)
+🖥️ [Lecture8- Linear Regression](https://learning.monash.edu/pluginfile.php/4105703/mod_resource/content/2/lec-8.html#/title-slide)
 
 <iframe src="https://learning.monash.edu/pluginfile.php/4105703/mod_resource/content/2/lec-8.html#/title-slide" width="100%" height="500">
 
