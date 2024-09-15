@@ -1,0 +1,35 @@
+---
+title: "Week 9"
+subtitle: "Time Series Analysis and Forecasting"
+editor: visual
+---
+
+## Pre-class activities (own-time)
+
+📖 Read Business Analytics, 5th Edition: Chapter 9
+
+## Lecture (real-time)
+
+🖥️ [Lecture 9- Time Series Analysis and Forecasting](https://learning.monash.edu/pluginfile.php/4105703/mod_resource/content/2/lec-8.html#/title-slide)
+
+<iframe src="https://learning.monash.edu/pluginfile.php/4124063/mod_resource/content/1/lec-9.html#/title-slide" width="100%" height="500">
+
+</iframe>
+
+## Tutorial (real-time)
+
+📋 [Tutorial 9 - Linear Regression](https://learning.monash.edu/pluginfile.php/4123810/mod_resource/content/2/lab-9.html)
+
+## Quiz (own-time)
+
+🧪 [Quiz 9](https://learning.monash.edu/mod/quiz/view.php?id=3133248)
+
+## Supplementary (own-time)
+
+🔕 Dealing with date is tricky in R. Although we do not cover it in R, if you are interested please refer to <https://r4ds.had.co.nz/dates-and-times.html>.
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/ "Course schedule") ⏎
+:::
