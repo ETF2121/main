@@ -19,7 +19,7 @@ The objective of this assignment is to develop the skills necessary for a compre
 
 3.  **Conduct data analysis**: Perform a comprehensive data analysis to answer the research question you have formulated. This should include data cleaning, exploratory analysis, and statistical modeling as appropriate. You should use the tools and techniques covered in this course to analyze the data and draw meaningful conclusions.
 
-4.  **Write a report**: Prepare a report summarizing your findings. The report should include an introduction, data description, methodology, results, and conclusion. It should be well-organized, clearly written, and include appropriate visualizations to support your analysis. Fold your code in your rmd/qmd report by setting the following yaml header.
+4.  **Write a report**: Prepare a report summarizing your findings on how well you can predict who will leave the bank. The report should include an introduction, data description, methodology, results, and conclusion. It should be well-organized, clearly written, and include appropriate visualizations to support your analysis. Fold your code in your rmd/qmd report by setting the following yaml header.
 
 ``` yaml
 ---

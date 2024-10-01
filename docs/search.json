@@ -2259,7 +2259,7 @@
     "href": "hw/hw-2.html#instructions",
     "title": "Group Assignment - Data Analysis Report",
     "section": "Instructions:",
-    "text": "Instructions:\n\nDataset: Use the dataset provided inside the Kaggle competition via the link below. You are required to use this dataset for your analysis. You may use additional datasets if necessary, but the primary focus should be on the dataset provided.\nFormulate a research question: Develop a research question that can be answered using the dataset you have selected. The research question should be specific, relevant, and clearly defined. It should also be answerable using the statistical methods covered in this course.\nConduct data analysis: Perform a comprehensive data analysis to answer the research question you have formulated. This should include data cleaning, exploratory analysis, and statistical modeling as appropriate. You should use the tools and techniques covered in this course to analyze the data and draw meaningful conclusions.\nWrite a report: Prepare a report summarizing your findings. The report should include an introduction, data description, methodology, results, and conclusion. It should be well-organized, clearly written, and include appropriate visualizations to support your analysis. Fold your code in your rmd/qmd report by setting the following yaml header.\n\n---\ntitle: \"xxx\"\nauthor: \"xxx\"\nformat: \n  html:\n    code-fold: true\n---\n\nSubmit your report: Submit your report as a html file by the deadline. Be sure to include your name and the names of your group members on the report.",
+    "text": "Instructions:\n\nDataset: Use the dataset provided inside the Kaggle competition via the link below. You are required to use this dataset for your analysis. You may use additional datasets if necessary, but the primary focus should be on the dataset provided.\nFormulate a research question: Develop a research question that can be answered using the dataset you have selected. The research question should be specific, relevant, and clearly defined. It should also be answerable using the statistical methods covered in this course.\nConduct data analysis: Perform a comprehensive data analysis to answer the research question you have formulated. This should include data cleaning, exploratory analysis, and statistical modeling as appropriate. You should use the tools and techniques covered in this course to analyze the data and draw meaningful conclusions.\nWrite a report: Prepare a report summarizing your findings on how well you can predict who will leave the bank. The report should include an introduction, data description, methodology, results, and conclusion. It should be well-organized, clearly written, and include appropriate visualizations to support your analysis. Fold your code in your rmd/qmd report by setting the following yaml header.\n\n---\ntitle: \"xxx\"\nauthor: \"xxx\"\nformat: \n  html:\n    code-fold: true\n---\n\nSubmit your report: Submit your report as a html file by the deadline. Be sure to include your name and the names of your group members on the report.",
     "crumbs": [
       "Assessment",
       "Group Assignment"
@@ -2468,42 +2468,66 @@
     "href": "weeks/week-9.html",
     "title": "Week 9",
     "section": "",
-    "text": "📖 Read Business Analytics, 5th Edition: Chapter 9"
+    "text": "📖 Read Business Analytics, 5th Edition: Chapter 9",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 9"
+    ]
   },
   {
     "objectID": "weeks/week-9.html#pre-class-activities-own-time",
     "href": "weeks/week-9.html#pre-class-activities-own-time",
     "title": "Week 9",
     "section": "",
-    "text": "📖 Read Business Analytics, 5th Edition: Chapter 9"
+    "text": "📖 Read Business Analytics, 5th Edition: Chapter 9",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 9"
+    ]
   },
   {
     "objectID": "weeks/week-9.html#lecture-real-time",
     "href": "weeks/week-9.html#lecture-real-time",
     "title": "Week 9",
     "section": "Lecture (real-time)",
-    "text": "Lecture (real-time)\n🖥️ Lecture 9- Time Series Analysis and Forecasting"
+    "text": "Lecture (real-time)\n🖥️ Lecture 9- Time Series Analysis and Forecasting",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 9"
+    ]
   },
   {
     "objectID": "weeks/week-9.html#tutorial-real-time",
     "href": "weeks/week-9.html#tutorial-real-time",
     "title": "Week 9",
     "section": "Tutorial (real-time)",
-    "text": "Tutorial (real-time)\n📋 Tutorial 9 - Linear Regression"
+    "text": "Tutorial (real-time)\n📋 Tutorial 9 - Linear Regression",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 9"
+    ]
   },
   {
     "objectID": "weeks/week-9.html#quiz-own-time",
     "href": "weeks/week-9.html#quiz-own-time",
     "title": "Week 9",
     "section": "Quiz (own-time)",
-    "text": "Quiz (own-time)\n🧪 Quiz 9"
+    "text": "Quiz (own-time)\n🧪 Quiz 9",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 9"
+    ]
   },
   {
     "objectID": "weeks/week-9.html#supplementary-own-time",
     "href": "weeks/week-9.html#supplementary-own-time",
     "title": "Week 9",
     "section": "Supplementary (own-time)",
-    "text": "Supplementary (own-time)\n🔕 Dealing with date is tricky in R. Although we do not cover it in R, if you are interested please refer to https://r4ds.had.co.nz/dates-and-times.html.\n\n\nBack to course schedule ⏎"
+    "text": "Supplementary (own-time)\n🔕 Dealing with date is tricky in R. Although we do not cover it in R, if you are interested please refer to https://r4ds.had.co.nz/dates-and-times.html.\n\n\nBack to course schedule ⏎",
+    "crumbs": [
+      "Weekly Schedule",
+      "Week 9"
+    ]
   },
   {
     "objectID": "weeks/week-10.html",
