@@ -12,7 +12,7 @@ editor: visual
 
 🖥️ [Lecture 10 - Predictive Data Mining: Classification](https://learning.monash.edu/pluginfile.php/4105703/mod_resource/content/2/lec-8.html#/title-slide)
 
-<iframe src="" width="100%" height="500">
+<iframe src="https://learning.monash.edu/pluginfile.php/4206953/mod_resource/content/2/lec-10.html#/title-slide" width="100%" height="500">
 
 </iframe>
 
