@@ -49,7 +49,7 @@ Your report will be evaluated based on the following criteria:
 
 3.  **Methodology**: Describe the statistical methods used to analyze the data (you are required to use only the tools and methodologies that have been taught during the course. Utilizing external techniques or software not covered in the curriculum is not permitted). Are the methods appropriate for the research question? Are the assumptions of this methods met?
 
-    For **postgraduate** student ONLY: In addition to the requirement above. You have to survey/research one methodology which is not covered in this course and make comparison on both of your chosen methods and discuss. This is to test your ability to think critically and be able to research and make better judgement and decision.
+    For **postgraduate** student ONLY: In addition to the requirement above. You have to survey/research one more methodology and make comparison on both of your chosen methods and discuss. This is to test your ability to think critically and be able to research and make better judgement and decision.
 
 4.  **Results**: Present the results of your analysis, including any visualizations or tables where appropriate. Are the results clearly presented and relevant to the research question?
 
