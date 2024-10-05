@@ -1,0 +1,35 @@
+---
+title: "Week 11"
+subtitle: "Predictive Data Mining: Continuous Outome Variable"
+editor: visual
+---
+
+## Pre-class activities (own-time)
+
+📖 Read Business Analytics, 5th Edition: Chapter 11.1-11.5
+
+## Lecture (real-time)
+
+🖥️ [Lecture 11 - Predictive Data Mining: Continuous Outcome Variable](https://learning.monash.edu/pluginfile.php/4105703/mod_resource/content/2/lec-8.html#/title-slide)
+
+<iframe src width="100%" height="500">
+
+</iframe>
+
+## Tutorial (real-time)
+
+📋 [Tutorial 11 - Binary Outcome](https://learning.monash.edu/mod/resource/view.php?id=3223665) [\[qm](https://learning.monash.edu/mod/folder/view.php?id=3205505)[d](https://learning.monash.edu/mod/folder/view.php?id=3223664)[file\]](https://learning.monash.edu/mod/folder/view.php?id=3205505)
+
+## Quiz (own-time)
+
+🧪 Hooray, NO QUIZ
+
+## Supplementary (own-time)
+
+🔕 None
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Back to [course schedule](/ "Course schedule") ⏎
+:::
