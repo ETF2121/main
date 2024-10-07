@@ -10,15 +10,11 @@ editor: visual
 
 ## Lecture (real-time)
 
-🖥️ [Lecture 11 - Predictive Data Mining: Continuous Outcome Variable](https://learning.monash.edu/pluginfile.php/4105703/mod_resource/content/2/lec-8.html#/title-slide)
-
-<iframe src width="100%" height="500">
-
-</iframe>
+🖥️ [Revision](TBA)
 
 ## Tutorial (real-time)
 
-📋 [Tutorial 11 - Binary Outcome](https://learning.monash.edu/mod/resource/view.php?id=3223665) [\[qm](https://learning.monash.edu/mod/folder/view.php?id=3205505)[d](https://learning.monash.edu/mod/folder/view.php?id=3223664)[file\]](https://learning.monash.edu/mod/folder/view.php?id=3205505)
+📋 [Tutorial 12 - Continuous Outcome Variable](https://learning.monash.edu/pluginfile.php/4234054/mod_resource/content/1/lab-12.html) [\[qm](https://learning.monash.edu/mod/folder/view.php?id=3205505)[d](https://learning.monash.edu/mod/folder/view.php?id=3223664)[f](https://learning.monash.edu/mod/folder/view.php?id=3205505)[ile](https://learning.monash.edu/mod/folder/view.php?id=3232329)[\]](https://learning.monash.edu/mod/folder/view.php?id=3205505)
 
 ## Quiz (own-time)
 
